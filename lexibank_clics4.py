@@ -64,6 +64,14 @@ class Dataset(BaseDataset):
                 dir=self.cldf_dir,
                 data_fnames={"ParameterTable": "colexifications.csv"},
                 zipped=["ParameterTable", "ValueTable"]
+            ),
+            "generic": CldfBenchSpec(
+                dir=self.cldf_dir,
+                metadata_fname="cldf-metadata.json",
+                module='Generic',
+                data_fnames=dict(
+                    ParameterTable='concepts.csv',
+                ),
             )
         }
 
@@ -84,7 +92,6 @@ class Dataset(BaseDataset):
 
     def cmd_makecldf(self, args):
         with self.cldf_writer(args) as writer:
-
             # concepticongloss 2 id
             gloss2id = {
                 concept.gloss: concept.id for concept in
@@ -235,6 +242,7 @@ class Dataset(BaseDataset):
                     Source=""
                 )
             language_table = writer.cldf["LanguageTable"]
+            form_table = writer.cldf["FormTable"]
         with self.cldf_writer(args, cldf_spec="structure", clean=False) as writer:
             wl = Wordlist(
                 [pycldf.Dataset.from_metadata(self.cldf_dir.joinpath("Wordlist-metadata.json"))],
@@ -267,28 +275,65 @@ class Dataset(BaseDataset):
                 {"name": "TargetWord", "datatype": "string"},
             )
 
-            for nodeA, nodeB in itertools.combinations(graph.nodes, r=2):
-                idx = "{0}-interactswith-{1}".format(slug(nodeA, lowercase=True), slug(nodeB, lowercase=True))
-                obj = {
-                    "ID": idx,
-                    "Source": nodeA,
-                    "Target": nodeB,
-                    "Variety_Count": 0,
-                    "Language_Count": 0,
-                    "Family_Count": 0,
-                    "Cognate_Count": 0,
-                    "Similarity": 0.0
-                }
-                try:
-                    data = graph[nodeA][nodeB]
-                except KeyError:
-                    data = {}
-                for c in ["Variety_Count", "Language_Count", "Family_Count", "Cognate_Count"]:
-                    obj[c] = data.get(c.lower(), 0)
-                if nodeA in node_list and nodeB in node_list:
-                    obj["Similarity"] = transition_matrix[node_list.index(nodeA)][node_list.index(nodeB)]
-                writer.objects["ParameterTable"].append(obj)
-                for language_id in data.get("varieties", []):
+            #for nodeA, nodeB in progressbar(itertools.combinations(graph.nodes, r=2), desc="write sims"):
+            #    idx = "{0}-interactswith-{1}".format(slug(nodeA, lowercase=True), slug(nodeB, lowercase=True))
+            #    obj = {
+            #        "ID": idx,
+            #        "Source": nodeA,
+            #        "Target": nodeB,
+            #        "Variety_Count": 0,
+            #        "Language_Count": 0,
+            #        "Family_Count": 0,
+            #        "Cognate_Count": 0,
+            #        "Similarity": 0.0
+            #    }
+            #    try:
+            #        data = graph[nodeA][nodeB]
+            #    except KeyError:
+            #        data = {}
+            #    for c in ["Variety_Count", "Language_Count", "Family_Count", "Cognate_Count"]:
+            #        obj[c] = data.get(c.lower(), 0)
+            #    if nodeA in node_list and nodeB in node_list:
+            #        obj["Similarity"] = transition_matrix[node_list.index(nodeA)][node_list.index(nodeB)]
+            #    if obj.get("Similarity") or obj.get("Variety_Count"):
+            #
+            #        # condition if to add or not here
+            #        writer.objects["ParameterTable"].append(obj)
+            #        for language_id in data.get("varieties", []):
+            #            writer.objects["ValueTable"].append(
+            #                {
+            #                    "ID": idx + "-" + language_id,
+            #                    "ParameterID": idx,
+            #                    "Language_ID": language_id,
+            #                    "Value": 1
+            #                }
+            #            )
+            #        # get the missing values
+            #        for language in wl.languages:
+            #            if language.id not in data.get("varieties", []):
+            #                if nodeA in language.concepts and nodeB in language.concepts:
+            #                    writer.objects["ValueTable"].append(
+            #                        {
+            #                            "ID": idx + "-" + language.id,
+            #                            "ParameterID": idx,
+            #                            "Language_ID": language.id,
+            #                            "Value": 0
+            #                        }
+            #                    )
+            for nodeA, nodeB, data in progressbar(graph.edges(data=True), desc="writing colexifications"):
+                idx = "{0}-colexifies-{1}".format(slug(nodeA, lowercase=True), slug(nodeB, lowercase=True))
+                writer.objects["ParameterTable"].append(
+                    {
+                        "ID": idx,
+                        "Source": nodeA,
+                        "Target": nodeB,
+                        "Variety_Count": data["variety_count"],
+                        "Language_Count": data["language_count"],
+                        "Family_Count": data["family_count"],
+                        "Cognate_Count": data["cognate_count"]
+                    }
+                )
+                for language_id in data["varieties"]:
                     writer.objects["ValueTable"].append(
                         {
                             "ID": idx + "-" + language_id,
@@ -299,7 +344,7 @@ class Dataset(BaseDataset):
                     )
                 # get the missing values
                 for language in wl.languages:
-                    if language.id not in data.get("varieties", []):
+                    if language.id not in data["varieties"]:
                         if nodeA in language.concepts and nodeB in language.concepts:
                             writer.objects["ValueTable"].append(
                                 {
@@ -310,38 +355,21 @@ class Dataset(BaseDataset):
                                 }
                             )
 
+        with self.cldf_writer(args, cldf_spec="generic", clean=False) as writer:
+            writer.cldf.add_columns(
+                "ParameterTable",
+                {"name": "Concepticon_ID", "datatype": "string"},
+                {"name": "Concepticon_Gloss", "datatype": "string"},
+                {"name": "Community", "datatype": "string"})
+            for concept in selected_concepts:
+                print(concept)
+                writer.objects["ParameterTable"].append(
+                    {
+                        "ID": slug(concept, lowercase=True),
+                        "Name": concept,
+                        "Concepticon_ID": gloss2id[concept],
+                        "Concepticon_Gloss": concept,
+                        "Community": 1
+                    }
+                )
 
-            #for nodeA, nodeB, data in progressbar(graph.edges(data=True), desc="writing colexifications"):
-            #    idx = "{0}-colexifies-{1}".format(slug(nodeA, lowercase=True), slug(nodeB, lowercase=True))
-            #    writer.objects["ParameterTable"].append(
-            #        {
-            #            "ID": idx,
-            #            "Source": nodeA,
-            #            "Target": nodeB,
-            #            "Variety_Count": data["variety_count"],
-            #            "Language_Count": data["language_count"],
-            #            "Family_Count": data["family_count"],
-            #            "Cognate_Count": data["cognate_count"]
-            #        }
-            #    )
-            #    for language_id in data["varieties"]:
-            #        writer.objects["ValueTable"].append(
-            #            {
-            #                "ID": idx + "-" + language_id,
-            #                "ParameterID": idx,
-            #                "Language_ID": language_id,
-            #                "Value": 1
-            #            }
-            #        )
-            #    # get the missing values
-            #    for language in wl.languages:
-            #        if language.id not in data["varieties"]:
-            #            if nodeA in language.concepts and nodeB in language.concepts:
-            #                writer.objects["ValueTable"].append(
-            #                    {
-            #                        "ID": idx + "-" + language.id,
-            #                        "ParameterID": idx,
-            #                        "Language_ID": language.id,
-            #                        "Value": 0
-            #                    }
-            #                )
