@@ -1,0 +1,25 @@
+ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Glottolog_Name,Family,Concept_Count,Form_Count
+allenbai-Heqing,Heqing,Eurasia,26.0991374,99.9416161,heqi1238,,Heqing,Sino-Tibetan,511,511
+allenbai-Jianchuan,Jianchuan,Eurasia,26.5536208,100.1396921,jian1239,,Jianchuan,Sino-Tibetan,522,522
+allenbai-Qiliqiao,Qiliqiao,Eurasia,25.6553283,100.1709288,qili1234,,Qiliqiao,Sino-Tibetan,516,516
+allenbai-Yunlong,Yunlong,Eurasia,25.9223745,99.0352884,yunl1238,,Yunlong,Sino-Tibetan,512,512
+allenbai-Lanping,Lanping,Eurasia,26.5158555,99.2581092,lanp1241,,Lanping,Sino-Tibetan,521,521
+allenbai-Luobenzhuo,Luobenzhuo,Eurasia,26.4240223,98.8862088,nuji1238,,Jinman Bai,Sino-Tibetan,509,509
+allenbai-Xiangyun,Xiangyun,Eurasia,25.5313657,100.4478932,xian1250,,Xiangyun,Sino-Tibetan,514,514
+allenbai-Eryuan,Eryuan,Eurasia,26.538056,99.910000,eryu1239,,Eryuan,Sino-Tibetan,512,512
+allenbai-Zhoucheng,Zhoucheng,Eurasia,25.8958633,100.0987848,zhou1234,,Zhoucheng,Sino-Tibetan,510,510
+bantubvd-6,Asu G.22,Africa,-4.17978,37.8323,asut1235,asa,Asu (Tanzania),Atlantic-Congo,495,495
+bantubvd-10,Yao P.21,Africa,-13.6119,35.2387,yaoo1241,yao,Yao,Atlantic-Congo,436,436
+bantubvd-9,Tswana S.30,Africa,-24.368,24.7587,tswa1253,tsn,Tswana,Atlantic-Congo,420,420
+bantubvd-1,Kinyamwezi F22,Africa,-5.08559,32.94452,nyam1276,nym,Nyamwezi,Atlantic-Congo,467,467
+bantubvd-2,Bukusu E.31c,Africa,0.68043,34.7719,buku1249,bxk,Bukusu,Atlantic-Congo,438,438
+bantubvd-7,Rumanyo (Gciriku) K.38,Africa,-18.1681,20.6678,diri1252,diu,Diriku-Shambyu,Atlantic-Congo,437,437
+bantubvd-4,Bemba M.42,Africa,-10.6122,29.2993,bemb1257,bem,Bemba (Zambia),Atlantic-Congo,411,411
+bantubvd-5,Basaa A.43a,Africa,3.80765,10.4213,basa1284,bas,Basa (Cameroon),Atlantic-Congo,403,403
+bantubvd-3,Koyo C.24,Africa,-0.69688,15.7508,koyo1242,koh,Koyo,Atlantic-Congo,390,390
+bantubvd-8,Lega D.25,Africa,-3.83196,27.1424,lega1249,lea,Lega-Shabunda,Atlantic-Congo,371,371
+abrahammonpa-MonpaSangti,Monpa Sangti,Eurasia,27.402266,92.314934,tsha1245,tsj,Tshangla,Sino-Tibetan,313,313
+abrahammonpa-MonpaBalemu,Monpa Balemu,Eurasia,26.964717,92.164581,kala1376,kkf,Kalaktang Monpa,Sino-Tibetan,317,317
+abrahammonpa-MonpaChangprong,Monpa Changprong,Eurasia,27.578928,91.876393,dakp1242,dka,Dakpakha,Sino-Tibetan,322,322
+abrahammonpa-NamreiNabolang,Namrei Nabolang,,27.546333,92.797975,miji1239,,Miji,Sino-Tibetan,328,328
+abrahammonpa-HrusoAkaJamiri,Hruso Aka Jamiri,Eurasia,27.184929,92.599114,hrus1242,hru,Hruso,Sino-Tibetan,310,310
