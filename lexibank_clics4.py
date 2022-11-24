@@ -1,6 +1,7 @@
 """Lexibank Script for CLICS⁴"""
 import pathlib
 
+import networkx as nx
 import pycldf
 from pylexibank.dataset import CLDFSpec as LexibankSpec
 from cldfbench import CLDFSpec as CldfBenchSpec
@@ -9,9 +10,10 @@ from pylexibank import Dataset as BaseDataset
 from cltoolkit import Wordlist
 from git import Repo
 from clldutils.misc import slug
-import itertools
+from lingpy.convert.graph import networkx2igraph
 
-from pyclics.colexifications import get_colexifications, weight_by_cognacy, get_transition_matrix
+from pyclics.colexifications import (
+    get_colexifications, get_transition_matrix, normalize_weights)
 from pyclics.util import write_gml
 
 from pylexibank import Concept, Lexeme, Language, progressbar
@@ -101,7 +103,7 @@ class Dataset(BaseDataset):
                 self.raw_dir / ds["ID"] / "cldf/cldf-metadata.json") for ds in
                            self.etc_dir.read_csv(
                                "datasets.tsv", delimiter="\t",
-                               dicts=True)][:4]  # DEBUGGING
+                               dicts=True)][:11] # DEBUGGING
             args.log.info("loaded datasets")
             wl = Wordlist(datasets, ts=args.clts.api.bipa)
 
@@ -242,19 +244,8 @@ class Dataset(BaseDataset):
                     Source=""
                 )
             language_table = writer.cldf["LanguageTable"]
-            form_table = writer.cldf["FormTable"]
+
         with self.cldf_writer(args, cldf_spec="structure", clean=False) as writer:
-            wl = Wordlist(
-                [pycldf.Dataset.from_metadata(self.cldf_dir.joinpath("Wordlist-metadata.json"))],
-                ts=args.clts.api.bipa
-            )
-            graph = get_colexifications(wl)
-            weight_by_cognacy(graph, 0.45, label="cognate_count")
-            transition_matrix, node_list, _ = get_transition_matrix(
-                graph, steps=10, weight="family_count", normalize=True
-            )
-            write_gml(graph, self.cldf_dir.joinpath("clics4-graph.gml"))
-            args.log.info("computed colexifications")
             writer.cldf.add_component(language_table)
             writer.cldf.add_columns(
                 "ParameterTable",
@@ -263,63 +254,59 @@ class Dataset(BaseDataset):
                 {"name": "Variety_Count", "datatype": "integer"},
                 {"name": "Language_Count", "datatype": "integer"},
                 {"name": "Family_Count", "datatype": "integer"},
-                {"name": "Cognate_Count", "datateype": "integer"},
-                {"name": "Similarity", "datatype": "float"}
-                # {"name": "Variety_Weight", "datatype": "float"},
-                # {"name": "Language_Weight", "datatype": "float"},
-                # {"name": "Family_Weight", "datatype": "float"},
+                {"name": "Variety_Weight", "datateype": "float"},
+                {"name": "Language_Weight", "datateype": "float"},
+                {"name": "Family_Weight", "datateype": "float"},
             )
             writer.cldf.add_columns(
                 "ValueTable",
                 {"name": "SourceWord", "datatype": "string"},
                 {"name": "TargetWord", "datatype": "string"},
             )
+            col = writer.cldf.add_table("concepts.csv")
+            writer.cldf.add_columns(
+                "concepts.csv",
+                {
+                    "name": "Concepticon_ID",
+                    "datatype": "string",
+                    "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#concepticonReference"
+                 },
+                {
+                    "name": "Concepticon_Gloss",
+                    "datatype": "string",
+                },
+                {"name": "Community", "datatype": "string", "null": "?"},
+                {"name": "CentralConcept", "datatype": "string", "null": "?"},
+                {"name": "Similarities", "datatype": "json"},
+            )
+            col.tableSchema.primaryKey = ["Concepticon_ID"]
 
-            #for nodeA, nodeB in progressbar(itertools.combinations(graph.nodes, r=2), desc="write sims"):
-            #    idx = "{0}-interactswith-{1}".format(slug(nodeA, lowercase=True), slug(nodeB, lowercase=True))
-            #    obj = {
-            #        "ID": idx,
-            #        "Source": nodeA,
-            #        "Target": nodeB,
-            #        "Variety_Count": 0,
-            #        "Language_Count": 0,
-            #        "Family_Count": 0,
-            #        "Cognate_Count": 0,
-            #        "Similarity": 0.0
-            #    }
-            #    try:
-            #        data = graph[nodeA][nodeB]
-            #    except KeyError:
-            #        data = {}
-            #    for c in ["Variety_Count", "Language_Count", "Family_Count", "Cognate_Count"]:
-            #        obj[c] = data.get(c.lower(), 0)
-            #    if nodeA in node_list and nodeB in node_list:
-            #        obj["Similarity"] = transition_matrix[node_list.index(nodeA)][node_list.index(nodeB)]
-            #    if obj.get("Similarity") or obj.get("Variety_Count"):
-            #
-            #        # condition if to add or not here
-            #        writer.objects["ParameterTable"].append(obj)
-            #        for language_id in data.get("varieties", []):
-            #            writer.objects["ValueTable"].append(
-            #                {
-            #                    "ID": idx + "-" + language_id,
-            #                    "ParameterID": idx,
-            #                    "Language_ID": language_id,
-            #                    "Value": 1
-            #                }
-            #            )
-            #        # get the missing values
-            #        for language in wl.languages:
-            #            if language.id not in data.get("varieties", []):
-            #                if nodeA in language.concepts and nodeB in language.concepts:
-            #                    writer.objects["ValueTable"].append(
-            #                        {
-            #                            "ID": idx + "-" + language.id,
-            #                            "ParameterID": idx,
-            #                            "Language_ID": language.id,
-            #                            "Value": 0
-            #                        }
-            #                    )
+            wl = Wordlist(
+                [pycldf.Dataset.from_metadata(self.cldf_dir.joinpath("Wordlist-metadata.json"))],
+                ts=args.clts.api.bipa
+            )
+            graph = get_colexifications(wl)
+            for w in ["variety", "language", "family"]:
+                normalize_weights(graph, w+"_weight", w+"_count", w+"_count")
+            transition_matrix, node_list, _ = get_transition_matrix(
+                graph, steps=10, weight="family_weight", normalize=True
+            )
+            ig = networkx2igraph(graph)
+            communities = ig.community_infomap(edge_weights="family_weight", vertex_weights="family_count")
+            community_labels = {}
+            for i, nodes_ in enumerate(communities):
+                nodes = [ig.vs[node]["Name"] for node in nodes_]
+                sg = nx.subgraph(graph, nodes)
+                central_node = sorted(
+                    nx.degree_centrality(sg).items(), key=lambda x: x[1], reverse=True)[0][0]
+                for node in nodes:
+                    community_labels[node] = (str(i+1), central_node)
+                    graph.nodes[node]["community"] = str(i+1)
+                    graph.nodes[node]["central_concept"] = central_node
+
+            write_gml(graph, self.cldf_dir.joinpath("clics4-graph.gml"))
+            args.log.info("computed colexifications")
+
             for nodeA, nodeB, data in progressbar(graph.edges(data=True), desc="writing colexifications"):
                 idx = "{0}-colexifies-{1}".format(slug(nodeA, lowercase=True), slug(nodeB, lowercase=True))
                 writer.objects["ParameterTable"].append(
@@ -330,7 +317,9 @@ class Dataset(BaseDataset):
                         "Variety_Count": data["variety_count"],
                         "Language_Count": data["language_count"],
                         "Family_Count": data["family_count"],
-                        "Cognate_Count": data["cognate_count"]
+                        "Variety_Weight": data["variety_weight"],
+                        "Language_Weight": data["language_weight"],
+                        "Family_Weight": data["family_weight"],
                     }
                 )
                 for language_id in data["varieties"]:
@@ -342,34 +331,40 @@ class Dataset(BaseDataset):
                             "Value": 1
                         }
                     )
-                # get the missing values
+                # get explicitly missing values for colexifications
                 for language in wl.languages:
                     if language.id not in data["varieties"]:
-                        if nodeA in language.concepts and nodeB in language.concepts:
+                        if not nodeA in language.concepts or not nodeB in language.concepts:
                             writer.objects["ValueTable"].append(
                                 {
                                     "ID": idx + "-" + language.id,
                                     "ParameterID": idx,
                                     "Language_ID": language.id,
-                                    "Value": 0
+                                    "Value": "?"
                                 }
                             )
 
-        with self.cldf_writer(args, cldf_spec="generic", clean=False) as writer:
-            writer.cldf.add_columns(
-                "ParameterTable",
-                {"name": "Concepticon_ID", "datatype": "string"},
-                {"name": "Concepticon_Gloss", "datatype": "string"},
-                {"name": "Community", "datatype": "string"})
+            # compute pairwise concept similarities based on random walks
+            similarities = {}
+            for i, nodeA in enumerate(node_list):
+                similarities[nodeA] = {}
+                for j, nodeB in enumerate(node_list):
+                    if transition_matrix[i][j] >= 0.001:
+                        similarities[nodeA][nodeB] = transition_matrix[i][j]
             for concept in selected_concepts:
-                print(concept)
-                writer.objects["ParameterTable"].append(
+                if concept not in community_labels:
+                    args.log.info("Concept {0} withouth community.".format(concept))
+                writer.objects["concepts.csv"].append(
                     {
-                        "ID": slug(concept, lowercase=True),
-                        "Name": concept,
                         "Concepticon_ID": gloss2id[concept],
                         "Concepticon_Gloss": concept,
-                        "Community": 1
+                        "Community": community_labels.get(concept, ["?"])[0],
+                        "CentralConcept": community_labels.get(concept, ["?", "?"])[1],
+                        "Similarities": similarities.get(nodeA, {})
                     }
                 )
+
+
+
+
 
