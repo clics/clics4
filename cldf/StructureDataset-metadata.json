@@ -10,13 +10,13 @@
     "dc:isVersionOf": null,
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:related": null,
-    "dc:title": "Language Islands",
+    "dc:title": "CLICS\u2074",
     "dcat:accessURL": "https://github.com/clics/clics4",
     "prov:wasDerivedFrom": [
         {
             "rdf:about": "https://github.com/clics/clics4",
             "rdf:type": "prov:Entity",
-            "dc:created": "6b814a8",
+            "dc:created": "256b184",
             "dc:title": "Repository"
         },
         {
@@ -491,7 +491,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 8255,
+            "dc:extent": 125960,
             "tableSchema": {
                 "columns": [
                     {
@@ -547,14 +547,6 @@
                         "required": false,
                         "separator": ";",
                         "name": "Source"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "SourceWord"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "TargetWord"
                     }
                 ],
                 "foreignKeys": [
@@ -564,6 +556,17 @@
                         ],
                         "reference": {
                             "resource": "colexifications.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Language_ID"
+                        ],
+                        "reference": {
+                            "resource": "languages.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -578,7 +581,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 713,
+            "dc:extent": 38730,
             "tableSchema": {
                 "columns": [
                     {
@@ -618,7 +621,11 @@
                     },
                     {
                         "datatype": "integer",
-                        "name": "Word_Count"
+                        "name": "Form_Count"
+                    },
+                    {
+                        "datatype": "integer",
+                        "name": "Variety_Count"
                     },
                     {
                         "datatype": "integer",
@@ -627,6 +634,40 @@
                     {
                         "datatype": "integer",
                         "name": "Family_Count"
+                    },
+                    {
+                        "name": "Variety_Weight"
+                    },
+                    {
+                        "name": "Language_Weight"
+                    },
+                    {
+                        "name": "Family_Weight"
+                    },
+                    {
+                        "datatype": "string",
+                        "separator": " ",
+                        "name": "Forms"
+                    },
+                    {
+                        "datatype": "string",
+                        "separator": " ",
+                        "name": "Varieties"
+                    },
+                    {
+                        "datatype": "string",
+                        "separator": " ",
+                        "name": "Languages"
+                    },
+                    {
+                        "datatype": "string",
+                        "separator": " ",
+                        "name": "Families"
+                    },
+                    {
+                        "datatype": "string",
+                        "separator": " ",
+                        "name": "Missing_Data"
                     }
                 ],
                 "primaryKey": [
@@ -634,6 +675,167 @@
                 ]
             },
             "url": "colexifications.csv"
+        },
+        {
+            "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
+            "dc:extent": 1129,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "required": false,
+                        "name": "Name"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#macroarea",
+                        "required": false,
+                        "name": "Macroarea"
+                    },
+                    {
+                        "datatype": {
+                            "base": "decimal",
+                            "minimum": "-90",
+                            "maximum": "90"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#latitude",
+                        "required": false,
+                        "name": "Latitude"
+                    },
+                    {
+                        "datatype": {
+                            "base": "decimal",
+                            "minimum": "-180",
+                            "maximum": "180"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#longitude",
+                        "required": false,
+                        "name": "Longitude"
+                    },
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-z0-9]{4}[1-9][0-9]{3}"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#glottocode",
+                        "required": false,
+                        "valueUrl": "http://glottolog.org/resource/languoid/id/{Glottocode}",
+                        "name": "Glottocode"
+                    },
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-z]{3}"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#iso639P3code",
+                        "required": false,
+                        "name": "ISO639P3code"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Glottolog_Name"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Family"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Concept_Count"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Form_Count"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "languages.csv"
+        },
+        {
+            "dc:extent": 1500,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#concepticonReference",
+                        "name": "Concepticon_ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Concepticon_Gloss"
+                    },
+                    {
+                        "datatype": "integer",
+                        "name": "Form_Count"
+                    },
+                    {
+                        "datatype": "integer",
+                        "name": "Variety_Count"
+                    },
+                    {
+                        "datatype": "integer",
+                        "name": "Language_Count"
+                    },
+                    {
+                        "datatype": "integer",
+                        "name": "Family_Count"
+                    },
+                    {
+                        "datatype": "string",
+                        "null": [
+                            "?"
+                        ],
+                        "name": "Community"
+                    },
+                    {
+                        "datatype": "string",
+                        "null": [
+                            "?"
+                        ],
+                        "name": "CentralConcept"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Forms"
+                    },
+                    {
+                        "datatype": "string",
+                        "separator": " ",
+                        "name": "Varieties"
+                    },
+                    {
+                        "datatype": "string",
+                        "separator": " ",
+                        "name": "Languages"
+                    },
+                    {
+                        "datatype": "string",
+                        "separator": " ",
+                        "name": "Families"
+                    },
+                    {
+                        "datatype": "json",
+                        "name": "Similarities"
+                    }
+                ],
+                "primaryKey": [
+                    "Concepticon_ID"
+                ]
+            },
+            "url": "concepts.csv"
         }
     ]
 }

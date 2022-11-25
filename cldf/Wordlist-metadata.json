@@ -10,13 +10,13 @@
     "dc:isVersionOf": null,
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:related": null,
-    "dc:title": "Language Islands",
+    "dc:title": "CLICS\u2074",
     "dcat:accessURL": "https://github.com/clics/clics4",
     "prov:wasDerivedFrom": [
         {
             "rdf:about": "https://github.com/clics/clics4",
             "rdf:type": "prov:Entity",
-            "dc:created": "6b814a8",
+            "dc:created": "256b184",
             "dc:title": "Repository"
         },
         {
@@ -495,7 +495,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 10485,
+            "dc:extent": 745607,
             "tableSchema": {
                 "columns": [
                     {
@@ -615,7 +615,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 24,
+            "dc:extent": 1129,
             "tableSchema": {
                 "columns": [
                     {
@@ -703,7 +703,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 816,
+            "dc:extent": 1445,
             "tableSchema": {
                 "columns": [
                     {
@@ -746,10 +746,6 @@
                     {
                         "datatype": "string",
                         "name": "OriginalConcept"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "Frequency"
                     }
                 ],
                 "primaryKey": [
