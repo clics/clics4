@@ -3,7 +3,7 @@ import pathlib
 
 import networkx as nx
 import pycldf
-from pylexibank.dataset import CLDFSpec as LexibankSpec
+import pylexibank.dataset
 from cldfbench import CLDFSpec as CldfBenchSpec
 from pylexibank.cldf import LexibankWriter
 from pylexibank import Dataset as BaseDataset
@@ -12,22 +12,38 @@ from git import Repo
 from clldutils.misc import slug
 from lingpy.convert.graph import networkx2igraph
 import itertools
+import zipfile
 
 from pyclics.colexifications import (
     get_colexifications, get_transition_matrix, normalize_weights)
-from pyclics.util import write_gml
+import pyclics.util
 
 from pylexibank import Concept, Lexeme, Language, progressbar
 import attr
 
 LANGUAGES = 250
 WRITE_CONCEPTS = False
-RERUN = False
+RERUN = True
+SUBGRAPH_THRESHOLD = 3
+DATASETS = 51
+MINIMAL_SIMILARITY = 0.01
 
 
 @attr.s
 class CustomConcept(Concept):
-    OriginalConcept = attr.ib(default=True)
+    Original_Concept = attr.ib(default=None)
+    Form_Count = attr.ib(default=None, metadata={"format": "integer"})
+    Variety_Count = attr.ib(default=None, metadata={"format": "integer"})
+    Language_Count = attr.ib(default=None, metadata={"format": "integer"})
+    Family_Count = attr.ib(default=None, metadata={"format": "integer"})
+    Community = attr.ib(default=None, metadata={"format": "string"})
+    CentralConcept = attr.ib(default=None, metadata={"format": "string"})
+    Forms = attr.ib(default=None, metadata={"format": "string", "separator": " "})
+    Varieties = attr.ib(default=None, metadata={"format": "string", "separator": " "})
+    Languages = attr.ib(default=None, metadata={"format": "string", "separator": " "})
+    Families = attr.ib(default=None, metadata={"format": "string", "separator": " "})
+    Neighbors = attr.ib(default=None, metadata={"format": "string", "separator": " // "})
+    Similarities = attr.ib(default=None, metadata={"format": "json"})
 
 
 @attr.s
@@ -43,29 +59,29 @@ class CustomLanguage(Language):
 
 class Dataset(BaseDataset):
     dir = pathlib.Path(__file__).parent
-    id = "clicsbp"
+    id = "clics4"
     concept_class = CustomConcept
     lexeme_class = CustomLexeme
     language_class = CustomLanguage
 
     def cldf_specs(self):  # A dataset must declare all CLDF sets it creates.
         return {
-            None: LexibankSpec(
+            None: pylexibank.dataset.CLDFSpec(
                 dir=self.cldf_dir,
                 writer_cls=LexibankWriter,
                 module='Wordlist',
                 data_fnames=dict(
                     LanguageTable="languages.csv",
-                    ParameterTable='parameters.csv',
+                    ParameterTable='concepts.csv',
                     CognateTable="cognates.csv",
                     FormTable='forms.csv',
                 ),
-                zipped=['FormTable']),
+                zipped=["FormTable", "ParameterTable"]),
             "structure": CldfBenchSpec(
                 module="StructureDataset",
                 dir=self.cldf_dir,
                 data_fnames={"ParameterTable": "colexifications.csv"},
-                zipped=["ParameterTable", "ValueTable"]
+                zipped=["ParameterTable", "ValueTable", "concepts.csv"]
             ),
             "generic": CldfBenchSpec(
                 dir=self.cldf_dir,
@@ -98,28 +114,25 @@ class Dataset(BaseDataset):
             concept.gloss: concept.id for concept in
             self.concepticon.conceptsets.values()}
         args.log.info("created concepticon gloss to ID converter")
+        # read target concepts
+        targets, sources = {}, {}
+        for row in self.etc_dir.read_csv(
+                "concept-modifications.tsv",
+                delimiter="\t", dicts=True):
+            targets[row["Source"]] = row["Targets"].split(" // ")
+            for t in row["Targets"].split(" // "):
+                sources[t] = row["Source"]
+        args.log.info("loaded concept modifications")
 
+        # only invoke when intenting to rerun the full data conversion process
         if RERUN:
             with self.cldf_writer(args) as writer:
-
                 datasets = [pycldf.Dataset.from_metadata(
-                    self.raw_dir / ds["ID"] / "cldf/cldf-metadata.json") for ds in
-                               self.etc_dir.read_csv(
-                                   "datasets.tsv", delimiter="\t",
-                                   dicts=True)] # DEBUGGING
-                args.log.info("loaded datasets")
+                    self.raw_dir / ds["ID"] / "cldf/cldf-metadata.json"
+                ) for ds in self.etc_dir.read_csv(
+                    "datasets.tsv", delimiter="\t",
+                    dicts=True)][:DATASETS]
                 wl: Wordlist = Wordlist(datasets, ts=args.clts.api.bipa)
-            
-                # read target concepts
-                targets, sources = {}, {}
-                for row in self.etc_dir.read_csv(
-                        "concept-modifications.tsv",
-                        delimiter="\t", dicts=True):
-                    if row["Status"].strip() in ["edited", "accepted"]:
-                        targets[row["Source"]] = row["Targets"].split(" // ")
-                        for t in row["Targets"].split(" // "):
-                            sources[t] = row["Source"]
-            
                 # sort the concepts by number of unique glottocodes
                 all_concepts = sorted(
                     wl.concepts,
@@ -133,7 +146,7 @@ class Dataset(BaseDataset):
                             "w") as f:
                         f.write("ID\tGLOSS\tFREQUENCY\n")
                         for concept in all_concepts:
-                            if concept.id and concept.concepticon_id:
+                            if concept and concept.concepticon_gloss:
                                 f.write("\t".join([
                                     concept.concepticon_id,
                                     concept.concepticon_gloss,
@@ -144,66 +157,68 @@ class Dataset(BaseDataset):
                 # check for duplicates in the selected concepts
                 selected_concepts, visited = [], set()
                 for concept in all_concepts:
-                    if concept.id in visited:
+                    if concept.concepticon_gloss in visited:
                         continue
-                    if concept.id in targets:
-                        selected_concepts.extend(targets[concept.id])
-                        for t in targets[concept.id]:
+                    if concept.concepticon_gloss in targets:
+                        selected_concepts.extend(targets[concept.concepticon_gloss])
+                        for t in targets[concept.concepticon_gloss]:
                             visited.add(t)
                     else:
-                        if concept.id not in gloss2id:
-                            args.log.info("Concepticon 3-Problem {0}".format(concept.id))
+                        if concept.concepticon_gloss not in gloss2id:
+                            dsets = " ".join(set([f.dataset for f in concept.forms]))
+                            args.log.info("Concepticon 3-Problem {0} / {1}".format(concept.concepticon_gloss, dsets))
                         else:
-                            selected_concepts.append(concept.id)
-                            visited.add(concept.id)
+                            selected_concepts.append(concept.concepticon_gloss)
+                            visited.add(concept.concepticon_gloss)
                 selected_concepts = selected_concepts[:1500]
+                args.log.info("found {0} valid concepts".format(len(selected_concepts)))
+                # calculate the count of concepts per language to filter languages with less than LANGUAGES concepts
                 concept_count = {}
                 for concept in all_concepts:
-                    if concept.id in selected_concepts:
-                        concept_count[concept.id] = 1
-                    elif concept.id in targets:
-                        if [c for c in targets[concept.id] if c in selected_concepts]:
-                            concept_count[concept.id] = 0
-                            for t in targets[concept.id]:
-                                if t in selected_concepts:
-                                    concept_count[concept.id] += 1
+                    if concept.concepticon_gloss in selected_concepts:
+                        concept_count[concept.concepticon_gloss] = 1
+                    elif concept.concepticon_gloss in targets:
+                        concept_count[concept.concepticon_gloss] = 0
+                        for t in targets[concept.concepticon_gloss]:
+                            if t in selected_concepts:
+                                concept_count[concept.concepticon_gloss] += 1
                 args.log.info(
                     "calculated frequencies for split concepts ({0}/{1})".format(
-                        len(concept_count), sum(concept_count.values()))
+                        sum([1 for cnc in concept_count.values() if cnc >= 1]),
+                        sum(concept_count.values()))
                 )
-            
-                # get valid languages
-                valid_language_ids, valid_language_objects, visited = [], [], set()
+                # get valid languages by counting if they have LANGUAGES concepts
+                valid_language_ids, valid_language_objects = [], []
                 for language in sorted(
                         wl.languages,
-                        key=lambda x: sum([concept_count[c.id] for c in x.concepts if c.id in
-                                                                                      concept_count]),
+                        key=lambda forms: sum([concept_count[c.concepticon_gloss] for c in forms.concepts if \
+                                           c.concepticon_gloss in concept_count]),
                         reverse=True
                 ):
-                    if language.glottocode in visited:
-                        pass
-                    else:
-                        cov = sum([concept_count[c.id] for c in language.concepts if
-                                   c.id in concept_count])
-                        if language.latitude and language.glottocode and cov >= LANGUAGES:
-                            visited.add(language.glottocode)
-                            valid_language_ids.append(language.id)
-                            valid_language_objects.append(language)
+                    # one can check for common glottocodes here, but we also filter these cases
+                    # so the current procedure is to take all languages if they have more than LANGUAGES
+                    # concepts, even if they have the same glottocode but come from different sources
+                    cov = sum([concept_count[c.id] for c in language.concepts if
+                               c.id in concept_count])
+                    if language.latitude and language.glottocode and cov >= LANGUAGES:
+                        valid_language_ids.append(language.id)
+                        valid_language_objects.append(language)
                 args.log.info("found {0} valid languages".format(len(valid_language_ids)))
-            
+
+                # add concepts to the writer now
                 for concept in selected_concepts:
                     writer.add_concept(
                         ID=slug(concept, lowercase=True),
                         Name=concept,
                         Concepticon_ID=gloss2id[concept],
                         Concepticon_Gloss=concept,
-                        OriginalConcept=sources.get(concept, "")
+                        Original_Concept=sources.get(concept, "")
                     )
                 clics, accepted_languages = [], []
                 for language in progressbar(valid_language_objects, desc="retrieve forms"):
                     cnc_count, frm_count = 0, 0
                     for form in language.forms_with_sounds:
-                        if (form.concept and form.concept.id in selected_concepts):
+                        if form.concept and form.concept.id in selected_concepts:
                             clics += [[
                                 language.id,
                                 form.id,
@@ -215,7 +230,7 @@ class Dataset(BaseDataset):
                             ]]
                             cnc_count += 1
                             frm_count += 1
-                        elif (form.concept and form.concept.id in targets):
+                        elif form.concept and form.concept.id in targets:
                             for gloss in targets[form.concept.id]:
                                 if gloss in selected_concepts:
                                     clics += [[
@@ -267,7 +282,59 @@ class Dataset(BaseDataset):
                     args.log.info("Missing concept {0} / {1}".format(m, lng))
 
         with self.cldf_writer(args, cldf_spec="structure", clean=False) as writer:
-            writer.cldf.add_component(language_table)
+            ds = pycldf.Dataset.from_metadata(self.cldf_dir.joinpath("Wordlist-metadata.json"))
+            wl = Wordlist(
+                [ds],
+                ts=args.clts.api.bipa
+            )
+
+            graph = get_colexifications(wl)
+            for w in ["form", "variety", "language", "family"]:
+                normalize_weights(graph, w+"_weight", w+"_count", w+"_count")
+            ig = networkx2igraph(graph)
+            communities = ig.community_infomap(edge_weights="family_weight", vertex_weights="family_count")
+            community_labels = {}
+            for i, nodes_ in enumerate(communities):
+                nodes = [ig.vs[node]["Name"] for node in nodes_]
+                central_node = sorted(
+                    nx.degree(graph, nodes, weight="family_weight"),
+                    key=lambda x: x[1],
+                    reverse=True)[0][0]
+                for node in nodes:
+                    community_labels[node] = (str(i+1), central_node)
+                    graph.nodes[node]["community"] = str(i+1)
+                    graph.nodes[node]["central_concept"] = central_node
+
+            # compute neighbors
+            neighbors = {}
+            for node, data in graph.nodes(data=True):
+                neighbors[node] = []
+                for node_b in graph[node]:
+                    if graph[node][node_b]["family_count"] >= SUBGRAPH_THRESHOLD:
+                        neighbors[node].append(node_b)
+
+            pyclics.util.write_gml(graph, self.cldf_dir.joinpath("clics4-graph.gml"))
+            with zipfile.ZipFile(
+                    self.cldf_dir.joinpath("clics4-graph.gml.zip"),
+                    "w",
+                    compression=zipfile.ZIP_DEFLATED,
+                    compresslevel=9) as zf:
+                zf.write(self.cldf_dir.joinpath("clics4-graph.gml"), arcname='clics4-graph.gml')
+            self.cldf_dir.joinpath("clics4-graph.gml").unlink()
+            args.log.info("computed colexifications")
+            # retrieve concepts
+            concepts = {row.data["Concepticon_Gloss"]: row for row in ds.objects("ParameterTable")}
+            # load language table
+            if not RERUN:
+                writer.cldf.add_component("LanguageTable")
+                writer.cldf.add_columns(
+                    "LanguageTable",
+                    {"name": "Concept_Count", "datatype": "integer"},
+                    {"name": "Form_Count", "datatype": "integer"}
+                )
+
+            else:
+                writer.cldf.add_component(language_table)
             writer.cldf.add_columns(
                 "ParameterTable",
                 {"name": "Source", "datatype": "string"},
@@ -289,6 +356,11 @@ class Dataset(BaseDataset):
             writer.cldf.add_columns(
                 "concepts.csv",
                 {
+                    "name": "ID",
+                    "datatype": "string",
+                    "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id"
+                },
+                {
                     "name": "Concepticon_ID",
                     "datatype": "string",
                     "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#concepticonReference"
@@ -297,44 +369,25 @@ class Dataset(BaseDataset):
                     "name": "Concepticon_Gloss",
                     "datatype": "string",
                 },
+                {
+                    "name": "Original_Concept",
+                    "datatype": "string"
+                },
                 {"name": "Form_Count", "datatype": "integer"},
                 {"name": "Variety_Count", "datatype": "integer"},
                 {"name": "Language_Count", "datatype": "integer"},
                 {"name": "Family_Count", "datatype": "integer"},
                 {"name": "Community", "datatype": "string", "null": "?"},
                 {"name": "CentralConcept", "datatype": "string", "null": "?"},
-                {"name": "Forms", "datatype": {"base": "string", "separator": " "}},
+                {"name": "Forms", "datatype": {"base": "string"}, "separator": " "},
                 {"name": "Varieties", "datatype": {"base": "string"}, "separator": " "},
                 {"name": "Languages", "datatype": {"base": "string"}, "separator": " "},
                 {"name": "Families", "datatype": {"base": "string"}, "separator": " "},
-                {"name": "Similarities", "datatype": "json"},
+                {"name": "Neighbors", "datatype": "string", "separator": " // "},
+                {"name": "Similarities", "datatype": "json"}
             )
             col.tableSchema.primaryKey = ["Concepticon_ID"]
-
-            wl = Wordlist(
-                [pycldf.Dataset.from_metadata(self.cldf_dir.joinpath("Wordlist-metadata.json"))],
-                ts=args.clts.api.bipa
-            )
-            graph = get_colexifications(wl)
-            for w in ["form", "variety", "language", "family"]:
-                normalize_weights(graph, w+"_weight", w+"_count", w+"_count")
-            ig = networkx2igraph(graph)
-            communities = ig.community_infomap(edge_weights="family_weight", vertex_weights="family_count")
-            community_labels = {}
-            for i, nodes_ in enumerate(communities):
-                nodes = [ig.vs[node]["Name"] for node in nodes_]
-                central_node = sorted(
-                    nx.degree(graph, nodes, weight="family_weight"),
-                    key=lambda x: x[1],
-                    reverse=True)[0][0]
-                for node in nodes:
-                    community_labels[node] = (str(i+1), central_node)
-                    graph.nodes[node]["community"] = str(i+1)
-                    graph.nodes[node]["central_concept"] = central_node
-
-            write_gml(graph, self.cldf_dir.joinpath("clics4-graph.gml"))
-            args.log.info("computed colexifications")
-
+            # compute missing data for all nodes
             for nodeA, nodeB, data in progressbar(
                     graph.edges(data=True),
                     desc="writing colexifications"):
@@ -378,6 +431,7 @@ class Dataset(BaseDataset):
                     )
 
             # extend graph by adding missing edges
+            args.log.info("computing similarities")
             for nodeA, nodeB in itertools.combinations(list(graph.nodes), r=2):
                 if not nodeB in graph[nodeA]:
                     graph.add_edge(nodeA, nodeB, family_weight=1/100000)
@@ -390,15 +444,17 @@ class Dataset(BaseDataset):
             for i, nodeA in enumerate(node_list):
                 similarities[nodeA] = {}
                 for j, nodeB in enumerate(node_list):
-                    if transition_matrix[i][j] >= 0.001:
+                    if transition_matrix[i][j] >= MINIMAL_SIMILARITY:
                         similarities[nodeA][nodeB] = transition_matrix[i][j]
             for concept in map(lambda x: x.id, wl.concepts):
                 if concept not in community_labels:
                     args.log.info("Concept {0} withouth community.".format(concept))
                 writer.objects["concepts.csv"].append(
                     {
+                        "ID": concepts[concept].id,
                         "Concepticon_ID": gloss2id[concept],
                         "Concepticon_Gloss": concept,
+                        "Original_Concept": concepts[concept].data["Original_Concept"],
                         "Form_Count": graph.nodes[concept]["form_count"],
                         "Variety_Count": graph.nodes[concept]["variety_count"],
                         "Language_Count": graph.nodes[concept]["language_count"],
@@ -408,8 +464,9 @@ class Dataset(BaseDataset):
                         "Similarities": similarities.get(concept, {}),
                         "Forms": graph.nodes[concept]["forms"],
                         "Varieties": graph.nodes[concept]["varieties"],
-                        "Languages": graph.nodes[concept]["languages"],
-                        "Families": graph.nodes[concept]["families"]
+                        "Languages": list(set(graph.nodes[concept]["languages"])),
+                        "Families": list(set(graph.nodes[concept]["families"])),
+                        "Neighbors": neighbors[concept]
                     }
                 )
 
