@@ -25,7 +25,7 @@ LANGUAGES = 250
 WRITE_CONCEPTS = False
 RERUN = True
 SUBGRAPH_THRESHOLD = 3
-DATASETS = 51
+DATASETS = 20
 MINIMAL_SIMILARITY = 0.01
 
 
@@ -55,6 +55,12 @@ class CustomLexeme(Lexeme):
 class CustomLanguage(Language):
     Concept_Count = attr.ib(default=None, metadata={"format": "integer"})
     Form_Count = attr.ib(default=None, metadata={"format": "integer"})
+    Contribution_ID = attr.ib(
+        default=None,
+        metadata={
+            "format": "string",
+            "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#contributionReference"
+        })
 
 
 class Dataset(BaseDataset):
@@ -94,6 +100,7 @@ class Dataset(BaseDataset):
         }
 
     def cmd_download(self, args):
+        # TODO: add the sources.bib, using the Zenodo API (pyzenodo3) that allows to retrieve data by DOI
         for dataset in self.etc_dir.read_csv(
                 "datasets.tsv", delimiter="\t",
                 dicts=True):
@@ -109,7 +116,7 @@ class Dataset(BaseDataset):
                     self.raw_dir / dataset["ID"])
 
     def cmd_makecldf(self, args):
-        # concepticongloss 2 id
+        # concepticon_gloss to concepticon_id conversion
         gloss2id = {
             concept.gloss: concept.id for concept in
             self.concepticon.conceptsets.values()}
@@ -124,15 +131,37 @@ class Dataset(BaseDataset):
                 sources[t] = row["Source"]
         args.log.info("loaded concept modifications")
 
-        # only invoke when intenting to rerun the full data conversion process
+        # only invoke when intending to rerun the full data conversion process
         if RERUN:
             with self.cldf_writer(args) as writer:
-                datasets = [pycldf.Dataset.from_metadata(
-                    self.raw_dir / ds["ID"] / "cldf/cldf-metadata.json"
-                ) for ds in self.etc_dir.read_csv(
-                    "datasets.tsv", delimiter="\t",
-                    dicts=True)][:DATASETS]
-                wl: Wordlist = Wordlist(datasets, ts=args.clts.api.bipa)
+                # add sources
+                writer.add_sources()
+                args.log.info("added sources")
+                # add contributions table
+                writer.cldf.add_component("ContributionTable")
+                writer.cldf.add_columns(
+                    "ContributionTable",
+                    {"name": "Source", "datatype": "string"},
+                    {"name": "DOI", "datatype": "string"}
+                )
+                datasets = []
+                for ds in self.etc_dir.read_csv("datasets.tsv", delimiter="\t", dicts=True):
+                    datasets += [pycldf.Dataset.from_metadata(
+                        self.raw_dir / ds["ID"] / "cldf/cldf-metadata.json"
+                    )]
+                    writer.objects["ContributionTable"].append(
+                        {
+                            "ID": ds["ID"],
+                            "Name": "",
+                            "Description": "",
+                            "Contributor": "",
+                            "Citation": "",
+                            "Source": "",
+                            "DOI": ""
+                        }
+                    )
+
+                wl: Wordlist = Wordlist(datasets[:DATASETS], ts=args.clts.api.bipa)
                 # sort the concepts by number of unique glottocodes
                 all_concepts = sorted(
                     wl.concepts,
@@ -153,7 +182,6 @@ class Dataset(BaseDataset):
                                     str(len(set([form.language.glottocode for form in
                                                  concept.forms_with_sounds])))]) + "\n")
                     args.log.info("wrote concept frequencies to file")
-            
                 # check for duplicates in the selected concepts
                 selected_concepts, visited = [], set()
                 for concept in all_concepts:
@@ -191,8 +219,9 @@ class Dataset(BaseDataset):
                 valid_language_ids, valid_language_objects = [], []
                 for language in sorted(
                         wl.languages,
-                        key=lambda forms: sum([concept_count[c.concepticon_gloss] for c in forms.concepts if \
-                                           c.concepticon_gloss in concept_count]),
+                        key=lambda forms: sum([
+                            concept_count[c.concepticon_gloss] for c in forms.concepts if
+                            c.concepticon_gloss in concept_count]),
                         reverse=True
                 ):
                     # one can check for common glottocodes here, but we also filter these cases
@@ -222,6 +251,7 @@ class Dataset(BaseDataset):
                             clics += [[
                                 language.id,
                                 form.id,
+                                language.dataset,
                                 form.concept.id,
                                 form.value,
                                 form.form,
@@ -236,6 +266,7 @@ class Dataset(BaseDataset):
                                     clics += [[
                                         language.id,
                                         form.id,
+                                        language.dataset,
                                         gloss,
                                         form.value,
                                         form.form,
@@ -251,13 +282,15 @@ class Dataset(BaseDataset):
                         Longitude=language.longitude,
                         Glottocode=language.glottocode,
                         Concept_Count=cnc_count,
-                        Form_Count=frm_count
+                        Form_Count=frm_count,
+                        Contribution_ID=language.dataset
                     )
                     accepted_languages += [language.id]
                 missing = set()
                 for (
                         language_id,
                         form_id,
+                        ds_id,
                         concept_id,
                         form_val,
                         form_form,
@@ -273,11 +306,12 @@ class Dataset(BaseDataset):
                             Form=form_form,
                             Segments=form_sounds,
                             ConceptInSource=concept_in_source,
-                            Source=""
+                            Source="",  # ds_id
                         )
                     else:
                         missing.add((concept_id, language_id))
                 language_table = writer.cldf["LanguageTable"]
+                contribution_table = writer.cldf["ContributionTable"]
                 for m, lng in missing:
                     args.log.info("Missing concept {0} / {1}".format(m, lng))
 
@@ -330,27 +364,32 @@ class Dataset(BaseDataset):
                 writer.cldf.add_columns(
                     "LanguageTable",
                     {"name": "Concept_Count", "datatype": "integer"},
-                    {"name": "Form_Count", "datatype": "integer"}
+                    {"name": "Form_Count", "datatype": "integer"},
+                    {
+                        "name": "Contribution_ID",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#contributionReference"
+                        }
                 )
 
             else:
                 writer.cldf.add_component(language_table)
+                writer.cldf.add_component(contribution_table)
             writer.cldf.add_columns(
                 "ParameterTable",
-                {"name": "Source", "datatype": "string"},
-                {"name": "Target", "datatype": "string"},
+                {"name": "Source_Concept", "datatype": "string"},
+                {"name": "Target_Concept", "datatype": "string"},
                 {"name": "Form_Count", "datatype": "integer"},
                 {"name": "Variety_Count", "datatype": "integer"},
                 {"name": "Language_Count", "datatype": "integer"},
                 {"name": "Family_Count", "datatype": "integer"},
-                {"name": "Variety_Weight", "datateype": "float"},
-                {"name": "Language_Weight", "datateype": "float"},
-                {"name": "Family_Weight", "datateype": "float"},
+                {"name": "Variety_Weight", "datatype": "float"},
+                {"name": "Language_Weight", "datatype": "float"},
+                {"name": "Family_Weight", "datatype": "float"},
                 {"name": "Forms", "datatype": {"base": "string"}, "separator": " "},
                 {"name": "Varieties", "datatype": {"base": "string"}, "separator": " "},
                 {"name": "Languages", "datatype": {"base": "string"}, "separator": " "},
-                {"name": "Families", "datatype": {"base": "string"}, "separator": " "},
-                {"name": "Missing_Data", "datatype": {"base": "string"}, "separator": " "}
+                {"name": "Families", "datatype": {"base": "string"}, "separator": " "}
             )
             col = writer.cldf.add_table("concepts.csv")
             writer.cldf.add_columns(
@@ -391,22 +430,23 @@ class Dataset(BaseDataset):
             for nodeA, nodeB, data in progressbar(
                     graph.edges(data=True),
                     desc="writing colexifications"):
-                idx = "{0}-colexifies-{1}".format(
+                idx = "{0}-x-{1}".format(
                     slug(nodeA, lowercase=True),
                     slug(nodeB, lowercase=True)
                 )
                 # compute missing data
-                missing_data = []
+                negative_data = []
                 for language in wl.languages:
                     if language.id not in data["languages"]:
-                        if not nodeA in language.concepts or not nodeB in language.concepts:
-                            missing_data.append(language.id)
+                        if nodeA in language.concepts and nodeB in language.concepts:
+                            negative_data.append(language.id)
 
                 writer.objects["ParameterTable"].append(
                     {
                         "ID": idx,
-                        "Source": nodeA,
-                        "Target": nodeB,
+                        "Description": "Colexification of {0} and {1}.".format(nodeA, nodeB),
+                        "Source_Node": nodeA,
+                        "Target_node": nodeB,
                         "Variety_Count": data["variety_count"],
                         "Language_Count": data["language_count"],
                         "Family_Count": data["family_count"],
@@ -416,8 +456,7 @@ class Dataset(BaseDataset):
                         "Forms": data["forms"],
                         "Varieties": data["varieties"],
                         "Languages": data["languages"],
-                        "Families": data["families"],
-                        "Missing_Data": missing_data
+                        "Families": data["families"]
                     }
                 )
                 for language_id in data["varieties"]:
@@ -429,12 +468,23 @@ class Dataset(BaseDataset):
                             "Value": 1
                         }
                     )
+                # now add missing data
+                for language_id in negative_data:
+                    writer.objects["ValueTable"].append(
+                        {
+                            "ID": idx + "-" + language_id,
+                            "ParameterID": idx,
+                            "Language_ID": language_id,
+                            "Value": 0
+                        }
+                    )
 
             # extend graph by adding missing edges
             args.log.info("computing similarities")
             for nodeA, nodeB in itertools.combinations(list(graph.nodes), r=2):
-                if not nodeB in graph[nodeA]:
-                    graph.add_edge(nodeA, nodeB, family_weight=1/100000)
+                if nodeB in graph[nodeA]:
+                    continue
+                graph.add_edge(nodeA, nodeB, family_weight=1/100000)
             transition_matrix, node_list, _ = get_transition_matrix(
                 graph, steps=10, weight="family_weight", normalize=True
             )
@@ -448,7 +498,7 @@ class Dataset(BaseDataset):
                         similarities[nodeA][nodeB] = transition_matrix[i][j]
             for concept in map(lambda x: x.id, wl.concepts):
                 if concept not in community_labels:
-                    args.log.info("Concept {0} withouth community.".format(concept))
+                    args.log.info("Concept {0} without community.".format(concept))
                 writer.objects["concepts.csv"].append(
                     {
                         "ID": concepts[concept].id,
@@ -469,8 +519,3 @@ class Dataset(BaseDataset):
                         "Neighbors": neighbors[concept]
                     }
                 )
-
-
-
-
-
