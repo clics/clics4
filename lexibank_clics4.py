@@ -25,8 +25,9 @@ LANGUAGES = 250
 WRITE_CONCEPTS = False
 RERUN = True
 SUBGRAPH_THRESHOLD = 3
-DATASETS = 20
+DATASETS = 60
 MINIMAL_SIMILARITY = 0.01
+COLEXIFICATION_THRESHOLD = 3
 
 
 @attr.s
@@ -88,14 +89,6 @@ class Dataset(BaseDataset):
                 dir=self.cldf_dir,
                 data_fnames={"ParameterTable": "colexifications.csv"},
                 zipped=["ParameterTable", "ValueTable", "concepts.csv"]
-            ),
-            "generic": CldfBenchSpec(
-                dir=self.cldf_dir,
-                metadata_fname="cldf-metadata.json",
-                module='Generic',
-                data_fnames=dict(
-                    ParameterTable='concepts.csv',
-                ),
             )
         }
 
@@ -142,24 +135,24 @@ class Dataset(BaseDataset):
                 writer.cldf.add_columns(
                     "ContributionTable",
                     {"name": "Source", "datatype": "string"},
-                    {"name": "DOI", "datatype": "string"}
+                    {"name": "DOI", "datatype": "string"},
+                    {"name": "Version", "datatype": "string"}
                 )
-                datasets = []
+                datasets, contributions = [], {}
                 for ds in self.etc_dir.read_csv("datasets.tsv", delimiter="\t", dicts=True):
                     datasets += [pycldf.Dataset.from_metadata(
                         self.raw_dir / ds["ID"] / "cldf/cldf-metadata.json"
                     )]
-                    writer.objects["ContributionTable"].append(
-                        {
-                            "ID": ds["ID"],
-                            "Name": "",
-                            "Description": "",
-                            "Contributor": "",
-                            "Citation": "",
-                            "Source": "",
-                            "DOI": ""
-                        }
-                    )
+                    contributions[ds["ID"]] = {
+                        "ID": ds["ID"],
+                        "Name": "",
+                        "Description": "",
+                        "Contributor": "",
+                        "Citation": "",
+                        "Version": "",
+                        "DOI": "",
+                        "Source": ""
+                    }
 
                 wl: Wordlist = Wordlist(datasets[:DATASETS], ts=args.clts.api.bipa)
                 # sort the concepts by number of unique glottocodes
@@ -243,13 +236,13 @@ class Dataset(BaseDataset):
                         Concepticon_Gloss=concept,
                         Original_Concept=sources.get(concept, "")
                     )
-                clics, accepted_languages = [], []
-                for language in progressbar(valid_language_objects, desc="retrieve forms"):
-                    cnc_count, frm_count = 0, 0
+                clics, accepted_languages, active_contributions = [], [], set()
+                for i, language in progressbar(enumerate(valid_language_objects), desc="retrieve forms"):
+                    cnc_count, frm_count, lid = 0, 0, str(i+1)
                     for form in language.forms_with_sounds:
                         if form.concept and form.concept.id in selected_concepts:
                             clics += [[
-                                language.id,
+                                lid,
                                 form.id,
                                 language.dataset,
                                 form.concept.id,
@@ -264,7 +257,7 @@ class Dataset(BaseDataset):
                             for gloss in targets[form.concept.id]:
                                 if gloss in selected_concepts:
                                     clics += [[
-                                        language.id,
+                                        lid,
                                         form.id,
                                         language.dataset,
                                         gloss,
@@ -275,7 +268,7 @@ class Dataset(BaseDataset):
                                     cnc_count += 1
                                     frm_count += 1
                     writer.add_language(
-                        ID=language.id,
+                        ID=lid,
                         Name=language.name,
                         Family=language.family,
                         Latitude=language.latitude,
@@ -286,6 +279,16 @@ class Dataset(BaseDataset):
                         Contribution_ID=language.dataset
                     )
                     accepted_languages += [language.id]
+                    active_contributions.add(language.dataset)
+                ctrerrors = set()
+                # write contributions to CLDF
+                for ctr in active_contributions:
+                    if not ctr in contributions:
+                        ctrerrors.add(ctr)
+                    else:
+                        writer.objects["ContributionTable"].append(contributions[ctr])
+                for ctr in ctrerrors:
+                    args.log.info("missing contribution {0} found".format(ctr))
                 missing = set()
                 for (
                         language_id,
@@ -427,13 +430,10 @@ class Dataset(BaseDataset):
             )
             col.tableSchema.primaryKey = ["Concepticon_ID"]
             # compute missing data for all nodes
-            for nodeA, nodeB, data in progressbar(
-                    graph.edges(data=True),
+            for idf, (nodeA, nodeB, data) in progressbar(
+                    enumerate(graph.edges(data=True)),
                     desc="writing colexifications"):
-                idx = "{0}-x-{1}".format(
-                    slug(nodeA, lowercase=True),
-                    slug(nodeB, lowercase=True)
-                )
+                idx = str(idf+1)
                 # compute missing data
                 negative_data = []
                 for language in wl.languages:
@@ -459,25 +459,26 @@ class Dataset(BaseDataset):
                         "Families": data["families"]
                     }
                 )
-                for language_id in data["varieties"]:
-                    writer.objects["ValueTable"].append(
-                        {
-                            "ID": idx + "-" + language_id,
-                            "ParameterID": idx,
-                            "Language_ID": language_id,
-                            "Value": 1
-                        }
-                    )
-                # now add missing data
-                for language_id in negative_data:
-                    writer.objects["ValueTable"].append(
-                        {
-                            "ID": idx + "-" + language_id,
-                            "ParameterID": idx,
-                            "Language_ID": language_id,
-                            "Value": 0
-                        }
-                    )
+                if data["family_count"] >= COLEXIFICATION_THRESHOLD:
+                    for language_id in data["varieties"]:
+                        writer.objects["ValueTable"].append(
+                            {
+                                "ID": idx + "-" + language_id,
+                                "Parameter_ID": idx,
+                                "Language_ID": language_id,
+                                "Value": 1
+                            }
+                        )
+                    # now add missing data
+                    for language_id in negative_data:
+                        writer.objects["ValueTable"].append(
+                            {
+                                "ID": idx + "-" + language_id,
+                                "ParameterID": idx,
+                                "Language_ID": language_id,
+                                "Value": 0
+                            }
+                        )
 
             # extend graph by adding missing edges
             args.log.info("computing similarities")
