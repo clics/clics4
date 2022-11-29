@@ -66,24 +66,25 @@ cldfbench clicsbp.plotgraphs --weight=Cognate_Count_Weighted --tag="human body p
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
-- **Varieties:** 1,129
-- **Concepts:** 1,445
-- **Lexemes:** 745,607
+- **Varieties:** 1,633
+- **Concepts:** 1,540
+- **Lexemes:** 1,038,180
 - **Sources:** 0
 - **Synonymy:** 1.15
 - **Invalid lexemes:** 0
-- **Tokens:** 4,343,349
-- **Segments:** 1,396 (0 BIPA errors, 0 CLTS sound class errors, 1388 CLTS modified)
-- **Inventory size (avg):** 43.88
+- **Tokens:** 6,021,524
+- **Segments:** 1,685 (0 BIPA errors, 0 CLTS sound class errors, 1677 CLTS modified)
+- **Inventory size (avg):** 44.54
 
 ## Possible Improvements:
 
 - Languages linked to [bookkeeping languoids in Glottolog](http://glottolog.org/glottolog/glottologinformation#bookkeepinglanguoids):
   - Rawngtu Weilong [wela1234](http://glottolog.org/resource/languoid/id/wela1234)
+  - Rawngtu Ramtim [wela1234](http://glottolog.org/resource/languoid/id/wela1234)
   - Sanapaná (Angaité) [sana1281](http://glottolog.org/resource/languoid/id/sana1281)
 
 
-- Entries missing sources: 745607/745607 (100.00%)
+- Entries missing sources: 1038180/1038180 (100.00%)
 
 # Contributors
 

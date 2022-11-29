@@ -1,5 +1,4 @@
 ID	Organisation	Dataset	Repository	Zenodo
-aaleykusunda	lexibank	aaleykusunda	aaleykusunda	10.5281/zenodo.5115947
 abrahammonpa	lexibank	abrahammonpa	abrahammonpa	10.5281/zenodo.5115885
 allenbai	lexibank	allenbai	allenbai	10.5281/zenodo.5115649
 bantubvd	lexibank	bantubvd	bantubvd	10.5281/zenodo.5115982
@@ -12,25 +11,26 @@ castrozhuang	lexibank	castrozhuang	castrozhuang	10.5281/zenodo.5121215
 chenhmongmien	lexibank	chenhmongmien	chenhmongmien	10.5281/zenodo.5118744
 chindialectsurvey	lexibank	chindialectsurvey	chindialectsurvey	10.5281/zenodo.5121280
 clarkkimmun	lexibank	clarkkimmun	clarkkimmun	10.5281/zenodo.5121482
+gravinachadic	lexibank	gravinachadic	gravinachadic	
 halenepal	lexibank	halenepal	halenepal	10.5281/zenodo.5121540
-hantganbangime	lexibank	hantganbangime	hantganbangime	10.5281/zenodo.5126441
-hsiuhmongmien	lexibank	hsiuhmongmien	hsiuhmongmien	10.5281/zenodo.5126451
 hubercolumbian	lexibank	hubercolumbian	hubercolumbian	10.5281/zenodo.5121219
 huntergatherer	lexibank	huntergatherer	huntergatherer	10.5281/zenodo.5126741
-johanssonsoundsymbolic	lexibank	johanssonsoundsymbolic	johanssonsoundsymbolic	10.5281/zenodo.5127131
 idssegmented	intercontinental-dictionary-series	idssegmented	idssegmented	
+johanssonsoundsymbolic	lexibank	johanssonsoundsymbolic	johanssonsoundsymbolic	10.5281/zenodo.5127131
 kraftchadic	lexibank	kraftchadic	kraftchadic	10.5281/zenodo.5121222
+lamanisoic	lexibank	lamanisoic	lamanisoic	
 lindseyende	intercontinental-dictionary-series	lindseyende	lindseyende	10.5281/zenodo.5127829
 listsamplesize	sequencecomparison	listsamplesize	listsamplesize	10.5281/zenodo.5128050
+luangthongkumkaren	lexibank	luangthongkumkaren	luangthongkumkaren	
 mannburmish	lexibank	mannburmish	mannburmish	10.5281/zenodo.5131419
 marrisonnaga	lexibank	marrisonnaga	marrisonnaga	10.5281/zenodo.5121317
 mitterhoferbena	lexibank	mitterhoferbena	mitterhoferbena	10.5281/zenodo.5121327
 naganorgyalrongic	lexibank	naganorgyalrongic	naganorgyalrongic	10.5281/zenodo.5126458
 northeuralex	lexibank	northeuralex	northeuralex	10.5281/zenodo.5121268
+oskolskayatungusic	lexibank	oskolskayatungusic	oskolskayatungusic	
+othanieljen	lexibank	othanieljen	othanieljen	
 polyglottaafricana	lexibank	polyglottaafricana	polyglottaafricana	10.5281/zenodo.5136890
 robinsonap	lexibank	robinsonap	robinsonap	10.5281/zenodo.5121340
-sagartst	lexibank	sagartst	sagartst	10.5281/zenodo.5121409
-simsrma	lexibank	simsrma	simsrma	10.5281/zenodo.5166593
 sohartmannchin	lexibank	sohartmannchin	sohartmannchin	10.5281/zenodo.5121813
 suntb	lexibank	suntb	suntb	10.5281/zenodo.5121515
 tls	lexibank	tls	tls	10.5281/zenodo.5121819
@@ -43,11 +43,4 @@ yanglalo	lexibank	yanglalo	yanglalo	10.5281/zenodo.5121829
 yangyi	lexibank	yangyi	yangyi	10.5281/zenodo.5167277
 yuchinese	intercontinental-dictionary-series	yuchinese	yuchinese	10.5281/zenodo.5139881
 zgraggenmadang	lexibank	zgraggenmadang	zgraggenmadang	10.5281/zenodo.5121535
-zhivlovobugrian	sequencecomparison	zhivlovobugrian	zhivlovobugrian	10.5281/zenodo.5137439
 zhoubizic	lexibank	zhoubizic	zhoubizic	10.5281/zenodo.5140129
-othanieljen	lexibank	othanieljen	othanieljen	
-lamanisoic	lexibank	lamanisoic	lamanisoic	
-luangthongkumkaren	lexibank	luangthongkumkaren	luangthongkumkaren	
-vanuatuvoices	lexibank	vanuatuvoices	vanuatuvoices	
-savelyevturkic	lexibank	savelyevturkic	savelyevturkic	
-oskolskayatungusic	lexibank	oskolskayatungusic	oskolskayatungusic	

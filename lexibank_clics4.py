@@ -21,13 +21,14 @@ import pyclics.util
 from pylexibank import Concept, Lexeme, Language, progressbar
 import attr
 
-LANGUAGES = 250
+CONCEPTS_PER_LANGUAGE_THRESHOLD = 250
+CONCEPT_THRESHOLD = 1600
 WRITE_CONCEPTS = False
 RERUN = True
 SUBGRAPH_THRESHOLD = 3
-DATASETS = 60
+DATASETS = 46
 MINIMAL_SIMILARITY = 0.01
-COLEXIFICATION_THRESHOLD = 3
+COLEXIFICATION_THRESHOLD = 2
 
 
 @attr.s
@@ -191,7 +192,7 @@ class Dataset(BaseDataset):
                         else:
                             selected_concepts.append(concept.concepticon_gloss)
                             visited.add(concept.concepticon_gloss)
-                selected_concepts = selected_concepts[:1500]
+                selected_concepts = selected_concepts[:CONCEPT_THRESHOLD]
                 args.log.info("found {0} valid concepts".format(len(selected_concepts)))
                 # calculate the count of concepts per language to filter languages with less than LANGUAGES concepts
                 concept_count = {}
@@ -208,7 +209,7 @@ class Dataset(BaseDataset):
                         sum([1 for cnc in concept_count.values() if cnc >= 1]),
                         sum(concept_count.values()))
                 )
-                # get valid languages by counting if they have LANGUAGES concepts
+                # get valid languages by counting if they have CONCEPTS_PER_LANGUAGE_THRESHOLD concepts
                 valid_language_ids, valid_language_objects = [], []
                 for language in sorted(
                         wl.languages,
@@ -218,11 +219,11 @@ class Dataset(BaseDataset):
                         reverse=True
                 ):
                     # one can check for common glottocodes here, but we also filter these cases
-                    # so the current procedure is to take all languages if they have more than LANGUAGES
+                    # so the current procedure is to take all languages if they have more than CONCEPTS_PER_LANGUAGE_THRESHOLD
                     # concepts, even if they have the same glottocode but come from different sources
                     cov = sum([concept_count[c.id] for c in language.concepts if
                                c.id in concept_count])
-                    if language.latitude and language.glottocode and cov >= LANGUAGES:
+                    if language.latitude and language.glottocode and cov >= CONCEPTS_PER_LANGUAGE_THRESHOLD:
                         valid_language_ids.append(language.id)
                         valid_language_objects.append(language)
                 args.log.info("found {0} valid languages".format(len(valid_language_ids)))

@@ -16,7 +16,7 @@
         {
             "rdf:about": "https://github.com/clics/clics4",
             "rdf:type": "prov:Entity",
-            "dc:created": "256b184",
+            "dc:created": "6f05ac3",
             "dc:title": "Repository"
         },
         {
@@ -164,27 +164,9 @@
             "dc:title": "Repository"
         },
         {
-            "rdf:about": "https://github.com/lexibank/gravinachadic",
-            "rdf:type": "prov:Entity",
-            "dc:created": "6eea3d6",
-            "dc:title": "Repository"
-        },
-        {
-            "rdf:about": "https://github.com/lexibank/halenepal",
-            "rdf:type": "prov:Entity",
-            "dc:created": "v3.0",
-            "dc:title": "Repository"
-        },
-        {
             "rdf:about": "https://github.com/lexibank/hantganbangime",
             "rdf:type": "prov:Entity",
             "dc:created": "v1.0-1-ga52490d",
-            "dc:title": "Repository"
-        },
-        {
-            "rdf:about": "https://github.com/lexibank/hsiuhmongmien",
-            "rdf:type": "prov:Entity",
-            "dc:created": "v1.0",
             "dc:title": "Repository"
         },
         {
@@ -226,7 +208,7 @@
         {
             "rdf:about": "https://github.com/lexibank/lamanisoic",
             "rdf:type": "prov:Entity",
-            "dc:created": "28c3c58",
+            "dc:created": "a1e4ddc",
             "dc:title": "Repository"
         },
         {
@@ -251,12 +233,6 @@
             "rdf:about": "https://github.com/sequencecomparison/listsamplesize",
             "rdf:type": "prov:Entity",
             "dc:created": "v1.0",
-            "dc:title": "Repository"
-        },
-        {
-            "rdf:about": "https://github.com/lexibank/luangthongkumkaren",
-            "rdf:type": "prov:Entity",
-            "dc:created": "v0.1",
             "dc:title": "Repository"
         },
         {
@@ -292,7 +268,7 @@
         {
             "rdf:about": "https://github.com/lingpy/norare-data/",
             "rdf:type": "prov:Entity",
-            "dc:created": "v0.2-41-g4c5c179",
+            "dc:created": "v0.2-117-g4d60905",
             "dc:title": "Repository"
         },
         {
@@ -310,7 +286,7 @@
         {
             "rdf:about": "https://github.com/lexibank/othanieljen",
             "rdf:type": "prov:Entity",
-            "dc:created": "1262a83",
+            "dc:created": "402c7e8",
             "dc:title": "Repository"
         },
         {
@@ -329,18 +305,6 @@
             "rdf:about": "https://github.com/lexibank/robinsonap",
             "rdf:type": "prov:Entity",
             "dc:created": "v4.0",
-            "dc:title": "Repository"
-        },
-        {
-            "rdf:about": "https://github.com/lexibank/sagartst",
-            "rdf:type": "prov:Entity",
-            "dc:created": "v2.0-1-ga0b483c",
-            "dc:title": "Repository"
-        },
-        {
-            "rdf:about": "https://github.com/lexibank/savelyevturkic",
-            "rdf:type": "prov:Entity",
-            "dc:created": "v2.0",
             "dc:title": "Repository"
         },
         {
@@ -412,7 +376,7 @@
         {
             "rdf:about": "https://github.com/lexibank/vanuatuvoices",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.0-36-g7a66f13",
+            "dc:created": "v1.0-39-gb937249",
             "dc:title": "Repository"
         },
         {
@@ -470,9 +434,33 @@
             "dc:title": "Repository"
         },
         {
+            "rdf:about": "https://github.com/lexibank/baf2",
+            "rdf:type": "prov:Entity",
+            "dc:created": "v0.2",
+            "dc:title": "Repository"
+        },
+        {
+            "rdf:about": "https://github.com/lexibank/gravinachadic",
+            "rdf:type": "prov:Entity",
+            "dc:created": "c1dcfd4",
+            "dc:title": "Repository"
+        },
+        {
+            "rdf:about": "https://github.com/lexibank/luangthongkumkaren",
+            "rdf:type": "prov:Entity",
+            "dc:created": "8f428ba",
+            "dc:title": "Repository"
+        },
+        {
             "rdf:about": "https://github.com/lexibank/zhoubizic",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.0-1-gf32c1e3",
+            "dc:created": "239c4fd",
+            "dc:title": "Repository"
+        },
+        {
+            "rdf:about": "https://github.com/lexibank/halenepal",
+            "rdf:type": "prov:Entity",
+            "dc:created": "v2.0-25-ga6e7843",
             "dc:title": "Repository"
         }
     ],
@@ -486,12 +474,12 @@
             "dc:relation": "requirements.txt"
         }
     ],
-    "rdf:ID": "clicsbp",
+    "rdf:ID": "clics4",
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 125960,
+            "dc:extent": 3948384,
             "tableSchema": {
                 "columns": [
                     {
@@ -581,7 +569,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 38730,
+            "dc:extent": 45745,
             "tableSchema": {
                 "columns": [
                     {
@@ -613,11 +601,11 @@
                     },
                     {
                         "datatype": "string",
-                        "name": "Source"
+                        "name": "Source_Concept"
                     },
                     {
                         "datatype": "string",
-                        "name": "Target"
+                        "name": "Target_Concept"
                     },
                     {
                         "datatype": "integer",
@@ -636,12 +624,15 @@
                         "name": "Family_Count"
                     },
                     {
+                        "datatype": "float",
                         "name": "Variety_Weight"
                     },
                     {
+                        "datatype": "float",
                         "name": "Language_Weight"
                     },
                     {
+                        "datatype": "float",
                         "name": "Family_Weight"
                     },
                     {
@@ -663,11 +654,6 @@
                         "datatype": "string",
                         "separator": " ",
                         "name": "Families"
-                    },
-                    {
-                        "datatype": "string",
-                        "separator": " ",
-                        "name": "Missing_Data"
                     }
                 ],
                 "primaryKey": [
@@ -678,7 +664,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 1129,
+            "dc:extent": 1633,
             "tableSchema": {
                 "columns": [
                     {
@@ -756,6 +742,24 @@
                     {
                         "datatype": "string",
                         "name": "Form_Count"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#contributionReference",
+                        "name": "Contribution_ID"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Contribution_ID"
+                        ],
+                        "reference": {
+                            "resource": "contributions.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -765,9 +769,71 @@
             "url": "languages.csv"
         },
         {
-            "dc:extent": 1500,
+            "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ContributionTable",
+            "dc:extent": 43,
             "tableSchema": {
                 "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "required": false,
+                        "name": "Name"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "required": false,
+                        "name": "Description"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#contributor",
+                        "required": false,
+                        "name": "Contributor"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#citation",
+                        "required": false,
+                        "name": "Citation"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Source"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "DOI"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Version"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "contributions.csv"
+        },
+        {
+            "dc:extent": 1540,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "name": "ID"
+                    },
                     {
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#concepticonReference",
@@ -776,6 +842,10 @@
                     {
                         "datatype": "string",
                         "name": "Concepticon_Gloss"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Original_Concept"
                     },
                     {
                         "datatype": "integer",
@@ -809,6 +879,7 @@
                     },
                     {
                         "datatype": "string",
+                        "separator": " ",
                         "name": "Forms"
                     },
                     {
@@ -825,6 +896,11 @@
                         "datatype": "string",
                         "separator": " ",
                         "name": "Families"
+                    },
+                    {
+                        "datatype": "string",
+                        "separator": " // ",
+                        "name": "Neighbors"
                     },
                     {
                         "datatype": "json",
