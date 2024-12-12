@@ -21,12 +21,12 @@ import pyclics.util
 from pylexibank import Concept, Lexeme, Language, progressbar
 import attr
 
-CONCEPTS_PER_LANGUAGE_THRESHOLD = 250
+CONCEPTS_PER_LANGUAGE_THRESHOLD = 200
 CONCEPT_THRESHOLD = 1600
 WRITE_CONCEPTS = False
 RERUN = True
 SUBGRAPH_THRESHOLD = 3
-DATASETS = 46
+DATASETS = 57
 MINIMAL_SIMILARITY = 0.01
 COLEXIFICATION_THRESHOLD = 2
 
@@ -103,11 +103,13 @@ class Dataset(BaseDataset):
                 args.log.info("skipping {0}".format(dataset["ID"]))
             else:
                 args.log.info("cloning {0} to raw/{0}".format(dataset["ID"]))
-                Repo.clone_from(
+                repo = Repo.clone_from(
                     "https://github.com/" +
                     dataset["Organisation"] + "/" +
                     dataset["Repository"] + '.git',
                     self.raw_dir / dataset["ID"])
+                if dataset["Version"]:
+                    repo.head.set_reference(repo.tags[dataset["Version"]].commit)
 
     def cmd_makecldf(self, args):
         # concepticon_gloss to concepticon_id conversion
@@ -140,7 +142,10 @@ class Dataset(BaseDataset):
                     {"name": "Version", "datatype": "string"}
                 )
                 datasets, contributions = [], {}
-                for ds in self.etc_dir.read_csv("datasets.tsv", delimiter="\t", dicts=True):
+                for ds in self.etc_dir.read_csv(
+                        "datasets.tsv", 
+                        delimiter="\t",
+                        dicts=True)[:DATASETS]:
                     datasets += [pycldf.Dataset.from_metadata(
                         self.raw_dir / ds["ID"] / "cldf/cldf-metadata.json"
                     )]
@@ -155,7 +160,7 @@ class Dataset(BaseDataset):
                         "Source": ""
                     }
 
-                wl: Wordlist = Wordlist(datasets[:DATASETS], ts=args.clts.api.bipa)
+                wl: Wordlist = Wordlist(datasets, ts=args.clts.api.bipa)
                 # sort the concepts by number of unique glottocodes
                 all_concepts = sorted(
                     wl.concepts,
@@ -328,7 +333,7 @@ class Dataset(BaseDataset):
 
             graph = get_colexifications(wl)
             for w in ["form", "variety", "language", "family"]:
-                normalize_weights(graph, w+"_weight", w+"_count", w+"_count")
+                normalize_weights(graph, w + "_weight", w + "_count", w + "_count")
             ig = networkx2igraph(graph)
             communities = ig.community_infomap(edge_weights="family_weight", vertex_weights="family_count")
             community_labels = {}
