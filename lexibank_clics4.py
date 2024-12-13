@@ -13,6 +13,11 @@ from clldutils.misc import slug
 from lingpy.convert.graph import networkx2igraph
 import itertools
 import zipfile
+import json
+import codecs
+from datetime import datetime
+from csvw.dsv import UnicodeWriter
+
 
 from pyclics.colexifications import (
     get_colexifications, get_transition_matrix, normalize_weights)
@@ -20,6 +25,7 @@ import pyclics.util
 
 from pylexibank import Concept, Lexeme, Language, progressbar
 import attr
+
 
 CONCEPTS_PER_LANGUAGE_THRESHOLD = 200
 CONCEPT_THRESHOLD = 1600
@@ -95,6 +101,8 @@ class Dataset(BaseDataset):
 
     def cmd_download(self, args):
         # TODO: add the sources.bib, using the Zenodo API (pyzenodo3) that allows to retrieve data by DOI
+        sources = []
+        base_info = []
         for dataset in self.etc_dir.read_csv(
                 "datasets.tsv", delimiter="\t",
                 dicts=True):
@@ -108,8 +116,57 @@ class Dataset(BaseDataset):
                     dataset["Organisation"] + "/" +
                     dataset["Repository"] + '.git',
                     self.raw_dir / dataset["ID"])
-                if dataset["Version"]:
-                    repo.head.set_reference(repo.tags[dataset["Version"]].commit)
+            repo = Repo(self.raw_dir / dataset["ID"])
+            if dataset["Version"]:
+                repo.head.set_reference(repo.tags[dataset["Version"]].commit)
+            # get metadata to write the reference in standardized form
+            with codecs.open(
+                    self.raw_dir / dataset["ID"] / ".zenodo.json",
+                    "r", 
+                    "utf-8") as f:
+                meta = json.load(f)
+            bibtex = "@book{" + dataset["ID"] + ",\n"
+            bibtex += "  author = {" + " AND ".join(
+                    [c["name"] for c in meta["creators"]]) + "},\n"
+            bibtex += "  editor = {" + " AND ".join(
+                    [c["name"] for c in meta["contributors"] if \
+                            c["type"] == "Editor"]) + "},\n"
+            bibtex += "  title = {" + meta["title"] + "},\n"
+            bibtex += "  version = {" + dataset["Version"] + "},\n"
+            bibtex += "  _reference = {" + meta["description"].split("\n")[3][3:-4] + "},\n"
+            bibtex += "  year = {" + str(
+                    datetime.fromtimestamp(
+                        repo.tags[dataset["Version"]].commit.authored_date
+                        ).year) + "},\n"
+            bibtex += "  address = {Geneva},\n"
+            bibtex += "  publisher = {Zenodo},\n"
+            bibtex += "  doi = {" + dataset["Zenodo"] + "}\n"
+            bibtex += "}\n\n"
+            sources += [bibtex]
+            base_info += [[
+                dataset["ID"],
+                dataset["ID"],
+                meta["title"],
+                " AND ".join([c["name"] for c in meta["creators"]]),
+                " AND ".join(
+                    [c["name"] for c in meta["contributors"] if c["type"] == "Editor"]),
+                meta["description"].split("\n")[3][3:-4],
+                dataset["ID"],
+                dataset["Zenodo"],
+                dataset["Version"]]]
+                
+        with codecs.open(self.raw_dir / "sources.bib", "w", "utf-8") as f:
+            for source in sources:
+                f.write(source)
+            args.log.info("Wrote sources to file.")
+
+        with UnicodeWriter(self.etc_dir / "contributions.csv") as writer:
+            writer.writerow(["ID", "Name", "Description", "Creator", "Contributor",
+                             "Citation", "Source", "DOI", "Version"])
+            for row in base_info:
+                writer.writerow(row)
+
+
 
     def cmd_makecldf(self, args):
         # concepticon_gloss to concepticon_id conversion
@@ -139,6 +196,7 @@ class Dataset(BaseDataset):
                     "ContributionTable",
                     {"name": "Source", "datatype": "string"},
                     {"name": "DOI", "datatype": "string"},
+                    {"name": "Creator", "datatype": "string"},
                     {"name": "Version", "datatype": "string"}
                 )
                 datasets, contributions = [], {}
@@ -149,16 +207,8 @@ class Dataset(BaseDataset):
                     datasets += [pycldf.Dataset.from_metadata(
                         self.raw_dir / ds["ID"] / "cldf/cldf-metadata.json"
                     )]
-                    contributions[ds["ID"]] = {
-                        "ID": ds["ID"],
-                        "Name": "",
-                        "Description": "",
-                        "Contributor": "",
-                        "Citation": "",
-                        "Version": "",
-                        "DOI": "",
-                        "Source": ""
-                    }
+                for row in self.etc_dir.read_csv("contributions.csv", dicts=True)[:DATASETS]:
+                    contributions[row["ID"]] = row
 
                 wl: Wordlist = Wordlist(datasets, ts=args.clts.api.bipa)
                 # sort the concepts by number of unique glottocodes
@@ -315,7 +365,7 @@ class Dataset(BaseDataset):
                             Form=form_form,
                             Segments=form_sounds,
                             ConceptInSource=concept_in_source,
-                            Source="",  # ds_id
+                            Source=ds["ID"]
                         )
                     else:
                         missing.add((concept_id, language_id))
@@ -450,9 +500,11 @@ class Dataset(BaseDataset):
                 writer.objects["ParameterTable"].append(
                     {
                         "ID": idx,
+                        "Name": "{0}/{1}".format(nodeA, nodeB),
                         "Description": "Colexification of {0} and {1}.".format(nodeA, nodeB),
-                        "Source_Node": nodeA,
-                        "Target_node": nodeB,
+                        "Source_Concept": nodeA,
+                        "Target_Concept": nodeB,
+                        "Form_Count": data["form_count"],
                         "Variety_Count": data["variety_count"],
                         "Language_Count": data["language_count"],
                         "Family_Count": data["family_count"],
@@ -491,7 +543,7 @@ class Dataset(BaseDataset):
             for nodeA, nodeB in itertools.combinations(list(graph.nodes), r=2):
                 if nodeB in graph[nodeA]:
                     continue
-                graph.add_edge(nodeA, nodeB, family_weight=1/100000)
+                graph.add_edge(nodeA, nodeB, family_weight=1 / 100000)
             transition_matrix, node_list, _ = get_transition_matrix(
                 graph, steps=10, weight="family_weight", normalize=True
             )

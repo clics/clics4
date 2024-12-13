@@ -28,4 +28,9 @@ cldfbench download lexibank_clics4.py
 cldfbench lexibank.makecldf --glottolog-repos=Path2Glottolog --concepticon-repos=Path2Concepticon --clts-repos=Path2Clics --glottolog-version=v4.6 --concepticon-version=v3.2.0 --clts-version=v2.3.0 lexibank_clics4.py
 ```
 
+## 4 TODO
 
+- [ ] check the sources of all datasets (they must be included, contribution table)
+- [ ] check all CLDF datasets, sometimes, values are missing
+- [ ] publish pyclics and make an update for PyPi here (important)
+- [ ] consider ignoring the similarities
