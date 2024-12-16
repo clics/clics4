@@ -105,6 +105,7 @@ class Dataset(BaseDataset):
         sources = []
         base_info = []
         zenodo = Zenodo()
+        datasets = []
         for dataset in self.etc_dir.read_csv(
                 "datasets.tsv", delimiter="\t",
                 dicts=True):
@@ -121,10 +122,12 @@ class Dataset(BaseDataset):
                         dataset["version"],
                         last_version,
                         dataset["ID"]))
+                    dataset["version"] = last_version
                 if did != pid:
                     args.log.warn("Zenodo ID for {0} should be {1}".format(
                         dataset["ID"],
                         pid))
+                    dataset["Zenodo"] = "10.5281/zenodo." + pid
 
             else:
                 args.log.warn("No DOI found for dataset {0}".format(dataset["ID"]))
@@ -178,6 +181,7 @@ class Dataset(BaseDataset):
                 dataset["ID"],
                 dataset["Zenodo"],
                 dataset["Version"]]]
+            datasets += [dataset]
                 
         with codecs.open(self.raw_dir / "sources.bib", "w", "utf-8") as f:
             for source in sources:
@@ -189,6 +193,10 @@ class Dataset(BaseDataset):
                              "Citation", "Source", "DOI", "Version"])
             for row in base_info:
                 writer.writerow(row)
+        with UnicodeWriter(self.etc_dir / "datasets-updated.csv") as writer:
+            writer.writerow(list(datasets[0].keys()))
+            for row in datasets:
+                writer.writerow(list(row.values()))
 
 
 
