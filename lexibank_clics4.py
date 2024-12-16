@@ -17,6 +17,7 @@ import json
 import codecs
 from datetime import datetime
 from csvw.dsv import UnicodeWriter
+from zenodo_client import Zenodo
 
 
 from pyclics.colexifications import (
@@ -103,9 +104,32 @@ class Dataset(BaseDataset):
         # TODO: add the sources.bib, using the Zenodo API (pyzenodo3) that allows to retrieve data by DOI
         sources = []
         base_info = []
+        zenodo = Zenodo()
         for dataset in self.etc_dir.read_csv(
                 "datasets.tsv", delimiter="\t",
                 dicts=True):
+            # get updated version via zenodo
+            args.log.info("Processing dataset {0}".format(dataset["ID"]))
+            if dataset["Zenodo"]:
+                did = dataset["Zenodo"].split(".")[2]
+                rec = zenodo.get_record(did)
+                pid = rec.json()["metadata"]["relations"]["version"][0]["parent"]["pid_value"]
+                prec = zenodo.get_record(pid)
+                last_version = prec.json()["metadata"]["version"]
+                if last_version != dataset["Version"]:
+                    args.log.warn("Version {0} is not the same as {1} for {2}".format(
+                        dataset["version"],
+                        last_version,
+                        dataset["ID"]))
+                if did != pid:
+                    args.log.warn("Zenodo ID for {0} should be {1}".format(
+                        dataset["ID"],
+                        pid))
+
+            else:
+                args.log.warn("No DOI found for dataset {0}".format(dataset["ID"]))
+
+
             if self.raw_dir.joinpath(
                     dataset["ID"], "cldf", "cldf-metadata.json").exists():
                 args.log.info("skipping {0}".format(dataset["ID"]))
