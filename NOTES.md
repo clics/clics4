@@ -30,7 +30,7 @@ cldfbench lexibank.makecldf --glottolog-repos=Path2Glottolog --concepticon-repos
 
 ## 4 TODO
 
-- [ ] check the sources of all datasets (they must be included, contribution table)
+- [x] check the sources of all datasets (they must be included, contribution table)
 - [ ] check all CLDF datasets, sometimes, values are missing
 - [ ] publish pyclics and make an update for PyPi here (important)
 - [ ] consider ignoring the similarities
