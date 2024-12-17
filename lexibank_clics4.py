@@ -33,9 +33,10 @@ CONCEPT_THRESHOLD = 1600
 WRITE_CONCEPTS = False
 RERUN = True
 SUBGRAPH_THRESHOLD = 3
-DATASETS = 57
+DATASETS = 71
 MINIMAL_SIMILARITY = 0.01
 COLEXIFICATION_THRESHOLD = 2
+UPDATE_DATASETS = False
 
 
 @attr.s
@@ -117,17 +118,18 @@ class Dataset(BaseDataset):
                 pid = rec.json()["metadata"]["relations"]["version"][0]["parent"]["pid_value"]
                 prec = zenodo.get_record(pid)
                 last_version = prec.json()["metadata"]["version"]
+                last_doi = prec.json()["metadata"]["doi"]
                 if last_version != dataset["Version"]:
                     args.log.warn("Version {0} is not the same as {1} for {2}".format(
                         dataset["version"],
                         last_version,
                         dataset["ID"]))
                     dataset["version"] = last_version
-                if did != pid:
-                    args.log.warn("Zenodo ID for {0} should be {1}".format(
+                if last_doi != dataset["Zenodo"]:
+                    args.log.warn("Zenodo DOI for {0} should be {1}".format(
                         dataset["ID"],
-                        pid))
-                    dataset["Zenodo"] = "10.5281/zenodo." + pid
+                        last_doi))
+                    dataset["Zenodo"] = last_doi
 
             else:
                 args.log.warn("No DOI found for dataset {0}".format(dataset["ID"]))
@@ -160,7 +162,10 @@ class Dataset(BaseDataset):
                             c["type"] == "Editor"]) + "},\n"
             bibtex += "  title = {" + meta["title"] + "},\n"
             bibtex += "  version = {" + dataset["Version"] + "},\n"
-            bibtex += "  _reference = {" + meta["description"].split("\n")[3][3:-4] + "},\n"
+            try:
+                bibtex += "  _reference = {" + meta["description"].split("\n")[3][3:-4] + "},\n"
+            except KeyError:
+                args.log.warn("Description missing for dataset {0}".format(dataset["ID"]))
             bibtex += "  year = {" + str(
                     datetime.fromtimestamp(
                         repo.tags[dataset["Version"]].commit.authored_date
@@ -177,7 +182,7 @@ class Dataset(BaseDataset):
                 " AND ".join([c["name"] for c in meta["creators"]]),
                 " AND ".join(
                     [c["name"] for c in meta["contributors"] if c["type"] == "Editor"]),
-                meta["description"].split("\n")[3][3:-4],
+                meta["description"].split("\n")[3][3:-4] if "description" in meta else "",
                 dataset["ID"],
                 dataset["Zenodo"],
                 dataset["Version"]]]
@@ -193,10 +198,13 @@ class Dataset(BaseDataset):
                              "Citation", "Source", "DOI", "Version"])
             for row in base_info:
                 writer.writerow(row)
-        with UnicodeWriter(self.etc_dir / "datasets-updated.csv") as writer:
-            writer.writerow(list(datasets[0].keys()))
-            for row in datasets:
-                writer.writerow(list(row.values()))
+        if UPDATE_DATASETS:
+            with UnicodeWriter(
+                    self.etc_dir / "datasets-updated.tsv", 
+                    delimiter="\t") as writer:
+                writer.writerow(list(datasets[0].keys()))
+                for row in datasets:
+                    writer.writerow(list(row.values()))
 
 
 
