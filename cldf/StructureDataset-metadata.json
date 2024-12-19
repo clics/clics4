@@ -17,7 +17,7 @@
         {
             "rdf:about": "git@github.com:clics/clics4",
             "rdf:type": "prov:Entity",
-            "dc:created": "7194449",
+            "dc:created": "e00adcb",
             "dc:title": "Repository"
         },
         {
@@ -33,7 +33,7 @@
             "dc:title": "Concepticon"
         },
         {
-            "rdf:about": "https://github.com/cldf-clts/clts/",
+            "rdf:about": "https://github.com/cldf-clts/clts",
             "rdf:type": "prov:Entity",
             "dc:created": "v2.3.0",
             "dc:title": "CLTS"
@@ -457,6 +457,36 @@
             "rdf:type": "prov:Entity",
             "dc:created": "v1.1",
             "dc:title": "Repository"
+        },
+        {
+            "rdf:about": "https://github.com/lexibank/abvdoceanic",
+            "rdf:type": "prov:Entity",
+            "dc:created": "v0.3",
+            "dc:title": "Repository"
+        },
+        {
+            "rdf:about": "https://github.com/digling/servamalagasy",
+            "rdf:type": "prov:Entity",
+            "dc:created": "v1.1",
+            "dc:title": "Repository"
+        },
+        {
+            "rdf:about": "https://github.com/sequencecomparison/kesslersignificance",
+            "rdf:type": "prov:Entity",
+            "dc:created": "v1.1",
+            "dc:title": "Repository"
+        },
+        {
+            "rdf:about": "https://github.com/sequencecomparison/hattorijaponic",
+            "rdf:type": "prov:Entity",
+            "dc:created": "v1.1",
+            "dc:title": "Repository"
+        },
+        {
+            "rdf:about": "https://github.com/sequencecomparison/blustaustronesian",
+            "rdf:type": "prov:Entity",
+            "dc:created": "v1.1",
+            "dc:title": "Repository"
         }
     ],
     "prov:wasGeneratedBy": [
@@ -474,7 +504,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 5193621,
+            "dc:extent": 5551447,
             "tableSchema": {
                 "columns": [
                     {
@@ -564,7 +594,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 46864,
+            "dc:extent": 47143,
             "tableSchema": {
                 "columns": [
                     {
@@ -659,7 +689,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 2477,
+            "dc:extent": 2638,
             "tableSchema": {
                 "columns": [
                     {
@@ -765,7 +795,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ContributionTable",
-            "dc:extent": 65,
+            "dc:extent": 70,
             "tableSchema": {
                 "columns": [
                     {
@@ -825,7 +855,7 @@
             "url": "contributions.csv"
         },
         {
-            "dc:extent": 1539,
+            "dc:extent": 1542,
             "tableSchema": {
                 "columns": [
                     {

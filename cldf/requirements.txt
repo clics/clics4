@@ -33,7 +33,7 @@ Jinja2==3.1.4
 jmespath==1.0.1
 jsonschema==4.23.0
 kiwisolver==1.4.7
--e git+ssh://git@github.com/clics/clics4.git@71944498ad4cfe861e8b77ac430701e355c7830c#egg=lexibank_clics4
+-e git+ssh://git@github.com/clics/clics4.git@e00adcb0439e4bc00c3ddebe729788ecf97f5f57#egg=lexibank_clics4
 lingpy==2.6.13
 lxml==5.3.0
 Markdown==3.7
@@ -52,7 +52,7 @@ prompt_toolkit==3.0.48
 pure_eval==0.2.3
 pybtex==0.24.0
 pycldf==1.39.0
--e git+https://github.com/clics/pyclics@ff48d31895dc632c42f11ddb48a295573f04c22a#egg=pyclics
+pyclics==3.1.0
 pyclts==3.2.0
 pyconcepticon==3.1.0
 pycountry==24.6.1

@@ -60,15 +60,15 @@ cldfbench lexibank.makecldf --glottolog-repos=Path2Glottolog --concepticon-repos
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
-- **Varieties:** 2,477 (linked to 1,675 different Glottocodes)
-- **Concepts:** 1,539 (linked to 1,539 different Concepticon concept sets)
-- **Lexemes:** 1,195,693
+- **Varieties:** 2,638 (linked to 1,771 different Glottocodes)
+- **Concepts:** 1,542 (linked to 1,542 different Concepticon concept sets)
+- **Lexemes:** 1,233,912
 - **Sources:** 1
 - **Synonymy:** 1.11
 - **Invalid lexemes:** 0
-- **Tokens:** 6,787,310
-- **Segments:** 1,869 (0 BIPA errors, 0 CLTS sound class errors, 1861 CLTS modified)
-- **Inventory size (avg):** 42.16
+- **Tokens:** 6,979,534
+- **Segments:** 1,879 (0 BIPA errors, 0 CLTS sound class errors, 1871 CLTS modified)
+- **Inventory size (avg):** 41.53
 
 ## Possible Improvements:
 
