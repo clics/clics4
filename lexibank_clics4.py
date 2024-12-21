@@ -33,7 +33,7 @@ CONCEPT_THRESHOLD = 1800
 WRITE_CONCEPTS = False
 RERUN = True
 SUBGRAPH_THRESHOLD = 3
-DATASETS = 2
+DATASETS =75
 MINIMAL_SIMILARITY = 0.01
 COLEXIFICATION_THRESHOLD = 2
 UPDATE_DATASETS = False
@@ -571,7 +571,7 @@ class Dataset(BaseDataset):
                         "Forms": data["forms"],
                         "Varieties": data["varieties"],
                         "Languages": data["languages"],
-                        "Families": data["families"]
+                        "Families": data["families"],
                     }
                 )
                 if data["family_count"] >= COLEXIFICATION_THRESHOLD:
@@ -615,6 +615,8 @@ class Dataset(BaseDataset):
             for concept in map(lambda x: x.id, wl.concepts):
                 if concept not in community_labels:
                     args.log.info("Concept {0} without community.".format(concept))
+                if concept not in neighbors:
+                    neighbors[concept] = []
                 writer.objects["concepts.csv"].append(
                     {
                         "ID": concepts[concept].id,

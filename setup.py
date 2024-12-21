@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='lexibank_clics4',
-    version='0.1.0.dev0',
+    version='0.2.0',
     description='',
     author='',
     author_email='',
@@ -41,6 +41,8 @@ setup(
         'uritemplate',
         'lingpy>=2.6.8',
         'pyclts>=3.1',
+        "pyclics==3.1.0",
+        "zenodo_client"
         #'cartopy',
         #'pillow',
         #'matplotlib',
