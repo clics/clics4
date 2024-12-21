@@ -41,8 +41,6 @@ setup(
         'uritemplate',
         'lingpy>=2.6.8',
         'pyclts>=3.1',
-        "pyclics==3.1.0",
-        "zenodo_client"
         #'cartopy',
         #'pillow',
         #'matplotlib',

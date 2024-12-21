@@ -22,32 +22,38 @@ To run the code, you need to follow specific workflow instructions
 - concepticon
 - clts
 
-Install pyclics (manually for now):
-
-```
-$ git clone https://github.com/clics/pyclics.git
-$ git checkout colexifications
-$ pip install -e .
-```
-
 ## 2 Download Data
-
-```
-cldfbench download lexibank_clics4.py
-```
 
 ## 3 Create CLICS4 Dataset
 
 ```
-cldfbench lexibank.makecldf --glottolog-repos=Path2Glottolog --concepticon-repos=Path2Concepticon --clts-repos=Path2Clics --glottolog-version=v4.6 --concepticon-version=v3.2.0 --clts-version=v2.3.0 lexibank_clics4.py
+cldfbench lexibank.makecldf --glottolog-repos=Path2Glottolog --concepticon-repos=Path2Concepticon --clts-repos=Path2Clics --glottolog-version=v4.6 --concepticon-version=v2.6.0 --clts-version=v2.2.0 lexibank_clicsbp.py
 ```
 
-## 4 TODO
+## 4 Compute Colexifications
 
-- [x] check the sources of all datasets (they must be included, contribution table)
-- [ ] check all CLDF datasets, sometimes, values are missing
-- [ ] publish pyclics and make an update for PyPi here (important)
-- [ ] consider ignoring the similarities
+Make sure to install pyclics, download via git, checkout branch `colexifications`, and then install the package.
+
+```
+cldfbench clicsbp.colexifications
+cldfbench clicsbp.colexify_all_data
+```
+
+## 5 Compute Statistics
+
+### 5.1 Compute Pie-Charts
+
+```
+cldfbench clicspb.piecharts --weight=Language_Count_Weighted
+```
+
+### 5.2 Compute ARI
+
+### 5.3 Plot Networks
+
+```
+cldfbench clicsbp.plotgraphs --weight=Cognate_Count_Weighted --tag="human body part"
+```
 
 
 
@@ -56,34 +62,29 @@ cldfbench lexibank.makecldf --glottolog-repos=Path2Glottolog --concepticon-repos
 
 ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%")
 ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%")
-![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
+![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%")
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
-- **Varieties:** 2,638 (linked to 1,771 different Glottocodes)
-- **Concepts:** 1,542 (linked to 1,542 different Concepticon concept sets)
-- **Lexemes:** 1,233,912
-- **Sources:** 1
-- **Synonymy:** 1.11
+- **Varieties:** 1,633
+- **Concepts:** 1,540
+- **Lexemes:** 1,038,180
+- **Sources:** 0
+- **Synonymy:** 1.15
 - **Invalid lexemes:** 0
-- **Tokens:** 6,979,534
-- **Segments:** 1,879 (0 BIPA errors, 0 CLTS sound class errors, 1871 CLTS modified)
-- **Inventory size (avg):** 41.53
+- **Tokens:** 6,021,524
+- **Segments:** 1,685 (0 BIPA errors, 0 CLTS sound class errors, 1677 CLTS modified)
+- **Inventory size (avg):** 44.54
 
 ## Possible Improvements:
 
 - Languages linked to [bookkeeping languoids in Glottolog](http://glottolog.org/glottolog/glottologinformation#bookkeepinglanguoids):
-  - Laisaw Thu Htay Kung [lait1239](http://glottolog.org/resource/languoid/id/lait1239)
-  - Songlai-Hettui 8Karchaung (Hettui) [song1313](http://glottolog.org/resource/languoid/id/song1313)
-  - Songlai-Maung Um (Song) 1Maung Um (Song) [song1313](http://glottolog.org/resource/languoid/id/song1313)
-  - Laitu (Khuasung) [lait1239](http://glottolog.org/resource/languoid/id/lait1239)
-  - Doitu (Hetsawlay) [song1313](http://glottolog.org/resource/languoid/id/song1313)
-  - Thaiphum (Rengkheng) [thai1262](http://glottolog.org/resource/languoid/id/thai1262)
-  - Laitu Ahongdong [lait1239](http://glottolog.org/resource/languoid/id/lait1239)
-  - Taungtha (Wethet) [rung1263](http://glottolog.org/resource/languoid/id/rung1263)
-  - Khalaj [khal1270](http://glottolog.org/resource/languoid/id/khal1270)
+  - Rawngtu Weilong [wela1234](http://glottolog.org/resource/languoid/id/wela1234)
+  - Rawngtu Ramtim [wela1234](http://glottolog.org/resource/languoid/id/wela1234)
+  - Sanapaná (Angaité) [sana1281](http://glottolog.org/resource/languoid/id/sana1281)
 
 
+- Entries missing sources: 1038180/1038180 (100.00%)
 
 # Contributors
 
