@@ -33,7 +33,7 @@ Jinja2==3.1.4
 jmespath==1.0.1
 jsonschema==4.23.0
 kiwisolver==1.4.7
--e git+ssh://git@github.com/clics/clics4.git@16c45ec0ade0895cae13501b3704483c33d56ef6#egg=lexibank_clics4
+-e git+ssh://git@github.com/clics/clics4.git@58e2bd952ea8eee1e59a64545a79536f57f0d614#egg=lexibank_clics4
 lingpy==2.6.13
 lxml==5.3.0
 Markdown==3.7
