@@ -159,12 +159,13 @@ class Dataset(BaseDataset):
                     "r", 
                     "utf-8") as f:
                 meta = json.load(f)
+            editors = " AND ".join([
+                c["name"] for c in meta["contributors"] if c["type"] == "Editor"])
             bibtex = "@book{" + dataset["ID"] + ",\n"
             bibtex += "  author = {" + " AND ".join(
                     [c["name"] for c in meta["creators"]]) + "},\n"
-            bibtex += "  editor = {" + " AND ".join(
-                    [c["name"] for c in meta["contributors"] if \
-                            c["type"] == "Editor"]) + "},\n"
+            if editors:
+                bibtex += "  editor = {" + editors + "},\n"
             bibtex += "  title = {" + meta["title"] + "},\n"
             bibtex += "  version = {" + dataset["Version"] + "},\n"
             try:

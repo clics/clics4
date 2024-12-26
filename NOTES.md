@@ -60,5 +60,8 @@ cldfbench lexibank.makecldf --glottolog-repos=Path2Glottolog --concepticon-repos
 
 ## W4: What needs to be done before we publish CLICS4 as Version 1.0
 
-- [ ] Dataset `lundgrenomagoa` has a problem with one concept and should be mapped to the 275 concepts in Concepticon with a new release
-- [ ] Current settings 
+This release is a CLICS⁴ dataset that we consider generally good enough with respect to the data to be used in publications (small errors would always be possible with such large numbers of data aggregated from different sources). However, we emphasize that there are a couple of shortcomings for now that we will try to handle before publishing a new version of CLICS that succeeds the current version 3.0 at https://clics.clld.org
+
+- [ ] use the new CLDF network representation for parameters
+- [ ] check if more datasets could be added (with our current thresholds of 180 concepts per language, there may be more datasets ready to include)
+- [ ] check all bibliographic citations individually (they are currently automated only)
