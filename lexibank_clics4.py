@@ -344,7 +344,8 @@ class Dataset(BaseDataset):
                                 form.value,
                                 form.form,
                                 form.sounds,
-                                ""
+                                "",
+                                form.dataset
                             ]]
                             cnc_count += 1
                             frm_count += 1
@@ -360,7 +361,8 @@ class Dataset(BaseDataset):
                                         form.value,
                                         form.form,
                                         form.sounds,
-                                        form.concept.id]]
+                                        form.concept.id,
+                                        form.dataset]]
                                     cnc_count += 1
                                     frm_count += 1
                         elif check_form in duplicates:
@@ -416,7 +418,8 @@ class Dataset(BaseDataset):
                         form_val,
                         form_form,
                         form_sounds,
-                        concept_in_source
+                        concept_in_source,
+                        dataset
                 ) in progressbar(clics, desc="adding forms"):
                     if concept_id in selected_concepts:
                         writer.add_form_with_segments(
@@ -427,7 +430,7 @@ class Dataset(BaseDataset):
                             Form=form_form,
                             Segments=form_sounds,
                             ConceptInSource=concept_in_source,
-                            Source=ds["ID"]
+                            Source=dataset
                         )
                     else:
                         missing.add((concept_id, language_id))
