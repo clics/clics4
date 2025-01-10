@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='lexibank_clics4',
-    version='0.1.0.dev0',
+    version='0.4',
     description='',
     author='',
     author_email='',
@@ -43,11 +43,6 @@ setup(
         'pyclts>=3.1',
         "pyclics==3.1.0",
         "zenodo_client"
-        #'cartopy',
-        #'pillow',
-        #'matplotlib',
-        #'scipy',
-        #"lingrex"
     ],
     extras_require={
         'dev': ['flake8', 'wheel', 'twine'],

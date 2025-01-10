@@ -17,7 +17,10 @@ import json
 import codecs
 from datetime import datetime
 from csvw.dsv import UnicodeWriter
-from zenodo_client import Zenodo
+from cldfzenodo import API as cldfzenodoapi
+import shutil
+import pycldf
+import nameparser
 
 
 from pyclics.colexifications import (
@@ -28,15 +31,16 @@ from pylexibank import Concept, Lexeme, Language, progressbar
 import attr
 
 
-CONCEPTS_PER_LANGUAGE_THRESHOLD = 200
-CONCEPT_THRESHOLD = 1600
-WRITE_CONCEPTS = False
+CONCEPTS_PER_LANGUAGE_THRESHOLD = 180
+CONCEPT_THRESHOLD = 1800
+WRITE_CONCEPTS = True
 RERUN = True
 SUBGRAPH_THRESHOLD = 3
-DATASETS = 75
+DATAFILE = "lexibank.tsv"
 MINIMAL_SIMILARITY = 0.01
 COLEXIFICATION_THRESHOLD = 2
 UPDATE_DATASETS = False
+WITH_TOKEN = False
 
 
 @attr.s
@@ -51,7 +55,7 @@ class CustomConcept(Concept):
     Forms = attr.ib(default=None, metadata={"format": "string", "separator": " "})
     Varieties = attr.ib(default=None, metadata={"format": "string", "separator": " "})
     Languages = attr.ib(default=None, metadata={"format": "string", "separator": " "})
-    Families = attr.ib(default=None, metadata={"format": "string", "separator": " "})
+    Families = attr.ib(default=None, metadata={"format": "string", "separator": " // "})
     Neighbors = attr.ib(default=None, metadata={"format": "string", "separator": " // "})
     Similarities = attr.ib(default=None, metadata={"format": "json"})
 
@@ -71,6 +75,7 @@ class CustomLanguage(Language):
             "format": "string",
             "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#contributionReference"
         })
+    Family_Name = attr.ib(default=None)
 
 
 class Dataset(BaseDataset):
@@ -105,108 +110,91 @@ class Dataset(BaseDataset):
         # TODO: add the sources.bib, using the Zenodo API (pyzenodo3) that allows to retrieve data by DOI
         sources = []
         base_info = []
-        zenodo = Zenodo()
+
         datasets = []
-        for dataset in self.etc_dir.read_csv(
-                "datasets.tsv", delimiter="\t",
+
+        sources = pycldf.Sources.from_file(self.raw_dir / "base-sources.bib")
+        contributions = []
+        for row in self.etc_dir.read_csv(
+                DATAFILE, delimiter="\t",
                 dicts=True):
+            dataset = row["ID"]
+
+            if row["ClicsCore"].strip() != "x":
+                print('skipping {0}'.format(dataset))
+                continue
             # get updated version via zenodo
-            args.log.info("Processing dataset {0}".format(dataset["ID"]))
-            if dataset["Zenodo"]:
-                did = dataset["Zenodo"].split(".")[2]
-                rec = zenodo.get_record(did)
-                pid = rec.json()["metadata"]["relations"]["version"][0]["parent"]["pid_value"]
-                prec = zenodo.get_record(pid)
-                last_version = prec.json()["metadata"]["version"]
-                last_doi = prec.json()["metadata"]["doi"]
-                if last_version != dataset["Version"]:
-                    args.log.warn("Version {0} is not the same as {1} for {2}".format(
-                        dataset["version"],
-                        last_version,
-                        dataset["ID"]))
-                    dataset["version"] = last_version
-                if last_doi != dataset["Zenodo"]:
-                    args.log.warn("Zenodo DOI for {0} should be {1}".format(
-                        dataset["ID"],
-                        last_doi))
-                    dataset["Zenodo"] = last_doi
-
-            else:
-                args.log.warn("No DOI found for dataset {0}".format(dataset["ID"]))
-
-
-            if self.raw_dir.joinpath(
-                    dataset["ID"], "cldf", "cldf-metadata.json").exists():
-                args.log.info("skipping {0}".format(dataset["ID"]))
-            else:
-                args.log.info("cloning {0} to raw/{0}".format(dataset["ID"]))
-                repo = Repo.clone_from(
-                    "https://github.com/" +
-                    dataset["Organisation"] + "/" +
-                    dataset["Repository"] + '.git',
-                    self.raw_dir / dataset["ID"])
-            repo = Repo(self.raw_dir / dataset["ID"])
-            if dataset["Version"]:
-                repo.head.set_reference(repo.tags[dataset["Version"]].commit)
-            # get metadata to write the reference in standardized form
-            with codecs.open(
-                    self.raw_dir / dataset["ID"] / ".zenodo.json",
-                    "r", 
-                    "utf-8") as f:
+            args.log.info("Processing dataset {0}".format(dataset))
+            dest = self.raw_dir / dataset
+            if dest.exists():
+                args.log.info("Removing old download in {0}".format(dataset))
+                shutil.rmtree(dest)
+            args.log.info("Downloading dataset {0}".format(dataset))
+            record = cldfzenodoapi.get_record(row["Zenodo"])
+            rec_new = record.from_concept_doi(record.concept_doi)
+            if rec_new.doi != record.doi:
+                record = rec_new
+                args.log.warn("DOI for datasets {0} is not the latest version!".format(
+                    dataset["ID"]))
+            record.download(dest)
+            
+            # load zenodo info to make a new bibtex and doi
+            with open(self.raw_dir / dataset / ".zenodo.json", encoding='utf8') as f:
                 meta = json.load(f)
-            bibtex = "@book{" + dataset["ID"] + ",\n"
-            bibtex += "  author = {" + " AND ".join(
-                    [c["name"] for c in meta["creators"]]) + "},\n"
-            bibtex += "  editor = {" + " AND ".join(
-                    [c["name"] for c in meta["contributors"] if \
-                            c["type"] == "Editor"]) + "},\n"
-            bibtex += "  title = {" + meta["title"] + "},\n"
-            bibtex += "  version = {" + dataset["Version"] + "},\n"
-            try:
-                bibtex += "  _reference = {" + meta["description"].split("\n")[3][3:-4] + "},\n"
-            except KeyError:
-                args.log.warn("Description missing for dataset {0}".format(dataset["ID"]))
-            bibtex += "  year = {" + str(
-                    datetime.fromtimestamp(
-                        repo.tags[dataset["Version"]].commit.authored_date
-                        ).year) + "},\n"
-            bibtex += "  address = {Geneva},\n"
-            bibtex += "  publisher = {Zenodo},\n"
-            bibtex += "  doi = {" + dataset["Zenodo"] + "}\n"
-            bibtex += "}\n\n"
-            sources += [bibtex]
-            base_info += [[
-                dataset["ID"],
-                dataset["ID"],
-                meta["title"],
-                " AND ".join([c["name"] for c in meta["creators"]]),
-                " AND ".join(
-                    [c["name"] for c in meta["contributors"] if c["type"] == "Editor"]),
-                meta["description"].split("\n")[3][3:-4] if "description" in meta else "",
-                dataset["ID"],
-                dataset["Zenodo"],
-                dataset["Version"]]]
-            datasets += [dataset]
-                
+            editors = [c["name"] for c in meta["contributors"] if
+                       c["type"] == "Editor"]
+            for i, editor in enumerate(editors):
+                name = nameparser.HumanName(editor)
+                first = name.first
+                if name.middle:
+                    first = " " + name.middle
+                editors[i] = f"{name.last}, {first}"
+            
+            # load normal metadata to get the original citation
+            with open(self.raw_dir / dataset / "metadata.json", encoding='utf8') as f:
+                meta = json.load(f)
+            description = meta["citation"]
+            # create bibtex and write to new file
+            bib = dict(author=" and ".join(record.creators),
+                    title=record.title,
+                    publisher="Zenodo",
+                    year=record.year,
+                    address="Geneva",
+                    doi=record.doi)
+            if editors:
+                bib["editor"] = " and ".join(editors)
+            if description:
+                bib["citation"] = description
+
+            sources.add(pycldf.Source(
+                    "book",
+                    row["ID"],
+                    **bib))
+            # check if source is in sources
+            for src_key in row["Source"].split(" "):
+                if src_key not in sources:
+                    args.log.warn("source with key '{0}' missing in data".format(src_key))
+            contributions += [[
+                row["ID"],
+                row["Dataset"],
+                bib["title"],
+                bib["author"],
+                bib.get("editor", ""),
+                bib.get("citation", ""),
+                row["Source"].split(" "),
+                bib["doi"],
+                row["Version"]]]
         with codecs.open(self.raw_dir / "sources.bib", "w", "utf-8") as f:
             for source in sources:
-                f.write(source)
-            args.log.info("Wrote sources to file.")
+                f.write(source.bibtex() + "\n\n")
 
+        # write contributions to file
         with UnicodeWriter(self.etc_dir / "contributions.csv") as writer:
-            writer.writerow(["ID", "Name", "Description", "Creator", "Contributor",
-                             "Citation", "Source", "DOI", "Version"])
-            for row in base_info:
+            writer.writerow(["ID", "Name", "Description", "Creator",
+                             "Contributor", "Citation", "Source", "DOI",
+                             "Version"])
+            for row in contributions:
                 writer.writerow(row)
-        if UPDATE_DATASETS:
-            with UnicodeWriter(
-                    self.etc_dir / "datasets-updated.tsv", 
-                    delimiter="\t") as writer:
-                writer.writerow(list(datasets[0].keys()))
-                for row in datasets:
-                    writer.writerow(list(row.values()))
-
-
 
     def cmd_makecldf(self, args):
         # concepticon_gloss to concepticon_id conversion
@@ -214,6 +202,8 @@ class Dataset(BaseDataset):
             concept.gloss: concept.id for concept in
             self.concepticon.conceptsets.values()}
         args.log.info("created concepticon gloss to ID converter")
+        gcodes = self.glottolog.languoids_by_code()
+        
         # read target concepts
         targets, sources = {}, {}
         for row in self.etc_dir.read_csv(
@@ -241,13 +231,14 @@ class Dataset(BaseDataset):
                 )
                 datasets, contributions = [], {}
                 for ds in self.etc_dir.read_csv(
-                        "datasets.tsv", 
+                        DATAFILE, 
                         delimiter="\t",
-                        dicts=True)[:DATASETS]:
-                    datasets += [pycldf.Dataset.from_metadata(
-                        self.raw_dir / ds["ID"] / "cldf/cldf-metadata.json"
-                    )]
-                for row in self.etc_dir.read_csv("contributions.csv", dicts=True)[:DATASETS]:
+                        dicts=True):
+                    if ds["ClicsCore"].strip() == "x":
+                        datasets += [pycldf.Dataset.from_metadata(
+                            self.raw_dir / ds["ID"] / "cldf/cldf-metadata.json"
+                        )]
+                for row in self.etc_dir.read_csv("contributions.csv", dicts=True):
                     contributions[row["ID"]] = row
 
                 wl: Wordlist = Wordlist(datasets, ts=args.clts.api.bipa)
@@ -264,7 +255,7 @@ class Dataset(BaseDataset):
                             "w") as f:
                         f.write("ID\tGLOSS\tFREQUENCY\n")
                         for concept in all_concepts:
-                            if concept and concept.concepticon_gloss:
+                            if concept and concept.concepticon_id and concept.concepticon_gloss:
                                 f.write("\t".join([
                                     concept.concepticon_id,
                                     concept.concepticon_gloss,
@@ -318,7 +309,9 @@ class Dataset(BaseDataset):
                     # concepts, even if they have the same glottocode but come from different sources
                     cov = sum([concept_count[c.id] for c in language.concepts if
                                c.id in concept_count])
-                    if language.latitude and language.glottocode and cov >= CONCEPTS_PER_LANGUAGE_THRESHOLD:
+                    if language.latitude and language.glottocode and \
+                            cov >= CONCEPTS_PER_LANGUAGE_THRESHOLD and \
+                            language.glottocode in gcodes:
                         valid_language_ids.append(language.id)
                         valid_language_objects.append(language)
                 args.log.info("found {0} valid languages".format(len(valid_language_ids)))
@@ -333,10 +326,16 @@ class Dataset(BaseDataset):
                         Original_Concept=sources.get(concept, "")
                     )
                 clics, accepted_languages, active_contributions = [], [], set()
+                excluded = []
                 for i, language in progressbar(enumerate(valid_language_objects), desc="retrieve forms"):
-                    cnc_count, frm_count, lid = 0, 0, str(i+1)
+                    cnc_count, frm_count, lid = 0, 0, str(i + 1)
+                    duplicates = set()
                     for form in language.forms_with_sounds:
-                        if form.concept and form.concept.id in selected_concepts:
+                        check_form = "{0}-{1}".format(
+                                form.concept.id if form.concept else "",
+                                str(form.sounds))
+                        if form.concept and form.concept.id in selected_concepts and check_form not in duplicates:
+                            duplicates.add(check_form)
                             clics += [[
                                 lid,
                                 form.id,
@@ -349,7 +348,8 @@ class Dataset(BaseDataset):
                             ]]
                             cnc_count += 1
                             frm_count += 1
-                        elif form.concept and form.concept.id in targets:
+                        elif form.concept and form.concept.id in targets and check_form not in duplicates:
+                            duplicates.add(check_form)
                             for gloss in targets[form.concept.id]:
                                 if gloss in selected_concepts:
                                     clics += [[
@@ -363,10 +363,20 @@ class Dataset(BaseDataset):
                                         form.concept.id]]
                                     cnc_count += 1
                                     frm_count += 1
+                        elif check_form in duplicates:
+                            excluded += [form]
+                    # identifier for family in order to avoid whitespace or
+                    # other inconsistencies, for isolates identical with
+                    # glottocode
+                    if gcodes[language.glottocode].family:
+                        family_id = gcodes[language.glottocode].family.id
+                    else:
+                        family_id = language.glottocode
                     writer.add_language(
                         ID=lid,
                         Name=language.name,
-                        Family=language.family,
+                        Family=family_id, # use slugged form
+                        Family_Name=language.family,
                         Latitude=language.latitude,
                         Longitude=language.longitude,
                         Glottocode=language.glottocode,
@@ -376,6 +386,18 @@ class Dataset(BaseDataset):
                     )
                     accepted_languages += [language.id]
                     active_contributions.add(language.dataset)
+                args.log.info("excluded {0} duplicates".format(len(excluded)))
+                with open(self.raw_dir / "duplicates.md", "w") as f:
+                    f.write("# Duplicates\n\n")
+                    f.write("ID | Language | Concept | Form | Sounds \n")
+                    f.write("--- | --- | --- | --- | ---\n")
+                    for form in excluded:
+                        f.write(" | ".join([
+                            form.id, 
+                            form.language.name,
+                            form.concept.concepticon_gloss,
+                            form.form, str(form.sounds)]) + "\n")
+
                 ctrerrors = set()
                 # write contributions to CLDF
                 for ctr in active_contributions:
@@ -554,7 +576,7 @@ class Dataset(BaseDataset):
                         "Forms": data["forms"],
                         "Varieties": data["varieties"],
                         "Languages": data["languages"],
-                        "Families": data["families"]
+                        "Families": data["families"],
                     }
                 )
                 if data["family_count"] >= COLEXIFICATION_THRESHOLD:
@@ -598,6 +620,8 @@ class Dataset(BaseDataset):
             for concept in map(lambda x: x.id, wl.concepts):
                 if concept not in community_labels:
                     args.log.info("Concept {0} without community.".format(concept))
+                if concept not in neighbors:
+                    neighbors[concept] = []
                 writer.objects["concepts.csv"].append(
                     {
                         "ID": concepts[concept].id,
