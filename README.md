@@ -82,15 +82,30 @@ This release is a CLICS⁴ dataset that we consider generally good enough with r
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
-- **Varieties:** 197 (linked to 122 different Glottocodes)
-- **Concepts:** 443 (linked to 443 different Concepticon concept sets)
-- **Lexemes:** 48,830
-- **Sources:** 3
-- **Synonymy:** 1.15
+- **Varieties:** 3,420 (linked to 2,149 different Glottocodes)
+- **Concepts:** 1,730 (linked to 1,730 different Concepticon concept sets)
+- **Lexemes:** 1,443,325
+- **Sources:** 94
+- **Synonymy:** 1.10
 - **Invalid lexemes:** 0
-- **Tokens:** 272,146
-- **Segments:** 214 (0 BIPA errors, 0 CLTS sound class errors, 214 CLTS modified)
-- **Inventory size (avg):** 33.12
+- **Tokens:** 8,107,217
+- **Segments:** 2,034 (0 BIPA errors, 0 CLTS sound class errors, 2026 CLTS modified)
+- **Inventory size (avg):** 40.74
+
+## Possible Improvements:
+
+- Languages linked to [bookkeeping languoids in Glottolog](http://glottolog.org/glottolog/glottologinformation#bookkeepinglanguoids):
+  - Laisaw Thu Htay Kung [lait1239](http://glottolog.org/resource/languoid/id/lait1239)
+  - Songlai-Hettui 8Karchaung (Hettui) [song1313](http://glottolog.org/resource/languoid/id/song1313)
+  - Songlai-Maung Um (Song) 1Maung Um (Song) [song1313](http://glottolog.org/resource/languoid/id/song1313)
+  - Laitu (Khuasung) [lait1239](http://glottolog.org/resource/languoid/id/lait1239)
+  - Doitu (Hetsawlay) [song1313](http://glottolog.org/resource/languoid/id/song1313)
+  - Thaiphum (Rengkheng) [thai1262](http://glottolog.org/resource/languoid/id/thai1262)
+  - Laitu Ahongdong [lait1239](http://glottolog.org/resource/languoid/id/lait1239)
+  - Taungtha (Wethet) [rung1263](http://glottolog.org/resource/languoid/id/rung1263)
+  - Khalaj [khal1270](http://glottolog.org/resource/languoid/id/khal1270)
+
+
 
 # Contributors
 
