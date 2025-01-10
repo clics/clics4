@@ -1,81 +1,225 @@
-__python__
-__pycache__
-cldf/.transcription-report.json
-*.egg-info
-.gitignore
-raw/leeainu/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.idea
+.transcription-report.json
+# C extensions
+*.so
 raw/aaleykusunda/
 raw/abrahammonpa/
 raw/abvdoceanic/
-raw/abvdphilippines/
-raw/allenbai/
-raw/backstromnorthernpakistan/
-raw/baf2/
-raw/bantubvd/
-raw/barlowlote/
-raw/beidasinitic/
-raw/blustaustronesian/
+raw/allenbai
+raw/bantubvd
+raw/beidasinitic
+raw/birchallchapacuran/
 raw/bodtkhobwa/
 raw/bowernpny/
-raw/bremerberta/
-raw/castrosui/
+raw/castrosui
 raw/castroyi/
 raw/castrozhuang/
-raw/chacolanguages/
+raw/chaconarawakan/
 raw/chenhmongmien/
 raw/chindialectsurvey/
 raw/clarkkimmun/
-raw/dhakalsouthwesttibetic/
+raw/constenlachibchan/
+raw/deepadungpalaung/
+raw/dunnaslian/
+raw/duonglachi/
 raw/gerarditupi/
 raw/gravinachadic/
 raw/halenepal/
 raw/hantganbangime/
-raw/hattorijaponic/
-raw/heathdogon/
 raw/hsiuhmongmien/
 raw/hubercolumbian/
-raw/huntergatherer/
-raw/idssegmented/
-raw/ivanisuansu/
-raw/johanssonsoundsymbolic/
-raw/kesslersignificance/
-raw/keypano/
+raw/huntergatherer
+raw/ids
+raw/idssegmented
+raw/johanssonsoundsymbolic
 raw/kraftchadic/
-raw/lairgyalrong/
 raw/lamanisoic/
-raw/leecaijia/
-raw/leejaponic/
-raw/leekoreanic/
+raw/lexirumah/
+raw/lieberherrkhobwa/
 raw/lindseyende/
 raw/listsamplesize/
 raw/luangthongkumkaren/
 raw/mannburmish/
-raw/marrisonnaga/
+raw/maps.py
+raw/marrisonnaga
 raw/mitterhoferbena/
-raw/mixtecansubgrouping/
 raw/naganorgyalrongic/
+raw/nagarajakhasian/
+raw/norare-data
 raw/northeuralex/
-raw/northperulex/
 raw/oskolskayatungusic/
 raw/othanieljen/
+raw/peirosaustroasiatic/
 raw/polyglottaafricana/
-raw/robbeetstriangulation/
 raw/robinsonap/
-raw/servamalagasy/
+raw/sagartst/
+raw/savelyevturkic/
+raw/sidwellbahnaric/
+raw/simsrma/
+raw/sohartmanchin/
 raw/sohartmannchin/
-raw/spagnolmaltese/
-raw/suntb/
+raw/suntb
+raw/syrjaenenuralic/
 raw/tls/
 raw/transnewguineaorg/
+raw/tryonsolomon/
 raw/tuled/
+raw/utoaztecan/
 raw/vanuatuvoices/
 raw/visserkalamang/
-raw/walworthpolynesian/
+raw/walworthpolynesian
 raw/wangbai/
-raw/wold/
-raw/yanglalo/
-raw/yangyi/
+raw/wold
+raw/yanglalo
+raw/yangyi
 raw/yuchinese/
 raw/zgraggenmadang/
+raw/zhivlovobugrian/
 raw/zhoubizic/
+raw/abvdphilippines/
+raw/backstromnorthernpakistan/
+raw/baf2/
+raw/barlowlote/
+raw/bremerberta/
+raw/chacolanguages/
+raw/dhakalsouthwesttibetic/
+raw/heathdogon/
+raw/ivanisuansu/
+raw/keypano/
+raw/lairgyalrong/
+raw/leecaijia/
+raw/leejaponic/
+raw/leekoreanic/
+raw/lundgrenomagoa/
+raw/mixtecansubgrouping/
+raw/northperulex/
+raw/robbeetstriangulation/
+raw/sources.bib
+raw/spagnolmaltese/
 
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/

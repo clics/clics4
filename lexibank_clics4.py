@@ -28,16 +28,15 @@ from pylexibank import Concept, Lexeme, Language, progressbar
 import attr
 
 
-CONCEPTS_PER_LANGUAGE_THRESHOLD = 180
-CONCEPT_THRESHOLD = 1800
+CONCEPTS_PER_LANGUAGE_THRESHOLD = 200
+CONCEPT_THRESHOLD = 1600
 WRITE_CONCEPTS = False
 RERUN = True
 SUBGRAPH_THRESHOLD = 3
-DATASETS =75
+DATASETS = 75
 MINIMAL_SIMILARITY = 0.01
 COLEXIFICATION_THRESHOLD = 2
 UPDATE_DATASETS = False
-WITH_TOKEN = False
 
 
 @attr.s
@@ -52,7 +51,7 @@ class CustomConcept(Concept):
     Forms = attr.ib(default=None, metadata={"format": "string", "separator": " "})
     Varieties = attr.ib(default=None, metadata={"format": "string", "separator": " "})
     Languages = attr.ib(default=None, metadata={"format": "string", "separator": " "})
-    Families = attr.ib(default=None, metadata={"format": "string", "separator": " // "})
+    Families = attr.ib(default=None, metadata={"format": "string", "separator": " "})
     Neighbors = attr.ib(default=None, metadata={"format": "string", "separator": " // "})
     Similarities = attr.ib(default=None, metadata={"format": "json"})
 
@@ -72,7 +71,6 @@ class CustomLanguage(Language):
             "format": "string",
             "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#contributionReference"
         })
-    Family_Name = attr.ib(default=None)
 
 
 class Dataset(BaseDataset):
@@ -107,37 +105,34 @@ class Dataset(BaseDataset):
         # TODO: add the sources.bib, using the Zenodo API (pyzenodo3) that allows to retrieve data by DOI
         sources = []
         base_info = []
-
-        if WITH_TOKEN:
-            zenodo = Zenodox()
+        zenodo = Zenodo()
         datasets = []
         for dataset in self.etc_dir.read_csv(
                 "datasets.tsv", delimiter="\t",
                 dicts=True):
             # get updated version via zenodo
             args.log.info("Processing dataset {0}".format(dataset["ID"]))
-            if WITH_TOKEN:
-                if dataset["Zenodo"]:
-                    did = dataset["Zenodo"].split(".")[2]
-                    rec = zenodo.get_record(did)
-                    pid = rec.json()["metadata"]["relations"]["version"][0]["parent"]["pid_value"]
-                    prec = zenodo.get_record(pid)
-                    last_version = prec.json()["metadata"]["version"]
-                    last_doi = prec.json()["metadata"]["doi"]
-                    if last_version != dataset["Version"]:
-                        args.log.warn("Version {0} is not the same as {1} for {2}".format(
-                            dataset["version"],
-                            last_version,
-                            dataset["ID"]))
-                        dataset["version"] = last_version
-                    if last_doi != dataset["Zenodo"]:
-                        args.log.warn("Zenodo DOI for {0} should be {1}".format(
-                            dataset["ID"],
-                            last_doi))
-                        dataset["Zenodo"] = last_doi
+            if dataset["Zenodo"]:
+                did = dataset["Zenodo"].split(".")[2]
+                rec = zenodo.get_record(did)
+                pid = rec.json()["metadata"]["relations"]["version"][0]["parent"]["pid_value"]
+                prec = zenodo.get_record(pid)
+                last_version = prec.json()["metadata"]["version"]
+                last_doi = prec.json()["metadata"]["doi"]
+                if last_version != dataset["Version"]:
+                    args.log.warn("Version {0} is not the same as {1} for {2}".format(
+                        dataset["version"],
+                        last_version,
+                        dataset["ID"]))
+                    dataset["version"] = last_version
+                if last_doi != dataset["Zenodo"]:
+                    args.log.warn("Zenodo DOI for {0} should be {1}".format(
+                        dataset["ID"],
+                        last_doi))
+                    dataset["Zenodo"] = last_doi
 
-                else:
-                    args.log.warn("No DOI found for dataset {0}".format(dataset["ID"]))
+            else:
+                args.log.warn("No DOI found for dataset {0}".format(dataset["ID"]))
 
 
             if self.raw_dir.joinpath(
@@ -159,13 +154,12 @@ class Dataset(BaseDataset):
                     "r", 
                     "utf-8") as f:
                 meta = json.load(f)
-            editors = " AND ".join([
-                c["name"] for c in meta["contributors"] if c["type"] == "Editor"])
             bibtex = "@book{" + dataset["ID"] + ",\n"
             bibtex += "  author = {" + " AND ".join(
                     [c["name"] for c in meta["creators"]]) + "},\n"
-            if editors:
-                bibtex += "  editor = {" + editors + "},\n"
+            bibtex += "  editor = {" + " AND ".join(
+                    [c["name"] for c in meta["contributors"] if \
+                            c["type"] == "Editor"]) + "},\n"
             bibtex += "  title = {" + meta["title"] + "},\n"
             bibtex += "  version = {" + dataset["Version"] + "},\n"
             try:
@@ -220,8 +214,6 @@ class Dataset(BaseDataset):
             concept.gloss: concept.id for concept in
             self.concepticon.conceptsets.values()}
         args.log.info("created concepticon gloss to ID converter")
-        gcodes = self.glottolog.languoids_by_code()
-        
         # read target concepts
         targets, sources = {}, {}
         for row in self.etc_dir.read_csv(
@@ -326,9 +318,7 @@ class Dataset(BaseDataset):
                     # concepts, even if they have the same glottocode but come from different sources
                     cov = sum([concept_count[c.id] for c in language.concepts if
                                c.id in concept_count])
-                    if language.latitude and language.glottocode and \
-                            cov >= CONCEPTS_PER_LANGUAGE_THRESHOLD and \
-                            language.glottocode in gcodes:
+                    if language.latitude and language.glottocode and cov >= CONCEPTS_PER_LANGUAGE_THRESHOLD:
                         valid_language_ids.append(language.id)
                         valid_language_objects.append(language)
                 args.log.info("found {0} valid languages".format(len(valid_language_ids)))
@@ -373,18 +363,10 @@ class Dataset(BaseDataset):
                                         form.concept.id]]
                                     cnc_count += 1
                                     frm_count += 1
-                    # identifier for family in order to avoid whitespace or
-                    # other inconsistencies, for isolates identical with
-                    # glottocode
-                    if gcodes[language.glottocode].family:
-                        family_id = gcodes[language.glottocode].family.id
-                    else:
-                        family_id = language.glottocode
                     writer.add_language(
                         ID=lid,
                         Name=language.name,
-                        Family=family_id, # use slugged form
-                        Family_Name=language.family,
+                        Family=language.family,
                         Latitude=language.latitude,
                         Longitude=language.longitude,
                         Glottocode=language.glottocode,
@@ -572,7 +554,7 @@ class Dataset(BaseDataset):
                         "Forms": data["forms"],
                         "Varieties": data["varieties"],
                         "Languages": data["languages"],
-                        "Families": data["families"],
+                        "Families": data["families"]
                     }
                 )
                 if data["family_count"] >= COLEXIFICATION_THRESHOLD:
@@ -616,8 +598,6 @@ class Dataset(BaseDataset):
             for concept in map(lambda x: x.id, wl.concepts):
                 if concept not in community_labels:
                     args.log.info("Concept {0} without community.".format(concept))
-                if concept not in neighbors:
-                    neighbors[concept] = []
                 writer.objects["concepts.csv"].append(
                     {
                         "ID": concepts[concept].id,
