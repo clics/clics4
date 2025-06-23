@@ -554,7 +554,7 @@ class Dataset(BaseDataset):
             for idf, (nodeA, nodeB, data) in progressbar(
                     enumerate(graph.edges(data=True)),
                     desc="writing colexifications"):
-                idx = str(idf+1)
+                idx = str(idf + 1)
                 # compute missing data
                 negative_data = []
                 for language in wl.languages:
@@ -584,22 +584,26 @@ class Dataset(BaseDataset):
                 )
                 if data["family_count"] >= COLEXIFICATION_THRESHOLD:
                     for language_id in data["varieties"]:
+                        lid = language_id.split("-")[1]
                         writer.objects["ValueTable"].append(
                             {
-                                "ID": idx + "-" + language_id,
+                                "ID": idx + "-" + lid,
                                 "Parameter_ID": idx,
-                                "Language_ID": language_id,
-                                "Value": 1
+                                "Language_ID": lid,
+                                "Value": 1,
+                                "Source": "Tjuka2025"
                             }
                         )
                     # now add missing data
                     for language_id in negative_data:
+                        lid = language_id.split("-")[1]
                         writer.objects["ValueTable"].append(
                             {
-                                "ID": idx + "-" + language_id,
-                                "ParameterID": idx,
-                                "Language_ID": language_id,
-                                "Value": 0
+                                "ID": idx + "-" + lid,
+                                "Parameter_ID": idx,
+                                "Language_ID": lid,
+                                "Value": 0,
+                                "Source": "Tjuka2025"
                             }
                         )
 
