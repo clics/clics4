@@ -2603,819 +2603,831 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Glottolog_Name,Fami
 2602,Oirata,Papunesia,-8.09044,127.201,oira1263,oia,Oirata,timo1261,237,237,transnewguineaorg,Timor-Alor-Pantar
 2603,Yaqay (Wairu Dialect),Papunesia,-6.66632,139.249,yaqa1246,jaq,Yaqay,anim1240,216,216,transnewguineaorg,Anim
 2604,Tarangapaka-Anuta,Papunesia,-11.61,169.85,anut1237,aud,Anuta,aust1307,240,240,walworthpolynesian,Austronesian
-2605,Tboli (Tagabili),Papunesia,6.20377,124.538,tbol1240,tbl,Tboli,aust1307,229,229,abvdphilippines,Austronesian
-2606,Bilinarra,Australia,-16.868771,130.533991,bili1250,,Bilinarra,pama1250,211,211,bowernpny,Pama-Nyungan
-2607,Mathi-Mathi,Australia,-34.5,143.5,madh1244,dmd,Madhi Madhi,pama1250,212,212,bowernpny,Pama-Nyungan
-2608,Wichí,,-23.16,-62.18,wich1261,,Wichi,mata1289,326,326,chacolanguages,Matacoan
-2609,Dutch_List,Eurasia,52.0,5.0,dutc1256,nld,Dutch,indo1319,237,237,dunnielex,Indo-European
-2610,English,Eurasia,53.0,-1.0,stan1293,eng,English,indo1319,211,211,dunnielex,Indo-European
-2611,Mazera,Africa,11.1433,15.044,maje1243,xmj,Majera,afro1255,211,211,gravinachadic,Afro-Asiatic
-2612,Tatuyo,South America,0.55582,-70.5327,tatu1247,tav,Tatuyo,tuca1253,211,211,huntergatherer,Tucanoan
-2613,Nimanburru,Australia,-17.374,123.228,nima1245,nmp,Nimanbur,nyul1248,218,218,huntergatherer,Nyulnyulan
-2614,Hatam,Papunesia,-1.13531,134.037,hata1243,had,Hatam,hata1242,211,211,johanssonsoundsymbolic,Hatam-Mansim
-2615,Ongota,Africa,5.29807,37.025,bira1253,bxe,Ongota,bira1253,211,211,johanssonsoundsymbolic,Ongota
-2616,Rikbaktsa,South America,-11.1887,-58.1942,rikb1245,rkb,Rikbaktsa,nucl1710,211,211,johanssonsoundsymbolic,Nuclear-Macro-Je
-2617,N·hā́lemōẹ,Africa,5.13981,9.92766,mboc1235,mbo,Mbo (Cameroon),atla1278,222,222,polyglottaafricana,Atlantic-Congo
-2618,"Asmat, Central (Keenok, Komar Dialect)",Papunesia,-4.89854,138.405,nort2917,nks,Momogo-Pupis-Irogo,nucl1709,226,226,transnewguineaorg,Nuclear Trans New Guinea
-2619,Kuman,Papunesia,-5.90586,144.977,kuma1280,kue,Kuman,nucl1709,254,254,transnewguineaorg,Nuclear Trans New Guinea
-2620,Vagahau Niue,Papunesia,-19.06,-169.86,niue1239,niu,Niuean,aust1307,259,259,walworthpolynesian,Austronesian
-2621,"Atta, Pamplona",Papunesia,18.4738,121.3,pamp1244,att,Pamplona Atta,aust1307,216,216,abvdphilippines,Austronesian
-2622,Saaroa L04,Papunesia,23.2632,120.711,saar1237,sxr,Saaroa,aust1307,228,228,abvdphilippines,Austronesian
-2623,Singhi,Papunesia,1.54467,109.985,baub1235,sne,Bau-Jagoi Bidayuh,aust1307,250,250,blustaustronesian,Austronesian
-2624,French,Eurasia,48.0,2.0,stan1290,fra,French,indo1319,213,213,dunnielex,Indo-European
-2625,MAWE,South America,-3.63897,-56.8749,sate1243,mav,Sateré-Mawé,tupi1275,211,211,gerarditupi,Tupian
-2626,Bambara,Africa,14.53,-4.1,bamb1269,bam,Bambara,mand1469,210,210,hantganbangime,Mande
-2627,Yokuts Yowlumne,North America,36.3167,-119.721,yoku1256,yok,Northern Yokuts,yoku1255,217,217,huntergatherer,Yokutsan
-2628,Taushiro,South America,-3.22497,-75.5603,taus1253,trr,Taushiro,taus1253,210,210,huntergatherer,Taushiro
-2629,Dhuwal,Australia,-12.7825,136.008,dhuw1249,duj,Dhuwal,pama1250,216,216,huntergatherer,Pama-Nyungan
-2630,Dera (Indonesia),Papunesia,-3.52309,140.947,dera1245,kbv,Dera (Indonesia),sena1264,210,210,johanssonsoundsymbolic,Senagi
-2631,Takelma,North America,42.423,-123.452,take1257,tkm,Takelma,take1257,210,210,johanssonsoundsymbolic,Takelma
-2632,Doutai,Papunesia,-3.24832,138.22,dout1240,tds,Doutai,lake1255,239,239,transnewguineaorg,Lakes Plain
-2633,Savosavo,Papunesia,-9.12853,159.814,savo1255,svs,Savosavo,savo1255,249,249,transnewguineaorg,Savosavo
-2634,Luangiua,Papunesia,-5.49029,159.701,onto1237,ojv,Luangiua,aust1307,242,242,walworthpolynesian,Austronesian
-2635,Pazih F69,Papunesia,23.7562,120.976,kulo1237,pzh,Pazeh-Kahabu,aust1307,461,461,abvdphilippines,Austronesian
-2636,"Kalinga, Limos",Papunesia,17.6081,121.381,limo1248,kmk,Limos Kalinga,aust1307,250,250,abvdphilippines,Austronesian
-2637,Atayal - C'uli' L04 (Skikun),Papunesia,24.5209,121.388,atay1247,tay,Atayal,aust1307,217,217,abvdphilippines,Austronesian
-2638,Bunun (Iskubun),Papunesia,23.4116,121.025,bunu1267,bnn,Bunun,aust1307,226,226,abvdphilippines,Austronesian
-2639,Saisiyat L04 (Tungho),Papunesia,24.6043,121.067,sais1237,xsy,Saisiyat,aust1307,222,222,abvdphilippines,Austronesian
-2640,Atayal - Squliq L04,Papunesia,24.5209,121.388,atay1247,tay,Atayal,aust1307,233,233,abvdphilippines,Austronesian
-2641,Seediq L04 (Toda),Papunesia,23.9032,121.358,taro1264,trv,Seediq,aust1307,229,229,abvdphilippines,Austronesian
-2642,Seediq L04 (Hecuo),Papunesia,23.9032,121.358,taro1264,trv,Seediq,aust1307,223,223,abvdphilippines,Austronesian
-2643,Kanakanabu L04,Papunesia,23.3235,120.887,kana1286,xnb,Kanakanavu,aust1307,235,235,abvdphilippines,Austronesian
-2644,Merina_Malagasy,Africa,-19.5907,47.1211,plat1254,plt,Plateau Malagasy,aust1307,226,226,blustaustronesian,Austronesian
-2645,Greek_Mod,Eurasia,38.36,23.13,mode1248,ell,Modern Greek,indo1319,215,215,dunnielex,Indo-European
-2646,Omagua,South America,-3.526,-69.1667,omag1248,omg,Omagua,tupi1275,210,210,gerarditupi,Tupian
-2647,Muniche,South America,-5.7441796,-76.426712,muni1258,myr,Muniche,muni1258,209,209,johanssonsoundsymbolic,Muniche
-2648,Kagoshima,Eurasia,28.20991,129.45346,nort2935,ryn,Northern Amami-Oshima,japo1237,210,210,leejaponic,Japonic
-2649,"Awyu, Central (Ketah Dialect)",Papunesia,-6.29363,139.693,cent2118,awu,Central Awyu,nucl1709,232,232,transnewguineaorg,Nuclear Trans New Guinea
-2650,Sikaiana,Papunesia,-8.378194,162.72952,sika1261,sky,Sikaiana,aust1307,238,238,walworthpolynesian,Austronesian
-2651,Amis (Farang),Papunesia,23.0917,121.348,amis1246,ami,Amis,aust1307,217,217,abvdphilippines,Austronesian
-2652,Bunun (Takituduh L04),Papunesia,23.4116,121.025,bunu1267,bnn,Bunun,aust1307,232,232,abvdphilippines,Austronesian
-2653,Bunun (Takbanuaz),Papunesia,23.4116,121.025,bunu1267,bnn,Bunun,aust1307,230,230,abvdphilippines,Austronesian
-2654,Paiwan (Tjubar L04),Papunesia,22.3271,120.806,paiw1248,pwn,Paiwan,aust1307,221,221,abvdphilippines,Austronesian
-2655,Puyuma (Pilam L04),Papunesia,22.643,120.996,puyu1239,pyu,Puyuma,aust1307,225,225,abvdphilippines,Austronesian
-2656,Puyuma (Lower Pinlang L04),Papunesia,22.643,120.996,puyu1239,pyu,Puyuma,aust1307,223,223,abvdphilippines,Austronesian
-2657,Tsou (Duhtu L04),Papunesia,23.216,120.787,tsou1248,tsu,Tsou,aust1307,224,224,abvdphilippines,Austronesian
-2658,Italian,Eurasia,43.0464,12.6489,ital1282,ita,Italian,indo1319,233,233,dunnielex,Indo-European
-2659,AvaCanoeiro,South America,-13.6081,-48.1336,avac1239,avv,Avá-Canoeiro,tupi1275,209,209,gerarditupi,Tupian
-2660,Guarayo,South America,-15.8247,-61.6934,guar1292,gyr,Guarayu,tupi1275,209,209,gerarditupi,Tupian
-2661,Hachijō,Eurasia,33.109444,139.791389,hach1239,,Hachijo,japo1237,209,209,hattorijaponic,Japonic
-2662,Kanoê,South America,-12.1789,-64.5812,kano1245,kxo,Kanoê,kano1245,208,208,johanssonsoundsymbolic,Kanoê
-2663,Taushiro,South America,-3.22497,-75.5603,taus1253,trr,Taushiro,taus1253,208,208,johanssonsoundsymbolic,Taushiro
-2664,Khasi,Eurasia,24.977,91.9998,khas1269,kha,Khasi,aust1305,215,215,nagarajakhasian,Austroasiatic
-2665,Lyngngam,Eurasia,25.35,91.05,lyng1241,lyg,India Lyngam,aust1305,215,215,nagarajakhasian,Austroasiatic
-2666,Ndanda_Denfap,Africa,5.111459,10.336031,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
-2667,Ndanda_Lek,Africa,5.150741,10.429029,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
-2668,Ndanda_Meno,Africa,5.069482,10.425853,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
-2669,Ndanda_Ngwa,Africa,5.191047,10.473404,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
-2670,Ndanda_Nyep,Africa,5.254489,10.471901,bato1245,,Batoufam,atla1278,208,208,ndanda,Atlantic-Congo
-2671,Ndanda_Shingou,Africa,5.238847,10.491081,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
-2672,Ndanda_Twefap,Africa,5.027245,10.473575,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
-2673,Sikaritai,Papunesia,-2.80285,138.287,sika1263,tty,Sikaritai,lake1255,225,225,transnewguineaorg,Lakes Plain
-2674,Reo Ra'ivavae,Papunesia,-23.86742,-147.6551,raiv1237,,Raivavae,aust1307,220,220,walworthpolynesian,Austronesian
-2675,Puyuma (Katipul L04),Papunesia,22.643,120.996,puyu1239,pyu,Puyuma,aust1307,222,222,abvdphilippines,Austronesian
-2676,Rukai (Maga L04),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,229,229,abvdphilippines,Austronesian
-2677,Saisiyat L04 (Ta'ai),Papunesia,24.6043,121.067,sais1237,xsy,Saisiyat,aust1307,216,216,abvdphilippines,Austronesian
-2678,Marathi,Eurasia,17.9344,76.6665,mara1378,mar,Marathi,indo1319,247,247,dunnielex,Indo-European
-2679,Oki,Eurasia,27.37384,128.6187,okin1246,okn,Oki-No-Erabu,japo1237,207,207,hattorijaponic,Japonic
-2680,Ikema,Eurasia,24.93149,125.245,ikem1235,,Ikema-Jima,japo1237,207,207,leejaponic,Japonic
-2681,Sinitic_Chaozhou,Eurasia,23.657699,116.622317,chao1238,,Chaozhou,sino1245,214,214,sagartst,Sino-Tibetan
-2682,Dupaningan Agta,Papunesia,17.3748,122.188,dupa1235,duo,Dupaninan Agta,aust1307,253,253,abvdphilippines,Austronesian
-2683,Paiwan (Stimul L04),Papunesia,22.3271,120.806,paiw1248,pwn,Paiwan,aust1307,220,220,abvdphilippines,Austronesian
-2684,Rukai (Tanan L04),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,221,221,abvdphilippines,Austronesian
-2685,Rukai (Tona),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,222,222,abvdphilippines,Austronesian
-2686,Shigar Balti,Eurasia,35.422616,75.737108,balt1258,bft,Balti,sino1245,220,220,backstromnorthernpakistan,Sino-Tibetan
-2687,Skardu Balti,Eurasia,35.289137,75.607395,balt1258,bft,Balti,sino1245,222,222,backstromnorthernpakistan,Sino-Tibetan
-2688,Kharmang Balti,Eurasia,34.968679,76.213849,balt1258,bft,Balti,sino1245,210,210,backstromnorthernpakistan,Sino-Tibetan
-2689,Thao,Papunesia,23.8333,120.93,thao1240,ssf,Thao,aust1307,214,214,blustaustronesian,Austronesian
-2690,Nias,Papunesia,0.90691,97.4961,nias1242,nia,Nias,aust1307,234,234,blustaustronesian,Austronesian
-2691,Breton_ST,Eurasia,48.2452,-3.78934,bret1244,bre,Breton,indo1319,225,225,dunnielex,Indo-European
-2692,Shuri,Eurasia,26.21699,127.7224,shur1243,,Shuri,japo1237,206,206,hattorijaponic,Japonic
-2693,Camsa,South America,1.14537,-76.8931,cams1241,kbh,Camsá,cams1241,206,206,huntergatherer,Camsá
-2694,Karas,Papunesia,-3.47037,132.678,kara1499,kgv,Kalamang,west2604,206,206,johanssonsoundsymbolic,West Bomberai
-2695,Yakumo,Eurasia,42.25,140.266667,ainu1240,ain,Hokkaido Ainu,ainu1252,224,224,leeainu,Ainu
-2696,Horobetsu,Eurasia,42.416667,141.1,ainu1240,ain,Hokkaido Ainu,ainu1252,234,234,leeainu,Ainu
-2697,Hiratori,Eurasia,42.583333,142.133333,ainu1240,ain,Hokkaido Ainu,ainu1252,229,229,leeainu,Ainu
-2698,Obihiro,Eurasia,42.916667,143.2,ainu1240,ain,Hokkaido Ainu,ainu1252,226,226,leeainu,Ainu
-2699,Bihoro,Eurasia,43.825,144.105556,ainu1240,ain,Hokkaido Ainu,ainu1252,223,223,leeainu,Ainu
-2700,Aomori,Eurasia,40.7435,140.6873,tsug1237,,Tsugaru,japo1237,207,207,leejaponic,Japonic
-2701,Irafu,Eurasia,24.831088,125.18956,irab1238,,Irabu-Jima,japo1237,206,206,leejaponic,Japonic
-2702,Tarama,Eurasia,24.6584,124.6998,tara1319,,Tarama-Minna,japo1237,206,206,leejaponic,Japonic
-2703,Leo Tuvalu,Papunesia,-8.520813,179.198088,tuva1244,tvl,Tuvalu,aust1307,277,277,walworthpolynesian,Austronesian
-2704,Hawaiian,Papunesia,19.6297,-155.43,hawa1245,haw,Hawaiian,aust1307,232,232,abvdoceanic,Austronesian
-2705,Lamogai (Mulakaino),Papunesia,-5.87071,149.321,lamo1244,lmg,Lamogai,aust1307,224,224,abvdoceanic,Austronesian
-2706,Maori,Papunesia,-38.2881,176.541,maor1246,mri,Maori,aust1307,218,218,abvdoceanic,Austronesian
-2707,Rotuman,Papunesia,-12.5008,177.066,rotu1241,rtm,Rotuman,aust1307,223,223,abvdoceanic,Austronesian
-2708,Roviana,Papunesia,-8.20493,157.408,rovi1238,rug,Roviana,aust1307,234,234,abvdoceanic,Austronesian
-2709,Samoan,Papunesia,-13.92,-171.83,samo1305,smo,Samoan,aust1307,299,299,abvdoceanic,Austronesian
-2710,Tongan,Papunesia,-21.17,-175.25,tong1325,ton,Tonga (Tonga Islands),aust1307,218,218,abvdoceanic,Austronesian
-2711,Ponapean,Papunesia,6.87212,158.223,pohn1238,pon,Pohnpeian,aust1307,242,242,abvdoceanic,Austronesian
-2712,Ririo,Papunesia,-6.88927,156.92,riri1237,rri,Ririo,aust1307,228,228,abvdoceanic,Austronesian
-2713,Kwara'ae (Solomon Islands'),Papunesia,-8.75779,160.804,kwar1239,kwf,Kwara'ae,aust1307,231,231,abvdoceanic,Austronesian
-2714,To'ambaita,Papunesia,-8.39233,160.619,toab1237,mlu,To'abaita,aust1307,373,373,abvdoceanic,Austronesian
-2715,Saliba,Papunesia,-10.6148,150.727,sali1295,sbe,Saliba,aust1307,252,252,abvdoceanic,Austronesian
-2716,Luqa,Papunesia,-8.17469,156.573,lung1249,lga,Lungga,aust1307,246,246,abvdoceanic,Austronesian
-2717,Western Fijian (Navosa),Papunesia,-17.8355,177.657,west2519,wyy,Western Viti Levu-Yasawas Fijian,aust1307,208,208,abvdoceanic,Austronesian
-2718,Nduke,Papunesia,-7.97768,157.064,duke1237,nke,Duke,aust1307,244,244,abvdoceanic,Austronesian
-2719,Lengo,Papunesia,-9.56425,160.42,leng1259,lgr,Lengo,aust1307,239,239,abvdoceanic,Austronesian
-2720,Bariai,Papunesia,-5.5087,148.666,bari1286,bch,Bariai,aust1307,211,211,abvdoceanic,Austronesian
-2721,Dobu,Papunesia,-9.63239,150.825,dobu1241,dob,Dobu,aust1307,266,266,abvdoceanic,Austronesian
-2722,Tahitian,Papunesia,-17.6485,-149.45,tahi1242,tah,Tahitian,aust1307,248,248,abvdoceanic,Austronesian
-2723,Puyuma (Chihpen F69),Papunesia,22.643,120.996,puyu1239,pyu,Puyuma,aust1307,340,340,abvdphilippines,Austronesian
-2724,Paiwan (Butanglu L04),Papunesia,22.3271,120.806,paiw1248,pwn,Paiwan,aust1307,217,217,abvdphilippines,Austronesian
-2725,Rukai (Budai L04),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,218,218,abvdphilippines,Austronesian
-2726,Seediq L04 (Truku),Papunesia,23.9032,121.358,taro1264,trv,Seediq,aust1307,217,217,abvdphilippines,Austronesian
-2727,Khapalu Balti,Eurasia,35.163409,76.342552,balt1258,bft,Balti,sino1245,216,216,backstromnorthernpakistan,Sino-Tibetan
-2728,Chorbat Balti,Eurasia,34.979586,72.680387,balt1258,bft,Balti,sino1245,219,219,backstromnorthernpakistan,Sino-Tibetan
-2729,Garlali,Australia,-28.136,143.929,kala1380,gll,Bulloo River,pama1250,206,206,bowernpny,Pama-Nyungan
-2730,Armenian_Mod,Eurasia,40.0,45.0,nucl1235,hye,Eastern Armenian,indo1319,224,224,dunnielex,Indo-European
-2731,Dhangu,Australia,-11.9493,135.752,dhan1270,dhg,Dhangu,pama1250,206,206,huntergatherer,Pama-Nyungan
-2732,Albanian,Eurasia,42.317,21.3837,gheg1238,aln,Gheg Albanian,indo1319,205,205,kesslersignificance,Indo-European
-2733,Latin,Eurasia,41.9026,12.4502,lati1261,lat,Latin,indo1319,205,205,kesslersignificance,Indo-European
-2734,German,Eurasia,48.649,12.4676,stan1295,deu,German,indo1319,205,205,kesslersignificance,Indo-European
-2735,English,Eurasia,53.0,-1.0,stan1293,eng,English,indo1319,205,205,kesslersignificance,Indo-European
-2736,Navajo,North America,36.33,-109.38,nava1243,nav,Navajo,atha1245,205,205,kesslersignificance,Athabaskan-Eyak-Tlingit
-2737,French,Eurasia,48.0,2.0,stan1290,fra,French,indo1319,205,205,kesslersignificance,Indo-European
-2738,Hawaiian,Papunesia,19.6297,-155.43,hawa1245,haw,Hawaiian,aust1307,205,205,kesslersignificance,Austronesian
-2739,Turkish,Eurasia,39.8667,32.8667,nucl1301,tur,Turkish,turk1311,205,205,kesslersignificance,Turkic
-2740,Niikappu,Eurasia,42.366667,142.316667,ainu1240,ain,Hokkaido Ainu,ainu1252,207,207,leeainu,Ainu
-2741,Samani,Eurasia,42.133333,142.933333,ainu1240,ain,Hokkaido Ainu,ainu1252,212,212,leeainu,Ainu
-2742,Asahikawa,Eurasia,43.766667,142.366667,ainu1240,ain,Hokkaido Ainu,ainu1252,222,222,leeainu,Ainu
-2743,Nayoro,Eurasia,44.355833,142.463333,ainu1240,ain,Hokkaido Ainu,ainu1252,230,230,leeainu,Ainu
-2744,North Eudeve,North America,28.5,-110.0,eude1234,eud,Eudeve,utoa1244,217,217,lionnetyotonahua,Uto-Aztecan
-2745,Diwála,Africa,4.10208,9.61877,dual1243,dua,Duala,atla1278,233,233,polyglottaafricana,Atlantic-Congo
-2746,Tabriak,Papunesia,-4.49162,143.593,tabr1243,tzx,Tabriak,lowe1423,417,417,transnewguineaorg,Lower Sepik
-2747,Zhaozhuang Bai,Eurasia,25.5844078,100.3117,dali1242,,Dali,sino1245,214,214,zhaobai,Sino-Tibetan
-2748,Mota,Papunesia,-13.835361,167.690924,mota1237,mtt,Mota,aust1307,257,257,abvdoceanic,Austronesian
-2749,Motu,Papunesia,-9.67492,147.424,motu1246,meu,Motu,aust1307,214,214,abvdoceanic,Austronesian
-2750,Marquesan,Papunesia,-8.89412,-140.108,nort2845,mrq,North Marquesan,aust1307,372,372,abvdoceanic,Austronesian
-2751,Rarotongan,Papunesia,-21.23,-159.78,raro1241,rar,Southern Cook Island Maori,aust1307,326,326,abvdoceanic,Austronesian
-2752,Nêlêmwa,Papunesia,-20.4035,164.193,kuma1276,nee,Nêlêmwa-Nixumwak,aust1307,231,231,abvdoceanic,Austronesian
-2753,Yapese,Papunesia,9.55811,138.125,yape1248,yap,Yapese,aust1307,255,255,abvdoceanic,Austronesian
-2754,Mengen,Papunesia,-5.47036,151.373,meng1267,mee,Mengen,aust1307,217,217,abvdoceanic,Austronesian
-2755,Nengone,Papunesia,-21.5305,167.964,neng1238,nen,Nengone,aust1307,271,271,abvdoceanic,Austronesian
-2756,Nggela,Papunesia,-9.04587,160.186,gela1263,nlg,Gela,aust1307,250,250,abvdoceanic,Austronesian
-2757,Anejom (Aneityum),Papunesia,-20.1864,169.825,anei1239,aty,Aneityum,aust1307,208,208,abvdoceanic,Austronesian
-2758,Pukapuka,Papunesia,-10.91,-165.83,puka1242,pkp,Pukapuka,aust1307,363,363,abvdoceanic,Austronesian
-2759,Kilivila,Papunesia,-8.72574,151.072,kili1267,kij,Kilivila,aust1307,238,238,abvdoceanic,Austronesian
-2760,Teop,Papunesia,-5.67474,154.971,teop1238,tio,Teop,aust1307,273,273,abvdoceanic,Austronesian
-2761,"Futuna, East",Papunesia,-14.278717,-178.137222,east2447,fud,East Futuna,aust1307,313,313,abvdoceanic,Austronesian
-2762,Numbami (Siboma),Papunesia,-7.52806,147.298,numb1247,sij,Numbami,aust1307,240,240,abvdoceanic,Austronesian
-2763,Kiribati,Papunesia,0.179,173.64,gilb1244,gil,Gilbertese,aust1307,330,330,abvdoceanic,Austronesian
-2764,Simbo,Papunesia,-8.26947,156.541,simb1256,sbb,Simbo,aust1307,233,233,abvdoceanic,Austronesian
-2765,Äiwoo,Papunesia,-10.282595,166.328715,ayiw1239,nfl,Äiwoo,aust1307,328,328,abvdoceanic,Austronesian
-2766,Muyuw,Papunesia,-9.195,152.731,muyu1244,myw,Muyuw,aust1307,336,336,abvdoceanic,Austronesian
-2767,Nukeria,Papunesia,-3.40038,154.731,nuku1259,nur,Nukuria,aust1307,277,277,abvdoceanic,Austronesian
-2768,Wedau,Papunesia,-10.1246,150.172,weda1241,wed,Wedau,aust1307,267,267,abvdoceanic,Austronesian
-2769,Itbayat,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,424,424,abvdphilippines,Austronesian
-2770,Bikol (Rinconada),Papunesia,13.3896,123.331,irig1242,bto,Iriga Bicolano,aust1307,258,258,abvdphilippines,Austronesian
-2771,Atayal - C'uli' L04 (Mayrinax),Papunesia,24.5209,121.388,atay1247,tay,Atayal,aust1307,243,243,abvdphilippines,Austronesian
-2772,Rukai (Mantauran L04),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,216,216,abvdphilippines,Austronesian
-2773,Hussainabad,Eurasia,36.6865546,74.8234606,hunz1248,,Hunza,buru1296,207,207,backstromnorthernpakistan,Burushaski
-2774,Nazimabad (Upper Sust) ,Eurasia,36.6717915,74.8337469,hunz1248,,Hunza,buru1296,209,209,backstromnorthernpakistan,Burushaski
-2775,Yandruwandha,Australia,-28.4744,140.583,yand1253,ynd,Yandruwandha,pama1250,204,204,huntergatherer,Pama-Nyungan
-2776,Arabana,Australia,-28.705,135.449,arab1267,ard,Arabana,pama1250,204,204,huntergatherer,Pama-Nyungan
-2777,Oshamambe,Eurasia,42.508056,140.373056,ainu1240,ain,Hokkaido Ainu,ainu1252,205,205,leeainu,Ainu
-2778,Hachijyo,Eurasia,33.109444,139.791389,hach1239,,Hachijo,japo1237,205,205,leejaponic,Japonic
-2779,WarLamin,Eurasia,25.1154,91.6266,warj1242,aml,War-Jaintia,aust1305,210,210,nagarajakhasian,Austroasiatic
-2780,Som,Papunesia,-6.07366,146.651,somm1240,smc,Som,nucl1709,250,250,transnewguineaorg,Nuclear Trans New Guinea
-2781,Gimán,Papunesia,-0.42618,127.976,gane1237,gzn,Gane,aust1307,239,239,abvdoceanic,Austronesian
-2782,Bughotu,Papunesia,-8.47948,159.802,bugh1239,bgt,Bughotu,aust1307,269,269,abvdoceanic,Austronesian
-2783,Lau,Papunesia,-8.51018,160.872,lauu1247,llu,Lau,aust1307,269,269,abvdoceanic,Austronesian
-2784,Marovo,Papunesia,-8.37943,157.747,maro1244,mvo,Marovo,aust1307,214,214,abvdoceanic,Austronesian
-2785,Mekeo,Papunesia,-8.23853,146.586,meke1243,mek,Mekeo,aust1307,211,211,abvdoceanic,Austronesian
-2786,Raga,Papunesia,-15.5432,168.167,hano1246,lml,Hano,aust1307,237,237,abvdoceanic,Austronesian
-2787,Windesi Wandamen,Papunesia,-2.25622,133.996,wand1267,wad,Wandamen,aust1307,255,255,abvdoceanic,Austronesian
-2788,Lenakel,Papunesia,-19.4763,169.261,lena1238,tnl,Lenakel,aust1307,205,205,abvdoceanic,Austronesian
-2789,Takia,Papunesia,-4.69057,145.975,taki1248,tbc,Takia,aust1307,231,231,abvdoceanic,Austronesian
-2790,Lunga Lunga  (Minigir),Papunesia,-4.31803,152.005,mini1251,vmg,Minigir,aust1307,227,227,abvdoceanic,Austronesian
-2791,Kwamera,Papunesia,-19.5954,169.442,kwam1252,tnk,Kwamera,aust1307,218,218,abvdoceanic,Austronesian
-2792,Imorod,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,351,351,abvdphilippines,Austronesian
-2793,Isamorong,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,346,346,abvdphilippines,Austronesian
-2794,Palawan Batak,Papunesia,10.1115,119.025,bata1301,bya,Batak,aust1307,362,362,abvdphilippines,Austronesian
-2795,Romblon,Papunesia,12.4047,122.56,romb1245,rol,Romblomanon,aust1307,229,229,abvdphilippines,Austronesian
-2796,Itawis,Papunesia,17.7329,121.58,itaw1240,itv,Itawit,aust1307,207,207,abvdphilippines,Austronesian
-2797,Mayi-Yapi,Australia,-19.25,140.61,mayi1235,xyj,Mayi-Yapi,pama1250,204,204,bowernpny,Pama-Nyungan
-2798,Yarluyandi,Australia,-25.83705,139.58436,yarl1238,yry,Yarluyandi,pama1250,204,204,bowernpny,Pama-Nyungan
-2799,Catalan,Eurasia,41.453,1.569,stan1289,cat,Catalan,indo1319,255,255,dunnielex,Indo-European
-2800,Portuguese_ST,Eurasia,39.91,-8.1,port1283,por,Portuguese,indo1319,225,225,dunnielex,Indo-European
-2801,Tomo Kan (Segue),Africa,13.84356667,-3.752166667,tomo1243,dtm,Tomo Kan Dogon,dogo1299,207,207,heathdogon,Dogon
-2802,Diyari,Australia,-28.1667,138.0,dier1241,dif,Dieri,pama1250,203,203,huntergatherer,Pama-Nyungan
-2803,Hadza,Africa,-3.83115,35.0458,hadz1240,hts,Hadza,hadz1240,203,203,johanssonsoundsymbolic,Hadza
-2804,Maranunggu,Australia,-13.6754,130.12,mara1386,zmr,Maranunggu,west2434,203,203,johanssonsoundsymbolic,Western Daly
-2805,Yimas,Papunesia,-4.71731,143.572,yima1243,yee,Yimas,lowe1423,203,203,johanssonsoundsymbolic,Lower Sepik
-2806,Sôya,Eurasia,45.415667,141.673056,ainu1240,ain,Hokkaido Ainu,ainu1252,217,217,leeainu,Ainu
-2807,Beijing,Eurasia,39.9385466,116.1172766,beij1234,,Beijing Mandarin,sino1245,207,207,liusinitic,Sino-Tibetan
-2808,Changsha,Eurasia,28.85032,112.943344,chan1326,,Changsha,sino1245,266,266,liusinitic,Sino-Tibetan
-2809,Chengdu,Eurasia,30.605768,103.970947,chen1267,,Chengdu Mandarin,sino1245,260,260,liusinitic,Sino-Tibetan
-2810,Fuzhou,Eurasia,26.08904,119.294243,fuzh1239,,Houguan,sino1245,272,272,liusinitic,Sino-Tibetan
-2811,Guangzhou,Eurasia,23.1253503,112.9476548,guan1279,,Guangzhou,sino1245,209,209,liusinitic,Sino-Tibetan
-2812,Guilin,Eurasia,25.266667,110.283333,guil1241,,Guilin Pinghua,sino1245,204,204,liusinitic,Sino-Tibetan
-2813,Ha_erbin,Eurasia,45.846595,126.551056,haer1234,,Ha'erbin Mandarin,sino1245,246,246,liusinitic,Sino-Tibetan
-2814,Jinan,Eurasia,36.690777,116.997299,jina1245,,Jinan Mandarin,sino1245,208,208,liusinitic,Sino-Tibetan
-2815,Jixi,Eurasia,30.071111,118.592222,jixi1238,,Jixi,sino1245,224,224,liusinitic,Sino-Tibetan
-2816,Loudi,Eurasia,27.733333,111.9281883,loud1234,,Loudi,sino1245,217,217,liusinitic,Sino-Tibetan
-2817,Meixian,Eurasia,24.3522958,115.8903375,yuet1238,,Meixian,sino1245,212,212,liusinitic,Sino-Tibetan
-2818,Nanchang,Eurasia,28.706609,115.857468,nanc1254,,Nanchang,sino1245,241,241,liusinitic,Sino-Tibetan
-2819,Nanjing,Eurasia,32.0989607,118.4575646,nanj1234,,Nanjing Mandarin,sino1245,230,230,liusinitic,Sino-Tibetan
-2820,Rongcheng,Eurasia,37.130642,122.434269,rong1271,,Rongcheng Mandarin,sino1245,204,204,liusinitic,Sino-Tibetan
-2821,Suzhou,Eurasia,31.3280439,120.364116,suzh1234,,Suzhou,sino1245,220,220,liusinitic,Sino-Tibetan
-2822,Taiyuan,Eurasia,37.8632119,112.4024883,taiy1243,,Taiyuan,sino1245,235,235,liusinitic,Sino-Tibetan
-2823,Wenzhou,Eurasia,28.005496,120.701179,ouji1238,,Wenzhou,sino1245,219,219,liusinitic,Sino-Tibetan
-2824,Xi_an,Eurasia,34.228154,108.960571,xian1253,,Xi'an Mandarin,sino1245,235,235,liusinitic,Sino-Tibetan
-2825,Khmu,Eurasia,20.2463,101.671,khmu1256,kjg,Khmu,aust1305,208,208,nagarajakhasian,Austroasiatic
-2826,Goshimjang,Africa,5.234168,10.407013,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
-2827,Mizo_Lushai,Eurasia,22.60535,92.629457,lush1249,lus,Mizo,sino1245,279,279,sagartst,Sino-Tibetan
-2828,Pawaia,Papunesia,-6.88021,145.081,pawa1255,pwa,Pawaia,pawa1255,295,295,transnewguineaorg,Pawaia
-2829,Yaqay (Kogo Dialect),Papunesia,-6.66632,139.249,yaqa1246,jaq,Yaqay,anim1240,221,221,transnewguineaorg,Anim
-2830,Arikem,South America,-8.92,-63.74,arik1264,ait,Arikem,tupi1275,225,225,tuled,Tupian
-2831,Kapingamarangi,Papunesia,1.039166,154.797223,kapi1249,kpg,Kapingamarangi,aust1307,228,228,walworthpolynesian,Austronesian
-2832,Buli,Papunesia,1.0008,128.443,buli1255,bzq,Buli (Indonesia),aust1307,221,221,abvdoceanic,Austronesian
-2833,Kwaio,Papunesia,-8.93744,160.965,kwai1243,kwd,Kwaio,aust1307,206,206,abvdoceanic,Austronesian
-2834,Loniu,Papunesia,-2.06124,147.35,loni1238,los,Loniu,aust1307,207,207,abvdoceanic,Austronesian
-2835,Mwotlap,Papunesia,-13.655015,167.706277,motl1237,mlv,Mwotlap,aust1307,222,222,abvdoceanic,Austronesian
-2836,Iaai,Papunesia,-20.6301,166.59,iaai1238,iai,Iaai,aust1307,231,231,abvdoceanic,Austronesian
-2837,Gumawana,Papunesia,-9.28497,150.762,guma1254,gvs,Gumawana,aust1307,230,230,abvdoceanic,Austronesian
-2838,Mortlockese (Lukunosh),Papunesia,5.50735,153.710778,mort1237,mrl,Mortlockese,aust1307,205,205,abvdoceanic,Austronesian
-2839,Mangap-Mbula,Papunesia,-5.66965,148.041,mbul1263,mna,Mbula,aust1307,204,204,abvdoceanic,Austronesian
-2840,"Sangir, Tabukang Dialect",Papunesia,3.0,125.5,sang1336,sxn,Sangir,aust1307,207,207,abvdphilippines,Austronesian
-2841,Sakizaya,Papunesia,23.9386,121.59,nata1254,ais,Northern Amis,aust1307,210,210,abvdphilippines,Austronesian
-2842,Rondu Balti,Eurasia,35.468685,75.358422,balt1258,bft,Balti,sino1245,206,206,backstromnorthernpakistan,Sino-Tibetan
-2843,Moken,Eurasia,10.1474,98.6765,moke1242,mwt,Moken,aust1307,234,234,blustaustronesian,Austronesian
-2844,Maká,South America,-25.01,-57.37,maca1260,mca,Maká,mata1289,238,238,chacolanguages,Matacoan
-2845,Tapiete,South America,-21.42,-62.68,tapi1253,tpj,Tapieté,tupi1275,274,274,chacolanguages,Tupian
-2846,Ngamini,Australia,-27.1797,138.701,ngam1265,nmv,Ngamini-Yarluyandi-Karangura,pama1250,202,202,huntergatherer,Pama-Nyungan
-2847,Kushiro,Eurasia,42.983333,144.383333,ainu1240,ain,Hokkaido Ainu,ainu1252,206,206,leeainu,Ainu
-2848,Xiamen,Eurasia,24.49421,118.08918,xiam1236,,Xiamen,sino1245,212,212,liusinitic,Sino-Tibetan
-2849,"Dani, Western",Papunesia,-3.77127,138.217,west2594,dnw,Western Dani,nucl1709,235,235,transnewguineaorg,Nuclear Trans New Guinea
-2850,Tangko,Papunesia,-5.13343,140.269,tang1353,tkx,Tangko,nucl1709,207,207,transnewguineaorg,Nuclear Trans New Guinea
-2851,Yaqay (Kotup Dialect),Papunesia,-6.66632,139.249,yaqa1246,jaq,Yaqay,anim1240,211,211,transnewguineaorg,Anim
-2852,Yaqay (Wanggate Dialect),Papunesia,-6.66632,139.249,yaqa1246,jaq,Yaqay,anim1240,217,217,transnewguineaorg,Anim
-2853,Bislama (1),Papunesia,-16.10694,167.4208,bisl1239,bis,Bislama,indo1319,202,202,vanuatuvoices,Indo-European
-2854,Ctl: Nalemba: Nasawa,Papunesia,-15.19677,168.112254,nasa1241,,Nasawa,aust1307,218,218,vanuatuvoices,Austronesian
-2855,Ctl: Sungwadaga: Lalaundi,Papunesia,-15.11413,168.14195,cent2058,mwo,Central Maewo,aust1307,218,218,vanuatuvoices,Austronesian
-2856,Ctl: Sungwadaga: Rongnawo,Papunesia,-15.10197,168.079925,cent2058,mwo,Central Maewo,aust1307,219,219,vanuatuvoices,Austronesian
-2857,Ctl: Sungwada: Ngota,Papunesia,-15.10125,168.121197,cent2058,mwo,Central Maewo,aust1307,208,208,vanuatuvoices,Austronesian
-2858,Ctl: Sungwadoga: Rata,Papunesia,-15.11413,168.14195,tali1260,,Talise (Vanuatu),aust1307,219,219,vanuatuvoices,Austronesian
-2859,E: Lolovoli,Papunesia,-15.36437,167.927911,east2443,omb,East Ambae,aust1307,206,206,vanuatuvoices,Austronesian
-2860,E: Sana: Solokave,Papunesia,-15.45831,167.856408,east2443,omb,East Ambae,aust1307,202,202,vanuatuvoices,Austronesian
-2861,N: Havai: Lombaha,Papunesia,-15.31659,167.81886,lomb1262,,Lombaha,aust1307,216,216,vanuatuvoices,Austronesian
-2862,N: Leonda,,-15.314,167.852877,amba1270,,Ambae,aust1307,218,218,vanuatuvoices,Austronesian
-2863,N: Sungwadia: Naone,Papunesia,-15.01508,168.066583,mari1426,mrb,Sunwadia,aust1307,218,218,vanuatuvoices,Austronesian
-2864,S: Raga: Avavanvae,,-15.34347,168.127388,maew1234,,Maewo,aust1307,219,219,vanuatuvoices,Austronesian
-2865,S: Sakao,,-15.42439,167.894062,amba1270,,Ambae,aust1307,210,210,vanuatuvoices,Austronesian
-2866,S: Sungagage: Avanbatai,,-15.38639,168.146667,maew1234,,Maewo,aust1307,211,211,vanuatuvoices,Austronesian
-2867,S: Sungagage: Avavanvae,,-15.34347,168.127388,maew1234,,Maewo,aust1307,209,209,vanuatuvoices,Austronesian
-2868,S: Xalangi: Baetora,,-15.25972,168.116944,maew1234,,Maewo,aust1307,209,209,vanuatuvoices,Austronesian
-2869,Nehan Hape,Papunesia,-4.56875,154.2,neha1247,nsn,Nehan,aust1307,204,204,abvdoceanic,Austronesian
-2870,Numfor,Papunesia,-0.9523,135.879,biak1248,bhw,Biak,aust1307,219,219,abvdoceanic,Austronesian
-2871,Sengseng,Papunesia,-6.16474,149.784,seng1281,ssz,Sengseng,aust1307,323,323,abvdoceanic,Austronesian
-2872,Mangareva,Papunesia,-23.1095,-134.97,mang1401,mrv,Mangareva,aust1307,270,270,abvdoceanic,Austronesian
-2873,Lakalai,Papunesia,-5.59931,150.888,naka1262,nak,Nakanai,aust1307,259,259,abvdoceanic,Austronesian
-2874,South Efate,Papunesia,-17.7006,168.377,sout2856,erk,Nafsan,aust1307,205,205,abvdoceanic,Austronesian
-2875,Lihir (Sunglik),Papunesia,-3.18895,152.606,lihi1237,lih,Lihir,aust1307,221,221,abvdoceanic,Austronesian
-2876,Sye (Erromangan),Papunesia,-18.8181,169.166,siee1239,erg,Sie,aust1307,217,217,abvdoceanic,Austronesian
-2877,Sa'a (A'ulu Village),Papunesia,-9.60258,161.467,saaa1240,apb,Sa'a,aust1307,221,221,abvdoceanic,Austronesian
-2878,Drubea,Papunesia,-22.0947,166.531,dumb1241,duf,Dumbea,aust1307,210,210,abvdoceanic,Austronesian
-2879,Nyindrou,Papunesia,-2.1143,146.627,nyin1250,lid,Nyindrou,aust1307,234,234,abvdoceanic,Austronesian
-2880,Iduna,Papunesia,-9.34361,150.24,idun1242,viv,Iduna,aust1307,246,246,abvdoceanic,Austronesian
-2881,Seediq F69 (Sakura),Papunesia,23.9032,121.358,taro1264,trv,Seediq,aust1307,293,293,abvdphilippines,Austronesian
-2882,Manide (Labo),Papunesia,14.1571,122.835,cama1250,abd,Camarines Norte Agta,aust1307,226,226,abvdphilippines,Austronesian
-2883,Murtazabad,Eurasia,36.2821952,74.5889064,hunz1248,,Hunza,buru1296,204,204,backstromnorthernpakistan,Burushaski
-2884,Hoper,Eurasia,36.1528358,74.8461621,naga1398,,Nagar,buru1296,205,205,backstromnorthernpakistan,Burushaski
-2885,Andoke,South America,-0.53751,-72.0869,ando1256,ano,Andoque,ando1256,201,201,huntergatherer,Andoque
-2886,Doromu-Koki,Papunesia,-9.56687,147.986,doro1266,kqc,Doromu-Koki,manu1261,201,201,johanssonsoundsymbolic,Manubaran
-2887,Pirahã,South America,-6.77713,-61.8167,pira1253,myp,Pirahã,pira1253,201,201,johanssonsoundsymbolic,Pirahã
-2888,Shatt,Africa,10.8525,29.7687,shat1244,shj,Shatt,daju1249,201,201,johanssonsoundsymbolic,Dajuic
-2889,Ewage-Notu,Papunesia,-8.68756,148.405,ewag1241,nou,Ewage-Notu,nucl1709,279,279,transnewguineaorg,Nuclear Trans New Guinea
-2890,Nakai,Papunesia,-5.19377,140.512,naka1265,nkj,Nakai,nucl1709,207,207,transnewguineaorg,Nuclear Trans New Guinea
-2891,Avava: Tisvel,Papunesia,-16.27153,167.39939,katb1237,tmb,Avava,aust1307,201,201,vanuatuvoices,Austronesian
-2892,Bislama (2),Papunesia,-16.10302,167.4168,bisl1239,bis,Bislama,indo1319,201,201,vanuatuvoices,Indo-European
-2893,Ctl-E: Tawet: Naviso,Papunesia,-15.12286,168.144,tali1260,,Talise (Vanuatu),aust1307,201,201,vanuatuvoices,Austronesian
-2894,Ctl: Sungwadola: Gwaran Uta,Papunesia,-15.12506,168.091146,tali1260,,Talise (Vanuatu),aust1307,222,222,vanuatuvoices,Austronesian
-2895,E: Vuindondo,Papunesia,-15.30571,167.971219,east2443,omb,East Ambae,aust1307,213,213,vanuatuvoices,Austronesian
-2896,N: Leõ: Vandue,,-15.31851,167.820332,amba1270,,Ambae,aust1307,210,210,vanuatuvoices,Austronesian
-2897,S: Lolovele,,-15.44771,167.869802,amba1270,,Ambae,aust1307,209,209,vanuatuvoices,Austronesian
-2898,S: Sungagage: Asanvari,,-15.37944,168.128889,maew1234,,Maewo,aust1307,212,212,vanuatuvoices,Austronesian
-2899,Penrhyn,Papunesia,-9.082238,-157.922908,penr1237,pnh,Māngarongaro,aust1307,217,217,walworthpolynesian,Austronesian
-2900,Jawe,Papunesia,-20.6648,164.676,jawe1237,jaz,Jawe,aust1307,219,219,abvdoceanic,Austronesian
-2901,Rapanui (Easter Island),Papunesia,-27.113,-109.342,rapa1244,rap,Rapanui,aust1307,375,375,abvdoceanic,Austronesian
-2902,Kove,Papunesia,-5.58623,149.63,kove1237,kvc,Kove,aust1307,234,234,abvdoceanic,Austronesian
-2903,Vaeakau-Taumako,Papunesia,-10.173335,166.247188,pile1238,piv,Vaeakau-Taumako,aust1307,250,250,abvdoceanic,Austronesian
-2904,Neve'ei,Papunesia,-16.2253,167.427,vinm1237,vnm,Neve'ei,aust1307,242,242,abvdoceanic,Austronesian
-2905,Longgu,Papunesia,-9.75258,160.663,long1395,lgu,Longgu,aust1307,228,228,abvdoceanic,Austronesian
-2906,Apma (Suru Mwerani),Papunesia,-15.8559,168.189,apma1240,app,Apma,aust1307,272,272,abvdoceanic,Austronesian
-2907,Bebeli,Papunesia,-5.63282,150.323,bebe1252,bek,Bebeli,aust1307,230,230,abvdoceanic,Austronesian
-2908,Ivasay,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,337,337,abvdphilippines,Austronesian
-2909,Haiderabad,Eurasia,36.2969008,74.5985662,hunz1248,,Hunza,buru1296,203,203,backstromnorthernpakistan,Burushaski
-2910,Uyum Nagar,Eurasia,36.1528358,74.8461621,naga1398,,Nagar,buru1296,204,204,backstromnorthernpakistan,Burushaski
-2911,Yasin Center,Eurasia,36.4092359,73.0214217,yasi1237,,Yasin,buru1296,205,205,backstromnorthernpakistan,Burushaski
-2912,Yuki,South America,-16.7875,-64.9438,yuqu1240,yuq,Yuqui,tupi1275,200,200,gerarditupi,Tupian
-2913,Kuot,Papunesia,-3.06952,151.537,kuot1243,kto,Kuot,kuot1243,200,200,johanssonsoundsymbolic,Kuot
-2914,Saponi,Papunesia,-2.385,136.497,sapo1254,spi,Saponi,lake1255,201,201,transnewguineaorg,Lakes Plain
-2915,Ctl: Nalemba: Narovorovo,Papunesia,-15.1826,168.110702,naro1250,,Narovorovo,aust1307,221,221,vanuatuvoices,Austronesian
-2916,Buninga: Moso,Papunesia,-17.529011534438972,168.28918755548693,buni1246,,Buninga,aust1307,206,206,vanuatuvoices,Austronesian
-2917,N: Sungwadia: Naumumu,Papunesia,-14.93637,168.053014,mari1426,mrb,Sunwadia,aust1307,222,222,vanuatuvoices,Austronesian
-2918,Wala: Worprev,Papunesia,-15.97775,167.37656,wala1267,,Wala-Rano,aust1307,202,202,vanuatuvoices,Austronesian
-2919,W: Walaha,Papunesia,-15.40071,167.701737,wala1268,,Walaha,aust1307,206,206,vanuatuvoices,Austronesian
-2920,Tikopia,Papunesia,-12.2766,168.822,tiko1237,tkp,Tikopia,aust1307,259,259,abvdoceanic,Austronesian
-2921,Futuna-Aniwa,Papunesia,-19.5303,170.215,futu1245,fut,Futuna-Aniwa,aust1307,305,305,abvdoceanic,Austronesian
-2922,Dehu,Papunesia,-20.8892,167.229,dehu1237,dhv,Dehu,aust1307,268,268,abvdoceanic,Austronesian
-2923,Molima,Papunesia,-9.57457,150.614,moli1248,mox,Molima,aust1307,234,234,abvdoceanic,Austronesian
-2924,"Uvea, West",Papunesia,-20.4145,166.589,west2516,uve,West Uvean,aust1307,219,219,abvdoceanic,Austronesian
-2925,Tami,Papunesia,-6.70017,147.732,tami1290,tmy,Tami,aust1307,200,200,abvdoceanic,Austronesian
-2926,Sursurunga,Papunesia,-3.99078,152.768,surs1246,sgz,Sursurunga,aust1307,203,203,abvdoceanic,Austronesian
-2927,"Bunun F69, Southern",Papunesia,23.4116,121.025,bunu1267,bnn,Bunun,aust1307,261,261,abvdphilippines,Austronesian
-2928,Iraralay,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,344,344,abvdphilippines,Austronesian
-2929,Amis (Fata'an),Papunesia,23.0917,121.348,amis1246,ami,Amis,aust1307,212,212,abvdphilippines,Austronesian
-2930,Ganish,Eurasia,36.312159,74.6626353,hunz1248,,Hunza,buru1296,202,202,backstromnorthernpakistan,Burushaski
-2931,Banoni,Papunesia,-6.23061,155.128,bann1247,bcm,Bannoni,aust1307,258,258,blustaustronesian,Austronesian
-2932,Mayi-Thakurti,Australia,-20.0,140.63,mayi1234,xyt,Mayi-Thakurti,pama1250,200,200,bowernpny,Pama-Nyungan
-2933,Kayabí,South America,-11.2747,-55.5479,kaya1329,kyz,Kayabí,tupi1275,200,200,gerarditupi,Tupian
-2934,Paakantyi,Australia,-32.7021,142.695,darl1243,drl,Paakantyi,pama1250,199,199,huntergatherer,Pama-Nyungan
-2935,Gaam,Africa,11.4674,33.9797,gaam1241,tbi,Gaam,east2386,199,199,johanssonsoundsymbolic,Eastern Jebel
-2936,Urarina,South America,-4.44006,-75.4211,urar1246,ura,Urarina,urar1246,199,199,johanssonsoundsymbolic,Urarina
-2937,Southern Gyeongsang,Eurasia,35.3,128.3,kyon1247,,Kyongsangdo,kore1284,203,203,leekoreanic,Koreanic
-2938,Awera,Papunesia,-2.71886,136.063,awer1241,awr,Awera,lake1255,200,200,transnewguineaorg,Lakes Plain
-2939,Kuot,Papunesia,-3.06952,151.537,kuot1243,kto,Kuot,kuot1243,301,301,transnewguineaorg,Kuot
-2940,Naha’ai: Mbatmbang,Papunesia,-16.56778,167.53083,malf1237,mlx,Na'ahai,aust1307,199,199,vanuatuvoices,Austronesian
-2941,Nese,Papunesia,-15.9305,167.17653,nese1235,,Nese,aust1307,204,204,vanuatuvoices,Austronesian
-2942,N: Mwerlap,Papunesia,-14.96984,168.058964,mari1426,mrb,Sunwadia,aust1307,206,206,vanuatuvoices,Austronesian
-2943,N: Sungwadia: Tasmaor,Papunesia,-14.93637,168.053014,mari1426,mrb,Sunwadia,aust1307,213,213,vanuatuvoices,Austronesian
-2944,Wampar,Papunesia,-6.67364,146.662,wamp1247,lbq,Wampar,aust1307,273,273,abvdoceanic,Austronesian
-2945,Sakao (Port-Olry),Papunesia,-15.0757,167.051,saka1289,sku,Wanohe,aust1307,283,283,abvdoceanic,Austronesian
-2946,Ura,Papunesia,-18.6747,169.084,urav1235,uur,Ura (Vanuatu),aust1307,203,203,abvdoceanic,Austronesian
-2947,Ramoaaina,Papunesia,-4.17306,152.451,ramo1244,rai,Ramoaaina,aust1307,202,202,abvdoceanic,Austronesian
-2948,Atayal - C'uli' F69 (Bandai),Papunesia,24.5209,121.388,atay1247,tay,Atayal,aust1307,212,212,abvdphilippines,Austronesian
-2949,Kavalan F69,Papunesia,24.6947,121.645,kava1241,ckv,Kavalan,aust1307,482,482,abvdphilippines,Austronesian
-2950,"Manobo, Kalamansig Cotabato (Paril Dialect)",Papunesia,6.39417,124.234,cota1241,mta,Cotabato Manobo,aust1307,206,206,abvdphilippines,Austronesian
-2951,Dharumbal,Australia,-23.307,150.593,dhar1248,xgm,Dharumbal,pama1250,198,198,bowernpny,Pama-Nyungan
-2952,Aha,South America,0.69618,-67.5028,curr1243,kpc,Curripaco,araw1281,198,198,chaconbaniwa,Arawakan
-2953,Shom Peng,Eurasia,7.02099,93.8064,shom1245,sii,Shom Peng,shom1245,198,198,johanssonsoundsymbolic,Shom Peng
-2954,Northern Sgaw,Eurasia,19.020577,96.540526,wewa1238,wea,Wewaw,sino1245,199,199,luangthongkumkaren,Sino-Tibetan
-2955,Yanesha',South America,-10.5454,-75.315,yane1238,ame,Yanesha',araw1281,220,220,northperulex,Arawakan
-2956,Kanyī́ka,Africa,-7.31878,23.613,kany1247,kny,Kanyok,atla1278,201,201,polyglottaafricana,Atlantic-Congo
-2957,Nkoya_2,Africa,-14.85,24.76,nkoy1244,nka,Nkoya,atla1278,201,201,sawkatokaleya,Atlantic-Congo
-2958,"Asmat, Central (Keenok, Sawa-Erma Dialect)",Papunesia,-4.89854,138.405,nort2917,nks,Momogo-Pupis-Irogo,nucl1709,217,217,transnewguineaorg,Nuclear Trans New Guinea
-2959,Berik,Papunesia,-2.26904,138.866,beri1254,bkl,Berik,toro1256,223,223,transnewguineaorg,Tor-Orya
-2960,Rasawa,Papunesia,-2.37609,136.352,rasa1243,rac,Rasawa,lake1255,201,201,transnewguineaorg,Lakes Plain
-2961,Neve’ei: Vinmavis 1,Papunesia,-16.27169,167.39957,vinm1237,vnm,Neve'ei,aust1307,201,201,vanuatuvoices,Austronesian
-2962,Maleu,Papunesia,-5.61613,148.445,male1289,mgl,Maleu-Kilenge,aust1307,204,204,abvdoceanic,Austronesian
-2963,"Ambrym, South-East",Papunesia,-16.2975,168.211,sout2859,tvk,Southeast Ambrym,aust1307,215,215,abvdoceanic,Austronesian
-2964,Manam,Papunesia,-4.07921,145.033,mana1295,mva,Manam,aust1307,209,209,abvdoceanic,Austronesian
-2965,Patpatar,Papunesia,-3.74711,152.493,patp1243,gfk,Patpatar,aust1307,232,232,abvdoceanic,Austronesian
-2966,"Tanna, Southwest",Papunesia,-19.57953,169.35603,sout2869,nwi,Southwest Tanna,aust1307,203,203,abvdoceanic,Austronesian
-2967,Tuamotu,Papunesia,-16.17259,-146.321755,tuam1242,pmt,Tuamotuan,aust1307,283,283,abvdoceanic,Austronesian
-2968,"Uvea, East",Papunesia,-13.2903,-176.207,wall1257,wls,East Uvean,aust1307,278,278,abvdoceanic,Austronesian
-2969,"Daa kaka (West Ambrym, Vanuatu)",Papunesia,-16.2696,168.013,daka1243,bpa,Dakaka,aust1307,239,239,abvdoceanic,Austronesian
-2970,Sio,Papunesia,-5.96037,147.353,sioo1240,xsi,Sio,aust1307,219,219,abvdoceanic,Austronesian
-2971,Paicî,Papunesia,-21.096,165.15,paic1239,pri,Paicî,aust1307,225,225,abvdoceanic,Austronesian
-2972,Saaroa F69,Papunesia,23.2632,120.711,saar1237,sxr,Saaroa,aust1307,298,298,abvdphilippines,Austronesian
-2973,Moi,Papunesia,-0.96532,131.52,moii1235,mxn,Moi (Indonesia),west1493,202,202,berrywestpapuan,West Bird's Head
-2974,Oho,South America,2.17859,-67.7704,bani1255,bwi,Baniwa do Icana,araw1281,198,198,chaconbaniwa,Arawakan
-2975,Miyako,Eurasia,24.7564,125.363,miya1259,mvi,Miyako,japo1237,197,197,hattorijaponic,Japonic
-2976,Bari,South America,9.08497,-72.9353,bari1297,mot,Barí,chib1249,197,197,johanssonsoundsymbolic,Chibchan
-2977,Kayaw,Eurasia,19.0561,96.8365,brek1238,kvl,Brek Karen,sino1245,198,198,luangthongkumkaren,Sino-Tibetan
-2978,"Asmat, Central (Keenakap, Namen Dialect)",Papunesia,-5.80391,138.471,cent2117,cns,Central Asmat,nucl1709,203,203,transnewguineaorg,Nuclear Trans New Guinea
-2979,Korowai,Papunesia,-5.26952,140.047,koro1312,khe,Korowai,nucl1709,199,199,transnewguineaorg,Nuclear Trans New Guinea
-2980,Sahu,Papunesia,1.00742,127.493,sahu1245,saj,Sahu,nort2923,359,359,transnewguineaorg,North Halmahera
-2981,Wanggom,Papunesia,-5.60094,140.194,wang1299,wng,Wanggom,nucl1709,202,202,transnewguineaorg,Nuclear Trans New Guinea
-2982,Nisvai: Blacksands,Papunesia,-16.38847,167.78301,nisv1234,,Nisvai,aust1307,198,198,vanuatuvoices,Austronesian
-2983,N: Sungwadia: Uta,Papunesia,-14.97184,168.0573,mari1426,mrb,Sunwadia,aust1307,202,202,vanuatuvoices,Austronesian
-2984,Manihiki,Papunesia,-10.03,-161.09,raka1237,rkh,Rakahanga-Manihiki,aust1307,292,292,walworthpolynesian,Austronesian
-2985,Gedaged,Papunesia,-5.18175,145.781,geda1237,gdd,Gedaged,aust1307,272,272,abvdoceanic,Austronesian
-2986,Canala,Papunesia,-21.7034,165.996,xara1244,ane,Xârâcùù,aust1307,218,218,abvdoceanic,Austronesian
-2987,Kaulong (Au Village),Papunesia,-6.08192,149.696,kaul1240,pss,Kaulong,aust1307,225,225,abvdoceanic,Austronesian
-2988,Seimat,Papunesia,-1.2666667,144.25,seim1238,ssg,Seimat,aust1307,200,200,abvdoceanic,Austronesian
-2989,Vitu,Papunesia,-4.69751,149.489,mudu1242,wiv,Muduapa,aust1307,212,212,abvdoceanic,Austronesian
-2990,Ubir,Papunesia,-9.59044,149.396,ubir1237,ubr,Ubir,aust1307,200,200,abvdoceanic,Austronesian
-2991,Anuta,Papunesia,-11.61,169.85,anut1237,aud,Anuta,aust1307,238,238,abvdoceanic,Austronesian
-2992,Chuukese,Papunesia,7.346993,151.598607,chuu1238,chk,Chuukese,aust1307,407,407,abvdoceanic,Austronesian
-2993,Nahavaq,Papunesia,-16.5116,167.477,sout2857,sns,Nahavaq,aust1307,204,204,abvdoceanic,Austronesian
-2994,Tape,Papunesia,-16.0695,167.33,mara1399,mrs,Maragus,aust1307,236,236,abvdoceanic,Austronesian
-2995,Irarutu,Papunesia,-2.94438,133.586,irar1238,irh,Irarutu,aust1307,210,210,abvdoceanic,Austronesian
-2996,Iamalele,Papunesia,-9.45005,150.573,iama1237,yml,Iamalele,aust1307,253,253,abvdoceanic,Austronesian
-2997,"Subanon, Siocon",Papunesia,7.79964,122.341,west2557,suc,Western Subanon,aust1307,204,204,abvdphilippines,Austronesian
-2998,Puyuma (Nanwang Cq),Papunesia,22.643,120.996,puyu1239,pyu,Puyuma,aust1307,216,216,abvdphilippines,Austronesian
-2999,Abun Ji,Papunesia,-0.57073,132.416,abun1252,kgr,Abun,abun1252,196,196,berrywestpapuan,Abun
-3000,Mailu,Papunesia,-10.3657,149.521,mail1248,mgu,Mailu,mail1249,260,260,blustaustronesian,Mailuan
-3001,Enxet Sur,South America,-23.43,-57.95,sout2989,enx,Enxet Sur,leng1261,322,322,chacolanguages,Enlhet-Enenlhet
-3002,Ehe,South America,2.17859,-67.7704,bani1255,bwi,Baniwa do Icana,araw1281,196,196,chaconbaniwa,Arawakan
-3003,Limilngan,Australia,-12.4294,131.845,nucl1327,lmc,Limilngan,limi1242,196,196,johanssonsoundsymbolic,Limilngan-Wulna
-3004,Hateruma,Eurasia,24.059,123.78,hate1238,,Hateruma,japo1237,197,197,leejaponic,Japonic
-3005,Northern Gyeongsang,Eurasia,35.3,128.3,kyon1247,,Kyongsangdo,kore1284,200,200,leekoreanic,Koreanic
-3006,Palaung,Eurasia,23.6729,97.7972,shwe1236,pll,Shwe Palaung,aust1305,205,205,nagarajakhasian,Austroasiatic
-3007,Rū́nda,Africa,-8.86971,21.4164,ruun1238,rnd,Ruund,atla1278,205,205,polyglottaafricana,Atlantic-Congo
-3008,"Asmat, Casuarina Coast (Pirimapun Dialect)",Papunesia,-6.43005,138.566,casu1237,asc,Casuarina Coast Asmat,nucl1709,213,213,transnewguineaorg,Nuclear Trans New Guinea
-3009,Tsaukambo,Papunesia,-5.39076,140.186,tsak1250,kvz,Tsaukambo,nucl1709,201,201,transnewguineaorg,Nuclear Trans New Guinea
-3010,Waritai,Papunesia,-3.23021,138.456,wari1264,wbe,Waritai,lake1255,222,222,transnewguineaorg,Lakes Plain
-3011,Aulua: Loxse-Asolokh,Papunesia,-16.322,167.716,aulu1238,aul,Aulua,aust1307,196,196,vanuatuvoices,Austronesian
-3012,Na’ahai: Mbatvanui,Papunesia,-16.53056,167.57778,malf1237,mlx,Na'ahai,aust1307,196,196,vanuatuvoices,Austronesian
-3013,Kusaie,Papunesia,5.31,162.98,kosr1238,kos,Kosraean,aust1307,368,368,abvdoceanic,Austronesian
-3014,Sobei,Papunesia,-1.86998,138.75,sobe1238,sob,Sobei,aust1307,214,214,abvdoceanic,Austronesian
-3015,Tawala,Papunesia,-10.3115,150.644,tawa1275,tbo,Tawala,aust1307,198,198,abvdoceanic,Austronesian
-3016,Rukai (Budai F69),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,268,268,abvdphilippines,Austronesian
-3017,Moraid,Papunesia,-1.04083,131.965,mora1239,msg,Moraid,west1493,197,197,berrywestpapuan,West Bird's Head
-3018,Maloh,Papunesia,1.3156,112.63,emba1238,emb,Embaloh,aust1307,210,210,blustaustronesian,Austronesian
-3019,Ñame,South America,0.69618,-67.5028,curr1243,kpc,Curripaco,araw1281,195,195,chaconbaniwa,Arawakan
-3020,Tapirapé,South America,-10.5373,-50.5438,tapi1254,taf,Tapirapé,tupi1275,195,195,gerarditupi,Tupian
-3021,Salinan M,North America,37.6646,-121.718,sali1253,sln,Salinan,sali1253,203,203,huntergatherer,Salinan
-3022,Nara,Africa,15.3251,37.499,nara1262,nrb,Nara,nara1262,195,195,johanssonsoundsymbolic,Nara
-3023,Dima,Papunesia,-9.70322,149.605,dima1252,jma,Dima,daga1274,197,197,transnewguineaorg,Dagan
-3024,Kaiy,Papunesia,-2.94448,138.161,kaiy1239,tcq,Kaiy,lake1255,223,223,transnewguineaorg,Lakes Plain
-3025,Burmbar: Tengan,Papunesia,-16.38095,167.70045,burm1263,vrt,Burmbar,aust1307,195,195,vanuatuvoices,Austronesian
-3026,Nese: Tanmial,Papunesia,-15.9305,167.17653,nese1235,,Nese,aust1307,195,195,vanuatuvoices,Austronesian
-3027,Levei,Papunesia,-2.06626,146.746,kheh1237,tlx,Khehek,aust1307,202,202,abvdoceanic,Austronesian
-3028,Lou,Papunesia,-2.38659,147.346,louu1245,loj,Lou,aust1307,198,198,abvdoceanic,Austronesian
-3029,Tarpia,Papunesia,-2.322279,140.115497,tarp1240,tpf,Tarpia,aust1307,203,203,abvdoceanic,Austronesian
-3030,Yabem,Papunesia,-6.67052,147.81,yabe1254,jae,Yabem,aust1307,223,223,abvdoceanic,Austronesian
-3031,Kuni,Papunesia,-8.66368,146.874,kuni1263,kse,Kuni,aust1307,249,249,abvdoceanic,Austronesian
-3032,Namakir,Papunesia,-16.8979,168.569,nama1268,nmk,Namakura,aust1307,223,223,abvdoceanic,Austronesian
-3033,Sowa,Papunesia,-15.82653,168.18653,sowa1244,sww,Sowa,aust1307,256,256,abvdoceanic,Austronesian
-3034,Akolet,Papunesia,-6.22711,150.182,akol1237,akt,Akolet,aust1307,222,222,abvdoceanic,Austronesian
-3035,Minaveha,Papunesia,-9.59922,150.501,mina1269,mvn,Minaveha,aust1307,231,231,abvdoceanic,Austronesian
-3036,Atayal - Squliq F69,Papunesia,24.5209,121.388,atay1247,tay,Atayal,aust1307,327,327,abvdphilippines,Austronesian
-3037,Cuyonon,Papunesia,10.3201,119.3,cuyo1237,cyo,Cuyonon,aust1307,211,211,abvdphilippines,Austronesian
-3038,Kalabra,Papunesia,-1.43074,131.617,kala1256,kzz,Kalabra,west1493,197,197,berrywestpapuan,West Bird's Head
-3039,Salmit,Papunesia,-1.51049,131.985,tehi1237,kps,Tehit,west1493,195,195,berrywestpapuan,West Bird's Head
-3040,As,Papunesia,-0.75267,131.728,asss1237,asz,As,aust1307,195,195,berrywestpapuan,Austronesian
-3041,Mauliene,South America,2.17859,-67.7704,bani1255,bwi,Baniwa do Icana,araw1281,194,194,chaconbaniwa,Arawakan
-3042,Bihari,Eurasia,26.3817,86.2211,mait1250,mai,Maithili,indo1319,216,216,dunnielex,Indo-European
-3043,Urueuwauwau,South America,-10.9176,-63.8086,urue1240,urz,Uru-Eu-Wau-Wau,tupi1275,194,194,gerarditupi,Tupian
-3044,Washo,North America,38.8184,-119.64,wash1253,was,Washo,wash1253,194,194,johanssonsoundsymbolic,Washo
-3045,Yonaguni,Eurasia,24.44997,122.99075,yona1241,yoi,Yonaguni,japo1237,194,194,leejaponic,Japonic
-3046,Huambisa,South America,-3.99109,-77.9797,huam1247,hub,Huambisa,jiva1245,200,200,northperulex,Chicham
-3047,Sekute 2013,Africa,-17.653196,25.634457,seku1239,,Sekute,atla1278,194,194,sawkatokaleya,Atlantic-Congo
-3048,Eritai,Papunesia,-2.71182,138.053,erit1239,ert,Eritai,lake1255,217,217,transnewguineaorg,Lakes Plain
-3049,Netimb: Bangir,Papunesia,-16.37936,167.66783,aulu1238,aul,Aulua,aust1307,194,194,vanuatuvoices,Austronesian
-3050,Mele-Fila,Papunesia,-17.6841,168.275,mele1250,mxe,Mele-Fila,aust1307,206,206,walworthpolynesian,Austronesian
-3051,Nauna,Papunesia,-2.21213,148.201,naun1237,ncn,Nauna,aust1307,199,199,abvdoceanic,Austronesian
-3052,Maisin,Papunesia,-9.22853,148.731,mais1250,mbq,Maisin,aust1307,213,213,abvdoceanic,Austronesian
-3053,Avava,Papunesia,-16.2701,167.484,katb1237,tmb,Avava,aust1307,263,263,abvdoceanic,Austronesian
-3054,Sa (south-eastern dialect),Papunesia,-15.9534,168.228,saaa1241,sax,Sa,aust1307,235,235,abvdoceanic,Austronesian
-3055,Ske (Seke),Papunesia,-15.8839,168.197,seke1241,ske,Seke (Vanuatu),aust1307,230,230,abvdoceanic,Austronesian
-3056,Piva,Papunesia,-6.15201,155.129,lawu1237,tgi,Lawunuia,aust1307,196,196,abvdoceanic,Austronesian
-3057,Yami,Papunesia,22.055,121.544,yami1254,tao,Yami,aust1307,204,204,abvdphilippines,Austronesian
-3058,Mamanwa,Papunesia,9.44744,125.548,mama1275,mmn,Minamanwa,aust1307,199,199,abvdphilippines,Austronesian
-3059,Abun Tat,Papunesia,-0.57073,132.416,abun1252,kgr,Abun,abun1252,193,193,berrywestpapuan,Abun
-3060,KK-Halqabad 2,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
-3061,KK-Halqabad 3,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
-3062,KK-Kokdarya 2,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
-3063,KK-Kokdarya 3,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
-3064,KK-Kokdarya 4,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
-3065,KK-Shege 1,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
-3066,KK-Shege 2,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
-3067,KK-Shege 3,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
-3068,Ka-Gazli 2,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
-3069,Ka-Gazli 5,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
-3070,Ka-Raushan 1,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
-3071,Ka-Raushan 2,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
-3072,Ka-Raushan 3,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
-3073,Ka-Raushan 4,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
-3074,Ki-Akmuz 1,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
-3075,Ki-Akmuz 2,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
-3076,Ki-Barskoon,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
-3077,Ki-Kulanak 2,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
-3078,Ki-Kulanak 3,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
-3079,Ki-Kulanak 4,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
-3080,Ki-Kulanak 5,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
-3081,T-Shink 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,193,193,cals,Indo-European
-3082,Y-Dugova 2,Eurasia,39.1486,69.2422,yagn1238,yai,Yagnobi,indo1319,193,193,cals,Indo-European
-3083,Y-Safedorak 1,Eurasia,39.1486,69.2422,yagn1238,yai,Yagnobi,indo1319,193,193,cals,Indo-European
-3084,Toba-pilagá,South America,-23.4989,-61.6489,toba1270,,Toba-Pilagá,guai1249,248,248,chacolanguages,Guaicuruan
-3085,Hohoodene,South America,2.17859,-67.7704,bani1255,bwi,Baniwa do Icana,araw1281,193,193,chaconbaniwa,Arawakan
-3086,Amonda,South America,-9.04023,-62.3064,amun1246,adw,Amundava,tupi1275,194,194,gerarditupi,Tupian
-3087,Mayo,North America,26.4522,-108.981,mayo1264,mfy,Mayo,utoa1244,201,201,lionnetyotonahua,Uto-Aztecan
-3088,Southern Sgaw,Eurasia,17.9872,97.7126,sgaw1245,ksw,S'gaw Karen,sino1245,193,193,luangthongkumkaren,Sino-Tibetan
-3089,Ujindile,Africa,-9.24553,34.50936,ujin1234,,Ujindile,atla1278,194,194,mitterhoferbena,Atlantic-Congo
-3090,Achuar,South America,-2.82646,-77.2641,achu1248,acu,Achuar-Shiwiar,jiva1245,199,199,northperulex,Chicham
-3091,Naga_Ukhrul,Eurasia,25.092617,94.37045,ukhr1238,,Ukhrul,sino1245,208,208,sagartst,Sino-Tibetan
-3092,Khalaj,Eurasia,34.4224,50.3222,turk1303,klj,Khalaj Turkic,turk1311,204,204,savelyevturkic,Turkic
-3093,Mukuni-March,Africa,-17.905369,25.937401,lenj1248,leh,Lenje,atla1278,193,193,sawkatokaleya,Atlantic-Congo
-3094,Ila,Africa,-15.61,26.46,ilaa1246,ilb,Ila,atla1278,194,194,sawkatokaleya,Atlantic-Congo
-3095,Lozi,Africa,-17.71,24.74,lozi1239,loz,Lozi,atla1278,193,193,sawkatokaleya,Atlantic-Congo
-3096,Angoram,Papunesia,-4.07758,144.028,ango1255,aog,Angoram,lowe1423,236,236,transnewguineaorg,Lower Sepik
-3097,Fuyug (Mafulu Dialect),Papunesia,-8.6371,147.312,fuyu1242,fuy,Fuyug,fuyu1242,245,245,transnewguineaorg,Fuyug
-3098,Larevat: Mosox,Papunesia,-16.17628,167.37023,lare1249,lrv,Larevat,aust1307,193,193,vanuatuvoices,Austronesian
-3099,Naati: Windua,Papunesia,-16.50139,167.49372,nati1244,,Nati,aust1307,197,197,vanuatuvoices,Austronesian
-3100,Nahavaq: Caroline Bay,Papunesia,-16.56268,167.46,sout2857,sns,Nahavaq,aust1307,197,197,vanuatuvoices,Austronesian
-3101,Nombotkote: Melkin,Papunesia,-16.32806,167.59949,lete1241,nms,Letemboi-Repanbitip,aust1307,193,193,vanuatuvoices,Austronesian
-3102,Novol: Tavendrua,Papunesia,-16.34446,167.38392,dixo1238,dix,Dixon Reef,aust1307,197,197,vanuatuvoices,Austronesian
-3103,Banoni,Papunesia,-6.23061,155.128,bann1247,bcm,Bannoni,aust1307,249,249,abvdoceanic,Austronesian
-3104,Kayupulau [Kajupulau],Papunesia,-2.54415,140.626,kayu1243,kzu,Kayupulau,aust1307,202,202,abvdoceanic,Austronesian
-3105,Luangiua,Papunesia,-5.49029,159.701,onto1237,ojv,Luangiua,aust1307,225,225,abvdoceanic,Austronesian
-3106,Naman,Papunesia,-16.1331,167.415,litz1237,lzl,Naman,aust1307,233,233,abvdoceanic,Austronesian
-3107,"Manobo, Ilianen (Kibudtungan Dialect)",Papunesia,7.34448,124.766,ilia1236,mbi,Ilianen Manobo,aust1307,196,196,abvdphilippines,Austronesian
-3108,Seget,Papunesia,-1.36931,131.218,sege1235,sbg,Seget,west1493,194,194,berrywestpapuan,West Bird's Head
-3109,KK-Halqabad 1,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,192,192,cals,Turkic
-3110,KK-Kokdarya 1,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,192,192,cals,Turkic
-3111,Ka-Gazli 6,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,192,192,cals,Turkic
-3112,Ki-Akmuz 3,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,192,192,cals,Turkic
-3113,Ki-Orday 1,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,192,192,cals,Turkic
-3114,Ki-Tamga,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,192,192,cals,Turkic
-3115,T-Navdî 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
-3116,T-Nimich 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
-3117,T-Nimich 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
-3118,T-Nimich 4,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
-3119,T-Nûshor 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
-3120,T-Urmetan 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
-3121,T-Urmetan 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
-3122,T-Zarmanak 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
-3123,Y-Safedorak 2,Eurasia,39.1486,69.2422,yagn1238,yai,Yagnobi,indo1319,192,192,cals,Indo-European
-3124,Araweté,South America,-4.90246,-52.5001,araw1273,awt,Araweté,tupi1275,192,192,gerarditupi,Tupian
-3125,Pacaas Novos,South America,-10.69948,-64.56152,wari1268,pav,Wari',chap1271,235,235,keypano,Chapacuran
-3126,Ukalawa,Africa,-9.18589,35.28047,ukal1234,,Ukalawa,atla1278,192,192,mitterhoferbena,Atlantic-Congo
-3127,Musukotwani,Africa,-17.615317,25.883419,musu1242,,Musukotwani,atla1278,197,197,sawkatokaleya,Atlantic-Congo
-3128,Chewa,Africa,-14.8,32.81,nyan1308,nya,Nyanja,atla1278,195,195,sawkatokaleya,Atlantic-Congo
-3129,Tause,Papunesia,-2.8406,136.899,taus1252,tad,Tause,lake1255,196,196,transnewguineaorg,Lakes Plain
-3130,Bangaasak: Taremb,Papunesia,-16.21925,167.571,katb1237,tmb,Avava,aust1307,192,192,vanuatuvoices,Austronesian
-3131,Letemboi: Aingelemolesa,Papunesia,-16.41806,167.5847,lete1241,nms,Letemboi-Repanbitip,aust1307,192,192,vanuatuvoices,Austronesian
-3132,Malua Bay: Marasup,Papunesia,-15.99098,167.2198,malu1245,mll,Malua-Tepërav,aust1307,192,192,vanuatuvoices,Austronesian
-3133,Nasvang: Big Island,Papunesia,-16.44294,167.67644,navw1234,,Navwien,aust1307,192,192,vanuatuvoices,Austronesian
-3134,Uliveo: Lurtes,Papunesia,-16.53072,167.83389,mask1242,klv,Maskelynes,aust1307,200,200,vanuatuvoices,Austronesian
-3135,Fakamae,Papunesia,-17.052,168.399,emae1237,mmw,Emae,aust1307,206,206,walworthpolynesian,Austronesian
-3136,Ambai (Yapen),Papunesia,-1.88126,136.526,amba1265,amk,Ambai,aust1307,195,195,abvdoceanic,Austronesian
-3137,Sikaiana,Papunesia,-8.378194,162.72952,sika1261,sky,Sikaiana,aust1307,231,231,abvdoceanic,Austronesian
-3138,Na:ti (Windua),Papunesia,-16.468709,167.496054,nati1244,,Nati,aust1307,195,195,abvdoceanic,Austronesian
-3139,Nombotkote (Usus - Melkin),Papunesia,-16.4339,167.566,lete1241,nms,Letemboi-Repanbitip,aust1307,193,193,abvdoceanic,Austronesian
-3140,Koluwawa,Papunesia,-9.42742,150.462,kolu1245,klx,Koluwawa,aust1307,238,238,abvdoceanic,Austronesian
-3141,Yami,Papunesia,22.055,121.544,yami1254,tao,Yami,aust1307,256,256,abvdphilippines,Austronesian
-3142,KK-Shege 4,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,191,191,cals,Turkic
-3143,Ka-Gazli 1,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,191,191,cals,Turkic
-3144,Ki-Orday 2,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,191,191,cals,Turkic
-3145,T-Agalyk,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
-3146,T-Kamangaron 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
-3147,T-Navdî 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
-3148,T-Nûshor 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
-3149,T-Shink 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
-3150,T-Shink 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
-3151,T-Zarmanak 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
-3152,Asurini,South America,-3.59359,-49.8991,toca1235,asu,Tocantins Asurini,tupi1275,192,192,gerarditupi,Tupian
-3153,Macaguan,South America,6.34582,-71.2671,maca1259,mbn,Hitnu,guah1252,192,192,huntergatherer,Guahiboan
-3154,Iquito,South America,-3.31233,-73.97046,iqui1243,iqu,Iquito,zapa1251,198,198,northperulex,Zaparoan
-3155,Mukuni,Africa,-17.905369,25.937401,lenj1248,leh,Lenje,atla1278,193,193,sawkatokaleya,Atlantic-Congo
-3156,Ama,Papunesia,-4.20192,141.658,amap1240,amm,Ama (Papua New Guinea),left1242,278,278,transnewguineaorg,Left May
-3157,Komyandaret,Papunesia,-5.25453,140.213,komy1238,kzv,Komyandaret,nucl1709,204,204,transnewguineaorg,Nuclear Trans New Guinea
-3158,Burmbar: Fartavo,Papunesia,-16.34167,167.74778,burm1263,vrt,Burmbar,aust1307,191,191,vanuatuvoices,Austronesian
-3159,Ninde: Lawa,Papunesia,-16.44484,167.42897,labo1244,mwi,Ninde,aust1307,199,199,vanuatuvoices,Austronesian
-3160,Nisvai: Ronevie,Papunesia,-16.41306,167.78556,nisv1234,,Nisvai,aust1307,192,192,vanuatuvoices,Austronesian
-3161,S: Biribiri,,-15.46989,167.82893,amba1270,,Ambae,aust1307,197,197,vanuatuvoices,Austronesian
-3162,Tirax: Bethel,Papunesia,-16.03923,167.40186,maee1241,mme,Tirax,aust1307,211,211,vanuatuvoices,Austronesian
-3163,Niue,Papunesia,-19.06,-169.86,niue1239,niu,Niuean,aust1307,255,255,abvdoceanic,Austronesian
-3164,Gaddang,Papunesia,16.5468,121.177,gadd1244,gad,Gaddang,aust1307,194,194,abvdphilippines,Austronesian
-3165,"Isneg, Dibagat-Kabugao-Isneg",Papunesia,18.2139,121.16,isna1241,isd,Isnag,aust1307,196,196,abvdphilippines,Austronesian
-3166,"Ivatan, Basco Dialect",Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,195,195,abvdphilippines,Austronesian
-3167,Soninke,Africa,13.13,-11.72,soni1259,snk,Soninke,mand1469,232,232,baf2,Mande
-3168,Badimaya,Australia,-29.0647,117.246,badi1246,bia,Badimaya,pama1250,190,190,bowernpny,Pama-Nyungan
-3169,Ka-Gazli 3,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,190,190,cals,Turkic
-3170,Ka-Gazli 4,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,190,190,cals,Turkic
-3171,T-Kaptarhona 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,190,190,cals,Indo-European
-3172,T-Kaptarhona 4,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,190,190,cals,Indo-European
-3173,T-Kaptarhona 5,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,190,190,cals,Indo-European
-3174,T-Rishtan 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,190,190,cals,Indo-European
-3175,Tariana,South America,0.440205,-68.9042,tari1256,tae,Tariana,araw1281,190,190,chaconbaniwa,Arawakan
-3176,Waris,Papunesia,-3.139,140.931,wari1266,wrs,Waris,bord1247,190,190,johanssonsoundsymbolic,Border
-3177,Sekute,Africa,-17.653196,25.634457,seku1239,,Sekute,atla1278,192,192,sawkatokaleya,Atlantic-Congo
-3178,Kawitshin,North America,49.0975,-122.6558,cowi1241,,Cowichan,sali1255,190,190,tolmiebritishcolumbia,Salishan
-3179,Bilhoola,North America,52.4188,-127.2684,bell1243,blc,Bella Coola,sali1255,192,192,tolmiebritishcolumbia,Salishan
-3180,Zia,Papunesia,-7.95814,147.579,ziaa1250,zia,Zia,nucl1709,256,256,transnewguineaorg,Nuclear Trans New Guinea
-3181,Ctl: Tawet: Narovorovo,Papunesia,-15.18528,168.109444,naro1250,,Narovorovo,aust1307,190,190,vanuatuvoices,Austronesian
-3182,Letemboi: Natingatlang,Papunesia,-16.40056,167.6178,lete1241,nms,Letemboi-Repanbitip,aust1307,190,190,vanuatuvoices,Austronesian
-3183,Na’ahai: Toman,Papunesia,-16.58306,167.47306,malf1237,mlx,Na'ahai,aust1307,190,190,vanuatuvoices,Austronesian
-3184,Nahavaq: Banour,Papunesia,-16.49503,167.4187,sout2857,sns,Nahavaq,aust1307,195,195,vanuatuvoices,Austronesian
-3185,Waropen,Papunesia,-2.31142,136.633,waro1242,wrp,Waropen,aust1307,268,268,abvdoceanic,Austronesian
-3186,Hiw,Papunesia,-13.126367,166.584857,hiww1237,hiw,Hiw,aust1307,210,210,abvdoceanic,Austronesian
-3187,"Kallahan, Kayapa Proper",Papunesia,16.321,120.9,kaya1320,,Kayapa Kallahan,aust1307,195,195,abvdphilippines,Austronesian
-3188,"Subanun, Sindangan",Papunesia,8.12701,123.018,cent2089,syb,Central Subanen,aust1307,194,194,abvdphilippines,Austronesian
-3189,T-Navdî 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,189,189,cals,Indo-European
-3190,T-Rishtan 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,189,189,cals,Indo-European
-3191,Savosavo,Papunesia,-9.12853,159.814,savo1255,svs,Savosavo,savo1255,189,189,johanssonsoundsymbolic,Savosavo
-3192,Kayan,Eurasia,19.5183,97.4138,kaya1315,pdu,Kayan Lahwi,sino1245,189,189,luangthongkumkaren,Sino-Tibetan
-3193,Duvle,Papunesia,-3.21832,137.964,duvl1242,duv,Duvle,lake1255,216,216,transnewguineaorg,Lakes Plain
-3194,Avava: Khatbol,Papunesia,-16.18473,167.46723,katb1237,tmb,Avava,aust1307,190,190,vanuatuvoices,Austronesian
-3195,Avok: Small Island,Papunesia,-16.5218,167.77738,avok1244,,Avok,aust1307,189,189,vanuatuvoices,Austronesian
-3196,Navwien: Mbonvor,Papunesia,-16.4161,167.6535,lete1241,nms,Letemboi-Repanbitip,aust1307,189,189,vanuatuvoices,Austronesian
-3197,Neve’ei: Vinmavis 2,Papunesia,-16.2291,167.3981,vinm1237,vnm,Neve'ei,aust1307,189,189,vanuatuvoices,Austronesian
-3198,Likum,Papunesia,-2.16157,146.695,liku1243,lib,Likum,aust1307,190,190,abvdoceanic,Austronesian
-3199,Bola,Papunesia,-5.55792,150.095,bola1250,bnp,Bola,aust1307,205,205,abvdoceanic,Austronesian
-3200,Saisiyat F69,Papunesia,24.6043,121.067,sais1237,xsy,Saisiyat,aust1307,203,203,abvdphilippines,Austronesian
-3201,Balangaw,Papunesia,17.0994,121.272,bala1310,blw,Balangao,aust1307,193,193,abvdphilippines,Austronesian
-3202,"Batak, Palawan",Papunesia,10.1115,119.025,bata1301,bya,Batak,aust1307,192,192,abvdphilippines,Austronesian
-3203,"Bilaan, Sarangani",Papunesia,6.03691,125.354,sara1326,bps,Sarangani Blaan,aust1307,192,192,abvdphilippines,Austronesian
-3204,Kalagan,Papunesia,6.8126,125.328,kala1388,kqe,Kalagan,aust1307,193,193,abvdphilippines,Austronesian
-3205,"Kallahan, Keleyqiq",Papunesia,16.7099,121.035,kele1259,ify,Keley-i Kallahan,aust1307,192,192,abvdphilippines,Austronesian
-3206,"Manobo, Ata (down-river)",Papunesia,7.7789,125.499,atam1240,atd,Ata Manobo,aust1307,193,193,abvdphilippines,Austronesian
-3207,"Manobo, Dibabawon",Papunesia,7.85664,126.018,diba1242,mbd,Dibabawon Manobo,aust1307,192,192,abvdphilippines,Austronesian
-3208,"Manobo, Sarangani, Kayaponga Dialect",Papunesia,5.84903,125.499,sara1327,mbs,Sarangani Manobo,aust1307,192,192,abvdphilippines,Austronesian
-3209,"Sangil, Saragani Islands",Papunesia,5.40229,125.378,sang1337,snl,Sangil,aust1307,193,193,abvdphilippines,Austronesian
-3210,Tagabili,Papunesia,6.20377,124.538,tbol1240,tbl,Tboli,aust1307,193,193,abvdphilippines,Austronesian
-3211,"Tagbanwa, Aborlan Dialect",Papunesia,10.6519,119.338,cent2090,tgt,Central Tagbanwa,aust1307,193,193,abvdphilippines,Austronesian
-3212,"Tagbanwa, Kalamian, Coron Island Dialect",Papunesia,12.0716,120.094,cala1258,tbk,Calamian Tagbanwa,aust1307,192,192,abvdphilippines,Austronesian
-3213,Tunjung,Papunesia,-0.29048,115.883,tunj1244,tjg,Tunjung,aust1307,192,192,blustaustronesian,Austronesian
-3214,Ki-Kulanak 1,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,188,188,cals,Turkic
-3215,T-Kamangaron 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,188,188,cals,Indo-European
-3216,T-Nimich 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,188,188,cals,Indo-European
-3217,T-Rishtan 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,188,188,cals,Indo-European
-3218,Y-Dugova 1,Eurasia,39.1486,69.2422,yagn1238,yai,Yagnobi,indo1319,188,188,cals,Indo-European
-3219,Southern Pomo,North America,38.7643,-122.545,sout2984,peq,Southern Pomo,pomo1273,188,188,johanssonsoundsymbolic,Pomoan
-3220,Búdūma,Africa,13.0692,14.4492,budu1265,bdm,Buduma,afro1255,192,192,polyglottaafricana,Afro-Asiatic
-3221,Migabac,Papunesia,-6.33237,147.713,miga1241,mpp,Migabac,nucl1709,236,236,transnewguineaorg,Nuclear Trans New Guinea
-3222,Tidore,Papunesia,0.02461,127.746,tido1248,tvo,Tidore,nort2923,215,215,transnewguineaorg,North Halmahera
-3223,Zimakani,Papunesia,-7.3701,141.452,zima1244,zik,Zimakani,anim1240,258,258,transnewguineaorg,Anim
-3224,Axamb: Small Island-Maliambor,Papunesia,-16.51721,167.65111,axam1237,ahb,Axamb,aust1307,188,188,vanuatuvoices,
-3225,Larevat: Fwishile,Papunesia,-16.17351,167.37147,lare1249,lrv,Larevat,aust1307,188,188,vanuatuvoices,Austronesian
-3226,Malua Bay: Petarmul,Papunesia,-16.00022,167.22137,malu1245,mll,Malua-Tepërav,aust1307,188,188,vanuatuvoices,Austronesian
-3227,Novol: Dixon Reef,Papunesia,-16.34747,167.37749,dixo1238,dix,Dixon Reef,aust1307,195,195,vanuatuvoices,Austronesian
-3228,Pangkumu: Ndarmif,Papunesia,-16.28389,167.6669,rere1240,pgk,Rerep,aust1307,188,188,vanuatuvoices,Austronesian
-3229,Port Sandwich: Merivar,Papunesia,-16.428,167.808,port1285,psw,Port Sandwich,aust1307,188,188,vanuatuvoices,Austronesian
-3230,Penrhyn,Papunesia,-9.082238,-157.922908,penr1237,pnh,Māngarongaro,aust1307,212,212,abvdoceanic,Austronesian
-3231,Mutu,Papunesia,-5.79405,148.014,mutu1242,tuc,Mutu,aust1307,201,201,abvdoceanic,Austronesian
-3232,Gitua,Papunesia,-6.0151,147.485,gitu1237,ggt,Gitua,aust1307,198,198,abvdoceanic,Austronesian
-3233,"Ifugao, Bayninan",Papunesia,16.7099,121.035,kele1259,ify,Keley-i Kallahan,aust1307,191,191,abvdphilippines,Austronesian
-3234,Inibaloi,Papunesia,16.4263,120.695,ibal1244,ibl,Ibaloi,aust1307,192,192,abvdphilippines,Austronesian
-3235,"Manobo, Tigwa, Iglogsad Dialect",Papunesia,7.72124,125.16,mati1250,mbt,Matigsalug Manobo,aust1307,191,191,abvdphilippines,Austronesian
-3236,"Manobo, Western Bukidnon",Papunesia,7.6682,124.825,west2555,mbb,Western Bukidnon Manobo,aust1307,192,192,abvdphilippines,Austronesian
-3237,Mbakwithi,Australia,-12.395,141.755,angu1242,awg,Anguthimri,pama1250,187,187,bowernpny,Pama-Nyungan
-3238,T-Kaptarhona 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,187,187,cals,Indo-European
-3239,Yawarrawarrka,Australia,-26.7334,140.871,yawa1258,yww,Yawarawarga,pama1250,187,187,huntergatherer,Pama-Nyungan
-3240,Karajá,South America,-11.1881,-50.3492,kara1500,kpj,Karajá,nucl1710,187,187,johanssonsoundsymbolic,Nuclear-Macro-Je
-3241,Meriam,Papunesia,-9.59575,143.773,meri1244,ulk,Meriam,east2503,187,187,johanssonsoundsymbolic,Eastern Trans-Fly
-3242,Jurchen,Eurasia,44.412626,126.866803,jurc1239,juc,Jurchen,tung1282,202,202,oskolskayatungusic,Tungusic
-3243,Nkoya_1,Africa,-14.85,24.76,nkoy1244,nka,Nkoya,atla1278,187,187,sawkatokaleya,Atlantic-Congo
-3244,BahnarPleiku,Eurasia,14.0476,108.471,bahn1262,bdq,Bahnar,aust1305,212,212,sidwellbahnaric,Austroasiatic
-3245,Haida,North America,54.8979,-132.2479,sout2956,hax,Southern Haida,haid1248,187,187,tolmiebritishcolumbia,Haida
-3246,Shahaptani,North America,46.1427,-121.6173,klik1240,,Klikitat,saha1239,197,197,tolmiebritishcolumbia,Sahaptian
-3247,Alekano,Papunesia,-6.03901,145.387,alek1238,gah,Alekano,nucl1709,384,384,transnewguineaorg,Nuclear Trans New Guinea
-3248,Kuni-Boazi,Papunesia,-6.97504,141.365,kuni1265,kvg,Kuni-Boazi,anim1240,256,256,transnewguineaorg,Anim
-3249,Maiwa,Papunesia,-9.69836,149.274,maiw1251,mti,Maiwa (Papua New Guinea),daga1274,238,238,transnewguineaorg,Dagan
-3250,Avok: Hokai 2,Papunesia,-16.54125,167.73977,avok1244,,Avok,aust1307,187,187,vanuatuvoices,Austronesian
-3251,Nasarian: Wileven,Papunesia,-16.38333,167.4681,nasa1240,nvh,Nasarian,aust1307,194,194,vanuatuvoices,Austronesian
-3252,Novol: Bangir,Papunesia,-16.29424,167.66802,dixo1238,dix,Dixon Reef,aust1307,191,191,vanuatuvoices,Austronesian
-3253,Biga (Misool),Papunesia,-1.8801,130.075,matb1237,xmt,Matbat,aust1307,187,187,abvdoceanic,Austronesian
-3254,Suau,Papunesia,-10.6606,150.21,suau1242,swp,Suau,aust1307,194,194,abvdoceanic,Austronesian
-3255,Gapapaiwa,Papunesia,-9.73317,149.854,gapa1238,pwg,Gapapaiwa,aust1307,224,224,abvdoceanic,Austronesian
-3256,'Auhelawa,Papunesia,-10.0959,151.002,auhe1237,kud,'Auhelawa,aust1307,199,199,abvdoceanic,Austronesian
-3257,"Bilaan, Koronadal",Papunesia,6.20529,125.007,koro1310,bpr,Koronadal Blaan,aust1307,190,190,abvdphilippines,Austronesian
-3258,Itbayaten,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,190,190,abvdphilippines,Austronesian
-3259,"Itneg, Binongan",Papunesia,17.5972,120.876,bino1237,itb,Binongan Itneg,aust1307,191,191,abvdphilippines,Austronesian
-3260,"Kankanay, Northern",Papunesia,17.1057,120.786,nort2877,xnn,Northern Kankanay,aust1307,189,189,abvdphilippines,Austronesian
-3261,Mbabaram,Australia,-20.1389,143.438,mbab1239,vmb,Mbabaram,pama1250,186,186,bowernpny,Pama-Nyungan
-3262,T-Urmetan 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,186,186,cals,Indo-European
-3263,Guajá,South America,-3.93574,-46.3683,guaj1256,gvj,Guajá,tupi1275,187,187,gerarditupi,Tupian
-3264,Yaqui,North America,29.9446,-110.681,yaqu1251,yaq,Yaqui,utoa1244,192,192,lionnetyotonahua,Uto-Aztecan
-3265,Southern Pwo,Eurasia,15.1915,98.7355,pwoe1235,kjp,Pwo Eastern Karen,sino1245,186,186,luangthongkumkaren,Sino-Tibetan
-3266,Sre,Eurasia,11.6444,108.057,koho1244,kpm,Koho,aust1305,198,198,sidwellbahnaric,Austroasiatic
-3267,Alak,Eurasia,15.5565,106.597,alak1253,alk,Alak,aust1305,191,191,sidwellbahnaric,Austroasiatic
-3268,Tshimsian,,54.336545,-130.450287,tsim1258,,Tsimshian,tsim1258,190,190,tolmiebritishcolumbia,Tsimshian
-3269,Fifti: Khatbol,Papunesia,-16.18053,167.5316,vivt1234,,Vivti,aust1307,187,187,vanuatuvoices,Austronesian
-3270,Mandri: Farun,Papunesia,-16.50111,167.63972,nisv1234,,Nisvai,aust1307,186,186,vanuatuvoices,Austronesian
-3271,Nasvang: Farun,Papunesia,-16.51167,167.63944,nasv1234,,Nasvang,aust1307,186,186,vanuatuvoices,Austronesian
-3272,Nitita: Khatbol,Papunesia,-16.18053,167.5316,niti1249,,Nitita,aust1307,189,189,vanuatuvoices,Austronesian
-3273,Salang: DixonReef,Papunesia,-16.26833,167.4339,katb1237,tmb,Avava,aust1307,186,186,vanuatuvoices,Austronesian
-3274,Uliveo: Pelongk,Papunesia,-16.51917,167.83139,mask1242,klv,Maskelynes,aust1307,187,187,vanuatuvoices,Austronesian
-3275,Kairiru,Papunesia,-3.34608,143.558,kair1263,kxa,Kairiru,aust1307,257,257,abvdoceanic,Austronesian
-3276,Minyaifuin (Gebe),Papunesia,-0.07877,129.424,gebe1237,gei,Gebe,aust1307,187,187,abvdoceanic,Austronesian
-3277,Wogeo,Papunesia,-3.20238,144.089,woge1237,woc,Wogeo,aust1307,188,188,abvdoceanic,Austronesian
-3278,Kapingamarangi,Papunesia,1.039166,154.797223,kapi1249,kpg,Kapingamarangi,aust1307,269,269,abvdoceanic,Austronesian
-3279,Gabadi,Papunesia,-9.03389,146.992,abad1241,kbt,Abadi,aust1307,200,200,abvdoceanic,Austronesian
-3280,Malango,Papunesia,-9.61383,160.118,mala1484,mln,Malango,aust1307,210,210,abvdoceanic,Austronesian
-3281,Arosi (Tawatana Village),Papunesia,-10.2441,161.432,aros1241,aia,Arosi,aust1307,200,200,abvdoceanic,Austronesian
-3282,Tesmbol (Usus),Papunesia,-16.3579,167.697,aulu1238,aul,Aulua,aust1307,186,186,abvdoceanic,Austronesian
-3283,Mangseng,Papunesia,-5.89752,150.68,mang1403,mbh,Mangseng,aust1307,201,201,abvdoceanic,Austronesian
-3284,Roinji,Papunesia,-5.80782,146.731,ronj1237,roe,Ronji,aust1307,196,196,abvdoceanic,Austronesian
-3285,Hote (Misim dialect),Papunesia,-7.07708,146.869,hote1245,hot,Hote,aust1307,189,189,abvdoceanic,Austronesian
-3286,"Ifugao, Amganad",Papunesia,16.9016,121.042,amga1235,ifa,Amganad Ifugao,aust1307,188,188,abvdphilippines,Austronesian
-3287,"Ilongot, Kakiduge:n",Papunesia,16.3785,121.547,ilon1239,ilk,Ilongot,aust1307,190,190,abvdphilippines,Austronesian
-3288,Tadyawan,Papunesia,13.0211,121.305,tady1237,tdy,Tadyawan,aust1307,265,265,abvdphilippines,Austronesian
-3289,Guiangan (Sirib),Papunesia,6.99967,125.359,gian1241,bgi,Giangan,aust1307,189,189,abvdphilippines,Austronesian
-3290,Mithaka,Australia,-25.13606725,139.598447,mith1236,,Mithaka,pama1250,187,187,bowernpny,Pama-Nyungan
-3291,Nhirrpi,Australia,-28.62911,141.27596,nhir1234,hrp,Nhirrpi,pama1250,185,185,bowernpny,Pama-Nyungan
-3292,Sukur,Africa,10.8933,13.6437,suku1272,syk,Sukur,afro1255,193,193,gravinachadic,Afro-Asiatic
-3293,Waimiri Atroari,South America,-0.61832,-60.4259,waim1253,atr,Waimiri-Atroari,cari1283,185,185,huntergatherer,Cariban
-3294,Dhuwala,Australia,-12.2868,135.337,gupa1247,guf,Gupapuyngu,pama1250,185,185,huntergatherer,Pama-Nyungan
-3295,Abun,Papunesia,-0.57073,132.416,abun1252,kgr,Abun,abun1252,185,185,johanssonsoundsymbolic,Abun
-3296,Gooniyandi,Australia,-18.4073,126.351,goon1238,gni,Gooniyandi,buna1274,185,185,johanssonsoundsymbolic,Bunaban
-3297,Opata,North America,31.15211,-110.06212,opat1246,opt,Teguima,utoa1244,201,201,lionnetyotonahua,Uto-Aztecan
-3298,MagdalenaPenascoMixtec,North America,17.2837,-97.5413,magd1235,xtm,Magdalena Peñasco Mixtec,otom1299,204,204,mixtecansubgrouping,Otomanguean
-3299,Urarina,South America,-4.44006,-75.4211,urar1246,ura,Urarina,urar1246,189,189,northperulex,Urarina
-3300,Jurchen,Eurasia,44.41,126.87,jurc1239,juc,Jurchen,tung1282,198,198,robbeetstriangulation,Tungusic
-3301,Sedang,Eurasia,14.7793,108.027,seda1262,sed,Sedang,aust1305,203,203,sidwellbahnaric,Austroasiatic
-3302,Halang,Eurasia,14.7862,107.457,hala1252,hal,Halang,aust1305,199,199,sidwellbahnaric,Austroasiatic
-3303,Thlinkit,North America,54.2006,-129.8392,tlin1245,tli,Tlingit,atha1245,192,192,tolmiebritishcolumbia,Athabaskan-Eyak-Tlingit
-3304,Selish,North America,50.6849,-121.9177,lill1248,lil,Lillooet,sali1255,186,186,tolmiebritishcolumbia,Salishan
-3305,Axamb: Small Island,Papunesia,-16.51664,167.65287,axam1237,ahb,Axamb,aust1307,185,185,vanuatuvoices,
-3306,Nahavaq: Loorndavo,Papunesia,-16.52763,167.44872,sout2857,sns,Nahavaq,aust1307,185,185,vanuatuvoices,Austronesian
-3307,Uliveo: Peskaros 2,Papunesia,-16.52542,167.82515,mask1242,klv,Maskelynes,aust1307,185,185,vanuatuvoices,Austronesian
-3308,Wala: Preng,Papunesia,-15.97342,167.37627,wala1267,,Wala-Rano,aust1307,188,188,vanuatuvoices,Austronesian
-3309,Xoli (Mbwenelang),Papunesia,-16.34139,167.7425,boin1237,,Boinelang,aust1307,185,185,vanuatuvoices,Austronesian
-3310,Taiof,Papunesia,-5.64103,154.732,sapo1253,sps,Saposa,aust1307,186,186,abvdoceanic,Austronesian
-3311,Manihiki,Papunesia,-10.03,-161.09,raka1237,rkh,Rakahanga-Manihiki,aust1307,299,299,abvdoceanic,Austronesian
-3312,Bunama,Papunesia,-10.0761,151.066,buna1276,bdd,Bunama,aust1307,212,212,abvdoceanic,Austronesian
-3313,Agta,Papunesia,17.9571,121.857,cent2084,agt,Central Cagayan Agta,aust1307,189,189,abvdphilippines,Austronesian
-3314,Bikol (Buhinon),Papunesia,13.17,123.5,buhi1243,ubl,Buhi,aust1307,191,191,abvdphilippines,Austronesian
-3315,Kamayo,Papunesia,8.10796,126.314,kama1363,kyk,Kamayo,aust1307,240,240,abvdphilippines,Austronesian
-3316,Wuna,Papunesia,-5.40419,122.541,muna1247,mnb,Muna,aust1307,192,192,blustaustronesian,Austronesian
-3317,Jeh,Eurasia,15.2351,107.753,jehh1245,jeh,Jeh,aust1305,190,190,sidwellbahnaric,Austroasiatic
-3318,MnongRlm,Eurasia,12.3939,108.354,east2333,mng,Eastern Mnong,aust1305,222,222,sidwellbahnaric,Austroasiatic
-3319,Mbaniata,Papunesia,-8.58405,157.296,touo1238,tqu,Touo,touo1238,239,239,transnewguineaorg,Touo
-3320,Siane,Papunesia,-6.13188,145.247,sian1257,snp,Siane,nucl1709,328,328,transnewguineaorg,Nuclear Trans New Guinea
-3321,Avok: Hokai,Papunesia,-16.53778,167.74,avok1244,,Avok,aust1307,185,185,vanuatuvoices,Austronesian
-3322,Burmbar: Burmbar,Papunesia,-16.38806,167.78222,burm1263,vrt,Burmbar,aust1307,184,184,vanuatuvoices,Austronesian
-3323,Nombotkote: Blacksands,Papunesia,-16.32063,167.44212,lete1241,nms,Letemboi-Repanbitip,aust1307,184,184,vanuatuvoices,Austronesian
-3324,Pangkumu: Datisman,Papunesia,-16.28244,167.6626,rere1240,pgk,Rerep,aust1307,184,184,vanuatuvoices,Austronesian
-3325,Rano: Chinambong,Papunesia,-15.99049,167.39063,wala1267,,Wala-Rano,aust1307,186,186,vanuatuvoices,Austronesian
-3326,Rano: Potora,Papunesia,-15.98472,167.3866,wala1267,,Wala-Rano,aust1307,187,187,vanuatuvoices,Austronesian
-3327,Sa: Paangi,Papunesia,-15.94611,168.19444,saaa1241,sax,Sa,aust1307,195,195,vanuatuvoices,Austronesian
-3328,Unua: Noferai,Papunesia,-16.23333,167.60139,unua1237,onu,Unua,aust1307,184,184,vanuatuvoices,Austronesian
-3329,Vao: Canada,Papunesia,-15.89978,167.30731,vaoo1237,vao,Vao-Vovo,aust1307,184,184,vanuatuvoices,Austronesian
-3330,Wowo: Wowo,Papunesia,-15.90224,167.18459,vovo1238,,Vovo,aust1307,188,188,vanuatuvoices,Austronesian
-3331,Mor,Papunesia,-2.87055,135.95,morm1235,mhz,Mor (Mor Islands),aust1307,190,190,abvdoceanic,Austronesian
-3332,Leipon,Papunesia,-1.9665,147.226,leip1237,lek,Leipon,aust1307,183,183,abvdoceanic,Austronesian
-3333,Nauru,Papunesia,-0.52957,166.922,naur1243,nau,Nauru,aust1307,232,232,abvdoceanic,Austronesian
-3334,Uruava,Papunesia,-6.23314,155.573,urua1242,urv,Uruava,aust1307,246,246,abvdoceanic,Austronesian
-3335,Lelepa,Papunesia,-17.6042,168.202,lele1267,lpa,Lelepa,aust1307,187,187,abvdoceanic,Austronesian
-3336,Hanunoo,Papunesia,12.4159,121.221,hanu1241,hnn,Hanunoo,aust1307,244,244,abvdphilippines,Austronesian
-3337,Malgana,Australia,-26.211,114.245,malg1242,vml,Malgana,pama1250,184,184,bowernpny,Pama-Nyungan
-3338,T-Nûshor 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,183,183,cals,Indo-European
-3339,Bunuba,Australia,-17.8297,125.631,buna1275,bck,Bunaba,buna1274,190,190,huntergatherer,Bunaban
-3340,Canela,South America,-6.10712,-45.1299,cane1242,ram,Central-Southern Timbira,nucl1710,205,205,idssegmented,Nuclear-Macro-Je
-3341,Kaluli,Papunesia,-6.45932,142.788,kalu1248,bco,Kaluli,bosa1245,183,183,johanssonsoundsymbolic,Bosavi
-3342,Kathmandu,Eurasia,27.67,85.326,newa1246,new,Kathmandu Valley Newari,sino1245,272,272,liunewari,Sino-Tibetan
-3343,Phon,Eurasia,25.3248194,97.3544031,hpon1238,hpo,Hpon,sino1245,183,183,mannburmish,Sino-Tibetan
-3344,SanAndresChicahuaxtlaTriqui,North America,17.15612,-97.84007,chic1273,trs,Chicahuaxtla Triqui,otom1299,202,202,mixtecansubgrouping,Otomanguean
-3345,SanMartinDuraznosMixtec,North America,17.30502,-98.10188,juxt1235,vmc,Juxtlahuaca Mixtec,otom1299,195,195,mixtecansubgrouping,Otomanguean
-3346,ElJicaralMixtec,North America,17.12602,-98.196842,coic1238,,Coicoyán,otom1299,192,192,mixtecansubgrouping,Otomanguean
-3347,Fúlup,Africa,12.5258,-16.4245,band1340,bqj,Bandial,atla1278,230,230,polyglottaafricana,Atlantic-Congo
-3348,Rengao,Eurasia,14.456,107.9459,reng1252,ren,Rengao,aust1305,197,197,sidwellbahnaric,Austroasiatic
-3349,Stieng,Eurasia,11.9777,106.798,bulo1242,sti,Bulo Stieng,aust1305,195,195,sidwellbahnaric,Austroasiatic
-3350,JruLaven,Eurasia,15.2726,106.322,lave1248,lbo,Laven,aust1305,190,190,sidwellbahnaric,Austroasiatic
-3351,Chambri,Papunesia,-4.27831,143.097,cham1313,can,Chambri,lowe1423,316,316,transnewguineaorg,Lower Sepik
-3352,West Makian,Papunesia,0.45332,127.63,west2600,mqs,West Makian,nort2923,259,259,transnewguineaorg,North Halmahera
-3353,Atchin: Small Island,Papunesia,-15.9439,167.33993,atch1238,,Atchin,aust1307,186,186,vanuatuvoices,Austronesian
-3354,Espiegel’s Bay: Solwota,Papunesia,-15.979,167.192,malu1245,mll,Malua-Tepërav,aust1307,183,183,vanuatuvoices,Austronesian
-3355,Malua Bay: Tiptir,Papunesia,-15.9905,167.21991,malu1245,mll,Malua-Tepërav,aust1307,183,183,vanuatuvoices,Austronesian
-3356,Port Sandwich: Lamap,Papunesia,-16.425,167.805,port1285,psw,Port Sandwich,aust1307,183,183,vanuatuvoices,Austronesian
-3357,Sa: Ranwas,Papunesia,-15.968650,168.265183,saaa1241,sax,Sa,aust1307,193,193,vanuatuvoices,Austronesian
-3358,Uliveo (Lurtes) 162-107,Papunesia,-16.5073,167.818,mask1242,klv,Maskelynes,aust1307,205,205,abvdoceanic,Austronesian
-3359,"Dumagat, Casiguran",Papunesia,16.2176,121.878,casi1235,dgc,Casiguran-Nagtipunan Agta,aust1307,186,186,abvdphilippines,Austronesian
-3360,Buhid,Papunesia,12.6396,121.21,buhi1245,bku,Buhid,aust1307,246,246,abvdphilippines,Austronesian
-3361,Ki-Orday 3,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,182,182,cals,Turkic
-3362,Lule,South America,-25.22,-61.89,lule1238,ule,Lule,lule1238,304,304,chacolanguages,Lule-Vilela
-3363,Kumadene_2,South America,0.69618,-67.5028,curr1243,kpc,Curripaco,araw1281,182,182,chaconbaniwa,Arawakan
-3364,Djapu,Australia,-12.879764,136.417978,djap1238,,Djapu,pama1250,184,184,huntergatherer,Pama-Nyungan
-3365,Garrwa,Australia,-17.4504,137.72014,gara1269,wrk,Garrwa,garr1260,182,182,johanssonsoundsymbolic,Garrwan
-3366,Murrinh-Patha,Australia,-14.74852,129.70152,murr1258,mwf,Murriny Patha,sout2772,182,182,johanssonsoundsymbolic,Southern Daly
-3367,Southern Jeolla,Eurasia,35.14,126.84,chol1278,,Jollado,kore1284,186,186,leekoreanic,Koreanic
-3368,Northern Chungcheong,Eurasia,36.63,127.31,chun1247,,Ch'ungch'ongdo,kore1284,187,187,leekoreanic,Koreanic
-3369,ChalcatongoHidalgoMixtec,North America,17.03226,-97.57074,sanm1296,,San Miguel Chalcatongo,otom1299,198,198,mixtecansubgrouping,Otomanguean
-3370,Tshinook,North America,45.5838,-121.2008,wasc1239,wac,Upper Chinook,chin1490,182,182,tolmiebritishcolumbia,Chinookan
-3371,Kaki Ae,Papunesia,-7.9946,145.816,kaki1249,tbd,Kaki Ae,kaki1249,233,233,transnewguineaorg,Kaki Ae
-3372,Mailu,Papunesia,-10.3657,149.521,mail1248,mgu,Mailu,mail1249,243,243,transnewguineaorg,Mailuan
-3373,Mbaniata (Lokuru Dialect),Papunesia,-7.92388,156.663,bilu1245,blb,Bilua,bilu1245,202,202,transnewguineaorg,Bilua
-3374,Mbilua,Papunesia,-7.92388,156.663,bilu1245,blb,Bilua,bilu1245,211,211,transnewguineaorg,Bilua
-3375,Atchin: Orap,Papunesia,-15.9156,167.30641,atch1238,,Atchin,aust1307,189,189,vanuatuvoices,Austronesian
-3376,Aulua: Loxse-Lanfitfit,Papunesia,-16.33667,167.73972,aulu1238,aul,Aulua,aust1307,182,182,vanuatuvoices,Austronesian
-3377,Neve’ei: Coast,Papunesia,-16.22942,167.38365,vinm1237,vnm,Neve'ei,aust1307,182,182,vanuatuvoices,Austronesian
-3378,Uliveo: Peskaros,Papunesia,-16.51917,167.83139,mask1242,klv,Maskelynes,aust1307,183,183,vanuatuvoices,Austronesian
-3379,Unua: Mbatumbo,Papunesia,-16.23361,167.6011,unua1237,onu,Unua,aust1307,182,182,vanuatuvoices,Austronesian
-3380,V’ënen Taute: Benmara,Papunesia,-16.05552,167.23261,bign1238,nmb,Big Nambas,aust1307,182,182,vanuatuvoices,Austronesian
-3381,Hoava,Papunesia,-8.19679,157.595,hoav1238,hoa,Hoava,aust1307,190,190,abvdoceanic,Austronesian
-3382,Misima,Papunesia,-10.6821,152.696,misi1243,mpx,Misima-Paneati,aust1307,183,183,abvdoceanic,Austronesian
-3383,Zabana (Kia),Papunesia,-7.74311,158.753,zaba1237,kji,Zabana,aust1307,195,195,abvdoceanic,Austronesian
-3384,Aria,Papunesia,-5.71155,149.158,mouk1239,mwh,Mouk-Aria,aust1307,241,241,abvdoceanic,Austronesian
-3385,Sisingga,Papunesia,-7.0,156.83,sisi1250,,Sisiqa,aust1307,197,197,abvdoceanic,Austronesian
-3386,Merei,Papunesia,-15.2839,166.905,mere1242,lmb,Merei,aust1307,198,198,abvdoceanic,Austronesian
-3387,Kalinga (Minangali),Papunesia,17.3441,121.311,lowe1412,kml,Tanudan Kalinga,aust1307,196,196,abvdphilippines,Austronesian
-3388,Alangan,Papunesia,13.0982,121.022,alan1249,alj,Alangan,aust1307,265,265,abvdphilippines,Austronesian
-3389,Batangan,Papunesia,12.6396,121.21,buhi1245,bku,Buhid,aust1307,271,271,abvdphilippines,Austronesian
-3390,Malaweg,Papunesia,17.7329,121.58,itaw1240,itv,Itawit,aust1307,202,202,abvdphilippines,Austronesian
-3391,YoloxochitlMixtec,North America,16.8059,-98.6293,yolo1241,xty,Yoloxochitl Mixtec,otom1299,190,190,mixtecansubgrouping,Otomanguean
-3392,Kiranti_Bahing,Eurasia,27.309472,86.430334,bahi1252,bhj,Bahing,sino1245,194,194,sagartst,Sino-Tibetan
-3393,Tampuan,Eurasia,13.56447,107.24544,tamp1251,tpu,Tampuan,aust1305,185,185,sidwellbahnaric,Austroasiatic
-3394,BahnarGolar,Eurasia,14.0476,108.471,bahn1262,bdq,Bahnar,aust1305,195,195,sidwellbahnaric,Austroasiatic
-3395,Huli,Papunesia,-5.97212,142.963,huli1244,hui,Huli,nucl1709,245,245,transnewguineaorg,Nuclear Trans New Guinea
-3396,Espiegel’s Bay: Litebral,Papunesia,-15.974,167.193,malu1245,mll,Malua-Tepërav,aust1307,181,181,vanuatuvoices,Austronesian
-3397,Naha’ai: Malfaxal,Papunesia,-16.55216,167.56539,malf1237,mlx,Na'ahai,aust1307,181,181,vanuatuvoices,Austronesian
-3398,Ninde: Southwest Bay,Papunesia,-16.48255,167.44635,labo1244,mwi,Ninde,aust1307,181,181,vanuatuvoices,Austronesian
-3399,Rano: Twalung,Papunesia,-15.98389,167.38444,wala1267,,Wala-Rano,aust1307,183,183,vanuatuvoices,Austronesian
-3400,Unua: Benuamor,Papunesia,-16.2346,167.60636,unua1237,onu,Unua,aust1307,181,181,vanuatuvoices,Austronesian
-3401,Vao: Torono,Papunesia,-15.89986,167.30819,vaoo1237,vao,Vao-Vovo,aust1307,181,181,vanuatuvoices,Austronesian
-3402,Tangga,Papunesia,-4.08824,153.611,tang1348,tgg,Tangga,aust1307,208,208,abvdoceanic,Austronesian
-3403,Vaghua,Papunesia,-6.68712,156.542,vagh1249,tva,Vaghua,aust1307,269,269,abvdoceanic,Austronesian
-3404,Varisi,Papunesia,-6.83443,156.655,vari1239,vrs,Varisi,aust1307,232,232,abvdoceanic,Austronesian
-3405,Kokota,Papunesia,-8.16481,159.191,koko1269,kkk,Kokota,aust1307,184,184,abvdoceanic,Austronesian
-3406,Tolai,Papunesia,-4.30986,152.114,kuan1248,ksd,Kuanua,aust1307,222,222,abvdoceanic,Austronesian
-3407,Unua (Noferai),Papunesia,-16.2638,167.599,unua1237,onu,Unua,aust1307,180,180,abvdoceanic,Austronesian
-3408,Na'ahai (Mbatvanui) 162-85,Papunesia,-16.5499,167.509,malf1237,mlx,Na'ahai,aust1307,180,180,abvdoceanic,Austronesian
-3409,Axamb (Small Island-Brisbane) 162-89,Papunesia,-16.4838,167.707,axam1237,ahb,Axamb,aust1307,180,180,abvdoceanic,Austronesian
-3410,Mayi-Kulan,Australia,-18.56,141.46,mayi1236,xyk,Mayi-Kulan,pama1250,181,181,bowernpny,Pama-Nyungan
-3411,T-Urmetan 4,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,180,180,cals,Indo-European
-3412,Shuar,South America,-3.45136,-78.1892,shua1257,jiv,Shuar,jiva1245,183,183,northperulex,Chicham
-3413,Jebero,South America,-5.40317,-76.4103,jebe1250,jeb,Jebero,cahu1265,183,183,northperulex,Cahuapanan
-3414,Nyaheun,Eurasia,15.1034,106.543,nyah1249,nev,Nyaheun,aust1305,189,189,sidwellbahnaric,Austroasiatic
-3415,Kwakiool,North America,49.9985,-125.1751,kwak1269,kwk,Kwak'wala,waka1280,180,180,tolmiebritishcolumbia,Wakashan
-3416,Niskwalli,North America,47.9688,-122.4076,lush1252,lut,Northern Lushootseed,sali1255,181,181,tolmiebritishcolumbia,Salishan
-3417,Lavukaleve,Papunesia,-9.05569,159.119,lavu1241,lvk,Lavukaleve,lavu1241,209,209,transnewguineaorg,Lavukaleve
-3418,Sa: Bunlap,Papunesia,-15.9575,168.26889,saaa1241,sax,Sa,aust1307,195,195,vanuatuvoices,Austronesian
-3419,V’ënen Taute: Alpalak,Papunesia,-15.99722,167.1825,bign1238,nmb,Big Nambas,aust1307,180,180,vanuatuvoices,Austronesian
-3420,V’ënen Taute: Unmet,Papunesia,-16.15371,167.26022,bign1238,nmb,Big Nambas,aust1307,180,180,vanuatuvoices,Austronesian
+2605,Dzhilikhur,Eurasia,41.65545,47.26768,ixre1238,,Ixreko-Muxrek,nakh1245,211,211,rutulbasiclexicon,Nakh-Daghestanian
+2606,Kina,Eurasia,41.6166,47.2647,rutu1240,rut,Rutul,nakh1245,211,211,rutulbasiclexicon,Nakh-Daghestanian
+2607,Tboli (Tagabili),Papunesia,6.20377,124.538,tbol1240,tbl,Tboli,aust1307,229,229,abvdphilippines,Austronesian
+2608,Bilinarra,Australia,-16.868771,130.533991,bili1250,,Bilinarra,pama1250,211,211,bowernpny,Pama-Nyungan
+2609,Mathi-Mathi,Australia,-34.5,143.5,madh1244,dmd,Madhi Madhi,pama1250,212,212,bowernpny,Pama-Nyungan
+2610,Wichí,,-23.16,-62.18,wich1261,,Wichi,mata1289,326,326,chacolanguages,Matacoan
+2611,Dutch_List,Eurasia,52.0,5.0,dutc1256,nld,Dutch,indo1319,237,237,dunnielex,Indo-European
+2612,English,Eurasia,53.0,-1.0,stan1293,eng,English,indo1319,211,211,dunnielex,Indo-European
+2613,Mazera,Africa,11.1433,15.044,maje1243,xmj,Majera,afro1255,211,211,gravinachadic,Afro-Asiatic
+2614,Tatuyo,South America,0.55582,-70.5327,tatu1247,tav,Tatuyo,tuca1253,211,211,huntergatherer,Tucanoan
+2615,Nimanburru,Australia,-17.374,123.228,nima1245,nmp,Nimanbur,nyul1248,218,218,huntergatherer,Nyulnyulan
+2616,Hatam,Papunesia,-1.13531,134.037,hata1243,had,Hatam,hata1242,211,211,johanssonsoundsymbolic,Hatam-Mansim
+2617,Ongota,Africa,5.29807,37.025,bira1253,bxe,Ongota,bira1253,211,211,johanssonsoundsymbolic,Ongota
+2618,Rikbaktsa,South America,-11.1887,-58.1942,rikb1245,rkb,Rikbaktsa,nucl1710,211,211,johanssonsoundsymbolic,Nuclear-Macro-Je
+2619,N·hā́lemōẹ,Africa,5.13981,9.92766,mboc1235,mbo,Mbo (Cameroon),atla1278,222,222,polyglottaafricana,Atlantic-Congo
+2620,"Asmat, Central (Keenok, Komar Dialect)",Papunesia,-4.89854,138.405,nort2917,nks,Momogo-Pupis-Irogo,nucl1709,226,226,transnewguineaorg,Nuclear Trans New Guinea
+2621,Kuman,Papunesia,-5.90586,144.977,kuma1280,kue,Kuman,nucl1709,254,254,transnewguineaorg,Nuclear Trans New Guinea
+2622,Vagahau Niue,Papunesia,-19.06,-169.86,niue1239,niu,Niuean,aust1307,259,259,walworthpolynesian,Austronesian
+2623,Amsar,Eurasia,41.60348,47.33116,rutu1240,rut,Rutul,nakh1245,210,210,rutulbasiclexicon,Nakh-Daghestanian
+2624,Ikhrek,Eurasia,41.693931,47.210005,ixre1238,,Ixreko-Muxrek,nakh1245,210,210,rutulbasiclexicon,Nakh-Daghestanian
+2625,Kala,Eurasia,41.577819,47.3499843,rutu1240,rut,Rutul,nakh1245,210,210,rutulbasiclexicon,Nakh-Daghestanian
+2626,Khnov,Eurasia,41.378607,47.443605,borc1243,,Borch,nakh1245,210,210,rutulbasiclexicon,Nakh-Daghestanian
+2627,Kiche,Eurasia,41.53146,47.48171,rutu1240,rut,Rutul,nakh1245,210,210,rutulbasiclexicon,Nakh-Daghestanian
+2628,Kufa,Eurasia,41.564115,47.376937,rutu1240,rut,Rutul,nakh1245,210,210,rutulbasiclexicon,Nakh-Daghestanian
+2629,Luchek,Eurasia,41.60988,47.307307,rutu1240,rut,Rutul,nakh1245,210,210,rutulbasiclexicon,Nakh-Daghestanian
+2630,Rutul,Eurasia,41.5342,47.4269,rutu1240,rut,Rutul,nakh1245,210,210,rutulbasiclexicon,Nakh-Daghestanian
+2631,Shinaz,Eurasia,41.618658,47.375666,shin1265,,Shina (Nakh-Daghestan),nakh1245,210,210,rutulbasiclexicon,Nakh-Daghestanian
+2632,"Atta, Pamplona",Papunesia,18.4738,121.3,pamp1244,att,Pamplona Atta,aust1307,216,216,abvdphilippines,Austronesian
+2633,Saaroa L04,Papunesia,23.2632,120.711,saar1237,sxr,Saaroa,aust1307,228,228,abvdphilippines,Austronesian
+2634,Singhi,Papunesia,1.54467,109.985,baub1235,sne,Bau-Jagoi Bidayuh,aust1307,250,250,blustaustronesian,Austronesian
+2635,French,Eurasia,48.0,2.0,stan1290,fra,French,indo1319,213,213,dunnielex,Indo-European
+2636,MAWE,South America,-3.63897,-56.8749,sate1243,mav,Sateré-Mawé,tupi1275,211,211,gerarditupi,Tupian
+2637,Bambara,Africa,14.53,-4.1,bamb1269,bam,Bambara,mand1469,210,210,hantganbangime,Mande
+2638,Yokuts Yowlumne,North America,36.3167,-119.721,yoku1256,yok,Northern Yokuts,yoku1255,217,217,huntergatherer,Yokutsan
+2639,Taushiro,South America,-3.22497,-75.5603,taus1253,trr,Taushiro,taus1253,210,210,huntergatherer,Taushiro
+2640,Dhuwal,Australia,-12.7825,136.008,dhuw1249,duj,Dhuwal,pama1250,216,216,huntergatherer,Pama-Nyungan
+2641,Dera (Indonesia),Papunesia,-3.52309,140.947,dera1245,kbv,Dera (Indonesia),sena1264,210,210,johanssonsoundsymbolic,Senagi
+2642,Takelma,North America,42.423,-123.452,take1257,tkm,Takelma,take1257,210,210,johanssonsoundsymbolic,Takelma
+2643,Doutai,Papunesia,-3.24832,138.22,dout1240,tds,Doutai,lake1255,239,239,transnewguineaorg,Lakes Plain
+2644,Savosavo,Papunesia,-9.12853,159.814,savo1255,svs,Savosavo,savo1255,249,249,transnewguineaorg,Savosavo
+2645,Luangiua,Papunesia,-5.49029,159.701,onto1237,ojv,Luangiua,aust1307,242,242,walworthpolynesian,Austronesian
+2646,Pazih F69,Papunesia,23.7562,120.976,kulo1237,pzh,Pazeh-Kahabu,aust1307,461,461,abvdphilippines,Austronesian
+2647,"Kalinga, Limos",Papunesia,17.6081,121.381,limo1248,kmk,Limos Kalinga,aust1307,250,250,abvdphilippines,Austronesian
+2648,Atayal - C'uli' L04 (Skikun),Papunesia,24.5209,121.388,atay1247,tay,Atayal,aust1307,217,217,abvdphilippines,Austronesian
+2649,Bunun (Iskubun),Papunesia,23.4116,121.025,bunu1267,bnn,Bunun,aust1307,226,226,abvdphilippines,Austronesian
+2650,Saisiyat L04 (Tungho),Papunesia,24.6043,121.067,sais1237,xsy,Saisiyat,aust1307,222,222,abvdphilippines,Austronesian
+2651,Atayal - Squliq L04,Papunesia,24.5209,121.388,atay1247,tay,Atayal,aust1307,233,233,abvdphilippines,Austronesian
+2652,Seediq L04 (Toda),Papunesia,23.9032,121.358,taro1264,trv,Seediq,aust1307,229,229,abvdphilippines,Austronesian
+2653,Seediq L04 (Hecuo),Papunesia,23.9032,121.358,taro1264,trv,Seediq,aust1307,223,223,abvdphilippines,Austronesian
+2654,Kanakanabu L04,Papunesia,23.3235,120.887,kana1286,xnb,Kanakanavu,aust1307,235,235,abvdphilippines,Austronesian
+2655,Merina_Malagasy,Africa,-19.5907,47.1211,plat1254,plt,Plateau Malagasy,aust1307,226,226,blustaustronesian,Austronesian
+2656,Greek_Mod,Eurasia,38.36,23.13,mode1248,ell,Modern Greek,indo1319,215,215,dunnielex,Indo-European
+2657,Omagua,South America,-3.526,-69.1667,omag1248,omg,Omagua,tupi1275,210,210,gerarditupi,Tupian
+2658,Muniche,South America,-5.7441796,-76.426712,muni1258,myr,Muniche,muni1258,209,209,johanssonsoundsymbolic,Muniche
+2659,Kagoshima,Eurasia,28.20991,129.45346,nort2935,ryn,Northern Amami-Oshima,japo1237,210,210,leejaponic,Japonic
+2660,"Awyu, Central (Ketah Dialect)",Papunesia,-6.29363,139.693,cent2118,awu,Central Awyu,nucl1709,232,232,transnewguineaorg,Nuclear Trans New Guinea
+2661,Sikaiana,Papunesia,-8.378194,162.72952,sika1261,sky,Sikaiana,aust1307,238,238,walworthpolynesian,Austronesian
+2662,Myukhrek,Eurasia,41.68,47.29,ixre1238,,Ixreko-Muxrek,nakh1245,208,208,rutulbasiclexicon,Nakh-Daghestanian
+2663,Amis (Farang),Papunesia,23.0917,121.348,amis1246,ami,Amis,aust1307,217,217,abvdphilippines,Austronesian
+2664,Bunun (Takituduh L04),Papunesia,23.4116,121.025,bunu1267,bnn,Bunun,aust1307,232,232,abvdphilippines,Austronesian
+2665,Bunun (Takbanuaz),Papunesia,23.4116,121.025,bunu1267,bnn,Bunun,aust1307,230,230,abvdphilippines,Austronesian
+2666,Paiwan (Tjubar L04),Papunesia,22.3271,120.806,paiw1248,pwn,Paiwan,aust1307,221,221,abvdphilippines,Austronesian
+2667,Puyuma (Pilam L04),Papunesia,22.643,120.996,puyu1239,pyu,Puyuma,aust1307,225,225,abvdphilippines,Austronesian
+2668,Puyuma (Lower Pinlang L04),Papunesia,22.643,120.996,puyu1239,pyu,Puyuma,aust1307,223,223,abvdphilippines,Austronesian
+2669,Tsou (Duhtu L04),Papunesia,23.216,120.787,tsou1248,tsu,Tsou,aust1307,224,224,abvdphilippines,Austronesian
+2670,Italian,Eurasia,43.0464,12.6489,ital1282,ita,Italian,indo1319,233,233,dunnielex,Indo-European
+2671,AvaCanoeiro,South America,-13.6081,-48.1336,avac1239,avv,Avá-Canoeiro,tupi1275,209,209,gerarditupi,Tupian
+2672,Guarayo,South America,-15.8247,-61.6934,guar1292,gyr,Guarayu,tupi1275,209,209,gerarditupi,Tupian
+2673,Hachijō,Eurasia,33.109444,139.791389,hach1239,,Hachijo,japo1237,209,209,hattorijaponic,Japonic
+2674,Kanoê,South America,-12.1789,-64.5812,kano1245,kxo,Kanoê,kano1245,208,208,johanssonsoundsymbolic,Kanoê
+2675,Taushiro,South America,-3.22497,-75.5603,taus1253,trr,Taushiro,taus1253,208,208,johanssonsoundsymbolic,Taushiro
+2676,Khasi,Eurasia,24.977,91.9998,khas1269,kha,Khasi,aust1305,215,215,nagarajakhasian,Austroasiatic
+2677,Lyngngam,Eurasia,25.35,91.05,lyng1241,lyg,India Lyngam,aust1305,215,215,nagarajakhasian,Austroasiatic
+2678,Ndanda_Denfap,Africa,5.111459,10.336031,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
+2679,Ndanda_Lek,Africa,5.150741,10.429029,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
+2680,Ndanda_Meno,Africa,5.069482,10.425853,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
+2681,Ndanda_Ngwa,Africa,5.191047,10.473404,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
+2682,Ndanda_Nyep,Africa,5.254489,10.471901,bato1245,,Batoufam,atla1278,208,208,ndanda,Atlantic-Congo
+2683,Ndanda_Shingou,Africa,5.238847,10.491081,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
+2684,Ndanda_Twefap,Africa,5.027245,10.473575,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
+2685,Sikaritai,Papunesia,-2.80285,138.287,sika1263,tty,Sikaritai,lake1255,225,225,transnewguineaorg,Lakes Plain
+2686,Reo Ra'ivavae,Papunesia,-23.86742,-147.6551,raiv1237,,Raivavae,aust1307,220,220,walworthpolynesian,Austronesian
+2687,Puyuma (Katipul L04),Papunesia,22.643,120.996,puyu1239,pyu,Puyuma,aust1307,222,222,abvdphilippines,Austronesian
+2688,Rukai (Maga L04),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,229,229,abvdphilippines,Austronesian
+2689,Saisiyat L04 (Ta'ai),Papunesia,24.6043,121.067,sais1237,xsy,Saisiyat,aust1307,216,216,abvdphilippines,Austronesian
+2690,Marathi,Eurasia,17.9344,76.6665,mara1378,mar,Marathi,indo1319,247,247,dunnielex,Indo-European
+2691,Oki,Eurasia,27.37384,128.6187,okin1246,okn,Oki-No-Erabu,japo1237,207,207,hattorijaponic,Japonic
+2692,Ikema,Eurasia,24.93149,125.245,ikem1235,,Ikema-Jima,japo1237,207,207,leejaponic,Japonic
+2693,Sinitic_Chaozhou,Eurasia,23.657699,116.622317,chao1238,,Chaozhou,sino1245,214,214,sagartst,Sino-Tibetan
+2694,Dupaningan Agta,Papunesia,17.3748,122.188,dupa1235,duo,Dupaninan Agta,aust1307,253,253,abvdphilippines,Austronesian
+2695,Paiwan (Stimul L04),Papunesia,22.3271,120.806,paiw1248,pwn,Paiwan,aust1307,220,220,abvdphilippines,Austronesian
+2696,Rukai (Tanan L04),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,221,221,abvdphilippines,Austronesian
+2697,Rukai (Tona),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,222,222,abvdphilippines,Austronesian
+2698,Shigar Balti,Eurasia,35.422616,75.737108,balt1258,bft,Balti,sino1245,220,220,backstromnorthernpakistan,Sino-Tibetan
+2699,Skardu Balti,Eurasia,35.289137,75.607395,balt1258,bft,Balti,sino1245,222,222,backstromnorthernpakistan,Sino-Tibetan
+2700,Kharmang Balti,Eurasia,34.968679,76.213849,balt1258,bft,Balti,sino1245,210,210,backstromnorthernpakistan,Sino-Tibetan
+2701,Thao,Papunesia,23.8333,120.93,thao1240,ssf,Thao,aust1307,214,214,blustaustronesian,Austronesian
+2702,Nias,Papunesia,0.90691,97.4961,nias1242,nia,Nias,aust1307,234,234,blustaustronesian,Austronesian
+2703,Breton_ST,Eurasia,48.2452,-3.78934,bret1244,bre,Breton,indo1319,225,225,dunnielex,Indo-European
+2704,Shuri,Eurasia,26.21699,127.7224,shur1243,,Shuri,japo1237,206,206,hattorijaponic,Japonic
+2705,Camsa,South America,1.14537,-76.8931,cams1241,kbh,Camsá,cams1241,206,206,huntergatherer,Camsá
+2706,Karas,Papunesia,-3.47037,132.678,kara1499,kgv,Kalamang,west2604,206,206,johanssonsoundsymbolic,West Bomberai
+2707,Yakumo,Eurasia,42.25,140.266667,ainu1240,ain,Hokkaido Ainu,ainu1252,224,224,leeainu,Ainu
+2708,Horobetsu,Eurasia,42.416667,141.1,ainu1240,ain,Hokkaido Ainu,ainu1252,234,234,leeainu,Ainu
+2709,Hiratori,Eurasia,42.583333,142.133333,ainu1240,ain,Hokkaido Ainu,ainu1252,229,229,leeainu,Ainu
+2710,Obihiro,Eurasia,42.916667,143.2,ainu1240,ain,Hokkaido Ainu,ainu1252,226,226,leeainu,Ainu
+2711,Bihoro,Eurasia,43.825,144.105556,ainu1240,ain,Hokkaido Ainu,ainu1252,223,223,leeainu,Ainu
+2712,Aomori,Eurasia,40.7435,140.6873,tsug1237,,Tsugaru,japo1237,207,207,leejaponic,Japonic
+2713,Irafu,Eurasia,24.831088,125.18956,irab1238,,Irabu-Jima,japo1237,206,206,leejaponic,Japonic
+2714,Tarama,Eurasia,24.6584,124.6998,tara1319,,Tarama-Minna,japo1237,206,206,leejaponic,Japonic
+2715,Leo Tuvalu,Papunesia,-8.520813,179.198088,tuva1244,tvl,Tuvalu,aust1307,277,277,walworthpolynesian,Austronesian
+2716,Hawaiian,Papunesia,19.6297,-155.43,hawa1245,haw,Hawaiian,aust1307,232,232,abvdoceanic,Austronesian
+2717,Lamogai (Mulakaino),Papunesia,-5.87071,149.321,lamo1244,lmg,Lamogai,aust1307,224,224,abvdoceanic,Austronesian
+2718,Maori,Papunesia,-38.2881,176.541,maor1246,mri,Maori,aust1307,218,218,abvdoceanic,Austronesian
+2719,Rotuman,Papunesia,-12.5008,177.066,rotu1241,rtm,Rotuman,aust1307,223,223,abvdoceanic,Austronesian
+2720,Roviana,Papunesia,-8.20493,157.408,rovi1238,rug,Roviana,aust1307,234,234,abvdoceanic,Austronesian
+2721,Samoan,Papunesia,-13.92,-171.83,samo1305,smo,Samoan,aust1307,299,299,abvdoceanic,Austronesian
+2722,Tongan,Papunesia,-21.17,-175.25,tong1325,ton,Tonga (Tonga Islands),aust1307,218,218,abvdoceanic,Austronesian
+2723,Ponapean,Papunesia,6.87212,158.223,pohn1238,pon,Pohnpeian,aust1307,242,242,abvdoceanic,Austronesian
+2724,Ririo,Papunesia,-6.88927,156.92,riri1237,rri,Ririo,aust1307,228,228,abvdoceanic,Austronesian
+2725,Kwara'ae (Solomon Islands'),Papunesia,-8.75779,160.804,kwar1239,kwf,Kwara'ae,aust1307,231,231,abvdoceanic,Austronesian
+2726,To'ambaita,Papunesia,-8.39233,160.619,toab1237,mlu,To'abaita,aust1307,373,373,abvdoceanic,Austronesian
+2727,Saliba,Papunesia,-10.6148,150.727,sali1295,sbe,Saliba,aust1307,252,252,abvdoceanic,Austronesian
+2728,Luqa,Papunesia,-8.17469,156.573,lung1249,lga,Lungga,aust1307,246,246,abvdoceanic,Austronesian
+2729,Western Fijian (Navosa),Papunesia,-17.8355,177.657,west2519,wyy,Western Viti Levu-Yasawas Fijian,aust1307,208,208,abvdoceanic,Austronesian
+2730,Nduke,Papunesia,-7.97768,157.064,duke1237,nke,Duke,aust1307,244,244,abvdoceanic,Austronesian
+2731,Lengo,Papunesia,-9.56425,160.42,leng1259,lgr,Lengo,aust1307,239,239,abvdoceanic,Austronesian
+2732,Bariai,Papunesia,-5.5087,148.666,bari1286,bch,Bariai,aust1307,211,211,abvdoceanic,Austronesian
+2733,Dobu,Papunesia,-9.63239,150.825,dobu1241,dob,Dobu,aust1307,266,266,abvdoceanic,Austronesian
+2734,Tahitian,Papunesia,-17.6485,-149.45,tahi1242,tah,Tahitian,aust1307,248,248,abvdoceanic,Austronesian
+2735,Puyuma (Chihpen F69),Papunesia,22.643,120.996,puyu1239,pyu,Puyuma,aust1307,340,340,abvdphilippines,Austronesian
+2736,Paiwan (Butanglu L04),Papunesia,22.3271,120.806,paiw1248,pwn,Paiwan,aust1307,217,217,abvdphilippines,Austronesian
+2737,Rukai (Budai L04),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,218,218,abvdphilippines,Austronesian
+2738,Seediq L04 (Truku),Papunesia,23.9032,121.358,taro1264,trv,Seediq,aust1307,217,217,abvdphilippines,Austronesian
+2739,Khapalu Balti,Eurasia,35.163409,76.342552,balt1258,bft,Balti,sino1245,216,216,backstromnorthernpakistan,Sino-Tibetan
+2740,Chorbat Balti,Eurasia,34.979586,72.680387,balt1258,bft,Balti,sino1245,219,219,backstromnorthernpakistan,Sino-Tibetan
+2741,Garlali,Australia,-28.136,143.929,kala1380,gll,Bulloo River,pama1250,206,206,bowernpny,Pama-Nyungan
+2742,Armenian_Mod,Eurasia,40.0,45.0,nucl1235,hye,Eastern Armenian,indo1319,224,224,dunnielex,Indo-European
+2743,Dhangu,Australia,-11.9493,135.752,dhan1270,dhg,Dhangu,pama1250,206,206,huntergatherer,Pama-Nyungan
+2744,Albanian,Eurasia,42.317,21.3837,gheg1238,aln,Gheg Albanian,indo1319,205,205,kesslersignificance,Indo-European
+2745,Latin,Eurasia,41.9026,12.4502,lati1261,lat,Latin,indo1319,205,205,kesslersignificance,Indo-European
+2746,German,Eurasia,48.649,12.4676,stan1295,deu,German,indo1319,205,205,kesslersignificance,Indo-European
+2747,English,Eurasia,53.0,-1.0,stan1293,eng,English,indo1319,205,205,kesslersignificance,Indo-European
+2748,Navajo,North America,36.33,-109.38,nava1243,nav,Navajo,atha1245,205,205,kesslersignificance,Athabaskan-Eyak-Tlingit
+2749,French,Eurasia,48.0,2.0,stan1290,fra,French,indo1319,205,205,kesslersignificance,Indo-European
+2750,Hawaiian,Papunesia,19.6297,-155.43,hawa1245,haw,Hawaiian,aust1307,205,205,kesslersignificance,Austronesian
+2751,Turkish,Eurasia,39.8667,32.8667,nucl1301,tur,Turkish,turk1311,205,205,kesslersignificance,Turkic
+2752,Niikappu,Eurasia,42.366667,142.316667,ainu1240,ain,Hokkaido Ainu,ainu1252,207,207,leeainu,Ainu
+2753,Samani,Eurasia,42.133333,142.933333,ainu1240,ain,Hokkaido Ainu,ainu1252,212,212,leeainu,Ainu
+2754,Asahikawa,Eurasia,43.766667,142.366667,ainu1240,ain,Hokkaido Ainu,ainu1252,222,222,leeainu,Ainu
+2755,Nayoro,Eurasia,44.355833,142.463333,ainu1240,ain,Hokkaido Ainu,ainu1252,230,230,leeainu,Ainu
+2756,North Eudeve,North America,28.5,-110.0,eude1234,eud,Eudeve,utoa1244,217,217,lionnetyotonahua,Uto-Aztecan
+2757,Diwála,Africa,4.10208,9.61877,dual1243,dua,Duala,atla1278,233,233,polyglottaafricana,Atlantic-Congo
+2758,Tabriak,Papunesia,-4.49162,143.593,tabr1243,tzx,Tabriak,lowe1423,417,417,transnewguineaorg,Lower Sepik
+2759,Zhaozhuang Bai,Eurasia,25.5844078,100.3117,dali1242,,Dali,sino1245,214,214,zhaobai,Sino-Tibetan
+2760,Mota,Papunesia,-13.835361,167.690924,mota1237,mtt,Mota,aust1307,257,257,abvdoceanic,Austronesian
+2761,Motu,Papunesia,-9.67492,147.424,motu1246,meu,Motu,aust1307,214,214,abvdoceanic,Austronesian
+2762,Marquesan,Papunesia,-8.89412,-140.108,nort2845,mrq,North Marquesan,aust1307,372,372,abvdoceanic,Austronesian
+2763,Rarotongan,Papunesia,-21.23,-159.78,raro1241,rar,Southern Cook Island Maori,aust1307,326,326,abvdoceanic,Austronesian
+2764,Nêlêmwa,Papunesia,-20.4035,164.193,kuma1276,nee,Nêlêmwa-Nixumwak,aust1307,231,231,abvdoceanic,Austronesian
+2765,Yapese,Papunesia,9.55811,138.125,yape1248,yap,Yapese,aust1307,255,255,abvdoceanic,Austronesian
+2766,Mengen,Papunesia,-5.47036,151.373,meng1267,mee,Mengen,aust1307,217,217,abvdoceanic,Austronesian
+2767,Nengone,Papunesia,-21.5305,167.964,neng1238,nen,Nengone,aust1307,271,271,abvdoceanic,Austronesian
+2768,Nggela,Papunesia,-9.04587,160.186,gela1263,nlg,Gela,aust1307,250,250,abvdoceanic,Austronesian
+2769,Anejom (Aneityum),Papunesia,-20.1864,169.825,anei1239,aty,Aneityum,aust1307,208,208,abvdoceanic,Austronesian
+2770,Pukapuka,Papunesia,-10.91,-165.83,puka1242,pkp,Pukapuka,aust1307,363,363,abvdoceanic,Austronesian
+2771,Kilivila,Papunesia,-8.72574,151.072,kili1267,kij,Kilivila,aust1307,238,238,abvdoceanic,Austronesian
+2772,Teop,Papunesia,-5.67474,154.971,teop1238,tio,Teop,aust1307,273,273,abvdoceanic,Austronesian
+2773,"Futuna, East",Papunesia,-14.278717,-178.137222,east2447,fud,East Futuna,aust1307,313,313,abvdoceanic,Austronesian
+2774,Numbami (Siboma),Papunesia,-7.52806,147.298,numb1247,sij,Numbami,aust1307,240,240,abvdoceanic,Austronesian
+2775,Kiribati,Papunesia,0.179,173.64,gilb1244,gil,Gilbertese,aust1307,330,330,abvdoceanic,Austronesian
+2776,Simbo,Papunesia,-8.26947,156.541,simb1256,sbb,Simbo,aust1307,233,233,abvdoceanic,Austronesian
+2777,Äiwoo,Papunesia,-10.282595,166.328715,ayiw1239,nfl,Äiwoo,aust1307,328,328,abvdoceanic,Austronesian
+2778,Muyuw,Papunesia,-9.195,152.731,muyu1244,myw,Muyuw,aust1307,336,336,abvdoceanic,Austronesian
+2779,Nukeria,Papunesia,-3.40038,154.731,nuku1259,nur,Nukuria,aust1307,277,277,abvdoceanic,Austronesian
+2780,Wedau,Papunesia,-10.1246,150.172,weda1241,wed,Wedau,aust1307,267,267,abvdoceanic,Austronesian
+2781,Itbayat,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,424,424,abvdphilippines,Austronesian
+2782,Bikol (Rinconada),Papunesia,13.3896,123.331,irig1242,bto,Iriga Bicolano,aust1307,258,258,abvdphilippines,Austronesian
+2783,Atayal - C'uli' L04 (Mayrinax),Papunesia,24.5209,121.388,atay1247,tay,Atayal,aust1307,243,243,abvdphilippines,Austronesian
+2784,Rukai (Mantauran L04),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,216,216,abvdphilippines,Austronesian
+2785,Hussainabad,Eurasia,36.6865546,74.8234606,hunz1248,,Hunza,buru1296,207,207,backstromnorthernpakistan,Burushaski
+2786,Nazimabad (Upper Sust) ,Eurasia,36.6717915,74.8337469,hunz1248,,Hunza,buru1296,209,209,backstromnorthernpakistan,Burushaski
+2787,Yandruwandha,Australia,-28.4744,140.583,yand1253,ynd,Yandruwandha,pama1250,204,204,huntergatherer,Pama-Nyungan
+2788,Arabana,Australia,-28.705,135.449,arab1267,ard,Arabana,pama1250,204,204,huntergatherer,Pama-Nyungan
+2789,Oshamambe,Eurasia,42.508056,140.373056,ainu1240,ain,Hokkaido Ainu,ainu1252,205,205,leeainu,Ainu
+2790,Hachijyo,Eurasia,33.109444,139.791389,hach1239,,Hachijo,japo1237,205,205,leejaponic,Japonic
+2791,WarLamin,Eurasia,25.1154,91.6266,warj1242,aml,War-Jaintia,aust1305,210,210,nagarajakhasian,Austroasiatic
+2792,Som,Papunesia,-6.07366,146.651,somm1240,smc,Som,nucl1709,250,250,transnewguineaorg,Nuclear Trans New Guinea
+2793,Gimán,Papunesia,-0.42618,127.976,gane1237,gzn,Gane,aust1307,239,239,abvdoceanic,Austronesian
+2794,Bughotu,Papunesia,-8.47948,159.802,bugh1239,bgt,Bughotu,aust1307,269,269,abvdoceanic,Austronesian
+2795,Lau,Papunesia,-8.51018,160.872,lauu1247,llu,Lau,aust1307,269,269,abvdoceanic,Austronesian
+2796,Marovo,Papunesia,-8.37943,157.747,maro1244,mvo,Marovo,aust1307,214,214,abvdoceanic,Austronesian
+2797,Mekeo,Papunesia,-8.23853,146.586,meke1243,mek,Mekeo,aust1307,211,211,abvdoceanic,Austronesian
+2798,Raga,Papunesia,-15.5432,168.167,hano1246,lml,Hano,aust1307,237,237,abvdoceanic,Austronesian
+2799,Windesi Wandamen,Papunesia,-2.25622,133.996,wand1267,wad,Wandamen,aust1307,255,255,abvdoceanic,Austronesian
+2800,Lenakel,Papunesia,-19.4763,169.261,lena1238,tnl,Lenakel,aust1307,205,205,abvdoceanic,Austronesian
+2801,Takia,Papunesia,-4.69057,145.975,taki1248,tbc,Takia,aust1307,231,231,abvdoceanic,Austronesian
+2802,Lunga Lunga  (Minigir),Papunesia,-4.31803,152.005,mini1251,vmg,Minigir,aust1307,227,227,abvdoceanic,Austronesian
+2803,Kwamera,Papunesia,-19.5954,169.442,kwam1252,tnk,Kwamera,aust1307,218,218,abvdoceanic,Austronesian
+2804,Imorod,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,351,351,abvdphilippines,Austronesian
+2805,Isamorong,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,346,346,abvdphilippines,Austronesian
+2806,Palawan Batak,Papunesia,10.1115,119.025,bata1301,bya,Batak,aust1307,362,362,abvdphilippines,Austronesian
+2807,Romblon,Papunesia,12.4047,122.56,romb1245,rol,Romblomanon,aust1307,229,229,abvdphilippines,Austronesian
+2808,Itawis,Papunesia,17.7329,121.58,itaw1240,itv,Itawit,aust1307,207,207,abvdphilippines,Austronesian
+2809,Mayi-Yapi,Australia,-19.25,140.61,mayi1235,xyj,Mayi-Yapi,pama1250,204,204,bowernpny,Pama-Nyungan
+2810,Yarluyandi,Australia,-25.83705,139.58436,yarl1238,yry,Yarluyandi,pama1250,204,204,bowernpny,Pama-Nyungan
+2811,Catalan,Eurasia,41.453,1.569,stan1289,cat,Catalan,indo1319,255,255,dunnielex,Indo-European
+2812,Portuguese_ST,Eurasia,39.91,-8.1,port1283,por,Portuguese,indo1319,225,225,dunnielex,Indo-European
+2813,Tomo Kan (Segue),Africa,13.84356667,-3.752166667,tomo1243,dtm,Tomo Kan Dogon,dogo1299,207,207,heathdogon,Dogon
+2814,Diyari,Australia,-28.1667,138.0,dier1241,dif,Dieri,pama1250,203,203,huntergatherer,Pama-Nyungan
+2815,Hadza,Africa,-3.83115,35.0458,hadz1240,hts,Hadza,hadz1240,203,203,johanssonsoundsymbolic,Hadza
+2816,Maranunggu,Australia,-13.6754,130.12,mara1386,zmr,Maranunggu,west2434,203,203,johanssonsoundsymbolic,Western Daly
+2817,Yimas,Papunesia,-4.71731,143.572,yima1243,yee,Yimas,lowe1423,203,203,johanssonsoundsymbolic,Lower Sepik
+2818,Sôya,Eurasia,45.415667,141.673056,ainu1240,ain,Hokkaido Ainu,ainu1252,217,217,leeainu,Ainu
+2819,Beijing,Eurasia,39.9385466,116.1172766,beij1234,,Beijing Mandarin,sino1245,207,207,liusinitic,Sino-Tibetan
+2820,Changsha,Eurasia,28.85032,112.943344,chan1326,,Changsha,sino1245,266,266,liusinitic,Sino-Tibetan
+2821,Chengdu,Eurasia,30.605768,103.970947,chen1267,,Chengdu Mandarin,sino1245,260,260,liusinitic,Sino-Tibetan
+2822,Fuzhou,Eurasia,26.08904,119.294243,fuzh1239,,Houguan,sino1245,272,272,liusinitic,Sino-Tibetan
+2823,Guangzhou,Eurasia,23.1253503,112.9476548,guan1279,,Guangzhou,sino1245,209,209,liusinitic,Sino-Tibetan
+2824,Guilin,Eurasia,25.266667,110.283333,guil1241,,Guilin Pinghua,sino1245,204,204,liusinitic,Sino-Tibetan
+2825,Ha_erbin,Eurasia,45.846595,126.551056,haer1234,,Ha'erbin Mandarin,sino1245,246,246,liusinitic,Sino-Tibetan
+2826,Jinan,Eurasia,36.690777,116.997299,jina1245,,Jinan Mandarin,sino1245,208,208,liusinitic,Sino-Tibetan
+2827,Jixi,Eurasia,30.071111,118.592222,jixi1238,,Jixi,sino1245,224,224,liusinitic,Sino-Tibetan
+2828,Loudi,Eurasia,27.733333,111.9281883,loud1234,,Loudi,sino1245,217,217,liusinitic,Sino-Tibetan
+2829,Meixian,Eurasia,24.3522958,115.8903375,yuet1238,,Meixian,sino1245,212,212,liusinitic,Sino-Tibetan
+2830,Nanchang,Eurasia,28.706609,115.857468,nanc1254,,Nanchang,sino1245,241,241,liusinitic,Sino-Tibetan
+2831,Nanjing,Eurasia,32.0989607,118.4575646,nanj1234,,Nanjing Mandarin,sino1245,230,230,liusinitic,Sino-Tibetan
+2832,Rongcheng,Eurasia,37.130642,122.434269,rong1271,,Rongcheng Mandarin,sino1245,204,204,liusinitic,Sino-Tibetan
+2833,Suzhou,Eurasia,31.3280439,120.364116,suzh1234,,Suzhou,sino1245,220,220,liusinitic,Sino-Tibetan
+2834,Taiyuan,Eurasia,37.8632119,112.4024883,taiy1243,,Taiyuan,sino1245,235,235,liusinitic,Sino-Tibetan
+2835,Wenzhou,Eurasia,28.005496,120.701179,ouji1238,,Wenzhou,sino1245,219,219,liusinitic,Sino-Tibetan
+2836,Xi_an,Eurasia,34.228154,108.960571,xian1253,,Xi'an Mandarin,sino1245,235,235,liusinitic,Sino-Tibetan
+2837,Khmu,Eurasia,20.2463,101.671,khmu1256,kjg,Khmu,aust1305,208,208,nagarajakhasian,Austroasiatic
+2838,Goshimjang,Africa,5.234168,10.407013,ndan1241,nnz,Nda'nda',atla1278,208,208,ndanda,Atlantic-Congo
+2839,Mizo_Lushai,Eurasia,22.60535,92.629457,lush1249,lus,Mizo,sino1245,279,279,sagartst,Sino-Tibetan
+2840,Pawaia,Papunesia,-6.88021,145.081,pawa1255,pwa,Pawaia,pawa1255,295,295,transnewguineaorg,Pawaia
+2841,Yaqay (Kogo Dialect),Papunesia,-6.66632,139.249,yaqa1246,jaq,Yaqay,anim1240,221,221,transnewguineaorg,Anim
+2842,Arikem,South America,-8.92,-63.74,arik1264,ait,Arikem,tupi1275,225,225,tuled,Tupian
+2843,Kapingamarangi,Papunesia,1.039166,154.797223,kapi1249,kpg,Kapingamarangi,aust1307,228,228,walworthpolynesian,Austronesian
+2844,Buli,Papunesia,1.0008,128.443,buli1255,bzq,Buli (Indonesia),aust1307,221,221,abvdoceanic,Austronesian
+2845,Kwaio,Papunesia,-8.93744,160.965,kwai1243,kwd,Kwaio,aust1307,206,206,abvdoceanic,Austronesian
+2846,Loniu,Papunesia,-2.06124,147.35,loni1238,los,Loniu,aust1307,207,207,abvdoceanic,Austronesian
+2847,Mwotlap,Papunesia,-13.655015,167.706277,motl1237,mlv,Mwotlap,aust1307,222,222,abvdoceanic,Austronesian
+2848,Iaai,Papunesia,-20.6301,166.59,iaai1238,iai,Iaai,aust1307,231,231,abvdoceanic,Austronesian
+2849,Gumawana,Papunesia,-9.28497,150.762,guma1254,gvs,Gumawana,aust1307,230,230,abvdoceanic,Austronesian
+2850,Mortlockese (Lukunosh),Papunesia,5.50735,153.710778,mort1237,mrl,Mortlockese,aust1307,205,205,abvdoceanic,Austronesian
+2851,Mangap-Mbula,Papunesia,-5.66965,148.041,mbul1263,mna,Mbula,aust1307,204,204,abvdoceanic,Austronesian
+2852,"Sangir, Tabukang Dialect",Papunesia,3.0,125.5,sang1336,sxn,Sangir,aust1307,207,207,abvdphilippines,Austronesian
+2853,Sakizaya,Papunesia,23.9386,121.59,nata1254,ais,Northern Amis,aust1307,210,210,abvdphilippines,Austronesian
+2854,Rondu Balti,Eurasia,35.468685,75.358422,balt1258,bft,Balti,sino1245,206,206,backstromnorthernpakistan,Sino-Tibetan
+2855,Moken,Eurasia,10.1474,98.6765,moke1242,mwt,Moken,aust1307,234,234,blustaustronesian,Austronesian
+2856,Maká,South America,-25.01,-57.37,maca1260,mca,Maká,mata1289,238,238,chacolanguages,Matacoan
+2857,Tapiete,South America,-21.42,-62.68,tapi1253,tpj,Tapieté,tupi1275,274,274,chacolanguages,Tupian
+2858,Ngamini,Australia,-27.1797,138.701,ngam1265,nmv,Ngamini-Yarluyandi-Karangura,pama1250,202,202,huntergatherer,Pama-Nyungan
+2859,Kushiro,Eurasia,42.983333,144.383333,ainu1240,ain,Hokkaido Ainu,ainu1252,206,206,leeainu,Ainu
+2860,Xiamen,Eurasia,24.49421,118.08918,xiam1236,,Xiamen,sino1245,212,212,liusinitic,Sino-Tibetan
+2861,"Dani, Western",Papunesia,-3.77127,138.217,west2594,dnw,Western Dani,nucl1709,235,235,transnewguineaorg,Nuclear Trans New Guinea
+2862,Tangko,Papunesia,-5.13343,140.269,tang1353,tkx,Tangko,nucl1709,207,207,transnewguineaorg,Nuclear Trans New Guinea
+2863,Yaqay (Kotup Dialect),Papunesia,-6.66632,139.249,yaqa1246,jaq,Yaqay,anim1240,211,211,transnewguineaorg,Anim
+2864,Yaqay (Wanggate Dialect),Papunesia,-6.66632,139.249,yaqa1246,jaq,Yaqay,anim1240,217,217,transnewguineaorg,Anim
+2865,Bislama (1),Papunesia,-16.10694,167.4208,bisl1239,bis,Bislama,indo1319,202,202,vanuatuvoices,Indo-European
+2866,Ctl: Nalemba: Nasawa,Papunesia,-15.19677,168.112254,nasa1241,,Nasawa,aust1307,218,218,vanuatuvoices,Austronesian
+2867,Ctl: Sungwadaga: Lalaundi,Papunesia,-15.11413,168.14195,cent2058,mwo,Central Maewo,aust1307,218,218,vanuatuvoices,Austronesian
+2868,Ctl: Sungwadaga: Rongnawo,Papunesia,-15.10197,168.079925,cent2058,mwo,Central Maewo,aust1307,219,219,vanuatuvoices,Austronesian
+2869,Ctl: Sungwada: Ngota,Papunesia,-15.10125,168.121197,cent2058,mwo,Central Maewo,aust1307,208,208,vanuatuvoices,Austronesian
+2870,Ctl: Sungwadoga: Rata,Papunesia,-15.11413,168.14195,tali1260,,Talise (Vanuatu),aust1307,219,219,vanuatuvoices,Austronesian
+2871,E: Lolovoli,Papunesia,-15.36437,167.927911,east2443,omb,East Ambae,aust1307,206,206,vanuatuvoices,Austronesian
+2872,E: Sana: Solokave,Papunesia,-15.45831,167.856408,east2443,omb,East Ambae,aust1307,202,202,vanuatuvoices,Austronesian
+2873,N: Havai: Lombaha,Papunesia,-15.31659,167.81886,lomb1262,,Lombaha,aust1307,216,216,vanuatuvoices,Austronesian
+2874,N: Leonda,,-15.314,167.852877,amba1270,,Ambae,aust1307,218,218,vanuatuvoices,Austronesian
+2875,N: Sungwadia: Naone,Papunesia,-15.01508,168.066583,mari1426,mrb,Sunwadia,aust1307,218,218,vanuatuvoices,Austronesian
+2876,S: Raga: Avavanvae,,-15.34347,168.127388,maew1234,,Maewo,aust1307,219,219,vanuatuvoices,Austronesian
+2877,S: Sakao,,-15.42439,167.894062,amba1270,,Ambae,aust1307,210,210,vanuatuvoices,Austronesian
+2878,S: Sungagage: Avanbatai,,-15.38639,168.146667,maew1234,,Maewo,aust1307,211,211,vanuatuvoices,Austronesian
+2879,S: Sungagage: Avavanvae,,-15.34347,168.127388,maew1234,,Maewo,aust1307,209,209,vanuatuvoices,Austronesian
+2880,S: Xalangi: Baetora,,-15.25972,168.116944,maew1234,,Maewo,aust1307,209,209,vanuatuvoices,Austronesian
+2881,Nehan Hape,Papunesia,-4.56875,154.2,neha1247,nsn,Nehan,aust1307,204,204,abvdoceanic,Austronesian
+2882,Numfor,Papunesia,-0.9523,135.879,biak1248,bhw,Biak,aust1307,219,219,abvdoceanic,Austronesian
+2883,Sengseng,Papunesia,-6.16474,149.784,seng1281,ssz,Sengseng,aust1307,323,323,abvdoceanic,Austronesian
+2884,Mangareva,Papunesia,-23.1095,-134.97,mang1401,mrv,Mangareva,aust1307,270,270,abvdoceanic,Austronesian
+2885,Lakalai,Papunesia,-5.59931,150.888,naka1262,nak,Nakanai,aust1307,259,259,abvdoceanic,Austronesian
+2886,South Efate,Papunesia,-17.7006,168.377,sout2856,erk,Nafsan,aust1307,205,205,abvdoceanic,Austronesian
+2887,Lihir (Sunglik),Papunesia,-3.18895,152.606,lihi1237,lih,Lihir,aust1307,221,221,abvdoceanic,Austronesian
+2888,Sye (Erromangan),Papunesia,-18.8181,169.166,siee1239,erg,Sie,aust1307,217,217,abvdoceanic,Austronesian
+2889,Sa'a (A'ulu Village),Papunesia,-9.60258,161.467,saaa1240,apb,Sa'a,aust1307,221,221,abvdoceanic,Austronesian
+2890,Drubea,Papunesia,-22.0947,166.531,dumb1241,duf,Dumbea,aust1307,210,210,abvdoceanic,Austronesian
+2891,Nyindrou,Papunesia,-2.1143,146.627,nyin1250,lid,Nyindrou,aust1307,234,234,abvdoceanic,Austronesian
+2892,Iduna,Papunesia,-9.34361,150.24,idun1242,viv,Iduna,aust1307,246,246,abvdoceanic,Austronesian
+2893,Seediq F69 (Sakura),Papunesia,23.9032,121.358,taro1264,trv,Seediq,aust1307,293,293,abvdphilippines,Austronesian
+2894,Manide (Labo),Papunesia,14.1571,122.835,cama1250,abd,Camarines Norte Agta,aust1307,226,226,abvdphilippines,Austronesian
+2895,Murtazabad,Eurasia,36.2821952,74.5889064,hunz1248,,Hunza,buru1296,204,204,backstromnorthernpakistan,Burushaski
+2896,Hoper,Eurasia,36.1528358,74.8461621,naga1398,,Nagar,buru1296,205,205,backstromnorthernpakistan,Burushaski
+2897,Andoke,South America,-0.53751,-72.0869,ando1256,ano,Andoque,ando1256,201,201,huntergatherer,Andoque
+2898,Doromu-Koki,Papunesia,-9.56687,147.986,doro1266,kqc,Doromu-Koki,manu1261,201,201,johanssonsoundsymbolic,Manubaran
+2899,Pirahã,South America,-6.77713,-61.8167,pira1253,myp,Pirahã,pira1253,201,201,johanssonsoundsymbolic,Pirahã
+2900,Shatt,Africa,10.8525,29.7687,shat1244,shj,Shatt,daju1249,201,201,johanssonsoundsymbolic,Dajuic
+2901,Ewage-Notu,Papunesia,-8.68756,148.405,ewag1241,nou,Ewage-Notu,nucl1709,279,279,transnewguineaorg,Nuclear Trans New Guinea
+2902,Nakai,Papunesia,-5.19377,140.512,naka1265,nkj,Nakai,nucl1709,207,207,transnewguineaorg,Nuclear Trans New Guinea
+2903,Avava: Tisvel,Papunesia,-16.27153,167.39939,katb1237,tmb,Avava,aust1307,201,201,vanuatuvoices,Austronesian
+2904,Bislama (2),Papunesia,-16.10302,167.4168,bisl1239,bis,Bislama,indo1319,201,201,vanuatuvoices,Indo-European
+2905,Ctl-E: Tawet: Naviso,Papunesia,-15.12286,168.144,tali1260,,Talise (Vanuatu),aust1307,201,201,vanuatuvoices,Austronesian
+2906,Ctl: Sungwadola: Gwaran Uta,Papunesia,-15.12506,168.091146,tali1260,,Talise (Vanuatu),aust1307,222,222,vanuatuvoices,Austronesian
+2907,E: Vuindondo,Papunesia,-15.30571,167.971219,east2443,omb,East Ambae,aust1307,213,213,vanuatuvoices,Austronesian
+2908,N: Leõ: Vandue,,-15.31851,167.820332,amba1270,,Ambae,aust1307,210,210,vanuatuvoices,Austronesian
+2909,S: Lolovele,,-15.44771,167.869802,amba1270,,Ambae,aust1307,209,209,vanuatuvoices,Austronesian
+2910,S: Sungagage: Asanvari,,-15.37944,168.128889,maew1234,,Maewo,aust1307,212,212,vanuatuvoices,Austronesian
+2911,Penrhyn,Papunesia,-9.082238,-157.922908,penr1237,pnh,Māngarongaro,aust1307,217,217,walworthpolynesian,Austronesian
+2912,Jawe,Papunesia,-20.6648,164.676,jawe1237,jaz,Jawe,aust1307,219,219,abvdoceanic,Austronesian
+2913,Rapanui (Easter Island),Papunesia,-27.113,-109.342,rapa1244,rap,Rapanui,aust1307,375,375,abvdoceanic,Austronesian
+2914,Kove,Papunesia,-5.58623,149.63,kove1237,kvc,Kove,aust1307,234,234,abvdoceanic,Austronesian
+2915,Vaeakau-Taumako,Papunesia,-10.173335,166.247188,pile1238,piv,Vaeakau-Taumako,aust1307,250,250,abvdoceanic,Austronesian
+2916,Neve'ei,Papunesia,-16.2253,167.427,vinm1237,vnm,Neve'ei,aust1307,242,242,abvdoceanic,Austronesian
+2917,Longgu,Papunesia,-9.75258,160.663,long1395,lgu,Longgu,aust1307,228,228,abvdoceanic,Austronesian
+2918,Apma (Suru Mwerani),Papunesia,-15.8559,168.189,apma1240,app,Apma,aust1307,272,272,abvdoceanic,Austronesian
+2919,Bebeli,Papunesia,-5.63282,150.323,bebe1252,bek,Bebeli,aust1307,230,230,abvdoceanic,Austronesian
+2920,Ivasay,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,337,337,abvdphilippines,Austronesian
+2921,Haiderabad,Eurasia,36.2969008,74.5985662,hunz1248,,Hunza,buru1296,203,203,backstromnorthernpakistan,Burushaski
+2922,Uyum Nagar,Eurasia,36.1528358,74.8461621,naga1398,,Nagar,buru1296,204,204,backstromnorthernpakistan,Burushaski
+2923,Yasin Center,Eurasia,36.4092359,73.0214217,yasi1237,,Yasin,buru1296,205,205,backstromnorthernpakistan,Burushaski
+2924,Yuki,South America,-16.7875,-64.9438,yuqu1240,yuq,Yuqui,tupi1275,200,200,gerarditupi,Tupian
+2925,Kuot,Papunesia,-3.06952,151.537,kuot1243,kto,Kuot,kuot1243,200,200,johanssonsoundsymbolic,Kuot
+2926,Saponi,Papunesia,-2.385,136.497,sapo1254,spi,Saponi,lake1255,201,201,transnewguineaorg,Lakes Plain
+2927,Ctl: Nalemba: Narovorovo,Papunesia,-15.1826,168.110702,naro1250,,Narovorovo,aust1307,221,221,vanuatuvoices,Austronesian
+2928,Buninga: Moso,Papunesia,-17.529011534438972,168.28918755548693,buni1246,,Buninga,aust1307,206,206,vanuatuvoices,Austronesian
+2929,N: Sungwadia: Naumumu,Papunesia,-14.93637,168.053014,mari1426,mrb,Sunwadia,aust1307,222,222,vanuatuvoices,Austronesian
+2930,Wala: Worprev,Papunesia,-15.97775,167.37656,wala1267,,Wala-Rano,aust1307,202,202,vanuatuvoices,Austronesian
+2931,W: Walaha,Papunesia,-15.40071,167.701737,wala1268,,Walaha,aust1307,206,206,vanuatuvoices,Austronesian
+2932,Tikopia,Papunesia,-12.2766,168.822,tiko1237,tkp,Tikopia,aust1307,259,259,abvdoceanic,Austronesian
+2933,Futuna-Aniwa,Papunesia,-19.5303,170.215,futu1245,fut,Futuna-Aniwa,aust1307,305,305,abvdoceanic,Austronesian
+2934,Dehu,Papunesia,-20.8892,167.229,dehu1237,dhv,Dehu,aust1307,268,268,abvdoceanic,Austronesian
+2935,Molima,Papunesia,-9.57457,150.614,moli1248,mox,Molima,aust1307,234,234,abvdoceanic,Austronesian
+2936,"Uvea, West",Papunesia,-20.4145,166.589,west2516,uve,West Uvean,aust1307,219,219,abvdoceanic,Austronesian
+2937,Tami,Papunesia,-6.70017,147.732,tami1290,tmy,Tami,aust1307,200,200,abvdoceanic,Austronesian
+2938,Sursurunga,Papunesia,-3.99078,152.768,surs1246,sgz,Sursurunga,aust1307,203,203,abvdoceanic,Austronesian
+2939,"Bunun F69, Southern",Papunesia,23.4116,121.025,bunu1267,bnn,Bunun,aust1307,261,261,abvdphilippines,Austronesian
+2940,Iraralay,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,344,344,abvdphilippines,Austronesian
+2941,Amis (Fata'an),Papunesia,23.0917,121.348,amis1246,ami,Amis,aust1307,212,212,abvdphilippines,Austronesian
+2942,Ganish,Eurasia,36.312159,74.6626353,hunz1248,,Hunza,buru1296,202,202,backstromnorthernpakistan,Burushaski
+2943,Banoni,Papunesia,-6.23061,155.128,bann1247,bcm,Bannoni,aust1307,258,258,blustaustronesian,Austronesian
+2944,Mayi-Thakurti,Australia,-20.0,140.63,mayi1234,xyt,Mayi-Thakurti,pama1250,200,200,bowernpny,Pama-Nyungan
+2945,Kayabí,South America,-11.2747,-55.5479,kaya1329,kyz,Kayabí,tupi1275,200,200,gerarditupi,Tupian
+2946,Paakantyi,Australia,-32.7021,142.695,darl1243,drl,Paakantyi,pama1250,199,199,huntergatherer,Pama-Nyungan
+2947,Gaam,Africa,11.4674,33.9797,gaam1241,tbi,Gaam,east2386,199,199,johanssonsoundsymbolic,Eastern Jebel
+2948,Urarina,South America,-4.44006,-75.4211,urar1246,ura,Urarina,urar1246,199,199,johanssonsoundsymbolic,Urarina
+2949,Southern Gyeongsang,Eurasia,35.3,128.3,kyon1247,,Kyongsangdo,kore1284,203,203,leekoreanic,Koreanic
+2950,Awera,Papunesia,-2.71886,136.063,awer1241,awr,Awera,lake1255,200,200,transnewguineaorg,Lakes Plain
+2951,Kuot,Papunesia,-3.06952,151.537,kuot1243,kto,Kuot,kuot1243,301,301,transnewguineaorg,Kuot
+2952,Naha’ai: Mbatmbang,Papunesia,-16.56778,167.53083,malf1237,mlx,Na'ahai,aust1307,199,199,vanuatuvoices,Austronesian
+2953,Nese,Papunesia,-15.9305,167.17653,nese1235,,Nese,aust1307,204,204,vanuatuvoices,Austronesian
+2954,N: Mwerlap,Papunesia,-14.96984,168.058964,mari1426,mrb,Sunwadia,aust1307,206,206,vanuatuvoices,Austronesian
+2955,N: Sungwadia: Tasmaor,Papunesia,-14.93637,168.053014,mari1426,mrb,Sunwadia,aust1307,213,213,vanuatuvoices,Austronesian
+2956,Wampar,Papunesia,-6.67364,146.662,wamp1247,lbq,Wampar,aust1307,273,273,abvdoceanic,Austronesian
+2957,Sakao (Port-Olry),Papunesia,-15.0757,167.051,saka1289,sku,Wanohe,aust1307,283,283,abvdoceanic,Austronesian
+2958,Ura,Papunesia,-18.6747,169.084,urav1235,uur,Ura (Vanuatu),aust1307,203,203,abvdoceanic,Austronesian
+2959,Ramoaaina,Papunesia,-4.17306,152.451,ramo1244,rai,Ramoaaina,aust1307,202,202,abvdoceanic,Austronesian
+2960,Atayal - C'uli' F69 (Bandai),Papunesia,24.5209,121.388,atay1247,tay,Atayal,aust1307,212,212,abvdphilippines,Austronesian
+2961,Kavalan F69,Papunesia,24.6947,121.645,kava1241,ckv,Kavalan,aust1307,482,482,abvdphilippines,Austronesian
+2962,"Manobo, Kalamansig Cotabato (Paril Dialect)",Papunesia,6.39417,124.234,cota1241,mta,Cotabato Manobo,aust1307,206,206,abvdphilippines,Austronesian
+2963,Dharumbal,Australia,-23.307,150.593,dhar1248,xgm,Dharumbal,pama1250,198,198,bowernpny,Pama-Nyungan
+2964,Aha,South America,0.69618,-67.5028,curr1243,kpc,Curripaco,araw1281,198,198,chaconbaniwa,Arawakan
+2965,Shom Peng,Eurasia,7.02099,93.8064,shom1245,sii,Shom Peng,shom1245,198,198,johanssonsoundsymbolic,Shom Peng
+2966,Northern Sgaw,Eurasia,19.020577,96.540526,wewa1238,wea,Wewaw,sino1245,199,199,luangthongkumkaren,Sino-Tibetan
+2967,Yanesha',South America,-10.5454,-75.315,yane1238,ame,Yanesha',araw1281,220,220,northperulex,Arawakan
+2968,Kanyī́ka,Africa,-7.31878,23.613,kany1247,kny,Kanyok,atla1278,201,201,polyglottaafricana,Atlantic-Congo
+2969,Nkoya_2,Africa,-14.85,24.76,nkoy1244,nka,Nkoya,atla1278,201,201,sawkatokaleya,Atlantic-Congo
+2970,"Asmat, Central (Keenok, Sawa-Erma Dialect)",Papunesia,-4.89854,138.405,nort2917,nks,Momogo-Pupis-Irogo,nucl1709,217,217,transnewguineaorg,Nuclear Trans New Guinea
+2971,Berik,Papunesia,-2.26904,138.866,beri1254,bkl,Berik,toro1256,223,223,transnewguineaorg,Tor-Orya
+2972,Rasawa,Papunesia,-2.37609,136.352,rasa1243,rac,Rasawa,lake1255,201,201,transnewguineaorg,Lakes Plain
+2973,Neve’ei: Vinmavis 1,Papunesia,-16.27169,167.39957,vinm1237,vnm,Neve'ei,aust1307,201,201,vanuatuvoices,Austronesian
+2974,Maleu,Papunesia,-5.61613,148.445,male1289,mgl,Maleu-Kilenge,aust1307,204,204,abvdoceanic,Austronesian
+2975,"Ambrym, South-East",Papunesia,-16.2975,168.211,sout2859,tvk,Southeast Ambrym,aust1307,215,215,abvdoceanic,Austronesian
+2976,Manam,Papunesia,-4.07921,145.033,mana1295,mva,Manam,aust1307,209,209,abvdoceanic,Austronesian
+2977,Patpatar,Papunesia,-3.74711,152.493,patp1243,gfk,Patpatar,aust1307,232,232,abvdoceanic,Austronesian
+2978,"Tanna, Southwest",Papunesia,-19.57953,169.35603,sout2869,nwi,Southwest Tanna,aust1307,203,203,abvdoceanic,Austronesian
+2979,Tuamotu,Papunesia,-16.17259,-146.321755,tuam1242,pmt,Tuamotuan,aust1307,283,283,abvdoceanic,Austronesian
+2980,"Uvea, East",Papunesia,-13.2903,-176.207,wall1257,wls,East Uvean,aust1307,278,278,abvdoceanic,Austronesian
+2981,"Daa kaka (West Ambrym, Vanuatu)",Papunesia,-16.2696,168.013,daka1243,bpa,Dakaka,aust1307,239,239,abvdoceanic,Austronesian
+2982,Sio,Papunesia,-5.96037,147.353,sioo1240,xsi,Sio,aust1307,219,219,abvdoceanic,Austronesian
+2983,Paicî,Papunesia,-21.096,165.15,paic1239,pri,Paicî,aust1307,225,225,abvdoceanic,Austronesian
+2984,Saaroa F69,Papunesia,23.2632,120.711,saar1237,sxr,Saaroa,aust1307,298,298,abvdphilippines,Austronesian
+2985,Moi,Papunesia,-0.96532,131.52,moii1235,mxn,Moi (Indonesia),west1493,202,202,berrywestpapuan,West Bird's Head
+2986,Oho,South America,2.17859,-67.7704,bani1255,bwi,Baniwa do Icana,araw1281,198,198,chaconbaniwa,Arawakan
+2987,Miyako,Eurasia,24.7564,125.363,miya1259,mvi,Miyako,japo1237,197,197,hattorijaponic,Japonic
+2988,Bari,South America,9.08497,-72.9353,bari1297,mot,Barí,chib1249,197,197,johanssonsoundsymbolic,Chibchan
+2989,Kayaw,Eurasia,19.0561,96.8365,brek1238,kvl,Brek Karen,sino1245,198,198,luangthongkumkaren,Sino-Tibetan
+2990,"Asmat, Central (Keenakap, Namen Dialect)",Papunesia,-5.80391,138.471,cent2117,cns,Central Asmat,nucl1709,203,203,transnewguineaorg,Nuclear Trans New Guinea
+2991,Korowai,Papunesia,-5.26952,140.047,koro1312,khe,Korowai,nucl1709,199,199,transnewguineaorg,Nuclear Trans New Guinea
+2992,Sahu,Papunesia,1.00742,127.493,sahu1245,saj,Sahu,nort2923,359,359,transnewguineaorg,North Halmahera
+2993,Wanggom,Papunesia,-5.60094,140.194,wang1299,wng,Wanggom,nucl1709,202,202,transnewguineaorg,Nuclear Trans New Guinea
+2994,Nisvai: Blacksands,Papunesia,-16.38847,167.78301,nisv1234,,Nisvai,aust1307,198,198,vanuatuvoices,Austronesian
+2995,N: Sungwadia: Uta,Papunesia,-14.97184,168.0573,mari1426,mrb,Sunwadia,aust1307,202,202,vanuatuvoices,Austronesian
+2996,Manihiki,Papunesia,-10.03,-161.09,raka1237,rkh,Rakahanga-Manihiki,aust1307,292,292,walworthpolynesian,Austronesian
+2997,Gedaged,Papunesia,-5.18175,145.781,geda1237,gdd,Gedaged,aust1307,272,272,abvdoceanic,Austronesian
+2998,Canala,Papunesia,-21.7034,165.996,xara1244,ane,Xârâcùù,aust1307,218,218,abvdoceanic,Austronesian
+2999,Kaulong (Au Village),Papunesia,-6.08192,149.696,kaul1240,pss,Kaulong,aust1307,225,225,abvdoceanic,Austronesian
+3000,Seimat,Papunesia,-1.2666667,144.25,seim1238,ssg,Seimat,aust1307,200,200,abvdoceanic,Austronesian
+3001,Vitu,Papunesia,-4.69751,149.489,mudu1242,wiv,Muduapa,aust1307,212,212,abvdoceanic,Austronesian
+3002,Ubir,Papunesia,-9.59044,149.396,ubir1237,ubr,Ubir,aust1307,200,200,abvdoceanic,Austronesian
+3003,Anuta,Papunesia,-11.61,169.85,anut1237,aud,Anuta,aust1307,238,238,abvdoceanic,Austronesian
+3004,Chuukese,Papunesia,7.346993,151.598607,chuu1238,chk,Chuukese,aust1307,407,407,abvdoceanic,Austronesian
+3005,Nahavaq,Papunesia,-16.5116,167.477,sout2857,sns,Nahavaq,aust1307,204,204,abvdoceanic,Austronesian
+3006,Tape,Papunesia,-16.0695,167.33,mara1399,mrs,Maragus,aust1307,236,236,abvdoceanic,Austronesian
+3007,Irarutu,Papunesia,-2.94438,133.586,irar1238,irh,Irarutu,aust1307,210,210,abvdoceanic,Austronesian
+3008,Iamalele,Papunesia,-9.45005,150.573,iama1237,yml,Iamalele,aust1307,253,253,abvdoceanic,Austronesian
+3009,"Subanon, Siocon",Papunesia,7.79964,122.341,west2557,suc,Western Subanon,aust1307,204,204,abvdphilippines,Austronesian
+3010,Puyuma (Nanwang Cq),Papunesia,22.643,120.996,puyu1239,pyu,Puyuma,aust1307,216,216,abvdphilippines,Austronesian
+3011,Abun Ji,Papunesia,-0.57073,132.416,abun1252,kgr,Abun,abun1252,196,196,berrywestpapuan,Abun
+3012,Mailu,Papunesia,-10.3657,149.521,mail1248,mgu,Mailu,mail1249,260,260,blustaustronesian,Mailuan
+3013,Enxet Sur,South America,-23.43,-57.95,sout2989,enx,Enxet Sur,leng1261,322,322,chacolanguages,Enlhet-Enenlhet
+3014,Ehe,South America,2.17859,-67.7704,bani1255,bwi,Baniwa do Icana,araw1281,196,196,chaconbaniwa,Arawakan
+3015,Limilngan,Australia,-12.4294,131.845,nucl1327,lmc,Limilngan,limi1242,196,196,johanssonsoundsymbolic,Limilngan-Wulna
+3016,Hateruma,Eurasia,24.059,123.78,hate1238,,Hateruma,japo1237,197,197,leejaponic,Japonic
+3017,Northern Gyeongsang,Eurasia,35.3,128.3,kyon1247,,Kyongsangdo,kore1284,200,200,leekoreanic,Koreanic
+3018,Palaung,Eurasia,23.6729,97.7972,shwe1236,pll,Shwe Palaung,aust1305,205,205,nagarajakhasian,Austroasiatic
+3019,Rū́nda,Africa,-8.86971,21.4164,ruun1238,rnd,Ruund,atla1278,205,205,polyglottaafricana,Atlantic-Congo
+3020,"Asmat, Casuarina Coast (Pirimapun Dialect)",Papunesia,-6.43005,138.566,casu1237,asc,Casuarina Coast Asmat,nucl1709,213,213,transnewguineaorg,Nuclear Trans New Guinea
+3021,Tsaukambo,Papunesia,-5.39076,140.186,tsak1250,kvz,Tsaukambo,nucl1709,201,201,transnewguineaorg,Nuclear Trans New Guinea
+3022,Waritai,Papunesia,-3.23021,138.456,wari1264,wbe,Waritai,lake1255,222,222,transnewguineaorg,Lakes Plain
+3023,Aulua: Loxse-Asolokh,Papunesia,-16.322,167.716,aulu1238,aul,Aulua,aust1307,196,196,vanuatuvoices,Austronesian
+3024,Na’ahai: Mbatvanui,Papunesia,-16.53056,167.57778,malf1237,mlx,Na'ahai,aust1307,196,196,vanuatuvoices,Austronesian
+3025,Kusaie,Papunesia,5.31,162.98,kosr1238,kos,Kosraean,aust1307,368,368,abvdoceanic,Austronesian
+3026,Sobei,Papunesia,-1.86998,138.75,sobe1238,sob,Sobei,aust1307,214,214,abvdoceanic,Austronesian
+3027,Tawala,Papunesia,-10.3115,150.644,tawa1275,tbo,Tawala,aust1307,198,198,abvdoceanic,Austronesian
+3028,Rukai (Budai F69),Papunesia,22.7738,120.844,ruka1240,dru,Rukai,aust1307,268,268,abvdphilippines,Austronesian
+3029,Moraid,Papunesia,-1.04083,131.965,mora1239,msg,Moraid,west1493,197,197,berrywestpapuan,West Bird's Head
+3030,Maloh,Papunesia,1.3156,112.63,emba1238,emb,Embaloh,aust1307,210,210,blustaustronesian,Austronesian
+3031,Ñame,South America,0.69618,-67.5028,curr1243,kpc,Curripaco,araw1281,195,195,chaconbaniwa,Arawakan
+3032,Tapirapé,South America,-10.5373,-50.5438,tapi1254,taf,Tapirapé,tupi1275,195,195,gerarditupi,Tupian
+3033,Salinan M,North America,37.6646,-121.718,sali1253,sln,Salinan,sali1253,203,203,huntergatherer,Salinan
+3034,Nara,Africa,15.3251,37.499,nara1262,nrb,Nara,nara1262,195,195,johanssonsoundsymbolic,Nara
+3035,Dima,Papunesia,-9.70322,149.605,dima1252,jma,Dima,daga1274,197,197,transnewguineaorg,Dagan
+3036,Kaiy,Papunesia,-2.94448,138.161,kaiy1239,tcq,Kaiy,lake1255,223,223,transnewguineaorg,Lakes Plain
+3037,Burmbar: Tengan,Papunesia,-16.38095,167.70045,burm1263,vrt,Burmbar,aust1307,195,195,vanuatuvoices,Austronesian
+3038,Nese: Tanmial,Papunesia,-15.9305,167.17653,nese1235,,Nese,aust1307,195,195,vanuatuvoices,Austronesian
+3039,Levei,Papunesia,-2.06626,146.746,kheh1237,tlx,Khehek,aust1307,202,202,abvdoceanic,Austronesian
+3040,Lou,Papunesia,-2.38659,147.346,louu1245,loj,Lou,aust1307,198,198,abvdoceanic,Austronesian
+3041,Tarpia,Papunesia,-2.322279,140.115497,tarp1240,tpf,Tarpia,aust1307,203,203,abvdoceanic,Austronesian
+3042,Yabem,Papunesia,-6.67052,147.81,yabe1254,jae,Yabem,aust1307,223,223,abvdoceanic,Austronesian
+3043,Kuni,Papunesia,-8.66368,146.874,kuni1263,kse,Kuni,aust1307,249,249,abvdoceanic,Austronesian
+3044,Namakir,Papunesia,-16.8979,168.569,nama1268,nmk,Namakura,aust1307,223,223,abvdoceanic,Austronesian
+3045,Sowa,Papunesia,-15.82653,168.18653,sowa1244,sww,Sowa,aust1307,256,256,abvdoceanic,Austronesian
+3046,Akolet,Papunesia,-6.22711,150.182,akol1237,akt,Akolet,aust1307,222,222,abvdoceanic,Austronesian
+3047,Minaveha,Papunesia,-9.59922,150.501,mina1269,mvn,Minaveha,aust1307,231,231,abvdoceanic,Austronesian
+3048,Atayal - Squliq F69,Papunesia,24.5209,121.388,atay1247,tay,Atayal,aust1307,327,327,abvdphilippines,Austronesian
+3049,Cuyonon,Papunesia,10.3201,119.3,cuyo1237,cyo,Cuyonon,aust1307,211,211,abvdphilippines,Austronesian
+3050,Kalabra,Papunesia,-1.43074,131.617,kala1256,kzz,Kalabra,west1493,197,197,berrywestpapuan,West Bird's Head
+3051,Salmit,Papunesia,-1.51049,131.985,tehi1237,kps,Tehit,west1493,195,195,berrywestpapuan,West Bird's Head
+3052,As,Papunesia,-0.75267,131.728,asss1237,asz,As,aust1307,195,195,berrywestpapuan,Austronesian
+3053,Mauliene,South America,2.17859,-67.7704,bani1255,bwi,Baniwa do Icana,araw1281,194,194,chaconbaniwa,Arawakan
+3054,Bihari,Eurasia,26.3817,86.2211,mait1250,mai,Maithili,indo1319,216,216,dunnielex,Indo-European
+3055,Urueuwauwau,South America,-10.9176,-63.8086,urue1240,urz,Uru-Eu-Wau-Wau,tupi1275,194,194,gerarditupi,Tupian
+3056,Washo,North America,38.8184,-119.64,wash1253,was,Washo,wash1253,194,194,johanssonsoundsymbolic,Washo
+3057,Yonaguni,Eurasia,24.44997,122.99075,yona1241,yoi,Yonaguni,japo1237,194,194,leejaponic,Japonic
+3058,Huambisa,South America,-3.99109,-77.9797,huam1247,hub,Huambisa,jiva1245,200,200,northperulex,Chicham
+3059,Sekute 2013,Africa,-17.653196,25.634457,seku1239,,Sekute,atla1278,194,194,sawkatokaleya,Atlantic-Congo
+3060,Eritai,Papunesia,-2.71182,138.053,erit1239,ert,Eritai,lake1255,217,217,transnewguineaorg,Lakes Plain
+3061,Netimb: Bangir,Papunesia,-16.37936,167.66783,aulu1238,aul,Aulua,aust1307,194,194,vanuatuvoices,Austronesian
+3062,Mele-Fila,Papunesia,-17.6841,168.275,mele1250,mxe,Mele-Fila,aust1307,206,206,walworthpolynesian,Austronesian
+3063,Nauna,Papunesia,-2.21213,148.201,naun1237,ncn,Nauna,aust1307,199,199,abvdoceanic,Austronesian
+3064,Maisin,Papunesia,-9.22853,148.731,mais1250,mbq,Maisin,aust1307,213,213,abvdoceanic,Austronesian
+3065,Avava,Papunesia,-16.2701,167.484,katb1237,tmb,Avava,aust1307,263,263,abvdoceanic,Austronesian
+3066,Sa (south-eastern dialect),Papunesia,-15.9534,168.228,saaa1241,sax,Sa,aust1307,235,235,abvdoceanic,Austronesian
+3067,Ske (Seke),Papunesia,-15.8839,168.197,seke1241,ske,Seke (Vanuatu),aust1307,230,230,abvdoceanic,Austronesian
+3068,Piva,Papunesia,-6.15201,155.129,lawu1237,tgi,Lawunuia,aust1307,196,196,abvdoceanic,Austronesian
+3069,Yami,Papunesia,22.055,121.544,yami1254,tao,Yami,aust1307,204,204,abvdphilippines,Austronesian
+3070,Mamanwa,Papunesia,9.44744,125.548,mama1275,mmn,Minamanwa,aust1307,199,199,abvdphilippines,Austronesian
+3071,Abun Tat,Papunesia,-0.57073,132.416,abun1252,kgr,Abun,abun1252,193,193,berrywestpapuan,Abun
+3072,KK-Halqabad 2,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
+3073,KK-Halqabad 3,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
+3074,KK-Kokdarya 2,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
+3075,KK-Kokdarya 3,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
+3076,KK-Kokdarya 4,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
+3077,KK-Shege 1,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
+3078,KK-Shege 2,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
+3079,KK-Shege 3,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,193,193,cals,Turkic
+3080,Ka-Gazli 2,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
+3081,Ka-Gazli 5,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
+3082,Ka-Raushan 1,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
+3083,Ka-Raushan 2,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
+3084,Ka-Raushan 3,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
+3085,Ka-Raushan 4,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,193,193,cals,Turkic
+3086,Ki-Akmuz 1,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
+3087,Ki-Akmuz 2,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
+3088,Ki-Barskoon,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
+3089,Ki-Kulanak 2,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
+3090,Ki-Kulanak 3,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
+3091,Ki-Kulanak 4,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
+3092,Ki-Kulanak 5,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,193,193,cals,Turkic
+3093,T-Shink 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,193,193,cals,Indo-European
+3094,Y-Dugova 2,Eurasia,39.1486,69.2422,yagn1238,yai,Yagnobi,indo1319,193,193,cals,Indo-European
+3095,Y-Safedorak 1,Eurasia,39.1486,69.2422,yagn1238,yai,Yagnobi,indo1319,193,193,cals,Indo-European
+3096,Toba-pilagá,South America,-23.4989,-61.6489,toba1270,,Toba-Pilagá,guai1249,248,248,chacolanguages,Guaicuruan
+3097,Hohoodene,South America,2.17859,-67.7704,bani1255,bwi,Baniwa do Icana,araw1281,193,193,chaconbaniwa,Arawakan
+3098,Amonda,South America,-9.04023,-62.3064,amun1246,adw,Amundava,tupi1275,194,194,gerarditupi,Tupian
+3099,Mayo,North America,26.4522,-108.981,mayo1264,mfy,Mayo,utoa1244,201,201,lionnetyotonahua,Uto-Aztecan
+3100,Southern Sgaw,Eurasia,17.9872,97.7126,sgaw1245,ksw,S'gaw Karen,sino1245,193,193,luangthongkumkaren,Sino-Tibetan
+3101,Ujindile,Africa,-9.24553,34.50936,ujin1234,,Ujindile,atla1278,194,194,mitterhoferbena,Atlantic-Congo
+3102,Achuar,South America,-2.82646,-77.2641,achu1248,acu,Achuar-Shiwiar,jiva1245,199,199,northperulex,Chicham
+3103,Naga_Ukhrul,Eurasia,25.092617,94.37045,ukhr1238,,Ukhrul,sino1245,208,208,sagartst,Sino-Tibetan
+3104,Khalaj,Eurasia,34.4224,50.3222,turk1303,klj,Khalaj Turkic,turk1311,204,204,savelyevturkic,Turkic
+3105,Mukuni-March,Africa,-17.905369,25.937401,lenj1248,leh,Lenje,atla1278,193,193,sawkatokaleya,Atlantic-Congo
+3106,Ila,Africa,-15.61,26.46,ilaa1246,ilb,Ila,atla1278,194,194,sawkatokaleya,Atlantic-Congo
+3107,Lozi,Africa,-17.71,24.74,lozi1239,loz,Lozi,atla1278,193,193,sawkatokaleya,Atlantic-Congo
+3108,Angoram,Papunesia,-4.07758,144.028,ango1255,aog,Angoram,lowe1423,236,236,transnewguineaorg,Lower Sepik
+3109,Fuyug (Mafulu Dialect),Papunesia,-8.6371,147.312,fuyu1242,fuy,Fuyug,fuyu1242,245,245,transnewguineaorg,Fuyug
+3110,Larevat: Mosox,Papunesia,-16.17628,167.37023,lare1249,lrv,Larevat,aust1307,193,193,vanuatuvoices,Austronesian
+3111,Naati: Windua,Papunesia,-16.50139,167.49372,nati1244,,Nati,aust1307,197,197,vanuatuvoices,Austronesian
+3112,Nahavaq: Caroline Bay,Papunesia,-16.56268,167.46,sout2857,sns,Nahavaq,aust1307,197,197,vanuatuvoices,Austronesian
+3113,Nombotkote: Melkin,Papunesia,-16.32806,167.59949,lete1241,nms,Letemboi-Repanbitip,aust1307,193,193,vanuatuvoices,Austronesian
+3114,Novol: Tavendrua,Papunesia,-16.34446,167.38392,dixo1238,dix,Dixon Reef,aust1307,197,197,vanuatuvoices,Austronesian
+3115,Banoni,Papunesia,-6.23061,155.128,bann1247,bcm,Bannoni,aust1307,249,249,abvdoceanic,Austronesian
+3116,Kayupulau [Kajupulau],Papunesia,-2.54415,140.626,kayu1243,kzu,Kayupulau,aust1307,202,202,abvdoceanic,Austronesian
+3117,Luangiua,Papunesia,-5.49029,159.701,onto1237,ojv,Luangiua,aust1307,225,225,abvdoceanic,Austronesian
+3118,Naman,Papunesia,-16.1331,167.415,litz1237,lzl,Naman,aust1307,233,233,abvdoceanic,Austronesian
+3119,"Manobo, Ilianen (Kibudtungan Dialect)",Papunesia,7.34448,124.766,ilia1236,mbi,Ilianen Manobo,aust1307,196,196,abvdphilippines,Austronesian
+3120,Seget,Papunesia,-1.36931,131.218,sege1235,sbg,Seget,west1493,194,194,berrywestpapuan,West Bird's Head
+3121,KK-Halqabad 1,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,192,192,cals,Turkic
+3122,KK-Kokdarya 1,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,192,192,cals,Turkic
+3123,Ka-Gazli 6,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,192,192,cals,Turkic
+3124,Ki-Akmuz 3,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,192,192,cals,Turkic
+3125,Ki-Orday 1,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,192,192,cals,Turkic
+3126,Ki-Tamga,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,192,192,cals,Turkic
+3127,T-Navdî 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
+3128,T-Nimich 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
+3129,T-Nimich 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
+3130,T-Nimich 4,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
+3131,T-Nûshor 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
+3132,T-Urmetan 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
+3133,T-Urmetan 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
+3134,T-Zarmanak 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,192,192,cals,Indo-European
+3135,Y-Safedorak 2,Eurasia,39.1486,69.2422,yagn1238,yai,Yagnobi,indo1319,192,192,cals,Indo-European
+3136,Araweté,South America,-4.90246,-52.5001,araw1273,awt,Araweté,tupi1275,192,192,gerarditupi,Tupian
+3137,Pacaas Novos,South America,-10.69948,-64.56152,wari1268,pav,Wari',chap1271,235,235,keypano,Chapacuran
+3138,Ukalawa,Africa,-9.18589,35.28047,ukal1234,,Ukalawa,atla1278,192,192,mitterhoferbena,Atlantic-Congo
+3139,Musukotwani,Africa,-17.615317,25.883419,musu1242,,Musukotwani,atla1278,197,197,sawkatokaleya,Atlantic-Congo
+3140,Chewa,Africa,-14.8,32.81,nyan1308,nya,Nyanja,atla1278,195,195,sawkatokaleya,Atlantic-Congo
+3141,Tause,Papunesia,-2.8406,136.899,taus1252,tad,Tause,lake1255,196,196,transnewguineaorg,Lakes Plain
+3142,Bangaasak: Taremb,Papunesia,-16.21925,167.571,katb1237,tmb,Avava,aust1307,192,192,vanuatuvoices,Austronesian
+3143,Letemboi: Aingelemolesa,Papunesia,-16.41806,167.5847,lete1241,nms,Letemboi-Repanbitip,aust1307,192,192,vanuatuvoices,Austronesian
+3144,Malua Bay: Marasup,Papunesia,-15.99098,167.2198,malu1245,mll,Malua-Tepërav,aust1307,192,192,vanuatuvoices,Austronesian
+3145,Nasvang: Big Island,Papunesia,-16.44294,167.67644,navw1234,,Navwien,aust1307,192,192,vanuatuvoices,Austronesian
+3146,Uliveo: Lurtes,Papunesia,-16.53072,167.83389,mask1242,klv,Maskelynes,aust1307,200,200,vanuatuvoices,Austronesian
+3147,Fakamae,Papunesia,-17.052,168.399,emae1237,mmw,Emae,aust1307,206,206,walworthpolynesian,Austronesian
+3148,Ambai (Yapen),Papunesia,-1.88126,136.526,amba1265,amk,Ambai,aust1307,195,195,abvdoceanic,Austronesian
+3149,Sikaiana,Papunesia,-8.378194,162.72952,sika1261,sky,Sikaiana,aust1307,231,231,abvdoceanic,Austronesian
+3150,Na:ti (Windua),Papunesia,-16.468709,167.496054,nati1244,,Nati,aust1307,195,195,abvdoceanic,Austronesian
+3151,Nombotkote (Usus - Melkin),Papunesia,-16.4339,167.566,lete1241,nms,Letemboi-Repanbitip,aust1307,193,193,abvdoceanic,Austronesian
+3152,Koluwawa,Papunesia,-9.42742,150.462,kolu1245,klx,Koluwawa,aust1307,238,238,abvdoceanic,Austronesian
+3153,Yami,Papunesia,22.055,121.544,yami1254,tao,Yami,aust1307,256,256,abvdphilippines,Austronesian
+3154,KK-Shege 4,Eurasia,39.98005,63.32233,kara1467,kaa,Kara-Kalpak,turk1311,191,191,cals,Turkic
+3155,Ka-Gazli 1,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,191,191,cals,Turkic
+3156,Ki-Orday 2,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,191,191,cals,Turkic
+3157,T-Agalyk,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
+3158,T-Kamangaron 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
+3159,T-Navdî 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
+3160,T-Nûshor 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
+3161,T-Shink 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
+3162,T-Shink 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
+3163,T-Zarmanak 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,191,191,cals,Indo-European
+3164,Asurini,South America,-3.59359,-49.8991,toca1235,asu,Tocantins Asurini,tupi1275,192,192,gerarditupi,Tupian
+3165,Macaguan,South America,6.34582,-71.2671,maca1259,mbn,Hitnu,guah1252,192,192,huntergatherer,Guahiboan
+3166,Iquito,South America,-3.31233,-73.97046,iqui1243,iqu,Iquito,zapa1251,198,198,northperulex,Zaparoan
+3167,Mukuni,Africa,-17.905369,25.937401,lenj1248,leh,Lenje,atla1278,193,193,sawkatokaleya,Atlantic-Congo
+3168,Ama,Papunesia,-4.20192,141.658,amap1240,amm,Ama (Papua New Guinea),left1242,278,278,transnewguineaorg,Left May
+3169,Komyandaret,Papunesia,-5.25453,140.213,komy1238,kzv,Komyandaret,nucl1709,204,204,transnewguineaorg,Nuclear Trans New Guinea
+3170,Burmbar: Fartavo,Papunesia,-16.34167,167.74778,burm1263,vrt,Burmbar,aust1307,191,191,vanuatuvoices,Austronesian
+3171,Ninde: Lawa,Papunesia,-16.44484,167.42897,labo1244,mwi,Ninde,aust1307,199,199,vanuatuvoices,Austronesian
+3172,Nisvai: Ronevie,Papunesia,-16.41306,167.78556,nisv1234,,Nisvai,aust1307,192,192,vanuatuvoices,Austronesian
+3173,S: Biribiri,,-15.46989,167.82893,amba1270,,Ambae,aust1307,197,197,vanuatuvoices,Austronesian
+3174,Tirax: Bethel,Papunesia,-16.03923,167.40186,maee1241,mme,Tirax,aust1307,211,211,vanuatuvoices,Austronesian
+3175,Niue,Papunesia,-19.06,-169.86,niue1239,niu,Niuean,aust1307,255,255,abvdoceanic,Austronesian
+3176,Gaddang,Papunesia,16.5468,121.177,gadd1244,gad,Gaddang,aust1307,194,194,abvdphilippines,Austronesian
+3177,"Isneg, Dibagat-Kabugao-Isneg",Papunesia,18.2139,121.16,isna1241,isd,Isnag,aust1307,196,196,abvdphilippines,Austronesian
+3178,"Ivatan, Basco Dialect",Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,195,195,abvdphilippines,Austronesian
+3179,Soninke,Africa,13.13,-11.72,soni1259,snk,Soninke,mand1469,232,232,baf2,Mande
+3180,Badimaya,Australia,-29.0647,117.246,badi1246,bia,Badimaya,pama1250,190,190,bowernpny,Pama-Nyungan
+3181,Ka-Gazli 3,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,190,190,cals,Turkic
+3182,Ka-Gazli 4,Eurasia,51.17,71.454,kaza1248,kaz,Kazakh,turk1311,190,190,cals,Turkic
+3183,T-Kaptarhona 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,190,190,cals,Indo-European
+3184,T-Kaptarhona 4,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,190,190,cals,Indo-European
+3185,T-Kaptarhona 5,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,190,190,cals,Indo-European
+3186,T-Rishtan 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,190,190,cals,Indo-European
+3187,Tariana,South America,0.440205,-68.9042,tari1256,tae,Tariana,araw1281,190,190,chaconbaniwa,Arawakan
+3188,Waris,Papunesia,-3.139,140.931,wari1266,wrs,Waris,bord1247,190,190,johanssonsoundsymbolic,Border
+3189,Sekute,Africa,-17.653196,25.634457,seku1239,,Sekute,atla1278,192,192,sawkatokaleya,Atlantic-Congo
+3190,Kawitshin,North America,49.0975,-122.6558,cowi1241,,Cowichan,sali1255,190,190,tolmiebritishcolumbia,Salishan
+3191,Bilhoola,North America,52.4188,-127.2684,bell1243,blc,Bella Coola,sali1255,192,192,tolmiebritishcolumbia,Salishan
+3192,Zia,Papunesia,-7.95814,147.579,ziaa1250,zia,Zia,nucl1709,256,256,transnewguineaorg,Nuclear Trans New Guinea
+3193,Ctl: Tawet: Narovorovo,Papunesia,-15.18528,168.109444,naro1250,,Narovorovo,aust1307,190,190,vanuatuvoices,Austronesian
+3194,Letemboi: Natingatlang,Papunesia,-16.40056,167.6178,lete1241,nms,Letemboi-Repanbitip,aust1307,190,190,vanuatuvoices,Austronesian
+3195,Na’ahai: Toman,Papunesia,-16.58306,167.47306,malf1237,mlx,Na'ahai,aust1307,190,190,vanuatuvoices,Austronesian
+3196,Nahavaq: Banour,Papunesia,-16.49503,167.4187,sout2857,sns,Nahavaq,aust1307,195,195,vanuatuvoices,Austronesian
+3197,Waropen,Papunesia,-2.31142,136.633,waro1242,wrp,Waropen,aust1307,268,268,abvdoceanic,Austronesian
+3198,Hiw,Papunesia,-13.126367,166.584857,hiww1237,hiw,Hiw,aust1307,210,210,abvdoceanic,Austronesian
+3199,"Kallahan, Kayapa Proper",Papunesia,16.321,120.9,kaya1320,,Kayapa Kallahan,aust1307,195,195,abvdphilippines,Austronesian
+3200,"Subanun, Sindangan",Papunesia,8.12701,123.018,cent2089,syb,Central Subanen,aust1307,194,194,abvdphilippines,Austronesian
+3201,T-Navdî 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,189,189,cals,Indo-European
+3202,T-Rishtan 3,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,189,189,cals,Indo-European
+3203,Savosavo,Papunesia,-9.12853,159.814,savo1255,svs,Savosavo,savo1255,189,189,johanssonsoundsymbolic,Savosavo
+3204,Kayan,Eurasia,19.5183,97.4138,kaya1315,pdu,Kayan Lahwi,sino1245,189,189,luangthongkumkaren,Sino-Tibetan
+3205,Duvle,Papunesia,-3.21832,137.964,duvl1242,duv,Duvle,lake1255,216,216,transnewguineaorg,Lakes Plain
+3206,Avava: Khatbol,Papunesia,-16.18473,167.46723,katb1237,tmb,Avava,aust1307,190,190,vanuatuvoices,Austronesian
+3207,Avok: Small Island,Papunesia,-16.5218,167.77738,avok1244,,Avok,aust1307,189,189,vanuatuvoices,Austronesian
+3208,Navwien: Mbonvor,Papunesia,-16.4161,167.6535,lete1241,nms,Letemboi-Repanbitip,aust1307,189,189,vanuatuvoices,Austronesian
+3209,Neve’ei: Vinmavis 2,Papunesia,-16.2291,167.3981,vinm1237,vnm,Neve'ei,aust1307,189,189,vanuatuvoices,Austronesian
+3210,Likum,Papunesia,-2.16157,146.695,liku1243,lib,Likum,aust1307,190,190,abvdoceanic,Austronesian
+3211,Bola,Papunesia,-5.55792,150.095,bola1250,bnp,Bola,aust1307,205,205,abvdoceanic,Austronesian
+3212,Saisiyat F69,Papunesia,24.6043,121.067,sais1237,xsy,Saisiyat,aust1307,203,203,abvdphilippines,Austronesian
+3213,Balangaw,Papunesia,17.0994,121.272,bala1310,blw,Balangao,aust1307,193,193,abvdphilippines,Austronesian
+3214,"Batak, Palawan",Papunesia,10.1115,119.025,bata1301,bya,Batak,aust1307,192,192,abvdphilippines,Austronesian
+3215,"Bilaan, Sarangani",Papunesia,6.03691,125.354,sara1326,bps,Sarangani Blaan,aust1307,192,192,abvdphilippines,Austronesian
+3216,Kalagan,Papunesia,6.8126,125.328,kala1388,kqe,Kalagan,aust1307,193,193,abvdphilippines,Austronesian
+3217,"Kallahan, Keleyqiq",Papunesia,16.7099,121.035,kele1259,ify,Keley-i Kallahan,aust1307,192,192,abvdphilippines,Austronesian
+3218,"Manobo, Ata (down-river)",Papunesia,7.7789,125.499,atam1240,atd,Ata Manobo,aust1307,193,193,abvdphilippines,Austronesian
+3219,"Manobo, Dibabawon",Papunesia,7.85664,126.018,diba1242,mbd,Dibabawon Manobo,aust1307,192,192,abvdphilippines,Austronesian
+3220,"Manobo, Sarangani, Kayaponga Dialect",Papunesia,5.84903,125.499,sara1327,mbs,Sarangani Manobo,aust1307,192,192,abvdphilippines,Austronesian
+3221,"Sangil, Saragani Islands",Papunesia,5.40229,125.378,sang1337,snl,Sangil,aust1307,193,193,abvdphilippines,Austronesian
+3222,Tagabili,Papunesia,6.20377,124.538,tbol1240,tbl,Tboli,aust1307,193,193,abvdphilippines,Austronesian
+3223,"Tagbanwa, Aborlan Dialect",Papunesia,10.6519,119.338,cent2090,tgt,Central Tagbanwa,aust1307,193,193,abvdphilippines,Austronesian
+3224,"Tagbanwa, Kalamian, Coron Island Dialect",Papunesia,12.0716,120.094,cala1258,tbk,Calamian Tagbanwa,aust1307,192,192,abvdphilippines,Austronesian
+3225,Tunjung,Papunesia,-0.29048,115.883,tunj1244,tjg,Tunjung,aust1307,192,192,blustaustronesian,Austronesian
+3226,Ki-Kulanak 1,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,188,188,cals,Turkic
+3227,T-Kamangaron 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,188,188,cals,Indo-European
+3228,T-Nimich 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,188,188,cals,Indo-European
+3229,T-Rishtan 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,188,188,cals,Indo-European
+3230,Y-Dugova 1,Eurasia,39.1486,69.2422,yagn1238,yai,Yagnobi,indo1319,188,188,cals,Indo-European
+3231,Southern Pomo,North America,38.7643,-122.545,sout2984,peq,Southern Pomo,pomo1273,188,188,johanssonsoundsymbolic,Pomoan
+3232,Búdūma,Africa,13.0692,14.4492,budu1265,bdm,Buduma,afro1255,192,192,polyglottaafricana,Afro-Asiatic
+3233,Migabac,Papunesia,-6.33237,147.713,miga1241,mpp,Migabac,nucl1709,236,236,transnewguineaorg,Nuclear Trans New Guinea
+3234,Tidore,Papunesia,0.02461,127.746,tido1248,tvo,Tidore,nort2923,215,215,transnewguineaorg,North Halmahera
+3235,Zimakani,Papunesia,-7.3701,141.452,zima1244,zik,Zimakani,anim1240,258,258,transnewguineaorg,Anim
+3236,Axamb: Small Island-Maliambor,Papunesia,-16.51721,167.65111,axam1237,ahb,Axamb,aust1307,188,188,vanuatuvoices,
+3237,Larevat: Fwishile,Papunesia,-16.17351,167.37147,lare1249,lrv,Larevat,aust1307,188,188,vanuatuvoices,Austronesian
+3238,Malua Bay: Petarmul,Papunesia,-16.00022,167.22137,malu1245,mll,Malua-Tepërav,aust1307,188,188,vanuatuvoices,Austronesian
+3239,Novol: Dixon Reef,Papunesia,-16.34747,167.37749,dixo1238,dix,Dixon Reef,aust1307,195,195,vanuatuvoices,Austronesian
+3240,Pangkumu: Ndarmif,Papunesia,-16.28389,167.6669,rere1240,pgk,Rerep,aust1307,188,188,vanuatuvoices,Austronesian
+3241,Port Sandwich: Merivar,Papunesia,-16.428,167.808,port1285,psw,Port Sandwich,aust1307,188,188,vanuatuvoices,Austronesian
+3242,Penrhyn,Papunesia,-9.082238,-157.922908,penr1237,pnh,Māngarongaro,aust1307,212,212,abvdoceanic,Austronesian
+3243,Mutu,Papunesia,-5.79405,148.014,mutu1242,tuc,Mutu,aust1307,201,201,abvdoceanic,Austronesian
+3244,Gitua,Papunesia,-6.0151,147.485,gitu1237,ggt,Gitua,aust1307,198,198,abvdoceanic,Austronesian
+3245,"Ifugao, Bayninan",Papunesia,16.7099,121.035,kele1259,ify,Keley-i Kallahan,aust1307,191,191,abvdphilippines,Austronesian
+3246,Inibaloi,Papunesia,16.4263,120.695,ibal1244,ibl,Ibaloi,aust1307,192,192,abvdphilippines,Austronesian
+3247,"Manobo, Tigwa, Iglogsad Dialect",Papunesia,7.72124,125.16,mati1250,mbt,Matigsalug Manobo,aust1307,191,191,abvdphilippines,Austronesian
+3248,"Manobo, Western Bukidnon",Papunesia,7.6682,124.825,west2555,mbb,Western Bukidnon Manobo,aust1307,192,192,abvdphilippines,Austronesian
+3249,Mbakwithi,Australia,-12.395,141.755,angu1242,awg,Anguthimri,pama1250,187,187,bowernpny,Pama-Nyungan
+3250,T-Kaptarhona 1,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,187,187,cals,Indo-European
+3251,Yawarrawarrka,Australia,-26.7334,140.871,yawa1258,yww,Yawarawarga,pama1250,187,187,huntergatherer,Pama-Nyungan
+3252,Karajá,South America,-11.1881,-50.3492,kara1500,kpj,Karajá,nucl1710,187,187,johanssonsoundsymbolic,Nuclear-Macro-Je
+3253,Meriam,Papunesia,-9.59575,143.773,meri1244,ulk,Meriam,east2503,187,187,johanssonsoundsymbolic,Eastern Trans-Fly
+3254,Jurchen,Eurasia,44.412626,126.866803,jurc1239,juc,Jurchen,tung1282,202,202,oskolskayatungusic,Tungusic
+3255,Nkoya_1,Africa,-14.85,24.76,nkoy1244,nka,Nkoya,atla1278,187,187,sawkatokaleya,Atlantic-Congo
+3256,BahnarPleiku,Eurasia,14.0476,108.471,bahn1262,bdq,Bahnar,aust1305,212,212,sidwellbahnaric,Austroasiatic
+3257,Haida,North America,54.8979,-132.2479,sout2956,hax,Southern Haida,haid1248,187,187,tolmiebritishcolumbia,Haida
+3258,Shahaptani,North America,46.1427,-121.6173,klik1240,,Klikitat,saha1239,197,197,tolmiebritishcolumbia,Sahaptian
+3259,Alekano,Papunesia,-6.03901,145.387,alek1238,gah,Alekano,nucl1709,384,384,transnewguineaorg,Nuclear Trans New Guinea
+3260,Kuni-Boazi,Papunesia,-6.97504,141.365,kuni1265,kvg,Kuni-Boazi,anim1240,256,256,transnewguineaorg,Anim
+3261,Maiwa,Papunesia,-9.69836,149.274,maiw1251,mti,Maiwa (Papua New Guinea),daga1274,238,238,transnewguineaorg,Dagan
+3262,Avok: Hokai 2,Papunesia,-16.54125,167.73977,avok1244,,Avok,aust1307,187,187,vanuatuvoices,Austronesian
+3263,Nasarian: Wileven,Papunesia,-16.38333,167.4681,nasa1240,nvh,Nasarian,aust1307,194,194,vanuatuvoices,Austronesian
+3264,Novol: Bangir,Papunesia,-16.29424,167.66802,dixo1238,dix,Dixon Reef,aust1307,191,191,vanuatuvoices,Austronesian
+3265,Biga (Misool),Papunesia,-1.8801,130.075,matb1237,xmt,Matbat,aust1307,187,187,abvdoceanic,Austronesian
+3266,Suau,Papunesia,-10.6606,150.21,suau1242,swp,Suau,aust1307,194,194,abvdoceanic,Austronesian
+3267,Gapapaiwa,Papunesia,-9.73317,149.854,gapa1238,pwg,Gapapaiwa,aust1307,224,224,abvdoceanic,Austronesian
+3268,'Auhelawa,Papunesia,-10.0959,151.002,auhe1237,kud,'Auhelawa,aust1307,199,199,abvdoceanic,Austronesian
+3269,"Bilaan, Koronadal",Papunesia,6.20529,125.007,koro1310,bpr,Koronadal Blaan,aust1307,190,190,abvdphilippines,Austronesian
+3270,Itbayaten,Papunesia,20.77,121.85,ivat1242,ivv,Itbayat,aust1307,190,190,abvdphilippines,Austronesian
+3271,"Itneg, Binongan",Papunesia,17.5972,120.876,bino1237,itb,Binongan Itneg,aust1307,191,191,abvdphilippines,Austronesian
+3272,"Kankanay, Northern",Papunesia,17.1057,120.786,nort2877,xnn,Northern Kankanay,aust1307,189,189,abvdphilippines,Austronesian
+3273,Mbabaram,Australia,-20.1389,143.438,mbab1239,vmb,Mbabaram,pama1250,186,186,bowernpny,Pama-Nyungan
+3274,T-Urmetan 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,186,186,cals,Indo-European
+3275,Guajá,South America,-3.93574,-46.3683,guaj1256,gvj,Guajá,tupi1275,187,187,gerarditupi,Tupian
+3276,Yaqui,North America,29.9446,-110.681,yaqu1251,yaq,Yaqui,utoa1244,192,192,lionnetyotonahua,Uto-Aztecan
+3277,Southern Pwo,Eurasia,15.1915,98.7355,pwoe1235,kjp,Pwo Eastern Karen,sino1245,186,186,luangthongkumkaren,Sino-Tibetan
+3278,Sre,Eurasia,11.6444,108.057,koho1244,kpm,Koho,aust1305,198,198,sidwellbahnaric,Austroasiatic
+3279,Alak,Eurasia,15.5565,106.597,alak1253,alk,Alak,aust1305,191,191,sidwellbahnaric,Austroasiatic
+3280,Tshimsian,,54.336545,-130.450287,tsim1258,,Tsimshian,tsim1258,190,190,tolmiebritishcolumbia,Tsimshian
+3281,Fifti: Khatbol,Papunesia,-16.18053,167.5316,vivt1234,,Vivti,aust1307,187,187,vanuatuvoices,Austronesian
+3282,Mandri: Farun,Papunesia,-16.50111,167.63972,nisv1234,,Nisvai,aust1307,186,186,vanuatuvoices,Austronesian
+3283,Nasvang: Farun,Papunesia,-16.51167,167.63944,nasv1234,,Nasvang,aust1307,186,186,vanuatuvoices,Austronesian
+3284,Nitita: Khatbol,Papunesia,-16.18053,167.5316,niti1249,,Nitita,aust1307,189,189,vanuatuvoices,Austronesian
+3285,Salang: DixonReef,Papunesia,-16.26833,167.4339,katb1237,tmb,Avava,aust1307,186,186,vanuatuvoices,Austronesian
+3286,Uliveo: Pelongk,Papunesia,-16.51917,167.83139,mask1242,klv,Maskelynes,aust1307,187,187,vanuatuvoices,Austronesian
+3287,Kairiru,Papunesia,-3.34608,143.558,kair1263,kxa,Kairiru,aust1307,257,257,abvdoceanic,Austronesian
+3288,Minyaifuin (Gebe),Papunesia,-0.07877,129.424,gebe1237,gei,Gebe,aust1307,187,187,abvdoceanic,Austronesian
+3289,Wogeo,Papunesia,-3.20238,144.089,woge1237,woc,Wogeo,aust1307,188,188,abvdoceanic,Austronesian
+3290,Kapingamarangi,Papunesia,1.039166,154.797223,kapi1249,kpg,Kapingamarangi,aust1307,269,269,abvdoceanic,Austronesian
+3291,Gabadi,Papunesia,-9.03389,146.992,abad1241,kbt,Abadi,aust1307,200,200,abvdoceanic,Austronesian
+3292,Malango,Papunesia,-9.61383,160.118,mala1484,mln,Malango,aust1307,210,210,abvdoceanic,Austronesian
+3293,Arosi (Tawatana Village),Papunesia,-10.2441,161.432,aros1241,aia,Arosi,aust1307,200,200,abvdoceanic,Austronesian
+3294,Tesmbol (Usus),Papunesia,-16.3579,167.697,aulu1238,aul,Aulua,aust1307,186,186,abvdoceanic,Austronesian
+3295,Mangseng,Papunesia,-5.89752,150.68,mang1403,mbh,Mangseng,aust1307,201,201,abvdoceanic,Austronesian
+3296,Roinji,Papunesia,-5.80782,146.731,ronj1237,roe,Ronji,aust1307,196,196,abvdoceanic,Austronesian
+3297,Hote (Misim dialect),Papunesia,-7.07708,146.869,hote1245,hot,Hote,aust1307,189,189,abvdoceanic,Austronesian
+3298,"Ifugao, Amganad",Papunesia,16.9016,121.042,amga1235,ifa,Amganad Ifugao,aust1307,188,188,abvdphilippines,Austronesian
+3299,"Ilongot, Kakiduge:n",Papunesia,16.3785,121.547,ilon1239,ilk,Ilongot,aust1307,190,190,abvdphilippines,Austronesian
+3300,Tadyawan,Papunesia,13.0211,121.305,tady1237,tdy,Tadyawan,aust1307,265,265,abvdphilippines,Austronesian
+3301,Guiangan (Sirib),Papunesia,6.99967,125.359,gian1241,bgi,Giangan,aust1307,189,189,abvdphilippines,Austronesian
+3302,Mithaka,Australia,-25.13606725,139.598447,mith1236,,Mithaka,pama1250,187,187,bowernpny,Pama-Nyungan
+3303,Nhirrpi,Australia,-28.62911,141.27596,nhir1234,hrp,Nhirrpi,pama1250,185,185,bowernpny,Pama-Nyungan
+3304,Sukur,Africa,10.8933,13.6437,suku1272,syk,Sukur,afro1255,193,193,gravinachadic,Afro-Asiatic
+3305,Waimiri Atroari,South America,-0.61832,-60.4259,waim1253,atr,Waimiri-Atroari,cari1283,185,185,huntergatherer,Cariban
+3306,Dhuwala,Australia,-12.2868,135.337,gupa1247,guf,Gupapuyngu,pama1250,185,185,huntergatherer,Pama-Nyungan
+3307,Abun,Papunesia,-0.57073,132.416,abun1252,kgr,Abun,abun1252,185,185,johanssonsoundsymbolic,Abun
+3308,Gooniyandi,Australia,-18.4073,126.351,goon1238,gni,Gooniyandi,buna1274,185,185,johanssonsoundsymbolic,Bunaban
+3309,Opata,North America,31.15211,-110.06212,opat1246,opt,Teguima,utoa1244,201,201,lionnetyotonahua,Uto-Aztecan
+3310,MagdalenaPenascoMixtec,North America,17.2837,-97.5413,magd1235,xtm,Magdalena Peñasco Mixtec,otom1299,204,204,mixtecansubgrouping,Otomanguean
+3311,Urarina,South America,-4.44006,-75.4211,urar1246,ura,Urarina,urar1246,189,189,northperulex,Urarina
+3312,Jurchen,Eurasia,44.41,126.87,jurc1239,juc,Jurchen,tung1282,198,198,robbeetstriangulation,Tungusic
+3313,Sedang,Eurasia,14.7793,108.027,seda1262,sed,Sedang,aust1305,203,203,sidwellbahnaric,Austroasiatic
+3314,Halang,Eurasia,14.7862,107.457,hala1252,hal,Halang,aust1305,199,199,sidwellbahnaric,Austroasiatic
+3315,Thlinkit,North America,54.2006,-129.8392,tlin1245,tli,Tlingit,atha1245,192,192,tolmiebritishcolumbia,Athabaskan-Eyak-Tlingit
+3316,Selish,North America,50.6849,-121.9177,lill1248,lil,Lillooet,sali1255,186,186,tolmiebritishcolumbia,Salishan
+3317,Axamb: Small Island,Papunesia,-16.51664,167.65287,axam1237,ahb,Axamb,aust1307,185,185,vanuatuvoices,
+3318,Nahavaq: Loorndavo,Papunesia,-16.52763,167.44872,sout2857,sns,Nahavaq,aust1307,185,185,vanuatuvoices,Austronesian
+3319,Uliveo: Peskaros 2,Papunesia,-16.52542,167.82515,mask1242,klv,Maskelynes,aust1307,185,185,vanuatuvoices,Austronesian
+3320,Wala: Preng,Papunesia,-15.97342,167.37627,wala1267,,Wala-Rano,aust1307,188,188,vanuatuvoices,Austronesian
+3321,Xoli (Mbwenelang),Papunesia,-16.34139,167.7425,boin1237,,Boinelang,aust1307,185,185,vanuatuvoices,Austronesian
+3322,Taiof,Papunesia,-5.64103,154.732,sapo1253,sps,Saposa,aust1307,186,186,abvdoceanic,Austronesian
+3323,Manihiki,Papunesia,-10.03,-161.09,raka1237,rkh,Rakahanga-Manihiki,aust1307,299,299,abvdoceanic,Austronesian
+3324,Bunama,Papunesia,-10.0761,151.066,buna1276,bdd,Bunama,aust1307,212,212,abvdoceanic,Austronesian
+3325,Agta,Papunesia,17.9571,121.857,cent2084,agt,Central Cagayan Agta,aust1307,189,189,abvdphilippines,Austronesian
+3326,Bikol (Buhinon),Papunesia,13.17,123.5,buhi1243,ubl,Buhi,aust1307,191,191,abvdphilippines,Austronesian
+3327,Kamayo,Papunesia,8.10796,126.314,kama1363,kyk,Kamayo,aust1307,240,240,abvdphilippines,Austronesian
+3328,Wuna,Papunesia,-5.40419,122.541,muna1247,mnb,Muna,aust1307,192,192,blustaustronesian,Austronesian
+3329,Jeh,Eurasia,15.2351,107.753,jehh1245,jeh,Jeh,aust1305,190,190,sidwellbahnaric,Austroasiatic
+3330,MnongRlm,Eurasia,12.3939,108.354,east2333,mng,Eastern Mnong,aust1305,222,222,sidwellbahnaric,Austroasiatic
+3331,Mbaniata,Papunesia,-8.58405,157.296,touo1238,tqu,Touo,touo1238,239,239,transnewguineaorg,Touo
+3332,Siane,Papunesia,-6.13188,145.247,sian1257,snp,Siane,nucl1709,328,328,transnewguineaorg,Nuclear Trans New Guinea
+3333,Avok: Hokai,Papunesia,-16.53778,167.74,avok1244,,Avok,aust1307,185,185,vanuatuvoices,Austronesian
+3334,Burmbar: Burmbar,Papunesia,-16.38806,167.78222,burm1263,vrt,Burmbar,aust1307,184,184,vanuatuvoices,Austronesian
+3335,Nombotkote: Blacksands,Papunesia,-16.32063,167.44212,lete1241,nms,Letemboi-Repanbitip,aust1307,184,184,vanuatuvoices,Austronesian
+3336,Pangkumu: Datisman,Papunesia,-16.28244,167.6626,rere1240,pgk,Rerep,aust1307,184,184,vanuatuvoices,Austronesian
+3337,Rano: Chinambong,Papunesia,-15.99049,167.39063,wala1267,,Wala-Rano,aust1307,186,186,vanuatuvoices,Austronesian
+3338,Rano: Potora,Papunesia,-15.98472,167.3866,wala1267,,Wala-Rano,aust1307,187,187,vanuatuvoices,Austronesian
+3339,Sa: Paangi,Papunesia,-15.94611,168.19444,saaa1241,sax,Sa,aust1307,195,195,vanuatuvoices,Austronesian
+3340,Unua: Noferai,Papunesia,-16.23333,167.60139,unua1237,onu,Unua,aust1307,184,184,vanuatuvoices,Austronesian
+3341,Vao: Canada,Papunesia,-15.89978,167.30731,vaoo1237,vao,Vao-Vovo,aust1307,184,184,vanuatuvoices,Austronesian
+3342,Wowo: Wowo,Papunesia,-15.90224,167.18459,vovo1238,,Vovo,aust1307,188,188,vanuatuvoices,Austronesian
+3343,Mor,Papunesia,-2.87055,135.95,morm1235,mhz,Mor (Mor Islands),aust1307,190,190,abvdoceanic,Austronesian
+3344,Leipon,Papunesia,-1.9665,147.226,leip1237,lek,Leipon,aust1307,183,183,abvdoceanic,Austronesian
+3345,Nauru,Papunesia,-0.52957,166.922,naur1243,nau,Nauru,aust1307,232,232,abvdoceanic,Austronesian
+3346,Uruava,Papunesia,-6.23314,155.573,urua1242,urv,Uruava,aust1307,246,246,abvdoceanic,Austronesian
+3347,Lelepa,Papunesia,-17.6042,168.202,lele1267,lpa,Lelepa,aust1307,187,187,abvdoceanic,Austronesian
+3348,Hanunoo,Papunesia,12.4159,121.221,hanu1241,hnn,Hanunoo,aust1307,244,244,abvdphilippines,Austronesian
+3349,Malgana,Australia,-26.211,114.245,malg1242,vml,Malgana,pama1250,184,184,bowernpny,Pama-Nyungan
+3350,T-Nûshor 2,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,183,183,cals,Indo-European
+3351,Bunuba,Australia,-17.8297,125.631,buna1275,bck,Bunaba,buna1274,190,190,huntergatherer,Bunaban
+3352,Canela,South America,-6.10712,-45.1299,cane1242,ram,Central-Southern Timbira,nucl1710,205,205,idssegmented,Nuclear-Macro-Je
+3353,Kaluli,Papunesia,-6.45932,142.788,kalu1248,bco,Kaluli,bosa1245,183,183,johanssonsoundsymbolic,Bosavi
+3354,Kathmandu,Eurasia,27.67,85.326,newa1246,new,Kathmandu Valley Newari,sino1245,272,272,liunewari,Sino-Tibetan
+3355,Phon,Eurasia,25.3248194,97.3544031,hpon1238,hpo,Hpon,sino1245,183,183,mannburmish,Sino-Tibetan
+3356,SanAndresChicahuaxtlaTriqui,North America,17.15612,-97.84007,chic1273,trs,Chicahuaxtla Triqui,otom1299,202,202,mixtecansubgrouping,Otomanguean
+3357,SanMartinDuraznosMixtec,North America,17.30502,-98.10188,juxt1235,vmc,Juxtlahuaca Mixtec,otom1299,195,195,mixtecansubgrouping,Otomanguean
+3358,ElJicaralMixtec,North America,17.12602,-98.196842,coic1238,,Coicoyán,otom1299,192,192,mixtecansubgrouping,Otomanguean
+3359,Fúlup,Africa,12.5258,-16.4245,band1340,bqj,Bandial,atla1278,230,230,polyglottaafricana,Atlantic-Congo
+3360,Rengao,Eurasia,14.456,107.9459,reng1252,ren,Rengao,aust1305,197,197,sidwellbahnaric,Austroasiatic
+3361,Stieng,Eurasia,11.9777,106.798,bulo1242,sti,Bulo Stieng,aust1305,195,195,sidwellbahnaric,Austroasiatic
+3362,JruLaven,Eurasia,15.2726,106.322,lave1248,lbo,Laven,aust1305,190,190,sidwellbahnaric,Austroasiatic
+3363,Chambri,Papunesia,-4.27831,143.097,cham1313,can,Chambri,lowe1423,316,316,transnewguineaorg,Lower Sepik
+3364,West Makian,Papunesia,0.45332,127.63,west2600,mqs,West Makian,nort2923,259,259,transnewguineaorg,North Halmahera
+3365,Atchin: Small Island,Papunesia,-15.9439,167.33993,atch1238,,Atchin,aust1307,186,186,vanuatuvoices,Austronesian
+3366,Espiegel’s Bay: Solwota,Papunesia,-15.979,167.192,malu1245,mll,Malua-Tepërav,aust1307,183,183,vanuatuvoices,Austronesian
+3367,Malua Bay: Tiptir,Papunesia,-15.9905,167.21991,malu1245,mll,Malua-Tepërav,aust1307,183,183,vanuatuvoices,Austronesian
+3368,Port Sandwich: Lamap,Papunesia,-16.425,167.805,port1285,psw,Port Sandwich,aust1307,183,183,vanuatuvoices,Austronesian
+3369,Sa: Ranwas,Papunesia,-15.968650,168.265183,saaa1241,sax,Sa,aust1307,193,193,vanuatuvoices,Austronesian
+3370,Uliveo (Lurtes) 162-107,Papunesia,-16.5073,167.818,mask1242,klv,Maskelynes,aust1307,205,205,abvdoceanic,Austronesian
+3371,"Dumagat, Casiguran",Papunesia,16.2176,121.878,casi1235,dgc,Casiguran-Nagtipunan Agta,aust1307,186,186,abvdphilippines,Austronesian
+3372,Buhid,Papunesia,12.6396,121.21,buhi1245,bku,Buhid,aust1307,246,246,abvdphilippines,Austronesian
+3373,Ki-Orday 3,Eurasia,42.0,74.0,kirg1245,kir,Kirghiz,turk1311,182,182,cals,Turkic
+3374,Lule,South America,-25.22,-61.89,lule1238,ule,Lule,lule1238,304,304,chacolanguages,Lule-Vilela
+3375,Kumadene_2,South America,0.69618,-67.5028,curr1243,kpc,Curripaco,araw1281,182,182,chaconbaniwa,Arawakan
+3376,Djapu,Australia,-12.879764,136.417978,djap1238,,Djapu,pama1250,184,184,huntergatherer,Pama-Nyungan
+3377,Garrwa,Australia,-17.4504,137.72014,gara1269,wrk,Garrwa,garr1260,182,182,johanssonsoundsymbolic,Garrwan
+3378,Murrinh-Patha,Australia,-14.74852,129.70152,murr1258,mwf,Murriny Patha,sout2772,182,182,johanssonsoundsymbolic,Southern Daly
+3379,Southern Jeolla,Eurasia,35.14,126.84,chol1278,,Jollado,kore1284,186,186,leekoreanic,Koreanic
+3380,Northern Chungcheong,Eurasia,36.63,127.31,chun1247,,Ch'ungch'ongdo,kore1284,187,187,leekoreanic,Koreanic
+3381,ChalcatongoHidalgoMixtec,North America,17.03226,-97.57074,sanm1296,,San Miguel Chalcatongo,otom1299,198,198,mixtecansubgrouping,Otomanguean
+3382,Tshinook,North America,45.5838,-121.2008,wasc1239,wac,Upper Chinook,chin1490,182,182,tolmiebritishcolumbia,Chinookan
+3383,Kaki Ae,Papunesia,-7.9946,145.816,kaki1249,tbd,Kaki Ae,kaki1249,233,233,transnewguineaorg,Kaki Ae
+3384,Mailu,Papunesia,-10.3657,149.521,mail1248,mgu,Mailu,mail1249,243,243,transnewguineaorg,Mailuan
+3385,Mbaniata (Lokuru Dialect),Papunesia,-7.92388,156.663,bilu1245,blb,Bilua,bilu1245,202,202,transnewguineaorg,Bilua
+3386,Mbilua,Papunesia,-7.92388,156.663,bilu1245,blb,Bilua,bilu1245,211,211,transnewguineaorg,Bilua
+3387,Atchin: Orap,Papunesia,-15.9156,167.30641,atch1238,,Atchin,aust1307,189,189,vanuatuvoices,Austronesian
+3388,Aulua: Loxse-Lanfitfit,Papunesia,-16.33667,167.73972,aulu1238,aul,Aulua,aust1307,182,182,vanuatuvoices,Austronesian
+3389,Neve’ei: Coast,Papunesia,-16.22942,167.38365,vinm1237,vnm,Neve'ei,aust1307,182,182,vanuatuvoices,Austronesian
+3390,Uliveo: Peskaros,Papunesia,-16.51917,167.83139,mask1242,klv,Maskelynes,aust1307,183,183,vanuatuvoices,Austronesian
+3391,Unua: Mbatumbo,Papunesia,-16.23361,167.6011,unua1237,onu,Unua,aust1307,182,182,vanuatuvoices,Austronesian
+3392,V’ënen Taute: Benmara,Papunesia,-16.05552,167.23261,bign1238,nmb,Big Nambas,aust1307,182,182,vanuatuvoices,Austronesian
+3393,Hoava,Papunesia,-8.19679,157.595,hoav1238,hoa,Hoava,aust1307,190,190,abvdoceanic,Austronesian
+3394,Misima,Papunesia,-10.6821,152.696,misi1243,mpx,Misima-Paneati,aust1307,183,183,abvdoceanic,Austronesian
+3395,Zabana (Kia),Papunesia,-7.74311,158.753,zaba1237,kji,Zabana,aust1307,195,195,abvdoceanic,Austronesian
+3396,Aria,Papunesia,-5.71155,149.158,mouk1239,mwh,Mouk-Aria,aust1307,241,241,abvdoceanic,Austronesian
+3397,Sisingga,Papunesia,-7.0,156.83,sisi1250,,Sisiqa,aust1307,197,197,abvdoceanic,Austronesian
+3398,Merei,Papunesia,-15.2839,166.905,mere1242,lmb,Merei,aust1307,198,198,abvdoceanic,Austronesian
+3399,Kalinga (Minangali),Papunesia,17.3441,121.311,lowe1412,kml,Tanudan Kalinga,aust1307,196,196,abvdphilippines,Austronesian
+3400,Alangan,Papunesia,13.0982,121.022,alan1249,alj,Alangan,aust1307,265,265,abvdphilippines,Austronesian
+3401,Batangan,Papunesia,12.6396,121.21,buhi1245,bku,Buhid,aust1307,271,271,abvdphilippines,Austronesian
+3402,Malaweg,Papunesia,17.7329,121.58,itaw1240,itv,Itawit,aust1307,202,202,abvdphilippines,Austronesian
+3403,YoloxochitlMixtec,North America,16.8059,-98.6293,yolo1241,xty,Yoloxochitl Mixtec,otom1299,190,190,mixtecansubgrouping,Otomanguean
+3404,Kiranti_Bahing,Eurasia,27.309472,86.430334,bahi1252,bhj,Bahing,sino1245,194,194,sagartst,Sino-Tibetan
+3405,Tampuan,Eurasia,13.56447,107.24544,tamp1251,tpu,Tampuan,aust1305,185,185,sidwellbahnaric,Austroasiatic
+3406,BahnarGolar,Eurasia,14.0476,108.471,bahn1262,bdq,Bahnar,aust1305,195,195,sidwellbahnaric,Austroasiatic
+3407,Huli,Papunesia,-5.97212,142.963,huli1244,hui,Huli,nucl1709,245,245,transnewguineaorg,Nuclear Trans New Guinea
+3408,Espiegel’s Bay: Litebral,Papunesia,-15.974,167.193,malu1245,mll,Malua-Tepërav,aust1307,181,181,vanuatuvoices,Austronesian
+3409,Naha’ai: Malfaxal,Papunesia,-16.55216,167.56539,malf1237,mlx,Na'ahai,aust1307,181,181,vanuatuvoices,Austronesian
+3410,Ninde: Southwest Bay,Papunesia,-16.48255,167.44635,labo1244,mwi,Ninde,aust1307,181,181,vanuatuvoices,Austronesian
+3411,Rano: Twalung,Papunesia,-15.98389,167.38444,wala1267,,Wala-Rano,aust1307,183,183,vanuatuvoices,Austronesian
+3412,Unua: Benuamor,Papunesia,-16.2346,167.60636,unua1237,onu,Unua,aust1307,181,181,vanuatuvoices,Austronesian
+3413,Vao: Torono,Papunesia,-15.89986,167.30819,vaoo1237,vao,Vao-Vovo,aust1307,181,181,vanuatuvoices,Austronesian
+3414,Tangga,Papunesia,-4.08824,153.611,tang1348,tgg,Tangga,aust1307,208,208,abvdoceanic,Austronesian
+3415,Vaghua,Papunesia,-6.68712,156.542,vagh1249,tva,Vaghua,aust1307,269,269,abvdoceanic,Austronesian
+3416,Varisi,Papunesia,-6.83443,156.655,vari1239,vrs,Varisi,aust1307,232,232,abvdoceanic,Austronesian
+3417,Kokota,Papunesia,-8.16481,159.191,koko1269,kkk,Kokota,aust1307,184,184,abvdoceanic,Austronesian
+3418,Tolai,Papunesia,-4.30986,152.114,kuan1248,ksd,Kuanua,aust1307,222,222,abvdoceanic,Austronesian
+3419,Unua (Noferai),Papunesia,-16.2638,167.599,unua1237,onu,Unua,aust1307,180,180,abvdoceanic,Austronesian
+3420,Na'ahai (Mbatvanui) 162-85,Papunesia,-16.5499,167.509,malf1237,mlx,Na'ahai,aust1307,180,180,abvdoceanic,Austronesian
+3421,Axamb (Small Island-Brisbane) 162-89,Papunesia,-16.4838,167.707,axam1237,ahb,Axamb,aust1307,180,180,abvdoceanic,Austronesian
+3422,Mayi-Kulan,Australia,-18.56,141.46,mayi1236,xyk,Mayi-Kulan,pama1250,181,181,bowernpny,Pama-Nyungan
+3423,T-Urmetan 4,Eurasia,38.8213,68.5549,taji1245,tgk,Tajik,indo1319,180,180,cals,Indo-European
+3424,Shuar,South America,-3.45136,-78.1892,shua1257,jiv,Shuar,jiva1245,183,183,northperulex,Chicham
+3425,Jebero,South America,-5.40317,-76.4103,jebe1250,jeb,Jebero,cahu1265,183,183,northperulex,Cahuapanan
+3426,Nyaheun,Eurasia,15.1034,106.543,nyah1249,nev,Nyaheun,aust1305,189,189,sidwellbahnaric,Austroasiatic
+3427,Kwakiool,North America,49.9985,-125.1751,kwak1269,kwk,Kwak'wala,waka1280,180,180,tolmiebritishcolumbia,Wakashan
+3428,Niskwalli,North America,47.9688,-122.4076,lush1252,lut,Northern Lushootseed,sali1255,181,181,tolmiebritishcolumbia,Salishan
+3429,Lavukaleve,Papunesia,-9.05569,159.119,lavu1241,lvk,Lavukaleve,lavu1241,209,209,transnewguineaorg,Lavukaleve
+3430,Sa: Bunlap,Papunesia,-15.9575,168.26889,saaa1241,sax,Sa,aust1307,195,195,vanuatuvoices,Austronesian
+3431,V’ënen Taute: Alpalak,Papunesia,-15.99722,167.1825,bign1238,nmb,Big Nambas,aust1307,180,180,vanuatuvoices,Austronesian
+3432,V’ënen Taute: Unmet,Papunesia,-16.15371,167.26022,bign1238,nmb,Big Nambas,aust1307,180,180,vanuatuvoices,Austronesian

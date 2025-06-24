@@ -19,7 +19,7 @@
         {
             "rdf:about": "git@github.com:clics/clics4",
             "rdf:type": "prov:Entity",
-            "dc:created": "v0.3-7-g60012bb",
+            "dc:created": "v0.3-8-g0d72b50",
             "dc:title": "Repository"
         },
         {
@@ -60,7 +60,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 1443325,
+            "dc:extent": 1445845,
             "tableSchema": {
                 "columns": [
                     {
@@ -180,7 +180,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 3420,
+            "dc:extent": 3432,
             "tableSchema": {
                 "columns": [
                     {
@@ -396,7 +396,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ContributionTable",
-            "dc:extent": 94,
+            "dc:extent": 95,
             "tableSchema": {
                 "columns": [
                     {

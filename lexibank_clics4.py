@@ -135,7 +135,7 @@ class Dataset(BaseDataset):
             if rec_new.doi != record.doi:
                 record = rec_new
                 args.log.warn("DOI for datasets {0} is not the latest version!".format(
-                    dataset["ID"]))
+                    dataset))
             record.download(dest)
             
             # load zenodo info to make a new bibtex and doi
@@ -273,7 +273,7 @@ class Dataset(BaseDataset):
                             visited.add(t)
                     else:
                         if concept.concepticon_gloss not in gloss2id:
-                            dsets = " ".join(set([f.dataset for f in concept.forms]))
+                            dseMPCDFts = " ".join(set([f.dataset for f in concept.forms]))
                             args.log.info("Concepticon 3-Problem {0} / {1}".format(concept.concepticon_gloss, dsets))
                         else:
                             selected_concepts.append(concept.concepticon_gloss)
@@ -583,15 +583,22 @@ class Dataset(BaseDataset):
                     }
                 )
                 if data["family_count"] >= COLEXIFICATION_THRESHOLD:
+                    visited_vars = []
                     for language_id in data["varieties"]:
+                        
                         lid = language_id.split("-")[1]
+                        if lid in visited_vars:
+                            count = visited_vars.count(lid)
+                            lid = lid + "-" + str(count)
+                            visited_vars.append(lid)
+
                         writer.objects["ValueTable"].append(
                             {
                                 "ID": idx + "-" + lid,
                                 "Parameter_ID": idx,
                                 "Language_ID": lid,
                                 "Value": 1,
-                                "Source": "Tjuka2025"
+                                "Source": ["Tjuka2025"]
                             }
                         )
                     # now add missing data
@@ -603,7 +610,7 @@ class Dataset(BaseDataset):
                                 "Parameter_ID": idx,
                                 "Language_ID": lid,
                                 "Value": 0,
-                                "Source": "Tjuka2025"
+                                "Source": ["Tjuka2025"]
                             }
                         )
 
