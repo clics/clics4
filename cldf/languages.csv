@@ -1749,7 +1749,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Glottolog_Name,Fami
 1748,Uyghur,Eurasia,43.88,87.38,uigh1240,uig,Uighur,turk1311,322,322,robbeetstriangulation,Turkic
 1749,Yaeyama Hatoma,Eurasia,24.17,123.51,hato1238,,Hatoma,japo1237,269,269,robbeetstriangulation,Japonic
 1750,Yonaguni,Eurasia,24.28,123,yona1241,yoi,Yonaguni,japo1237,262,262,robbeetstriangulation,Japonic
-1751,Arandai (Weriagar Dialect),Papunesia,-2.08016,132.983,aran1237,jbj,Dombano,sout1516,285,285,transnewguineaorg,South Bird's Head Family
+1751,Arandai (Weriagar Dialect),Papunesia,-2.08016,132.983,aran1237,jbj,Dombano,sout3418,285,285,transnewguineaorg,South Bird's Head Family
 1752,"Awyu, South (Syiagha Dialect)",Papunesia,-7.36301,139.538,sout2941,aws,South Awyu,nucl1709,392,392,transnewguineaorg,Nuclear Trans New Guinea
 1753,Duungidjawu,Australia,-25.3987,152.345,duun1241,,Duungidjawu,pama1250,260,260,bowernpny,Pama-Nyungan
 1754,Kuku Yalanji,Australia,-16.0036,145.188,kuku1273,gvn,Kuku-Yalanji,pama1250,260,260,bowernpny,Pama-Nyungan
@@ -1964,7 +1964,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Glottolog_Name,Fami
 1963,Suansu,Eurasia,24.806681,93.941689,suan1234,,Suansu,sino1245,251,251,ivanisuansu,Sino-Tibetan
 1964,Chayahuita,South America,-5.63764,-76.8252,chay1248,cbt,Shawi,cahu1265,251,251,johanssonsoundsymbolic,Cahuapanan
 1965,Nama,Africa,-25.0747,17.9767,nama1264,naq,Nama (Namibia),khoe1240,251,251,johanssonsoundsymbolic,Khoe-Kwadi
-1966,Zarma,Africa,12.8554,2.41173,zarm1239,dje,Zarma,song1307,251,251,johanssonsoundsymbolic,Songhay
+1966,Zarma,Africa,12.8554,2.41173,zarm1239,dje,Zarma-Kaado,song1307,251,251,johanssonsoundsymbolic,Songhay
 1967,Azha,Eurasia,23.9,104.15,azha1235,aza,Azha,sino1245,251,251,lamanisoic,Sino-Tibetan
 1968,Samu,Eurasia,25.012,102.2,sama1295,ysd,Samatao,sino1245,251,251,lamanisoic,Sino-Tibetan
 1969,Pádṣāde,Africa,12.6425,-13.4759,bady1239,pbp,Jaad-Badyara,atla1278,254,254,polyglottaafricana,Atlantic-Congo
@@ -2280,7 +2280,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Glottolog_Name,Fami
 2279,Gyani Maiya,Eurasia,28.0,82.26,kusu1250,kgg,Kusunda,kusu1250,227,227,aaleykusunda,Kusunda
 2280,Waimaja,South America,0.30416,-70.1644,waim1255,bao,Waimaha,tuca1253,227,227,huntergatherer,Tucanoan
 2281,Abun,Papunesia,-0.57,132.42,abun1252,kgr,Abun,abun1252,227,227,papuanvoices,Isolate
-2282,Ambel,Papunesia,-0.18,130.92,waig1244,wgo,Waigeo,aust1307,227,227,papuanvoices,Austronesian
+2282,Ambel,Papunesia,-0.18,130.92,waig1244,wgo,Ambel,aust1307,227,227,papuanvoices,Austronesian
 2283,Mee,Papunesia,-3.89,136.02,ekar1243,ekg,Ekari,nucl1709,227,227,papuanvoices,Nuclear Trans New Guinea
 2284,Mek W.: Nalca,Papunesia,-4.26,139.88,nalc1240,nlc,Nalca,nucl1709,227,227,papuanvoices,Nuclear Trans New Guinea
 2285,Mpur,Papunesia,-0.75,133.17,mpur1239,akc,Mpur,mpur1239,227,227,papuanvoices,Isolate
@@ -2300,7 +2300,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Glottolog_Name,Fami
 2299,Burarra,Australia,-12.3061,134.365,bura1267,bvr,Burarra,mani1293,232,232,huntergatherer,Maningrida
 2300,Yuracaré,South America,-16.7479,-65.1224,yura1255,yuz,Yuracaré,yura1255,226,226,johanssonsoundsymbolic,Yuracaré
 2301,Ansus,Papunesia,-1.73,135.81,ansu1237,and,Ansus,aust1307,226,226,papuanvoices,Austronesian
-2302,Irires,Papunesia,-0.6051,132.4896,irir1234,,Irires,mayb1237,226,226,papuanvoices,Maybratic
+2302,Irires,Papunesia,-0.6051,132.4896,irir1234,,Irires,east1459,226,226,papuanvoices,Maybratic
 2303,Yapen: Wooi,Papunesia,-1.63,135.48,woii1237,wbw,Woi,aust1307,215,215,papuanvoices,Austronesian
 2304,Bóde,Africa,12.789,10.6557,bade1248,bde,Bade,afro1255,226,226,polyglottaafricana,Afro-Asiatic
 2305,Alẹ́ge,Africa,6.59423,9.00394,aleg1238,alf,Alege,atla1278,262,262,polyglottaafricana,Atlantic-Congo
@@ -2583,7 +2583,7 @@ ID,Name,Macroarea,Latitude,Longitude,Glottocode,ISO639P3code,Glottolog_Name,Fami
 2582,Tembé,South America,-2.6123,-48.2359,temb1276,tqb,Tenetehara,tupi1275,214,214,gerarditupi,Tupian
 2583,Ritharrngu,Australia,-13.4559,135.259,rita1239,rit,Ritharrngu,pama1250,222,222,huntergatherer,Pama-Nyungan
 2584,Lavukaleve,Papunesia,-9.05569,159.119,lavu1241,lvk,Lavukaleve,lavu1241,213,213,johanssonsoundsymbolic,Lavukaleve
-2585,Suabo,Papunesia,-2.07971,132.157,suab1238,szp,Suabo,inan1242,213,213,johanssonsoundsymbolic,Inanwatan
+2585,Suabo,Papunesia,-2.07971,132.157,suab1238,szp,Suabo,sout3418,213,213,johanssonsoundsymbolic,Inanwatan
 2586,Sinitic_Longgang,Eurasia,22.725545,114.243825,hakk1236,hak,Hakka Chinese,sino1245,222,222,sagartst,Sino-Tibetan
 2587,Tibeto_Kinauri_Rongpo,Eurasia,30.530044,79.569987,rong1264,rnp,Rongpo,sino1245,235,235,sagartst,Sino-Tibetan
 2588,Edopi,Papunesia,-3.11078,137.387,edop1238,dbf,Edopi,lake1255,216,216,transnewguineaorg,Lakes Plain
