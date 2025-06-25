@@ -19,7 +19,7 @@
         {
             "rdf:about": "git@github.com:clics/clics4",
             "rdf:type": "prov:Entity",
-            "dc:created": "v0.3-8-g0d72b50",
+            "dc:created": "v0.3-9-g37dc1fb",
             "dc:title": "Repository"
         },
         {

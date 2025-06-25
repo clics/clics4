@@ -19,7 +19,7 @@
         {
             "rdf:about": "git@github.com:clics/clics4",
             "rdf:type": "prov:Entity",
-            "dc:created": "v0.3-8-g0d72b50",
+            "dc:created": "v0.3-9-g37dc1fb",
             "dc:title": "Repository"
         },
         {
@@ -56,7 +56,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 7225225,
+            "dc:extent": 7210588,
             "tableSchema": {
                 "columns": [
                     {

@@ -584,31 +584,24 @@ class Dataset(BaseDataset):
                 )
                 if data["family_count"] >= COLEXIFICATION_THRESHOLD:
                     visited_vars = []
-                    for language_id in data["varieties"]:
-                        
-                        lid = language_id.split("-")[1]
-                        if lid in visited_vars:
-                            count = visited_vars.count(lid)
-                            lid = lid + "-" + str(count)
-                            visited_vars.append(lid)
-
+                    for lid in sorted(set(data["varieties"])):
                         writer.objects["ValueTable"].append(
                             {
                                 "ID": idx + "-" + lid,
                                 "Parameter_ID": idx,
-                                "Language_ID": lid,
+                                "Language_ID": lid.split("-")[-1],
                                 "Value": 1,
                                 "Source": ["Tjuka2025"]
                             }
                         )
                     # now add missing data
-                    for language_id in negative_data:
+                    for language_id in sorted(set(negative_data)):
                         lid = language_id.split("-")[1]
                         writer.objects["ValueTable"].append(
                             {
                                 "ID": idx + "-" + lid,
                                 "Parameter_ID": idx,
-                                "Language_ID": lid,
+                                "Language_ID": lid.split("-")[-1],
                                 "Value": 0,
                                 "Source": ["Tjuka2025"]
                             }

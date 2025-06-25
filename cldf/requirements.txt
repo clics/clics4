@@ -33,7 +33,7 @@ platformdirs==4.3.8
 pluggy==1.6.0
 pybtex==0.25.0
 pycldf==1.42.0
-pyclics==3.1.0
+-e git+ssh://git@github.com/clics/pyclics.git@fdc3208e281ac9d6673cc954b924893be2fb48fd#egg=pyclics
 pyclts==3.2.0
 pyconcepticon==3.1.0
 pycountry==24.6.1
