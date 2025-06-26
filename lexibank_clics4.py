@@ -524,6 +524,10 @@ class Dataset(BaseDataset):
                     "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id"
                 },
                 {
+                    "name": "Name",
+                    "datatype": "string"
+                },
+                {
                     "name": "Concepticon_ID",
                     "datatype": "string",
                     "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#concepticonReference"
