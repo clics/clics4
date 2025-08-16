@@ -82,15 +82,15 @@ This release is a CLICS⁴ dataset that we consider generally good enough with r
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
-- **Varieties:** 3,420 (linked to 2,149 different Glottocodes)
+- **Varieties:** 3,432 (linked to 2,152 different Glottocodes)
 - **Concepts:** 1,730 (linked to 1,730 different Concepticon concept sets)
-- **Lexemes:** 1,443,325
-- **Sources:** 94
+- **Lexemes:** 1,445,845
+- **Sources:** 95
 - **Synonymy:** 1.10
 - **Invalid lexemes:** 0
-- **Tokens:** 8,107,217
-- **Segments:** 2,034 (0 BIPA errors, 0 CLTS sound class errors, 2026 CLTS modified)
-- **Inventory size (avg):** 40.74
+- **Tokens:** 8,120,261
+- **Segments:** 2,039 (0 BIPA errors, 0 CLTS sound class errors, 2031 CLTS modified)
+- **Inventory size (avg):** 40.78
 
 ## Possible Improvements:
 

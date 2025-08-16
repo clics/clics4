@@ -1,4 +1,5 @@
 ID	Concepts	Concepticon	Dataset	Organization	Source	Zenodo	ClicsCore	LexiCore	CogCore	ProtoCore	Version
+rutulbasiclexicon	207	207	rutulbasiclexicon	lexibank	Alekseeva2025	10.5281/zenodo.15719681	x	x			v0.2
 aaleykusunda	230	230	aaleykusunda	lexibank	Aaley2019	10.5281/zenodo.13149034	x	x			v2.1
 abrahammonpa	306	304	abrahammonpa	lexibank	Abraham2018	10.5281/zenodo.13149071	x	x			v3.1
 abvdoceanic	191	191	abvdoceanic	lexibank	Greenhill2008	10.5281/zenodo.13149095	x	x	x		v0.3
@@ -47,7 +48,7 @@ kraftchadic	433	429	kraftchadic	lexibank	Kraft1981	10.5281/zenodo.13832124	x	x		
 lairgyalrong	291	291	lairgyalrong	lexibank	Lai2023	10.5281/zenodo.14001762	x	x	x		v0.4
 lamanisoic	301	283	lamanisoic	lexibank	Lama2012	10.5281/zenodo.13169526	x	x			v1.1
 leeainu	199	199	leeainu	lexibank	Lee2013	10.5281/zenodo.14602119	x	x			v1.2
-leecaijia	234	234	leecaijia	lexibank	Lee2022	10.5281/zenodo.13253594	x	x			v1.0
+leecaijia	234	234	leecaijia	lexibank	Lee2023	10.5281/zenodo.15682950	x	x			v1.3
 leejaponic	210	210	leejaponic	lexibank	Lee2011	10.5281/zenodo.13254646	x	x			v1.1
 leekoreanic	246	246	leekoreanic	lexibank	Lee2015	10.5281/zenodo.13254649	x	x	x		v1.1
 lindseyende	1129	1128	lindseyende	intercontinental-dictionary-series	Lindsey2019	10.5281/zenodo.13254739	x	x			v2.2

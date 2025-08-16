@@ -135,7 +135,7 @@ class Dataset(BaseDataset):
             if rec_new.doi != record.doi:
                 record = rec_new
                 args.log.warn("DOI for datasets {0} is not the latest version!".format(
-                    dataset["ID"]))
+                    dataset))
             record.download(dest)
             
             # load zenodo info to make a new bibtex and doi
@@ -273,7 +273,7 @@ class Dataset(BaseDataset):
                             visited.add(t)
                     else:
                         if concept.concepticon_gloss not in gloss2id:
-                            dsets = " ".join(set([f.dataset for f in concept.forms]))
+                            dseMPCDFts = " ".join(set([f.dataset for f in concept.forms]))
                             args.log.info("Concepticon 3-Problem {0} / {1}".format(concept.concepticon_gloss, dsets))
                         else:
                             selected_concepts.append(concept.concepticon_gloss)
@@ -524,6 +524,10 @@ class Dataset(BaseDataset):
                     "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id"
                 },
                 {
+                    "name": "Name",
+                    "datatype": "string"
+                },
+                {
                     "name": "Concepticon_ID",
                     "datatype": "string",
                     "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#concepticonReference"
@@ -554,7 +558,7 @@ class Dataset(BaseDataset):
             for idf, (nodeA, nodeB, data) in progressbar(
                     enumerate(graph.edges(data=True)),
                     desc="writing colexifications"):
-                idx = str(idf+1)
+                idx = str(idf + 1)
                 # compute missing data
                 negative_data = []
                 for language in wl.languages:
@@ -583,23 +587,27 @@ class Dataset(BaseDataset):
                     }
                 )
                 if data["family_count"] >= COLEXIFICATION_THRESHOLD:
-                    for language_id in data["varieties"]:
+                    visited_vars = []
+                    for lid in sorted(set(data["varieties"])):
                         writer.objects["ValueTable"].append(
                             {
-                                "ID": idx + "-" + language_id,
+                                "ID": idx + "-" + lid,
                                 "Parameter_ID": idx,
-                                "Language_ID": language_id,
-                                "Value": 1
+                                "Language_ID": lid.split("-")[-1],
+                                "Value": 1,
+                                "Source": ["Tjuka2025"]
                             }
                         )
                     # now add missing data
-                    for language_id in negative_data:
+                    for language_id in sorted(set(negative_data)):
+                        lid = language_id.split("-")[1]
                         writer.objects["ValueTable"].append(
                             {
-                                "ID": idx + "-" + language_id,
-                                "ParameterID": idx,
-                                "Language_ID": language_id,
-                                "Value": 0
+                                "ID": idx + "-" + lid,
+                                "Parameter_ID": idx,
+                                "Language_ID": lid.split("-")[-1],
+                                "Value": 0,
+                                "Source": ["Tjuka2025"]
                             }
                         )
 
