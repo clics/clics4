@@ -87,6 +87,7 @@ raw/othanieljen/
 raw/polyglottaafricana/
 raw/robbeetstriangulation/
 raw/robinsonap/
+raw/rutulbasiclexicon/
 raw/servamalagasy/
 raw/sohartmannchin/
 raw/spagnolmaltese/
@@ -104,4 +105,7 @@ raw/yangyi/
 raw/yuchinese/
 raw/zgraggenmadang/
 raw/zhoubizic/
+
+.DS_Store
+.idea/
 
