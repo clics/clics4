@@ -31,7 +31,7 @@ All you need to install the packages required is to install the current package 
 ```
 $ git clone https://github.com/clics/clics4.git
 $ cd clics4
-$ git checkout v0.4
+$ git checkout v0.5
 $ pip install -e .
 ```
 

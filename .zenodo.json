@@ -1,5 +1,5 @@
 {
-    "title": "CLICS\u2074",
+    "title": "CLICS 4",
     "access_right": "open",
     "keywords": [
         "cldf:Wordlist",
@@ -10,10 +10,10 @@
             "name": "Annika Tjuka"
         },
         {
-            "name": "Christoph Rzymski"
+            "name": "Robert Forkel"
         },
         {
-            "name": "Robert Forkel"
+            "name": "Christoph Rzymski"
         },
         {
             "name": "Johann-Mattis List"
@@ -29,5 +29,5 @@
     "license": {
         "id": "CC-BY-4.0"
     },
-    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Tjuka, Annika; Forkel, Robert; Rzymski, Christoph; and List, Johann-Mattis (2025): CLICS\u2074: An Improved Database of Cross-Linguistic Colexifications [Dataset, Version 0.4]. Passau: MCL Chair at the University of Passau.</p>\n</blockquote>"
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Tjuka, Annika; Forkel, Robert; Rzymski, Christoph; and List, Johann-Mattis (2025): CLICS 4: An Improved Database of Cross-Linguistic Colexifications [Dataset, Version 0.5]. Passau: MCL Chair at the University of Passau.</p>\n</blockquote>"
 }
