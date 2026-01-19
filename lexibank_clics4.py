@@ -181,7 +181,7 @@ class Dataset(BaseDataset):
                 bib["author"],
                 bib.get("editor", ""),
                 bib.get("citation", ""),
-                row["Source"].split(" "),
+                row["Source"],
                 bib["doi"],
                 row["Version"]]]
         with codecs.open(self.raw_dir / "sources.bib", "w", "utf-8") as f:
