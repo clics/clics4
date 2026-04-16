@@ -28,7 +28,7 @@ Jinja2==3.1.6
 jmespath==1.1.0
 jsonschema==4.26.0
 kiwisolver==1.5.0
--e git+https://github.com/clics/clics4@bf702ad7b29456f3421f02a73bdddf1679f151dd#egg=lexibank_clics4
+-e git+https://github.com/clics/clics4@1148f7520da48698a1d765b8008c2679ee4e80c5#egg=lexibank_clics4
 lingpy==2.6.13
 lxml==6.0.2
 Markdown==3.10.2

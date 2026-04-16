@@ -251,6 +251,9 @@ class Dataset(BaseDataset):
                 for clx in progressbar(g.iter_colexifications(), desc="writing colexifications", leave=True):
                     writer.objects["ParameterTable"].append(clx.asdict())
 
+                    if clx.Family_Count < COLEXIFICATION_THRESHOLD:
+                        continue
+
                     for lid in sorted(set(clx.Varieties)):
                         writer.objects["ValueTable"].append(clx.make_value(1, lid))
                     # now add missing data
@@ -620,8 +623,8 @@ class ClicsGraph:
 
     def iter_colexifications(self) -> Generator[Colexification, None, None]:
         for i, (node_a, node_b, data) in enumerate(self.graph.edges(data=True)):
-            if data['family_count'] >= COLEXIFICATION_THRESHOLD:
-                yield Colexification.from_edge(str(i + 1), node_a, node_b, data)
+            #if data['family_count'] >= COLEXIFICATION_THRESHOLD:
+            yield Colexification.from_edge(str(i + 1), node_a, node_b, data)
 
     def get_concept_data(self, concept: NodeNameType) -> dict[str, Any]:
         return {
