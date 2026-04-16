@@ -20,9 +20,6 @@ setup(
         'lexibank.dataset': [
             'clics4=lexibank_clics4:Dataset',
         ],
-        'cldfbench.commands': [
-            'clics4=clics4commands',
-        ],
     },
     platforms='any',
     python_requires='>=3.6',
@@ -41,7 +38,7 @@ setup(
         'uritemplate',
         'lingpy>=2.6.8',
         'pyclts>=3.1',
-        "pyclics==3.1.0",
+        "pyclics>=3.1.0",
         "zenodo_client"
     ],
     extras_require={

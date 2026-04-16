@@ -13,13 +13,13 @@
 
 property | value
  --- | ---
-[dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | Tjuka, Annika; Forkel, Robert; Rzymski, Christoph; and List, Johann-Mattis (2025): CLICS 4: An Improved Database of Cross-Linguistic Colexifications [Dataset, Version 0.5]. Passau: MCL Chair at the University of Passau.
+[dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | Tjuka, Annika; Forkel, Robert; Rzymski, Christoph; and List, Johann-Mattis (2026): CLICS⁴: An Improved Database of Cross-Linguistic Colexifications [Dataset, Version 1.0]. Passau: MCL Chair at the University of Passau. https://doi.org/10.5281/zenodo.16900179
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF Wordlist](http://cldf.clld.org/v1.0/terms.rdf#Wordlist)
-[dc:identifier](http://purl.org/dc/terms/identifier) | https://github.com/clics/clics4
+[dc:identifier](http://purl.org/dc/terms/identifier) | https://doi.org/10.5281/zenodo.16900179
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by/4.0/
 [dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | https://github.com/clics/clics4
-[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/clics/clics4/tree/e86adf3">clics/clics4 v0.4-10-ge86adf3</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v5.2.1">Glottolog v5.2.1</a></li><li><a href="https://github.com/concepticon/concepticon-data/tree/v3.4.0">Concepticon v3.4.0</a></li><li><a href="https://github.com/cldf-clts/clts/tree/v2.3.0">CLTS v2.3.0</a></li></ol>
-[prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>lingpy-rcParams</strong>: <a href="./lingpy-rcParams.json">lingpy-rcParams.json</a></li><li><strong>python</strong>: 3.13.6</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
+[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/clics/clics4/tree/bf702ad">clics/clics4 v0.5-1-gbf702ad</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v5.3">Glottolog v5.3</a></li><li><a href="https://github.com/concepticon/concepticon-data/tree/v3.4.0">Concepticon v3.4.0</a></li><li><a href="https://github.com/cldf-clts/clts/tree/v2.3.0">CLTS v2.3.0</a></li></ol>
+[prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>lingpy-rcParams</strong>: <a href="./lingpy-rcParams.json">lingpy-rcParams.json</a></li><li><strong>python</strong>: 3.12.3</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | clics4
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution
 
@@ -29,7 +29,7 @@ property | value
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF FormTable](http://cldf.clld.org/v1.0/terms.rdf#FormTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 1445845
+[dc:extent](http://purl.org/dc/terms/extent) | 1449893
 
 
 ### Columns
@@ -56,7 +56,7 @@ Name/Property | Datatype | Description
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF LanguageTable](http://cldf.clld.org/v1.0/terms.rdf#LanguageTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 3432
+[dc:extent](http://purl.org/dc/terms/extent) | 3447
 
 
 ### Columns
@@ -142,13 +142,13 @@ Name/Property | Datatype | Description
 
 property | value
  --- | ---
-[dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | Tjuka, Annika; Forkel, Robert; Rzymski, Christoph; and List, Johann-Mattis (2025): CLICS 4: An Improved Database of Cross-Linguistic Colexifications [Dataset, Version 0.5]. Passau: MCL Chair at the University of Passau.
+[dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | Tjuka, Annika; Forkel, Robert; Rzymski, Christoph; and List, Johann-Mattis (2026): CLICS⁴: An Improved Database of Cross-Linguistic Colexifications [Dataset, Version 1.0]. Passau: MCL Chair at the University of Passau. https://doi.org/10.5281/zenodo.16900179
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF StructureDataset](http://cldf.clld.org/v1.0/terms.rdf#StructureDataset)
-[dc:identifier](http://purl.org/dc/terms/identifier) | https://github.com/clics/clics4
+[dc:identifier](http://purl.org/dc/terms/identifier) | https://doi.org/10.5281/zenodo.16900179
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by/4.0/
 [dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | https://github.com/clics/clics4
-[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/clics/clics4/tree/e86adf3">clics/clics4 v0.4-10-ge86adf3</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v5.2.1">Glottolog v5.2.1</a></li><li><a href="https://github.com/concepticon/concepticon-data/tree/v3.4.0">Concepticon v3.4.0</a></li><li><a href="https://github.com/cldf-clts/clts/tree/v2.3.0">CLTS v2.3.0</a></li></ol>
-[prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>python</strong>: 3.13.6</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
+[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/clics/clics4/tree/bf702ad">clics/clics4 v0.5-1-gbf702ad</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v5.3">Glottolog v5.3</a></li><li><a href="https://github.com/concepticon/concepticon-data/tree/v3.4.0">Concepticon v3.4.0</a></li><li><a href="https://github.com/cldf-clts/clts/tree/v2.3.0">CLTS v2.3.0</a></li></ol>
+[prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>python</strong>: 3.12.3</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | clics4
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution
 
@@ -158,7 +158,7 @@ property | value
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF ValueTable](http://cldf.clld.org/v1.0/terms.rdf#ValueTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 7210588
+[dc:extent](http://purl.org/dc/terms/extent) | 7245287
 
 
 ### Columns
@@ -178,7 +178,7 @@ Name/Property | Datatype | Description
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF ParameterTable](http://cldf.clld.org/v1.0/terms.rdf#ParameterTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 51539
+[dc:extent](http://purl.org/dc/terms/extent) | 8458
 
 
 ### Columns
@@ -208,7 +208,7 @@ Name/Property | Datatype | Description
 property | value
  --- | ---
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF LanguageTable](http://cldf.clld.org/v1.0/terms.rdf#LanguageTable)
-[dc:extent](http://purl.org/dc/terms/extent) | 3432
+[dc:extent](http://purl.org/dc/terms/extent) | 3447
 
 
 ### Columns

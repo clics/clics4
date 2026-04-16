@@ -6,9 +6,9 @@
         }
     ],
     "aboutUrl": null,
-    "dc:bibliographicCitation": "Tjuka, Annika; Forkel, Robert; Rzymski, Christoph; and List, Johann-Mattis (2025): CLICS 4: An Improved Database of Cross-Linguistic Colexifications [Dataset, Version 0.5]. Passau: MCL Chair at the University of Passau.",
+    "dc:bibliographicCitation": "Tjuka, Annika; Forkel, Robert; Rzymski, Christoph; and List, Johann-Mattis (2026): CLICS\u2074: An Improved Database of Cross-Linguistic Colexifications [Dataset, Version 1.0]. Passau: MCL Chair at the University of Passau. https://doi.org/10.5281/zenodo.16900179",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#StructureDataset",
-    "dc:identifier": "https://github.com/clics/clics4",
+    "dc:identifier": "https://doi.org/10.5281/zenodo.16900179",
     "dc:isVersionOf": null,
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:related": null,
@@ -19,13 +19,13 @@
         {
             "rdf:about": "https://github.com/clics/clics4",
             "rdf:type": "prov:Entity",
-            "dc:created": "v0.4-10-ge86adf3",
+            "dc:created": "v0.5-1-gbf702ad",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v5.2.1",
+            "dc:created": "v5.3",
             "dc:title": "Glottolog"
         },
         {
@@ -44,7 +44,7 @@
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.13.6"
+            "dc:description": "3.12.3"
         },
         {
             "dc:title": "python-packages",
@@ -56,7 +56,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ValueTable",
-            "dc:extent": 7210588,
+            "dc:extent": 7245287,
             "tableSchema": {
                 "columns": [
                     {
@@ -146,7 +146,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 51539,
+            "dc:extent": 8458,
             "tableSchema": {
                 "columns": [
                     {
@@ -241,7 +241,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 3432,
+            "dc:extent": 3447,
             "tableSchema": {
                 "columns": [
                     {
